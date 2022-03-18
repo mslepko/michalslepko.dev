@@ -1,33 +1,44 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+import { stack as Menu } from 'react-burger-menu'
 
 const Header = ({ siteTitle }) => (
   <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
+    className="bg-blue p-4"
   >
     <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
+      className="flex justify-between"
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+      <StaticImage
+        src="../images/michalcodes.jpg"
+        width={65}
+        height={65}
+        quality={95}
+        formats={["auto", "webp", "avif"]}
+        alt="Michal"
+        className="rounded-full"
+      />
     </div>
+
+    <Menu
+      right
+      scaleRotate
+      width={"100%"}
+    >
+        <Link to="/"
+          className="text-4xl text-dark-blue"
+        >Home
+        </Link>
+        <Link to="/about"
+          className="text-4xl text-dark-blue"
+          >About</Link>
+        <Link to="/uses"
+          className="text-4xl text-dark-blue"
+          >Uses</Link>
+
+      </Menu>
   </header>
 )
 

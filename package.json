@@ -16,11 +16,16 @@
     "gatsby-transformer-sharp": "^4.10.0",
     "prop-types": "^15.8.1",
     "react": "^17.0.1",
+    "react-burger-menu": "^3.0.6",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "prettier": "^2.5.1"
+    "autoprefixer": "^10.4.4",
+    "gatsby-plugin-postcss": "^5.10.0",
+    "postcss": "^8.4.12",
+    "prettier": "^2.5.1",
+    "tailwindcss": "^3.0.23"
   },
   "keywords": [
     "gatsby"
