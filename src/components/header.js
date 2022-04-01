@@ -25,6 +25,18 @@ const Header = ({ siteTitle }) => (
       </div>
     </div>
 
+    <div className="hidden lg:flex flex-col">
+    <Link to="/"
+      className="text-4xl text-dark-blue mb-4"
+      >Home</Link>
+    <Link to="/about"
+      className="text-4xl text-dark-blue mb-4"
+      >About</Link>
+    <Link to="/uses"
+      className="text-4xl text-dark-blue mb-4"
+    >Uses</Link>
+    </div>
+
     <div
       className="hidden lg:flex"
     >
