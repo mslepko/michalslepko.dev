@@ -9,15 +9,15 @@ const HeroLine = ({lineNo, text, varName, varValue}) => {
     <p
       className="text-2xl"
     >
-    <span
-      className="text-dark-blue pr-4"
-    >
-      {lineNo}.
-    </span>
-    {textOutput}
-    {nameOutput}
-    {valueOutput}
-  </p>
+      <span
+        className="text-dark-blue pr-4"
+      >
+        {lineNo}.
+      </span>
+      {textOutput}
+      {nameOutput}
+      {valueOutput}
+    </p>
   )
 }
 
