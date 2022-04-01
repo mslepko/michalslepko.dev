@@ -24,16 +24,25 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
-        className="container mx-auto"
+        className="flex flex-col lg:flex-row h-screen"
       >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
+        <Header
+          siteTitle={data.site.siteMetadata?.title || `Title`}
+        />
+        <div
+          className="container lg:mx-auto lg:overflow-y-scroll"
+        >
+          <main>{children}</main>
+
+          <footer
+            className="container mx-auto"
+          >
+                © {new Date().getFullYear()}, Built with
+                {` `}
+                <a href="https://www.gatsbyjs.com">Gatsby</a>
+          </footer>
+        </div>
       </div>
     </>
   )
