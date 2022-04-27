@@ -11,7 +11,6 @@ const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <Hero />
-
     <div
       className="block lg:hidden"
     >
