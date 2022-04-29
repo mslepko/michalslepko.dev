@@ -2,30 +2,41 @@ import * as React from "react"
 import usesList from "./usesList"
 
 const UsesLine = ({type}) => {
-  const elements = usesList[type]
+  const setupElements = usesList[type]
   let htmlOutput = '';
-  let keys = [];
+  let names = [];
 
-  if (elements) {
-    keys = Object.keys(elements)
+  if (setupElements) {
+    names = Object.keys(setupElements)
   }
 
-  if (keys.length) {
+  if (names.length) {
     htmlOutput = '<ul>';
-    for (const element of keys) {
-      console.log('link', elements[element].link);
-      const elementLink = elements[element].link ? '<a target="_blank" href="' + elements[element].link + '">Amazon UK</a>' : ''
 
-      htmlOutput += '<li>'
-      htmlOutput += '<span class="bold capitalize">' + element + '</span> - ' + elements[element].name + ' - ' + elementLink
-      htmlOutput += '</li>'
+    for (let name of names) {
+      let setupItem = setupElements[name]
+
+      if (setupItem) {
+        let urls = Object.keys(setupItem)
+        let count = 0;
+        htmlOutput += `<li>
+          <span class="bold capitalize">${name}</span> - `
+
+        for (let url of urls) {
+          htmlOutput += count > 0 ? ' | ' : ''
+          count++
+
+          htmlOutput += `<a href="${setupItem[url]}" target="_blank">${url}</a>`
+        }
+
+        htmlOutput += `</li>`
+      }
     }
     htmlOutput += '</ul>'
   }
 
   return (
     <p
-      className="text-2xl"
       dangerouslySetInnerHTML={{ __html: htmlOutput }}
     >
 

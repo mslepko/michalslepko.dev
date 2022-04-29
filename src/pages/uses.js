@@ -20,11 +20,15 @@ const UsesPage = () => (
       />
 
       <h2>My work setup</h2>
-        <UsesLine type="workSetup" />
+      <UsesLine type="workSetup" />
+
       <h2>Apps I use</h2>
 
       <h2>My streaming setup</h2>
+      <UsesLine type="streamingSetup" />
     </div>
+
+    <p class="text-small">* affiliated link</p>
   </Layout>
 )
 
