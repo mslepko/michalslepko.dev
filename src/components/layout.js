@@ -36,9 +36,9 @@ const Layout = ({ children }) => {
           <main>{children}</main>
 
           <footer
-            className="container mx-auto"
+            className="container mx-auto text-right text-gray-500 mt-16"
           >
-                © {new Date().getFullYear()}, Built with
+                Michal Slepko © {new Date().getFullYear()}, Built with
                 {` `}
                 <a href="https://www.gatsbyjs.com">Gatsby</a>
           </footer>
