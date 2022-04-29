@@ -1,7 +1,7 @@
 
 const usesList = {}
 
-usesList['workSetup'] = {
+usesList['my_work_setup'] = {
   "MacBook Air M1 16GB RAM, 1TB SSD": {
     'Apple UK': 'https://www.apple.com/uk/shop/buy-mac/macbook-air/space-grey-apple-m1-chip-with-8-core-cpu-and-8-core-gpu-512gb',
   },
@@ -28,7 +28,27 @@ usesList['streamingSetup'] = {
   },
   'Elgato HD60 S+, External Capture Card': {
     'Amazon UK*': 'https://www.amazon.co.uk/dp/B07XB6VNLJ?tag=onamzrootscop-21&linkCode=ssc&creativeASIN=B07XB6VNLJ&asc_item-id=amzn1.ideas.1VQNJPFZ7TCCD'
+  },
+  'Logitech C920S HD Pro Webcam': {
+    'Amazon UK*': 'https://www.amazon.co.uk/dp/B07MM4V7NR?tag=onamzrootscop-21&linkCode=ssc&creativeASIN=B07MM4V7NR&asc_item-id=amzn1.ideas.1VQNJPFZ7TCCD'
+  },
+  'Mac Mini 2018 - Intel i7 3.2GHz 6-core, 16GB RAM': {
+
   }
+}
+
+
+usesList['apps'] = {
+  'VS Code with Hack The Box theme': {
+    'https://code.visualstudio.com/': 'https://code.visualstudio.com/'
+  },
+  'iTerm2 Terminal': {
+    'https://iterm2.com/': 'https://iterm2.com/'
+  },
+  'Notion for everything': {
+    'https://www.notion.so/': 'https://www.notion.so/'
+  },
+
 }
 
 export default usesList

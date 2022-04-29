@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Hero from "../components/hero"
 //import Socials from "../components/socials"
 
 import UsesLine from "../components/usesLine"
@@ -11,24 +12,25 @@ import UsesLine from "../components/usesLine"
 const UsesPage = () => (
   <Layout>
     <Seo title="Uses" />
-    <div className="container mx-auto">
-      <h1>Uses</h1>
+    <Hero />
+    <div className="container mx-auto p-8">
+      <h1 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight dark:text-slate-200 pt-10">Uses</h1>
       <StaticImage
         src="../images/mydesk.jpeg"
         alt="Michal.codes's setup"
         className="max-w-lg	block mx-auto"
       />
 
-      <h2>My work setup</h2>
-      <UsesLine type="workSetup" />
+      <a href="#my_work_setup" class="block text-xl sm:text-1xl font-bold text-slate-900 tracking-tight dark:text-slate-200 pt-10">My work setup</a>
+      <p class="text-sm text-slate-500">* affiliated links</p>
+      <UsesLine type="my_work_setup" />
 
-      <h2>Apps I use</h2>
-
-      <h2>My streaming setup</h2>
+      <h3 class="text-xl sm:text-1xl font-bold text-slate-900 tracking-tight dark:text-slate-200 pt-10">My streaming setup</h3>
       <UsesLine type="streamingSetup" />
-    </div>
 
-    <p class="text-small">* affiliated link</p>
+      <h3 class="text-xl sm:text-1xl font-bold text-slate-900 tracking-tight dark:text-slate-200 pt-10">Apps I use</h3>
+      <UsesLine type="apps" />
+    </div>
   </Layout>
 )
 

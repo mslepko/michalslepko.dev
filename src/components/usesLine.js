@@ -11,7 +11,7 @@ const UsesLine = ({type}) => {
   }
 
   if (names.length) {
-    htmlOutput = '<ul>';
+    htmlOutput = `<ul class="${type} marker:text-sky-400 list-disc pl-5 space-y-3 text-slate-500 mt-8">`;
 
     for (let name of names) {
       let setupItem = setupElements[name]
@@ -20,13 +20,15 @@ const UsesLine = ({type}) => {
         let urls = Object.keys(setupItem)
         let count = 0;
         htmlOutput += `<li>
-          <span class="bold capitalize">${name}</span> - `
+          <span class="font-bold capitalize">${name}</span>`
+
+        htmlOutput += urls && urls.length > 0 ? ' - ' : ''
 
         for (let url of urls) {
           htmlOutput += count > 0 ? ' | ' : ''
           count++
 
-          htmlOutput += `<a href="${setupItem[url]}" target="_blank">${url}</a>`
+          htmlOutput += `<a href="${setupItem[url]}" target="_blank" class="text-blue">${url}</a>`
         }
 
         htmlOutput += `</li>`
@@ -36,11 +38,10 @@ const UsesLine = ({type}) => {
   }
 
   return (
-    <p
+    <div
       dangerouslySetInnerHTML={{ __html: htmlOutput }}
     >
-
-    </p>
+    </div>
   )
 }
 
