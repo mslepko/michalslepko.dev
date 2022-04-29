@@ -55,9 +55,9 @@ const Header = ({ siteTitle }) => (
             className="text-4xl text-dark-blue"
           >Home
           </Link>
-          <Link to="/about"
+          {/* <Link to="/about"
             className="text-4xl text-dark-blue"
-            >About</Link>
+            >About</Link> */}
           <Link to="/uses"
             className="text-4xl text-dark-blue"
             >Uses</Link>
