@@ -14,7 +14,6 @@ const IndexPage = () => (
     <div
       className="block lg:hidden"
     >
-      <Socials />
     </div>
   </Layout>
 )
