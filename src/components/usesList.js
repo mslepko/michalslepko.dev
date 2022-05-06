@@ -38,17 +38,25 @@ usesList['streamingSetup'] = {
 }
 
 
-usesList['apps'] = {
+usesList['codingApps'] = {
   'VS Code with Hack The Box theme': {
     'https://code.visualstudio.com/': 'https://code.visualstudio.com/'
   },
   'iTerm2 Terminal': {
     'https://iterm2.com/': 'https://iterm2.com/'
   },
-  'Notion for everything': {
+}
+
+usesList['productivityApps'] = {
+  'Notion for notes, tasks, habit tracker': {
     'https://www.notion.so/': 'https://www.notion.so/'
   },
-
+  'TickTick for quick tasks and reminders': {
+    'https://ticktick.com/': 'https://ticktick.com/'
+  },
+  'Sunsama - for daily planning and block scheduling': {
+    'Sunsama*': 'https://sunsama.grsm.io/fsyygeo11ucv'
+  }
 }
 
 export default usesList

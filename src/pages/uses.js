@@ -28,8 +28,11 @@ const UsesPage = () => (
       <h3 class="text-xl sm:text-1xl font-bold text-slate-900 tracking-tight dark:text-slate-200 pt-10">My streaming setup</h3>
       <UsesLine type="streamingSetup" />
 
-      <h3 class="text-xl sm:text-1xl font-bold text-slate-900 tracking-tight dark:text-slate-200 pt-10">Apps I use</h3>
-      <UsesLine type="apps" />
+      <h3 class="text-xl sm:text-1xl font-bold text-slate-900 tracking-tight dark:text-slate-200 pt-10">Coding Apps</h3>
+      <UsesLine type="codingApps" />
+
+      <h3 class="text-xl sm:text-1xl font-bold text-slate-900 tracking-tight dark:text-slate-200 pt-10">Productivity Apps</h3>
+      <UsesLine type="productivityApps" />
     </div>
   </Layout>
 )
