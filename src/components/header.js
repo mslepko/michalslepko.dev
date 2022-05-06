@@ -1,9 +1,9 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { stack as Menu } from 'react-burger-menu'
-import Socials from './socials.js'
+import MenuLinks from './menuLinks'
+import Socials from './socials'
 
 const Header = ({ siteTitle }) => (
   <header
@@ -25,17 +25,7 @@ const Header = ({ siteTitle }) => (
       </div>
     </div>
 
-    <div className="hidden lg:flex flex-col">
-    <Link to="/"
-      className="text-4xl text-dark-blue mb-4"
-      >Home</Link>
-    <Link to="/about"
-      className="text-4xl text-dark-blue mb-4"
-      >About</Link>
-    <Link to="/uses"
-      className="text-4xl text-dark-blue mb-4"
-    >Uses</Link>
-    </div>
+    <MenuLinks classes="hidden lg:flex flex-col"/>
 
     <div
       className="hidden lg:flex"
@@ -51,17 +41,7 @@ const Header = ({ siteTitle }) => (
         scaleRotate
         width={"100%"}
       >
-          <Link to="/"
-            className="text-4xl text-dark-blue"
-          >Home
-          </Link>
-          {/* <Link to="/about"
-            className="text-4xl text-dark-blue"
-            >About</Link> */}
-          <Link to="/uses"
-            className="text-4xl text-dark-blue"
-            >Uses</Link>
-
+         <MenuLinks classes="flex flex-col justify-center"/>
       </Menu>
     </div>
   </header>
