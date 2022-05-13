@@ -6,7 +6,7 @@ const MenuLinks = ({classes}) => {
   const links = {
     '/': 'Home',
     '/uses': 'Uses',
-    // '/links': 'Links',
+    '/links': 'Links',
     // '/partnerships': 'Partnerships',
   }
 
