@@ -1,5 +1,5 @@
 import * as React from "react"
-import usesList from "./usesList"
+import usesList from "../lists/usesList"
 
 const UsesLine = ({type}) => {
   const setupElements = usesList[type]
