@@ -13,8 +13,10 @@ const MenuLinks = ({classes}) => {
   let htmlOutput = [];
 
   for (let url in links) {
-    htmlOutput.push(<Link to={url}
+    htmlOutput.push(<Link
+      to={url}
       className="text-4xl text-dark-blue mb-4"
+      key={links[url]}
     >{links[url]}</Link>)
   }
   return (
