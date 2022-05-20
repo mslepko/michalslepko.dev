@@ -3,11 +3,11 @@ module.exports = {
     title: `Michal Slepko | Software Developer`,
     description: `Hello there.`,
     author: `@michal.codes`,
-    siteUrl: `https://michalsledo.dev/`,
+    siteUrl: `https://michalslepko.dev/`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-image`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
