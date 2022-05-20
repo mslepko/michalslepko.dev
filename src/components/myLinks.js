@@ -5,21 +5,25 @@ import linksList from "../lists/linksList"
 import { getImage, GatsbyImage } from "gatsby-plugin-image"
 
 
-function Thumbnail({image}) {
-
-  console.log('image Thumbnail', image);
+function Thumbnail({image, alt}) {
   return (
-    <p>No image</p>
-    // <GatsbyImage
-    // image={image}
-    // alt="A corgi smiling happily"
-    // />
+    <GatsbyImage
+    image={image}
+    alt={alt}
+    className="mr-4"
+    />
   )
 }
-function Link({link}) {
-  return <li>
+function Link({link, thumb}) {
+  return <li
+    className="flex items-center justify-start mb-2"
+  >
 
-    <Thumbnail image={link}/>
+    <Thumbnail
+      image={thumb}
+      alt={link.name}
+      key={link.name}
+    />
 
     <a
       href={link.url}
@@ -31,7 +35,7 @@ function Link({link}) {
 }
 
 const MyLinks = () => {
-  const thumbnails = useStaticQuery(graphql`
+  const thumbnailsQuery = useStaticQuery(graphql`
   {
     allFile(
       filter: {extension: {regex: "/(jpg)|(png)|(jpeg)/"}, relativeDirectory: {eq: "thumbnails"}}
@@ -40,28 +44,35 @@ const MyLinks = () => {
         node {
           base
           childImageSharp {
-            fluid {
-              base64
-              aspectRatio
-              src
-              srcSet
-              sizes
-            }
+            gatsbyImageData(
+						  height: 46
+            )
           }
         }
       }
     }
   }
   `)
-console.log('thumbnails', thumbnails);
+
+  let thumbnails = [];
+
+  thumbnailsQuery.allFile.edges.map(image => (
+    thumbnails[image.node.base] = image.node.childImageSharp.gatsbyImageData
+  ))
+
   let links = [];
   for (let link of linksList) {
-    links.push(<Link link={link} />)
+    let thumbnail = thumbnails[link.thumb]
+    links.push(<Link
+      link={link}
+      thumb = {thumbnail}
+      key={link.name}
+    />)
   }
 
   return (
     <div>
-      <ul className="marker:text-sky-400 list-disc pl-5 space-y-3 text-slate-500 mt-8"
+      <ul className="list-none w-2/3 m-auto pl-5 space-y-3 text-slate-500 mt-8"
       >
         {links}
       </ul>
@@ -70,21 +81,3 @@ console.log('thumbnails', thumbnails);
 }
 
 export default MyLinks
-
-
-
-/*
-query MyQuery {
-  file(relativePath: {eq: "thumbnails/sunsama.png"}) {
-    childrenImageSharp {
-      fluid {
-        base64
-        src
-        sizes
-        srcSet
-      }
-    }
-  }
-}
-
-*/
