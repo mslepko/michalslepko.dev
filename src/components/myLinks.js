@@ -2,35 +2,40 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import linksList from "../lists/linksList"
-import { getImage, GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 
 function Thumbnail({image, alt}) {
   return (
+    image ?
     <GatsbyImage
     image={image}
     alt={alt}
     className="mr-4"
-    />
+    /> : null
   )
 }
 function Link({link, thumb}) {
   return <li
-    className="flex items-center justify-start mb-2"
+    className="flex items-center mb-2"
   >
+    <div className="w-1/5">
 
     <Thumbnail
       image={thumb}
       alt={link.name}
       key={link.name}
     />
+    </div>
 
+    <div className="text-left">
     <a
       href={link.url}
       target="_blank"
       className="text-blue"
       rel="noreferrer"
     >{link.name}</a>
+    </div>
   </li>
 }
 
