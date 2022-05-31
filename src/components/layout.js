@@ -11,8 +11,6 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 
-import Socials from "./socials"
-
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -35,18 +33,8 @@ const Layout = ({ children }) => {
         <div
           className="container lg:mx-auto lg:overflow-y-scroll"
         >
-          <main>{children}</main>
+          <main className="min-h-full">{children}</main>
 
-          <footer
-            className="container mx-auto text-right text-gray-500 mt-16"
-          >
-                <div className="md:hidden">
-                  <Socials />
-                </div>
-                Michal Slepko © {new Date().getFullYear()}, Built with
-                {` `}
-                <a href="https://www.gatsbyjs.com">Gatsby</a>
-          </footer>
         </div>
       </div>
     </>
