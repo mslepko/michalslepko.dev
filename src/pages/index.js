@@ -1,17 +1,15 @@
 import * as React from "react"
-import Layout from "../components/layout"
+import IndexLayout from "../components/IndexLayout"
 import Seo from "../components/seo"
 import Hero from "../components/hero"
 
 const IndexPage = () => (
-  <Layout>
+  <IndexLayout>
     <Seo title="Home" />
-    <Hero />
-    <div
-      className="block lg:hidden"
-    >
+    <div className="h-screen w-screen">
+      <Hero />
     </div>
-  </Layout>
+  </IndexLayout>
 )
 
 export default IndexPage

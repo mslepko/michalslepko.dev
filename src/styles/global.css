@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+input.light-blue::placeholder {
+  @apply text-dark;
+}
+
+.typed-cursor {
+  @apply text-gray;
+}
+.typed-cursor.typed-cursor--blink {
+  @apply hidden;
+}
