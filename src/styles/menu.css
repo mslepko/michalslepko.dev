@@ -7,7 +7,7 @@
 }
 
 .bm-burger-bars {
-  @apply bg-dark-blue;
+  @apply bg-mint;
   height: 15% !important;
 }
 
@@ -52,5 +52,5 @@
 }
 
 .bm-menu {
-  @apply bg-light-blue p-8;
+  @apply bg-header p-8;
 }
