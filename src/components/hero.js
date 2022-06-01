@@ -49,8 +49,8 @@ const Hero = () => {
           />
         </p>
 
-        <p className="text-2xl md:text-5xl pb-1 md:pb-6 min-h-68">
-          <span className="text-dark pr-6 md:pr-14">3</span>
+        <p className="text-2xl md:text-5xl pb-1 md:pb-6 min-h-68 pl-10">
+          <span className="text-dark pr-6 md:pr-14 -ml-10">3</span>
           <Typed
             strings={[
               '<span class="text-var_name">$description&nbsp;=&nbsp;</span>'
