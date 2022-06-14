@@ -18,16 +18,14 @@ const Header = ({ siteTitle }) => (
       bg-header"
   >
     <div
-      className="flex items-center w-full pt-8"
+      className="flex items-start w-full pt-0 md:pt-8"
     >
       <StaticImage
         src="../images/michalcodes.jpg"
-        width={250}
-        height={250}
         quality={95}
         formats={["auto", "webp", "avif"]}
         alt="Michal"
-        className="rounded-full mx-auto"
+        className="rounded-full md:mx-auto max-w-90 max-h-90 md:max-w-300 md:max-h-300 ring-2 ring-current"
       />
     </div>
 
