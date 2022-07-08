@@ -2,6 +2,9 @@
 const usesList = {}
 
 usesList['my_work_setup'] = {
+  "ACTIV 2 Standing Desk": {
+    "ACTIV": "https://aktivdesk.com/products/aktiv-dual-motor-standing-desk?variant=40106892263460"
+  },
   "MacBook Air M1 16GB RAM, 1TB SSD": {
     'Apple UK': 'https://www.apple.com/uk/shop/buy-mac/macbook-air/space-grey-apple-m1-chip-with-8-core-cpu-and-8-core-gpu-512gb',
   },

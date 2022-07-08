@@ -1,13 +1,13 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import linksList from "../lists/linksList"
-import MyLink from "./linkComponent"
+import MyLink from "./myLinkComponent"
 
 const MyLinks = () => {
   const thumbnailsQuery = useStaticQuery(graphql`
   {
     allFile(
-      filter: {extension: {regex: "/(jpg)|(png)|(jpeg)/"}, relativeDirectory: {eq: "thumbnails"}}
+      filter: {extension: {regex: "/(jpg)|(png)|(jpeg)|(webp)/"}, relativeDirectory: {eq: "thumbnails"}}
     ) {
       edges {
         node {
