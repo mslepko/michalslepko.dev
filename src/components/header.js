@@ -39,7 +39,7 @@ const Header = ({ siteTitle }) => (
     </div>
 
     <div
-      className="block lg:hidden"
+      className="flex lg:hidden"
     >
       <Menu
         right
