@@ -1,49 +1,13 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-
 import linksList from "../lists/linksList"
-import { GatsbyImage } from "gatsby-plugin-image"
-
-
-function Thumbnail({image, alt}) {
-  return (
-    image ?
-    <GatsbyImage
-    image={image}
-    alt={alt}
-    className="mr-4"
-    /> : null
-  )
-}
-function Link({link, thumb}) {
-  return <li
-    className="flex items-center mb-2"
-  >
-    <div className="w-1/5">
-
-    <Thumbnail
-      image={thumb}
-      alt={link.name}
-      key={link.name}
-    />
-    </div>
-
-    <div className="text-left">
-    <a
-      href={link.url}
-      target="_blank"
-      className="text-blue"
-      rel="noreferrer"
-    >{link.name}</a>
-    </div>
-  </li>
-}
+import MyLink from "./myLinkComponent"
 
 const MyLinks = () => {
   const thumbnailsQuery = useStaticQuery(graphql`
   {
     allFile(
-      filter: {extension: {regex: "/(jpg)|(png)|(jpeg)/"}, relativeDirectory: {eq: "thumbnails"}}
+      filter: {extension: {regex: "/(jpg)|(png)|(jpeg)|(webp)/"}, relativeDirectory: {eq: "thumbnails"}}
     ) {
       edges {
         node {
@@ -68,7 +32,7 @@ const MyLinks = () => {
   let links = [];
   for (let link of linksList) {
     let thumbnail = thumbnails[link.thumb]
-    links.push(<Link
+    links.push(<MyLink
       link={link}
       thumb = {thumbnail}
       key={link.name}
@@ -76,11 +40,8 @@ const MyLinks = () => {
   }
 
   return (
-    <div>
-      <ul className="list-none w-2/3 m-auto pl-5 space-y-3 text-slate-500 mt-8"
-      >
-        {links}
-      </ul>
+    <div className="md:w-2/3 m-auto marker:text-sky-400 list-disc md:pl-5 space-y-6 text-slate-500 mt-8">
+      {links}
     </div>
   )
 }

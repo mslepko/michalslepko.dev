@@ -2,6 +2,9 @@
 const usesList = {}
 
 usesList['my_work_setup'] = {
+  "ACTIV 2 Standing Desk": {
+    "ACTIV": "https://aktivdesk.com/products/aktiv-dual-motor-standing-desk?variant=40106892263460"
+  },
   "MacBook Air M1 16GB RAM, 1TB SSD": {
     'Apple UK': 'https://www.apple.com/uk/shop/buy-mac/macbook-air/space-grey-apple-m1-chip-with-8-core-cpu-and-8-core-gpu-512gb',
   },
@@ -23,8 +26,7 @@ usesList['my_work_setup'] = {
 
 usesList['streamingSetup'] = {
   'Fifine RGB Dynamic Microphone K658': {
-    'Amazon UK*': 'https://www.amazon.co.uk/dp/B09M8J86D6?tag=onamzrootscop-21&linkCode=ssc&creativeASIN=B09M8J86D6&asc_item-id=amzn1.ideas.1VQNJPFZ7TCCD',
-    'FifineMic.com': 'https://fifinemic.com/products/fifine-k658-usb-dynamic-microphone?variant=40775193886876'
+    'Amazon UK*': 'https://www.amazon.co.uk/dp/B09M8J86D6?tag=onamzrootscop-21&linkCode=ssc&creativeASIN=B09M8J86D6&asc_item-id=amzn1.ideas.1VQNJPFZ7TCCD'
   },
   'Elgato HD60 S+, External Capture Card': {
     'Amazon UK*': 'https://www.amazon.co.uk/dp/B07XB6VNLJ?tag=onamzrootscop-21&linkCode=ssc&creativeASIN=B07XB6VNLJ&asc_item-id=amzn1.ideas.1VQNJPFZ7TCCD'
@@ -42,9 +44,9 @@ usesList['codingApps'] = {
   'VS Code with Hack The Box theme': {
     'https://code.visualstudio.com/': 'https://code.visualstudio.com/'
   },
-  'iTerm2 Terminal': {
-    'https://iterm2.com/': 'https://iterm2.com/'
-  },
+  'Warp Terminal': {
+    'https://app.warp.dev/': 'https://app.warp.dev/referral/7QZEVP'
+  }
 }
 
 usesList['productivityApps'] = {

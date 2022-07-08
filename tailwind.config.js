@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: 'media',
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
@@ -23,7 +24,18 @@ module.exports = {
       },
       minHeight: {
         '68': '68px',
-      }
+      },
+      maxWidth: {
+        '90': '90px',
+        '300': '300px',
+      },
+      maxHeight: {
+        '90': '90px',
+        '300': '300px',
+      },
+      backgroundSize: {
+        "size-200": "200% 200%",
+      },
 
     },
   },
