@@ -1,7 +1,7 @@
 {
-  "name": "Personal website of Michal Slepko",
+  "name": "michalslepko.dev",
   "private": true,
-  "description": "Personal website of Michal Slepko with Gatsby",
+  "description": "Personal website of Michal Slepko built with GatsbyJS",
   "version": "0.1.0",
   "author": "Michal Slepko <michal@rootscope.co.uk>",
   "dependencies": {
