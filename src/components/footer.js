@@ -6,7 +6,7 @@ const Footer = () => {
       className="container
       mx-auto
       text-right
-      text-gray
+      text-mint
       mt-4"
     >
       Michal Slepko © {new Date().getFullYear()},

@@ -1,46 +1,43 @@
 import * as React from "react"
 import usesList from "../lists/usesList"
+import MyLink from "./linkComponent"
 
 const UsesLine = ({type}) => {
   const setupElements = usesList[type]
-  let htmlOutput = '';
   let names = [];
+  var links = [];
 
   if (setupElements) {
     names = Object.keys(setupElements)
   }
 
   if (names.length) {
-    htmlOutput = `<ul class="${type} marker:text-sky-400 list-disc pl-5 space-y-3 text-slate-500 mt-8">`;
-
     for (let name of names) {
       let setupItem = setupElements[name]
-
+      let urls = Object.keys(setupItem)
       if (setupItem) {
-        let urls = Object.keys(setupItem)
-        let count = 0;
-        htmlOutput += `<li>
-          <span class="font-bold capitalize">${name}</span>`
-
-        htmlOutput += urls && urls.length > 0 ? ' - ' : ''
-
-        for (let url of urls) {
-          htmlOutput += count > 0 ? ' | ' : ''
-          count++
-
-          htmlOutput += `<a href="${setupItem[url]}" target="_blank" class="text-blue">${url}</a>`
+        var link = {
+          'name': name,
+          'url': '#'
         }
 
-        htmlOutput += `</li>`
+        for (let url of urls) {
+          console.log('url', url)
+          link.url = setupItem[url]
+          link.name += ` (${url})`
+
+          links.push(<MyLink
+            link={link}
+            key={link.name}
+          />)
+        }
       }
     }
-    htmlOutput += '</ul>'
   }
 
   return (
-    <div
-      dangerouslySetInnerHTML={{ __html: htmlOutput }}
-    >
+    <div className="{type} md:w-2/3 m-auto marker:text-sky-400 list-disc md:pl-5 space-y-6 text-slate-500 mt-8">
+      {links}
     </div>
   )
 }
