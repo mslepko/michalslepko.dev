@@ -22,7 +22,7 @@ const MenuLinks = ({classes, hideHome, linkClasses}) => {
   for (let url in links) {
     htmlOutput.push(<Link
       to={url}
-      className={`text-4xl ${linkClasses} mb-4`}
+      className={`${linkClasses} mb-4`}
       activeClassName="text-mint"
       key={links[url]}
     >{links[url]}</Link>)
@@ -32,7 +32,7 @@ const MenuLinks = ({classes, hideHome, linkClasses}) => {
     >
       {htmlOutput}
       <a href="https://snippets.slepko.co.uk/"
-      className={`text-4xl ${linkClasses} mb-4`}
+      className={`${linkClasses} mb-4`}
       rel="noreferrer"
       target="_blank"
       >

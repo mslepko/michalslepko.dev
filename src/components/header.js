@@ -29,7 +29,10 @@ const Header = ({ siteTitle }) => (
       />
     </div>
 
-    <MenuLinks classes="hidden lg:flex flex-col" />
+    <MenuLinks
+      classes="hidden lg:flex flex-col"
+      linkClasses={"text-4xl"}
+    />
 
     <div
       className="hidden lg:flex w-full flex-col"
@@ -46,7 +49,10 @@ const Header = ({ siteTitle }) => (
         scaleRotate
         width={"100%"}
       >
-        <MenuLinks classes="flex flex-col justify-center" />
+        <MenuLinks
+          classes="flex flex-col justify-center"
+          linkClasses={"text-4xl"}
+        />
       </Menu>
     </div>
   </header>
