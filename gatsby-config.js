@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Michal Slepko | Software Developer`,
-    description: `Hello there.`,
+    title: `Michal Slepko | Software Developer, Content creator, Streamer`,
+    description: `Hello there. My name is Michal and I'm a Software Developer. Recently I've started creating content on Instagram and streaming on Twitch.`,
     author: `@michal.codes`,
-    siteUrl: `https://michalsledo.dev/`,
+    siteUrl: `https://michalslepko.dev/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
