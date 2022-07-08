@@ -23,7 +23,7 @@ function MyLink({link, thumb}) {
     rel="noreferrer"
   >
     {hasThumb &&
-      <div className="w-1/5">
+      <div className="w-1/5 text-center">
         <Thumbnail
           image={thumb}
           alt={link.name}
@@ -31,7 +31,7 @@ function MyLink({link, thumb}) {
         />
       </div>
     }
-    <div className={hasThumb ? 'text-left text-blue font-bold' : 'text-center text-blue font-bold'} >
+    <div className={hasThumb ? 'text-left text-blue font-bold' : 'text-center text-blue font-bold w-full'} >
       {link.name}
     </div>
   </a>

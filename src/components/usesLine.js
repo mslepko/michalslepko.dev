@@ -1,6 +1,6 @@
 import * as React from "react"
 import usesList from "../lists/usesList"
-import MyLink from "./linkComponent"
+import MyLink from "./myLinkComponent"
 
 const UsesLine = ({type}) => {
   const setupElements = usesList[type]
