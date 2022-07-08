@@ -71,7 +71,7 @@ const Hero = () => {
         <MenuLinks
           hideHome={true}
           classes={"flex justify-around m-auto max-w-screen-sm"}
-          linkClasses={"text-white hover:text-var_value"}
+          linkClasses={"text-2xl md:text-4xl text-white hover:text-var_value"}
         />
         <Footer />
       </div>
