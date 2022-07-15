@@ -67,10 +67,10 @@ const Hero = () => {
           <DelayedLine />
         </p>
       </div>
-      <div className="absolute inset-x-0 bottom-0">
+      <div className="absolute inset-x-0 bottom-0 px-8">
         <MenuLinks
           hideHome={true}
-          classes={"flex justify-around m-auto max-w-screen-sm"}
+          classes={"flex justify-evenly m-auto max-w-screen-sm w-4/5 flex-wrap"}
           linkClasses={"text-2xl md:text-4xl text-white hover:text-var_value"}
         />
         <Footer />

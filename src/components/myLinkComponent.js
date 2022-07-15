@@ -31,7 +31,7 @@ function MyLink({link, thumb}) {
         />
       </div>
     }
-    <div className={hasThumb ? 'text-left text-blue font-bold' : 'text-center text-blue font-bold w-full'} >
+    <div className={hasThumb ? 'text-left text-blue font-medium' : 'text-center text-blue font-medium w-full'} >
       {link.name}
     </div>
   </a>
