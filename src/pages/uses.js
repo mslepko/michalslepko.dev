@@ -21,7 +21,7 @@ const UsesPage = () => (
         The list of hardware and software I use almost everyday.
       </p>
       <p className="text-mint pb-1 text-xl">
-        I get a lot of questions about my setup and what I use. There
+        I get a lot of questions about my setup and what I use.
       </p>
       <p className="text-mint pb-1 text-xl">
         I hope this page will be useful for you.
