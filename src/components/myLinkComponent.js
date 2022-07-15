@@ -16,7 +16,9 @@ function MyLink({link, thumb}) {
   let hasThumb = thumb ? true : false;
   return (
   <a
-    className="flex items-center w-full p-4 text-dark bg-white rounded-lg shadow-md dark:text-gray-400 hover:bg-mint md:flex-row transition-all duration-500 hover:bg-mint
+    className="flex items-center w-full p-4 text-dark bg-white rounded-lg
+    shadow-md dark:text-gray-400 hover:bg-mint md:flex-row transition-all duration-500
+    hover:bg-mint hover:scale-105
     "
     href={link.url}
     target="_blank"
