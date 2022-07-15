@@ -16,10 +16,17 @@ const UsesPage = () => (
         className="max-w-lg	block mx-auto"
       />
 
-      <p className="text-mint pt-14 text-xl">
+      <div className="pt-14">
+      <p className="text-mint pb-1 text-xl">
         The list of hardware and software I use almost everyday.
       </p>
-
+      <p className="text-mint pb-1 text-xl">
+        I get a lot of questions about my setup and what I use. There
+      </p>
+      <p className="text-mint pb-1 text-xl">
+        I hope this page will be useful for you.
+      </p>
+      </div>
       <a href="#my_work_setup" className="text-center block text-xl sm:text-1xl font-bold text-mint tracking-tight dark:text-slate-200 pt-10">My work setup</a>
       <p className="text-sm text-slate-500 text-center">* affiliated links</p>
       <UsesLine type="my_work_setup" />
