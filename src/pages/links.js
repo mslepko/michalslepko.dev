@@ -9,8 +9,8 @@ const LinksPage = () => (
   <Layout>
     <Seo title="Uses" />
 
-    <div className="container mx-auto p-8">
-      <h1 className="text-2xl sm:text-3xl font-bold text-mint tracking-tight dark:text-slate-200 pt-10">Affiliate links</h1>
+    <div className="container mx-auto p-8 pb-16">
+      <h1 className="text-center text-2xl sm:text-3xl font-bold text-mint tracking-tight dark:text-slate-200 pt-10">Affiliate links</h1>
 
       <MyLinks />
 

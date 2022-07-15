@@ -25,7 +25,7 @@ const Header = ({ siteTitle }) => (
         quality={95}
         formats={["auto", "webp", "avif"]}
         alt="Michal"
-        className="rounded-full md:mx-auto max-w-90 max-h-90 md:max-w-300 md:max-h-300 ring-2 ring-current"
+        className="rounded-full md:mx-auto max-w-90 max-h-90 md:max-w-300 md:max-h-300"
       />
     </div>
 

@@ -5,7 +5,7 @@ const Footer = () => {
     <footer
       className="container
       mx-auto
-      text-right
+      text-center
       text-mint
       mt-4"
     >

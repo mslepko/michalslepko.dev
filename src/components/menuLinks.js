@@ -33,8 +33,6 @@ const MenuLinks = ({classes, hideHome, linkClasses}) => {
       {htmlOutput}
       <a href="https://snippets.slepko.co.uk/"
       className={`${linkClasses} mb-4`}
-      rel="noreferrer"
-      target="_blank"
       >
         Snippets
       </a>
