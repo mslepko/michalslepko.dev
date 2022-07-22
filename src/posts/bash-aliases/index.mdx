@@ -1,0 +1,104 @@
+---
+title: 'Bash - .aliases'
+description: ""
+published: 2017-01-17
+redirect_from:
+            - https://snippets.slepko.co.uk/bash-aliases/
+categories: "bash, Bash shell, Git, git, linux, Linux, shell"
+hero: ../../../defaultHero.jpg
+featuredImage:
+---
+### `ls`
+
+Display in long list format
+
+```
+<code class="bash">alias ll='ls -l'
+```
+
+Do not list . and ..
+
+```
+<code class="bash">alias la='ls -A'
+```
+
+List entries in columns with file indicator (/ - directories, \* - executables, @ - aliases, | - pipes, = - sockets)
+
+```
+<code class="bash">alias l='ls -CF'
+```
+
+### Explain what is being done by default when copying, moving or removing files
+
+```
+<code class="bash">alias mv='mv -v'
+alias rm='rm -i -v'
+alias cp='cp -v'
+```
+
+### Edit hosts file
+
+```
+<code class="bash">alias hosts='sudo $EDITOR /etc/hosts'
+```
+
+### Recursively delete .DS_Store files
+
+```
+<code class="bash">alias cleanup_dsstore="find . -name '*.DS_Store' -type f -ls -delete"
+```
+
+### Usefull
+
+```
+<code class="bash">alias extip='curl -s http://whatismijnip.nl |cut -d " " -f 5'
+```
+
+### BREW stuff
+
+```
+<code class="bash">alias brew_update="brew -v update; brew upgrade --force-bottle --cleanup; brew cleanup; brew cask cleanup; brew prune; brew doctor; npm-check -g -u"
+```
+
+### GIT stuff
+
+Do not show untracked files in `git status`
+
+```
+<code class="bash">alias gs='git status -uno'
+```
+
+Undo a git push
+
+```
+<code class="bash">alias undopush="git push -f origin HEAD^:master"
+```
+
+```
+<code class="bash">alias gsa='git status'
+alias pp='git pull && git push origin HEAD'
+alias master="git checkout master"
+```
+
+### MERCURIAL stuff
+
+```
+<code class="bash">alias hgs="hg status"
+
+function merge_to {
+    current_branch=`hg branch
+
+    if [ -z "$1" ]
+    then
+        echo ">>> Set branch to which you want merge $current_branch !!!"
+    else
+        echo "Merge branch $current_branch to $1: [y/n]"
+        read merge
+
+        if [ "$merge" == "y" ]; then
+            hg pull && hg push --new-branch && hg up $1 && hg merge $current_branch && hg diff
+            echo "Merging: $current_branch"
+        fi
+    fi
+}
+```

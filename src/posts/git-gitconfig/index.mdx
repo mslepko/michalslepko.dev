@@ -1,0 +1,76 @@
+---
+title: 'Git - .gitconfig'
+description: ""
+published: 2017-01-20
+redirect_from:
+            - https://snippets.slepko.co.uk/git-gitconfig/
+categories: "bash, Bash shell, Git, git, linux, Linux, shell"
+hero: ../../../defaultHero.jpg
+featuredImage:
+---
+This is the base file which always makes it easier and prettier to work with Git in command line.
+
+```
+<code class="bash">[user]
+    name = Michal Slepko
+    email = michal.slepko@gmail.com
+[push]
+    default = simple
+```
+
+### Most used commands
+
+For example: insted `git checkout` I can just type `git co`
+
+```
+<code class="bash">[alias]
+    ct = commit -m
+    dc = diff --cached
+    st = status -s
+    co = checkout
+    br = branch
+    ls = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]' --decorate --date=short
+    lsv = log --pretty=format:'%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]' --decorate --date=short --numstat
+```
+
+### So much color
+
+```
+<code class="bash">[color]
+    ui = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+```
+
+### We all make typos
+
+```
+<code class="bash">[help]
+    autocorrect = 1
+```
+
+It will automatically correct and execute mistyped commands, e.q.
+
+```
+WARNING: You called a Git command named 'pulll', which does not exist.
+Continuing under the assumption that you meant 'pull'
+```
+
+### Use separate file for usernames / github token / etc
+
+```
+<code class="bash">[include]
+    path = ~/.gitconfig.local
+```

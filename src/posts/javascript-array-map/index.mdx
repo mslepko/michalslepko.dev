@@ -1,0 +1,37 @@
+---
+title: 'Javascript array map'
+description: ""
+published: 2017-01-30
+redirect_from:
+            - https://snippets.slepko.co.uk/javascript-array-map/
+categories: "es6, JavaScript, javascript, js, vanillajs"
+hero: ../../../defaultHero.jpg
+---
+JS array map
+
+```
+<code class="js">// Array of object
+const cars = [
+    {make: 'Ford', model: 'Mondeo', gearbox: 'manual'},
+    {make: 'VW', model: 'Passat', gearbox: 'automatic'},
+    {make: 'Volvo', model: 'XC90', gearbox: 'automatic'}
+]
+
+// Create array of car make and model
+const car_list = cars.map(function(car) {
+  return car.make + ' ' + car.model;
+})
+
+console.log(car_list);
+```
+
+ES6 syntax
+
+```
+<code class="js">//ES 6
+const car_list_es6 = cars.map(car => `${car.make} ${car.model}`);
+
+console.log(car_list_es6);
+```
+
+Check it here: <http://codepen.io/mslepko/pen/ggoYoz?editors=0010>

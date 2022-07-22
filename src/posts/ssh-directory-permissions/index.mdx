@@ -1,0 +1,15 @@
+---
+title: 'SSH - directory permissions'
+description: ""
+published: 2017-02-13
+redirect_from:
+            - https://snippets.slepko.co.uk/ssh-directory-permissions/
+categories: "bash, centos, Linux, linux, shell, ssh, ubuntu"
+hero: ../../../defaultHero.jpg
+---
+To login to remote server without a password make sure your local computer public RSA key is added to `~/.ssh/authorized_keys` file and file and directory permissions are updated
+
+`
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+`

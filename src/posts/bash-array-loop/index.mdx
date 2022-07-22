@@ -1,0 +1,28 @@
+---
+title: 'Bash array loop'
+description: ""
+published: 2017-01-26
+redirect_from:
+            - https://snippets.slepko.co.uk/bash-array-loop/
+categories: "bash, Bash shell, linux, Linux, shell"
+hero: ../../../defaultHero.jpg
+featuredImage:
+---
+```
+<code class="bash">#!/bin/bash
+
+ARRAY_LIST=('apple' 'banana' 'orange')
+
+for fruit in "${ARRAY_LIST[@]}"
+do
+    echo $fruit
+done
+```
+
+### Output
+
+```
+<code class="bash">apple
+banana
+orange
+```

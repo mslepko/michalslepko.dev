@@ -1,0 +1,136 @@
+---
+title: '.tmux.conf'
+description: ""
+published: 2017-01-24
+redirect_from:
+            - https://snippets.slepko.co.uk/tmux-conf/
+categories: "bash, Bash shell, linux, Linux, shell"
+hero: ../../../defaultHero.jpg
+---
+Full file: [.tmux.conf](https://github.com/mslepko/dotfiles/blob/master/.tmux.conf)
+
+### Use 256 color terminal
+
+```
+<code class="bash">set -g default-terminal xterm-256color
+```
+
+### Set prefix key to Ctrl-a
+
+```
+<code class="bash">unbind-key C-b
+set-option -g prefix C-a
+bind-key C-a last-window
+```
+
+### Send the prefix to client inside window
+
+```
+<code class="bash">bind-key C-a send-prefix
+```
+
+### Scrollback buffer n lines
+
+```
+<code class="bash">set -g history-limit 5000
+```
+
+### Listen for activity on all windows
+
+```
+<code class="bash">set -g bell-action any
+#set -g bell-action none
+```
+
+### Start window indexing at zero (default)
+
+```
+<code class="bash">set -g base-index 0
+```
+
+### Instructs tmux to expect UTF-8 sequences
+
+```
+<code class="bash">setw -g utf8 on
+```
+
+### Control automatic window renaming
+
+```
+<code class="bash">setw -g automatic-rename off
+```
+
+### Enable window titles
+
+```
+<code class="bash">set -g set-titles on
+```
+
+### Map Vi movement keys as pane movement keys
+
+```
+<code class="bash">bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+```
+
+# Shortcuts to window split
+
+```
+<code class="bash">bind-key v split-window -h
+bind-key h split-window
+```
+
+### Colours
+
+```
+<code class="bash">set-option -g status-bg colour235 #base02
+set-option -g status-fg colour136 #yellow
+set-option -g status-attr default
+
+set-window-option -g window-status-fg colour244 #base0
+set-window-option -g window-status-bg default
+#set-window-option -g window-status-attr dim
+
+# active window title colors
+set-window-option -g window-status-current-fg colour166 #orange
+set-window-option -g window-status-current-bg default
+#set-window-option -g window-status-current-attr bright
+
+# pane border
+set-option -g pane-border-fg colour235 #base02
+set-option -g pane-active-border-fg white #base01
+
+# message text
+set-option -g message-bg colour235 #base02
+set-option -g message-fg colour166 #orange
+
+# pane number display
+set-option -g display-panes-active-colour colour33 #blue
+set-option -g display-panes-colour colour166 #orange
+# clock colour
+set-window-option -g clock-mode-colour green #green
+```
+
+### Status bar
+
+```
+<code class="bash">set -g status-interval 1
+set -g status-justify centre # center align window list
+set -g status-left-length 20
+set -g status-right-length 140
+set -g status-left '#[fg=green]#H'
+
+##[fg=red,dim,bg=default]#(uptime | cut -f 4-5 -d " " | cut -f 1 -d ",")
+set -g status-right '#[fg=white,bg=default]%a %l:%M:%S %p#[default] #[fg=green]%Y-%m-%d'
+set-option -g status-utf8 on
+```
+
+### Misc
+
+```
+<code class="bash">setw -g aggressive-resize on
+
+setw -g monitor-activity on
+set -g visual-activity on
+```

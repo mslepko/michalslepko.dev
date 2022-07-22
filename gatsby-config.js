@@ -34,6 +34,36 @@ module.exports = {
       },
     },
     'gatsby-plugin-postcss',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `snippets`,
+        path: `${__dirname}/src/posts/`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/src/posts`,
+      },
+    },
+    `gatsby-remark-images`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+            },
+          },
+        ],
+        defaultLayouts: {
+          default: require.resolve("./src/components/BlogPostSimple.js"),
+        },
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
