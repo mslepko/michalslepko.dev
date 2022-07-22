@@ -1,0 +1,28 @@
+---
+title: 'MySQL - Adding or removing individual SQL modes'
+description: ""
+published: 2017-02-03
+redirect_from:
+            - https://snippets.slepko.co.uk/mysql-adding-or-removing-individual-sql-modes/
+categories: "MySQL, mysql"
+hero: ../../../defaultHero.jpg
+---
+### Adding only one mode to sql_mode without removing existing ones:
+
+```
+<code class="sql">SET sql_mode=(SELECT CONCAT(@@sql_mode,',<mode_to_add>'));
+```
+
+### Removing only a specific mode from sql_mode without removing others:
+
+```
+<code class="sql">SET sql_mode=(SELECT REPLACE(@@sql_mode,'<mode_to_remove>',''));
+```
+
+In my case I wanted to remove only ONLY_FULL_GROUP_BY mode
+
+```
+<code class="sql">SET sql_mode=(SELECT REPLACE(@@sql_mode, 'ONLY_FULL_GROUP_BY', ''));
+```
+
+More information about `sql_mode` <https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html>

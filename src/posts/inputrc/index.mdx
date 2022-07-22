@@ -1,0 +1,84 @@
+---
+title: '.inputrc'
+description: ""
+published: 2017-01-23
+redirect_from:
+            - https://snippets.slepko.co.uk/inputrc/
+categories: "bash, Bash shell, linux, Linux"
+hero: ../../../defaultHero.jpg
+---
+### Make Tab autocomplete regardless of filename case
+
+```
+<code class="bash">set completion-ignore-case on
+```
+
+### List all matches in case multiple possible completions are possible
+
+```
+<code class="bash">set show-all-if-ambiguous on
+```
+
+### Immediately add a trailing slash when autocompleting symlinks to directories
+
+```
+<code class="bash">set mark-symlinked-directories on
+```
+
+### Use the text that has already been typed as the prefix for searching through commands (basically more intelligent Up/Down behavior)
+
+```
+<code class="bash">"\e[B": history-search-forward
+"\e[A": history-search-backward
+```
+
+### Ctrl left, ctrl right for moving on the readline by word
+
+```
+<code class="bash">"\e[1;5C": forward-word
+"\e[1;5D": backward-word
+```
+
+### Do not autocomplete hidden files unless the pattern explicitly begins with a dot
+
+```
+<code class="bash">set match-hidden-files off
+```
+
+### Show all autocomplete results at once
+
+```
+<code class="bash">set page-completions off
+```
+
+### If there are more than 200 possible completions for a word, ask to show them all
+
+```
+<code class="bash">set completion-query-items 200
+```
+
+### Show extra file information when completing, like `ls -F` does
+
+```
+<code class="bash">set visible-stats on
+```
+
+### Be more intelligent when autocompleting by also looking at the text after the cursor. For example, when the current line is "cd ~/src/mozil", and the cursor is on the "z", pressing Tab will not autocomplete it to "cd ~/src/mozillail", but to "cd ~/src/mozilla". (This is supported by the Readline used by Bash 4.)
+
+```
+<code class="bash">set skip-completed-text on
+```
+
+### Allow UTF-8 input and output, instead of showing stuff like \$'\\0123\\0456'
+
+```
+<code class="bash">set input-meta on
+set output-meta on
+set convert-meta off
+```
+
+### Use Alt/Meta + Delete to delete the preceding word
+
+```
+<code class="bash">"\e[3;3~": kill-word
+```

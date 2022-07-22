@@ -7,7 +7,8 @@ const MenuLinks = ({classes, hideHome, linkClasses}) => {
     '/': 'Home',
     '/uses': 'Uses',
     '/links': 'Links',
-    '/contact': 'Contact me'
+    '/contact': 'Contact me',
+    '/snippets': 'My snippets'
     // '/partnerships': 'Partnerships',
   }
 
@@ -31,11 +32,6 @@ const MenuLinks = ({classes, hideHome, linkClasses}) => {
     <div className={classes}
     >
       {htmlOutput}
-      <a href="https://snippets.slepko.co.uk/"
-      className={`${linkClasses} mb-4`}
-      >
-        Snippets
-      </a>
     </div>
   )
 }
