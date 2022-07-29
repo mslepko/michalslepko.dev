@@ -1,0 +1,22 @@
+---
+title: 'Update files or directories permissions separately'
+description: ""
+published: 2017-01-12
+redirect_from:
+            - https://snippets.slepko.co.uk/update-files-or-directories-permissions-separately/
+categories: "bash, Bash shell, linux, Linux, shell"
+hero: ../../../defaultHero.jpg
+---
+How to update files permissions not directories? How to update directories permissions not files?
+
+To update files permission to 655 (Only the owner can read and write, but not execute the file. Everyone else can read and execute, but cannot modify the file.)
+
+```bash
+find /home/web/public_html -type f -exec chmod 655 {} +
+```
+
+To update direcotries permission to 755 (The owner has all the permissions to read, write and execute. Everyone else can only read and execute, but cannot make changes to the file.)
+
+```bash
+find /home/web/public_html -type d -exec chmod 755 {} +
+```

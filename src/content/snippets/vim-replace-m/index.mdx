@@ -1,0 +1,17 @@
+---
+title: 'vim replace ^M'
+description: ""
+published: 2017-01-13
+redirect_from:
+            - https://snippets.slepko.co.uk/vim-replace-m/
+categories: "bash, Bash shell, linux, Linux, shell"
+hero: ../../../defaultHero.jpg
+featuredImage:
+---
+How to replace ^M symbol in VIM?
+
+```bash
+:%s/<Ctrl-V><Ctrl-M>/\r/g
+```
+
+Where `<Ctrl-V><Ctrl-M>` means type `Ctrl+V` then `Ctrl+M`.

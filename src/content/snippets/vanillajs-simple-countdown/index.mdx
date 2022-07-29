@@ -1,0 +1,52 @@
+---
+title: 'VanillaJS Simple Countdown'
+description: ""
+published: 2017-01-15
+redirect_from:
+            - https://snippets.slepko.co.uk/vanillajs-simple-countdown/
+categories: "javascript, JS, js, vanillajs"
+hero: ../../../defaultHero.jpg
+---
+How to create countdown using JavaScript?
+
+JavaScript snippet to create simple countdown on the site, no need to use JS libraries. Create and element on your page with `.countdown` class and copy and paste below code
+
+```javascript
+var countdown = function(container, callback, duration, message) {
+  // If no message is provided, we use an empty string
+  message = message || "";
+
+  // Set initial content
+  container.textContent = duration + message;
+
+  // Get reference to the interval doing the countdown
+  var countdown = setInterval(function() {
+    // If seconds remain
+    if (--duration) {
+      // Update our container's message
+      container.textContent = duration + message;
+      // Otherwise
+    } else {
+      // Clear the countdown interval
+      clearInterval(countdown);
+      // And fire the callback passing our container as `this`
+      callback.call(container);
+    }
+    // Run interval every 1000ms (1 second)
+  }, 1000);
+
+};
+
+// Use p.countdown as container, pass redirect, duration, and optional message
+var container = document.querySelector(".countdown");
+countdown(container, callback, 5, "s");
+
+// Function to be called after countdown is finished
+function callback() {
+  // window.location.replace();
+  //alert('Time is up!');
+  container.textContent = 'Time is up!';
+}
+```
+
+http://codepen.io/mslepko/pen/QdNqrW/

@@ -1,0 +1,33 @@
+---
+title: 'Bash - Find and replace string in multiple files'
+description: ""
+published: 2017-01-09
+redirect_from:
+            - https://snippets.slepko.co.uk/bash-find-and-replace-string-in-multiple-files/
+categories: "bash, Bash shell, linux, Linux, sed, shell"
+hero: ../../../defaultHero.jpg
+featuredImage:
+---
+How to replace string in multiple files using command line?
+
+### 1. Option #1
+
+To replace foo to bar in all files in current directory (it will not search files in sub folders)
+
+```bash
+sed -i 's/foo/bar/g' *
+```
+
+### 2. Option #2
+
+To replace foo to bar in all files recusrively
+
+```bash
+find . -type f -exec sed -i 's/foo/bar/g' {} +
+```
+
+Find can accept multiple arguments to filter down necessary files e.q. - to find just PHP files
+
+```bash
+find . -type f -name '*.php' -exec sed -i 's/foo/bar/g' {} +
+```

@@ -1,0 +1,103 @@
+---
+title: 'How to check CentOS version'
+description: ""
+published: 2017-01-27
+redirect_from:
+            - https://snippets.slepko.co.uk/how-to-check-centos-version/
+categories: "bash, Bash shell, centos, linux, Linux, shell"
+hero: ../../../defaultHero.jpg
+---
+There are several ways to check Centos version
+
+### rpm --query centos-release
+
+```bash
+# rpm --query centos-release
+
+centos-release-7-3.1611.el7.centos.x86_64
+```
+
+### cat /etc/centos-release
+
+```bash
+# cat /etc/centos-release
+
+CentOS Linux release 7.3.1611 (Core)
+```
+
+### cat /etc/_release_
+
+```bash
+# cat /etc/*release*
+
+NAME="CentOS Linux"
+VERSION="7 (Core)"
+ID="centos"
+ID_LIKE="rhel fedora"
+VERSION_ID="7"
+PRETTY_NAME="CentOS Linux 7 (Core)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:centos:centos:7"
+HOME_URL="https://www.centos.org/"
+BUG_REPORT_URL="https://bugs.centos.org/"
+
+CENTOS_MANTISBT_PROJECT="CentOS-7"
+CENTOS_MANTISBT_PROJECT_VERSION="7"
+REDHAT_SUPPORT_PRODUCT="centos"
+REDHAT_SUPPORT_PRODUCT_VERSION="7"
+
+CentOS Linux release 7.3.1611 (Core)
+CentOS Linux release 7.3.1611 (Core)
+cpe:/o:centos:centos:7
+```
+
+If this is not enough you can install aditional packages
+
+## lsb_release
+
+```bash
+# lsb_release -d
+bash: lsb_release: command not found
+```
+
+Let's find out, which package provides the `lsb_release` command
+
+```bash
+# yum provides */lsb_release
+
+Loaded plugins: fastestmirror, ovl
+Loading mirror speeds from cached hostfile
+ * base: mirror.sov.uk.goscomb.net
+ * extras: mirrors.clouvider.net
+ * updates: mirror.sov.uk.goscomb.net
+base/7/x86_64/filelists_db
+extras/7/x86_64/filelists_db
+updates/7/x86_64/filelists_db
+redhat-lsb-core-4.1-27.el7.centos.1.i686 : LSB Core module support
+Repo        : base
+Matched from:
+Filename    : /usr/bin/lsb_release
+
+
+
+redhat-lsb-core-4.1-27.el7.centos.1.x86_64 : LSB Core module support
+Repo        : base
+Matched from:
+Filename    : /usr/bin/lsb_release
+```
+
+As you can see above `redhat-lsb-core-4.1-27.el7.centos.1.x86_64` provides `lsb_release` comand.
+
+Installing `lsb_release`
+
+```bash
+# yum install redhat-lsb-core
+```
+
+Running `lsb_release`
+
+```bash
+# lsb_release -d
+
+Description:    CentOS Linux release 7.3.1611 (Core)
+```

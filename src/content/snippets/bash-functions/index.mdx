@@ -1,0 +1,111 @@
+---
+title: 'Bash - .functions'
+description: ""
+published: 2017-01-19
+redirect_from:
+            - https://snippets.slepko.co.uk/bash-functions/
+categories: "bash, Bash shell, linux, Linux, shell"
+hero: ../../../defaultHero.jpg
+featuredImage:
+---
+### Create a new directory and enter it
+
+```bash
+function md() {
+        mkdir -p "$@" && cd "$@"
+}
+```
+
+### Mercurial (parse branch) - can be used to display branch in prompt
+
+```bash
+function parse_hg_branch {
+    if hash hg 2>/dev/null; then
+        hg branch 2> /dev/null | sed -e "s/\(.*\)/[\1]/"
+    fi
+}
+```
+
+### Extract archives
+
+```bash
+# Based on http://dotfiles.org/~pseup/.bashrc
+# use: extract <file>
+function extract() {
+    if [ -f "$1" ] ; then
+        local filename=$(basename "$1")
+        local foldername="${filename%%.*}"
+        local fullpath=`perl -e 'use Cwd "abs_path";print abs_path(shift)' "$1"`
+        local didfolderexist=false
+        if [ -d "$foldername" ]; then
+            didfolderexist=true
+            read -p "$foldername already exists, do you want to overwrite it? (y/n) " -n 1
+            echo
+            if [[ $REPLY =~ ^[Nn]$ ]]; then
+                return
+            fi
+        fi
+        mkdir -p "$foldername" && cd "$foldername"
+        case $1 in
+            *.tar.bz2) tar xjf "$fullpath" ;;
+            *.tar.gz) tar xzf "$fullpath" ;;
+            *.tar.xz) tar Jxvf "$fullpath" ;;
+            *.tar.Z) tar xzf "$fullpath" ;;
+            *.tar) tar xf "$fullpath" ;;
+            *.taz) tar xzf "$fullpath" ;;
+            *.tb2) tar xjf "$fullpath" ;;
+            *.tbz) tar xjf "$fullpath" ;;
+            *.tbz2) tar xjf "$fullpath" ;;
+            *.tgz) tar xzf "$fullpath" ;;
+            *.txz) tar Jxvf "$fullpath" ;;
+            *.zip) unzip "$fullpath" ;;
+            *) echo "'$1' cannot be extracted via extract()" && cd .. && ! $didfolderexist && rm -r "$foldername" ;;
+        esac
+    else
+        echo "'$1' is not a valid file"
+    fi
+}
+```
+
+### Find by name shorthand
+
+```bash
+function f() {
+    find . -name "$1" 2>&1 | grep -v 'Permission denied'
+}
+```
+
+### Copy w/ progress
+
+```bash
+cp_p () {
+  rsync -WavP --human-readable --progress $1 $2
+}
+```
+
+### Preview csv files in command line
+
+```bash
+# source: http://stackoverflow.com/questions/1875305/command-line-csv-viewer
+function csvpreview(){
+      sed 's/,,/, ,/g;s/,,/, ,/g' "$@" | column -s, -t | less -#2 -N -S
+}
+```
+
+### Update files permissions not directories
+
+```bash
+# useage files_perm 655
+function files_perm(){
+    #find . -type f -exec chmod 655 {} +
+    find . -type f -exec chmod $1 {} \;
+}
+```
+
+### Update directories premisions
+
+```bash
+function dir_perm(){
+    find . -type d -exec chmod $1 {} \;
+}
+```
