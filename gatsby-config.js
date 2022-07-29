@@ -37,14 +37,14 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `snippets`,
-        path: `${__dirname}/src/posts/`,
+        name: `posts`,
+        path: `${__dirname}/src/content/`,
       },
     },
     {
       resolve: "gatsby-plugin-page-creator",
       options: {
-        path: `${__dirname}/src/posts`,
+        path: `${__dirname}/src/content/snippets`,
       },
     },
     `gatsby-remark-images`,
@@ -59,9 +59,6 @@ module.exports = {
             },
           },
         ],
-        defaultLayouts: {
-          default: require.resolve("./src/components/BlogPostSimple.js"),
-        },
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

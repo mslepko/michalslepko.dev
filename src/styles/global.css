@@ -12,3 +12,32 @@ input.light-blue::placeholder {
 .typed-cursor.typed-cursor--blink {
   @apply hidden;
 }
+
+pre {
+  @apply my-10 shadow-lg whitespace-pre-line;
+}
+code {
+  @apply rounded block bg-gray text-white p-10;
+}
+
+@layer base {
+  /* Pagination */
+  .pagination-prev,
+  .pagination-next {
+    @apply text-mint p-3 text-base font-semibold capitalize border border-transparent hover:border-gray hover:rounded max-w-sm;
+  }
+
+  .pagination-next {
+    @apply text-right;
+  }
+
+  .pagination-prev:before {
+    content: "← Previously ";
+    @apply block text-gray text-sm uppercase font-normal;
+  }
+
+  .pagination-next:before {
+    content: "Up next →";
+    @apply block text-gray text-sm uppercase font-normal;
+  }
+}
