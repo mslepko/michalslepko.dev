@@ -1,0 +1,45 @@
+---
+title: 'Bash - List 10 biggest files in directory'
+description: ""
+published: 2017-01-29
+redirect_from:
+            - https://snippets.slepko.co.uk/bash-list-10-biggest-files-in-directory/
+categories: "bash, Bash shell, linux, Linux, shell"
+hero: ../../../defaultHero.jpg
+featuredImage:
+---
+How to list biggest files in a directory? How to sort files by size?
+
+### ls -lSh
+
+```bash
+# ls -lSh /var/log/*log | head
+
+-rw-r-----. 1 mysql mysql 2.5M Jan 28 19:13 /var/log/mysqld.log
+-rw-------  1 root  root  1.3M Jan 28 23:53 /var/log/maillog
+-rw-r--r--. 1 root  root  902K Jan 20 15:13 /var/log/lastlog
+-rw-------. 1 root  root  197K Oct 27 04:02 /var/log/dracut.log
+-rw-r--r--  2 root  root  141K Apr 20  2016 /var/log/boot.log
+-rw-------. 1 root  root   30K Mar 23  2016 /var/log/dovecot.log
+-rw-r--r--. 1 root  root   19K Apr 20  2016 /var/log/google.log
+-rw-------  1 root  root   158 Jan 29 00:18 /var/log/yum.log
+-rw-r--r--  1 root  root     0 Dec 16 04:43 /var/log/sa-update.log
+-rw-------. 1 root  root     0 Oct 24  2014 /var/log/startupscript.log
+```
+
+### du -a
+
+```bash
+# du -a /var/log/*log | sort -nr | head
+
+2528    /var/log/mysqld.log
+1248    /var/log/maillog
+776     /var/log/lastlog
+200     /var/log/dracut.log
+144     /var/log/boot.log
+36      /var/log/dovecot.log
+24      /var/log/google.log
+4       /var/log/yum.log
+0       /var/log/xferlog
+0       /var/log/vsftpd.log
+```

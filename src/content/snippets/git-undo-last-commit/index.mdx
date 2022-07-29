@@ -1,0 +1,18 @@
+---
+title: 'GIT undo last commit'
+description: ""
+published: 2017-01-14
+redirect_from:
+            - https://snippets.slepko.co.uk/git-undo-last-commit/
+categories: "bash, git, Git, Linux"
+hero: ../../../defaultHero.jpg
+---
+How to undo last commit in GIT?
+
+```bash
+git commit ...
+git reset --soft 'HEAD^'
+edit
+git add ....
+git commit -c ORIG_HEAD
+```
