@@ -17,7 +17,7 @@ function MyLink({link, thumb}) {
   return (
   <a
     className="flex items-center w-full p-4 text-dark bg-white rounded-lg
-    shadow-md dark:text-gray-400 hover:bg-mint md:flex-row transition-all duration-500
+    shadow-md dark:text-gray-400 md:flex-row transition-all duration-500
     hover:bg-mint hover:scale-105
     "
     href={link.url}
