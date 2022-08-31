@@ -39,6 +39,9 @@ const UsesPage = () => (
 
       <h3 className="text-center text-xl sm:text-1xl font-bold text-mint tracking-tight dark:text-slate-200 pt-14">Productivity Apps</h3>
       <UsesLine type="productivityApps" />
+
+      <h3 className="text-center text-xl sm:text-1xl font-bold text-mint tracking-tight dark:text-slate-200 pt-14">VS Code setup</h3>
+      <UsesLine type="vscode" />
     </div>
   </Layout>
 )

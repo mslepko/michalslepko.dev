@@ -21,6 +21,12 @@ usesList['my_work_setup'] = {
   },
   'Kensington SD4750P Docking Station': {
     'Amazon UK*': 'https://www.amazon.co.uk/dp/B085B4Q94J?tag=onamzrootscop-21&linkCode=ssc&creativeASIN=B085B4Q94J&asc_item-id=amzn1.ideas.1VQNJPFZ7TCCD',
+  },
+  'Edifier W820NB Headphones': {
+    'Amazon*': 'https://www.amazon.co.uk/dp/B09FF244QP/?ref=idea_lv_dp_ov_d'
+  },
+  'Soundcore by Anker Life Q30 Headphones': {
+    'Amazon*': 'https://www.amazon.co.uk/dp/B08HMWZBXC/?ref=idea_lv_dp_ov_d'
   }
 }
 
@@ -36,6 +42,9 @@ usesList['streamingSetup'] = {
   },
   'Mac Mini 2018 - Intel i7 3.2GHz 6-core, 16GB RAM': {
 
+  },
+  'UPERFECT S 4K Portable Monitor': {
+    'uperfectmonitor.com*': 'www.uperfectmonitor.com/products/uperfect-s-4k-portable-monitor-15-6?sca_ref=2346911.iXlbDisKz2&sca_source=instagram'
   }
 }
 
@@ -53,11 +62,41 @@ usesList['productivityApps'] = {
   'Notion for notes, tasks, habit tracker': {
     'https://www.notion.so/': 'https://www.notion.so/'
   },
-  'TickTick for quick tasks and reminders': {
-    'https://ticktick.com/': 'https://ticktick.com/'
-  },
   'Sunsama - for daily planning and block scheduling': {
     'Sunsama*': 'https://sunsama.grsm.io/fsyygeo11ucv'
+  }
+}
+
+usesList['vscode'] = {
+  'Theme: HackTheBox': {
+    '': 'https://marketplace.visualstudio.com/items?itemName=silofy.hackthebox'
+  },
+  'Font: FiraCode': {
+    '': 'https://github.com/tonsky/FiraCode'
+  },
+  'indent-rainbow': {
+    '': 'https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow'
+  },
+  'ESLint': {
+    '': 'https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint'
+  },
+  'Code Spell Checker': {
+    '': 'https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker'
+  },
+  'GraphQL for VSCode': {
+    '': 'https://marketplace.visualstudio.com/items?itemName=kumar-harsh.graphql-for-vscode'
+  },
+  'Tabnine AI Autocomplete': {
+    '': 'https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode'
+  },
+  'Tailwind CSS IntelliSense': {
+    '': 'https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss'
+  },
+  'favorites': {
+    '': 'https://marketplace.visualstudio.com/items?itemName=howardzuo.vscode-favorites'
+  },
+  'GatsbyHub': {
+    '': 'https://marketplace.visualstudio.com/items?itemName=GatsbyHub.gatsbyhub'
   }
 }
 

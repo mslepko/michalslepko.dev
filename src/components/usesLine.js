@@ -23,7 +23,9 @@ const UsesLine = ({type}) => {
 
         for (let url of urls) {
           link.url = setupItem[url]
-          link.name += ` (${url})`
+          if (url.length > 0) {
+            link.name += ` (${url})`
+          }
 
           links.push(<MyLink
             link={link}
