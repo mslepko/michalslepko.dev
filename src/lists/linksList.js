@@ -1,5 +1,10 @@
 const linksList = [
   {
+    'name': 'theCode - code and software inspired posters (15% off)',
+    'url': 'https://www.thecode.xyz/discount/MICHALCODES15',
+    'thumb': 'thecode.png'
+  },
+  {
     'name': 'Sunsama - The daily planner for busy professionals.',
     'url': 'https://sunsama.grsm.io/fsyygeo11ucv',
     'thumb': 'sunsama.png'
