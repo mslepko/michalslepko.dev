@@ -5,6 +5,7 @@ import Instagram from "../images/icons/instagram-icon.svg"
 import Twitch from "../images/icons/twitch-icon.svg"
 import Github from "../images/icons/github-icon.svg"
 import LinkedIn from "../images/icons/linkedin.svg"
+import TikTok from "../images/icons/tiktok.svg"
 
 // Icons from = https://simpleicons.org/
 
@@ -32,6 +33,13 @@ const Socials = () => (
         className="pr-2"
         rel="noopener noreferrer">
           <img src={Twitch} className="w-8 h-8" alt="Twitch"/>
+      </a>
+
+      <a href="https://www.tiktok.com/@michal.codes"
+        target="_blank"
+        className="pr-2"
+        rel="noopener noreferrer">
+          <img src={TikTok} className="w-8 h-8" alt="TikTok"/>
       </a>
 
       <a href="https://github.com/mslepko"
