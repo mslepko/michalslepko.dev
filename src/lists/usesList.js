@@ -100,4 +100,19 @@ usesList['vscode'] = {
   }
 }
 
+usesList['socials'] = {
+  'Instagram': {
+    '': 'https://instagram.com/michal.codes'
+  },
+  'TikTok': {
+    '': 'https://www.tiktok.com/@michal.codes'
+  },
+  'Twitch': {
+    '': 'https://twitch.com/michal_codes'
+  },
+  'Twitter': {
+    '': 'https://twitter.com/michal_codes'
+  },
+}
+
 export default usesList

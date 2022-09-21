@@ -1,6 +1,7 @@
 import * as React from "react"
 import usesList from "../lists/usesList"
 import MyLink from "./myLinkComponent"
+import socialStats from "../lists/socialStats"
 
 const UsesLine = ({type}) => {
   const setupElements = usesList[type]
@@ -25,6 +26,12 @@ const UsesLine = ({type}) => {
           link.url = setupItem[url]
           if (url.length > 0) {
             link.name += ` (${url})`
+          }
+
+          if (type === 'socials') {
+            if (socialStats.hasOwnProperty(name)) {
+              link.name += ` - Followers: ${socialStats[name]}`
+            }
           }
 
           links.push(<MyLink
