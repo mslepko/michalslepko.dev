@@ -2,8 +2,8 @@
 const usesList = {}
 
 usesList['my_work_setup'] = {
-  "ACTIV 2 Standing Desk": {
-    "ACTIV": "https://aktivdesk.com/products/aktiv-dual-motor-standing-desk?variant=40106892263460"
+  "Autonomous SmartDesk Pro Desk": {
+    "Autonomous": "https://www.autonomous.ai/standing-desks/smartdesk-2-business?utm_source=pr&utm_medium=influencer&utm_campaign=growth&utm_content=Instagram&utm_term=21MICHALCODE"
   },
   "MacBook Air M1 16GB RAM, 1TB SSD": {
     'Apple UK': 'https://www.apple.com/uk/shop/buy-mac/macbook-air/space-grey-apple-m1-chip-with-8-core-cpu-and-8-core-gpu-512gb',
@@ -27,6 +27,9 @@ usesList['my_work_setup'] = {
   },
   'Soundcore by Anker Life Q30 Headphones': {
     'Amazon*': 'https://www.amazon.co.uk/dp/B08HMWZBXC/?ref=idea_lv_dp_ov_d'
+  },
+  'Mobile Developer poster from thecode.xyz': {
+    'theCode': 'https://www.thecode.xyz/collections/dev-series/products/mobile-developer'
   }
 }
 
