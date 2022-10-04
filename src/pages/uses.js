@@ -11,7 +11,7 @@ const UsesPage = () => (
     <div className="container mx-auto p-8 pb-16 text-center">
       <h1 className="text-2xl sm:text-3xl font-bold text-mint tracking-tight dark:text-slate-200 pt-10 text-center pb-16">Uses</h1>
       <StaticImage
-        src="../images/mynewdesk.jpeg"
+        src="../images/michaldesk.jpg"
         alt="Michal.codes's setup"
         className="max-w-lg	block mx-auto"
       />
