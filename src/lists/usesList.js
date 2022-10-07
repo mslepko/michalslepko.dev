@@ -13,8 +13,11 @@ usesList['my_work_setup'] = {
     'Amazon UK*': 'https://www.amazon.co.uk/dp/B07BVXGBHT?tag=onamzrootscop-21&linkCode=ssc&creativeASIN=B07BVXGBHT&asc_item-id=amzn1.ideas.1VQNJPFZ7TCCD',
   },
 
-  'Wired Mechanical Gaming Keyboard and RGB Mouse Combo Set UK Layout, Blue Switch Mechanical': {
-    'Amazon UK *': 'https://www.amazon.co.uk/dp/B07XHJ4QK6?tag=onamzrootscop-21&linkCode=ssc&creativeASIN=B07XHJ4QK6&asc_item-id=amzn1.ideas.1VQNJPFZ7TCCD',
+  'Mechanical Keyboard, 88 Keys Full Anti-Ghosting Blue Switch 60% Mechanical Tenkeyless Gaming Keyboard, Customizable Rainbow Backlit': {
+    'Amazon UK *': 'https://www.amazon.co.uk/dp/B010IIKHBK/?ref=idea_lv_dp_ov_d',
+  },
+  '125-key Shimmer Theme Keycaps PBT Sublimation XDA Cherry MX Switch': {
+    'AliExpress': 'https://www.aliexpress.com/i/1005002775674956.html',
   },
   'Logitech M720 Triathlon': {
     'Amazon UK*': 'https://www.amazon.co.uk/dp/B01KZVQB42?tag=onamzrootscop-21&linkCode=ssc&creativeASIN=B01KZVQB42&asc_item-id=amzn1.ideas.1VQNJPFZ7TCCD&th=1',
