@@ -66,7 +66,7 @@ const UsesPage = () => (
           <p className="text-left">A dedicated Instagram post about you or your brand, with a story that promotes it with a link and your profile mention.</p>
         </li>
         <li className="py-2 px-4 w-full rounded-t-lg border-b border-gray-200 transition-all duration-500 hover:bg-mint">
-          <p className="font-bold">1 reel (+ announcing story) - 799 GBP</p>
+          <p className="font-bold">1 reel (+ announcing story) - 699 GBP</p>
           <p className="text-left">A dedicated Instagram reel about you or your brand, with a story that promotes it with a link and your profile mention.</p>
         </li>
         <li className="py-2 px-4 w-full rounded-t-lg border-b border-gray-200 transition-all duration-500 hover:bg-mint">
