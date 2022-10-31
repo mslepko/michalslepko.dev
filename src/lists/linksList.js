@@ -20,6 +20,16 @@ const linksList = [
     'thumb': 'barnerglasses.png'
   },
   {
+    'name': 'Autonomous - 4% off',
+    'url': 'https://www.autonomous.ai/standing-desks/smartdesk-2-business?utm_source=pr&utm_medium=influencer&utm_campaign=growth&utm_content=Instagram&utm_term=21MICHALCODE',
+    'thumb': 'autonomous.jpg'
+  },
+  {
+    'name': 'Notera Desktop whiteboard - 5% off',
+    'url': 'https://shopnotera.com/discount/MICHALCODES5',
+    'thumb': 'notera.jpg'
+  },
+  {
     'name': 'Vissles keyboards - 5% off with code: Michal',
     'url': 'https://vissles.com/discount/MICHAL',
     'thumb': 'vissles.jpg',

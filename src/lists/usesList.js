@@ -33,6 +33,9 @@ usesList['my_work_setup'] = {
   },
   'Mobile Developer poster from thecode.xyz': {
     'theCode': 'https://www.thecode.xyz/collections/dev-series/products/mobile-developer'
+  },
+  'Notera Desktop whiteboard "Original Wedge" (5% off)': {
+    'Notera': 'https://shopnotera.com/discount/MICHALCODES5'
   }
 }
 
