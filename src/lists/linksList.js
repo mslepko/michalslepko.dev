@@ -1,8 +1,17 @@
 const linksList = [
   {
+    'name': 'SDET course from Syntax Technologies',
+    'url': 'https://www.syntaxtechs.com/courses/sdet-training-course-online',
+  },
+  {
     'name': 'theCode - code and software inspired posters (15% off)',
     'url': 'https://www.thecode.xyz/discount/MICHALCODES15',
     'thumb': 'thecode.png'
+  },
+  {
+    'name': 'Autonomous - 4% off',
+    'url': 'https://www.autonomous.ai/standing-desks/smartdesk-2-business?utm_source=pr&utm_medium=influencer&utm_campaign=growth&utm_content=Instagram&utm_term=21MICHALCODE',
+    'thumb': 'autonomous.jpg'
   },
   {
     'name': 'Sunsama - The daily planner for busy professionals.',
@@ -18,11 +27,6 @@ const linksList = [
     'name': 'Barner Glasses - 10% off',
     'url': 'https://barnerbrand.com/a/refer-a-friend/redeem/6c97wigx6n4fvvq6hpkvtz0epcybgm31b8ehx20o/3494',
     'thumb': 'barnerglasses.png'
-  },
-  {
-    'name': 'Autonomous - 4% off',
-    'url': 'https://www.autonomous.ai/standing-desks/smartdesk-2-business?utm_source=pr&utm_medium=influencer&utm_campaign=growth&utm_content=Instagram&utm_term=21MICHALCODE',
-    'thumb': 'autonomous.jpg'
   },
   {
     'name': 'Notera Desktop whiteboard - 5% off',
