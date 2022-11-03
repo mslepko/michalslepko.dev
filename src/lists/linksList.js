@@ -2,6 +2,7 @@ const linksList = [
   {
     'name': 'SDET course from Syntax Technologies',
     'url': 'https://www.syntaxtechs.com/courses/sdet-training-course-online',
+    'thumb': 'syntaxtechs.jpeg'
   },
   {
     'name': 'theCode - code and software inspired posters (15% off)',
