@@ -43,6 +43,7 @@ const SnippetsPage = () => {
         key={Posts.allMdx.nodes.length}
       />
     </div>
+    
   </Layout>
 )}
 
