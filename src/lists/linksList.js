@@ -1,5 +1,10 @@
 const linksList = [
   {
+    'name': 'ScribeHow Guide - Run VS Code directly on GitHub',
+    'url': 'https://scribehow.com/shared/Run_VS_Code_directly_on_GitHub__c0C3QOMGQniyzgJ7LZIBnQ',
+    'thumb': 'scribehow.jpg'
+  },
+  {
     'name': 'SDET course from Syntax Technologies',
     'url': 'https://www.syntaxtechs.com/courses/sdet-training-course-online',
     'thumb': 'syntaxtechs.jpeg'
