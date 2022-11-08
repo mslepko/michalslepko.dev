@@ -10,19 +10,29 @@ const linksList = [
     'thumb': 'syntaxtechs.jpeg'
   },
   {
-    'name': 'theCode - code and software inspired posters (15% off)',
-    'url': 'https://www.thecode.xyz/discount/MICHALCODES15',
-    'thumb': 'thecode.png'
-  },
-  {
     'name': 'Autonomous - 4% off',
     'url': 'https://www.autonomous.ai/standing-desks/smartdesk-2-business?utm_source=pr&utm_medium=influencer&utm_campaign=growth&utm_content=Instagram&utm_term=21MICHALCODE',
     'thumb': 'autonomous.jpg'
   },
   {
-    'name': 'Sunsama - The daily planner for busy professionals.',
+    'name': 'Grid Studio - 10% off',
+    'url': 'http://gridstudio.cc/referral/michal-codes',
+    'thumb': 'grid.webp'
+  },
+  {
+    'name': 'Notera Desktop whiteboard - 5% off',
+    'url': 'https://shopnotera.com/discount/MICHALCODES5',
+    'thumb': 'notera.jpg'
+  },
+  {
+    'name': 'Sunsama - The daily planner - 14 days free',
     'url': 'https://sunsama.grsm.io/fsyygeo11ucv',
     'thumb': 'sunsama.png'
+  },
+  {
+    'name': 'DigitalOcean - $200 in credit',
+    'url': 'https://m.do.co/c/8ee9a5484e8b',
+    'thumb': 'digitalocean.png'
   },
   {
     'name': 'XREART - 10% off with code: MICHAL',
@@ -35,11 +45,6 @@ const linksList = [
     'thumb': 'barnerglasses.png'
   },
   {
-    'name': 'Notera Desktop whiteboard - 5% off',
-    'url': 'https://shopnotera.com/discount/MICHALCODES5',
-    'thumb': 'notera.jpg'
-  },
-  {
     'name': 'Vissles keyboards - 5% off with code: Michal',
     'url': 'https://vissles.com/discount/MICHAL',
     'thumb': 'vissles.jpg',
@@ -50,14 +55,9 @@ const linksList = [
     'thumb': 'moft.png'
   },
   {
-    'name': 'SETUPNOID - 15%',
+    'name': 'SETUPNOID - 15% off',
     'url': 'https://loox.io/z/E1vlDgkbo',
     'thumb':'setupnoid.jpeg'
-  },
-  {
-    'name': 'Grid Studio',
-    'url': 'https://shareasale.com/r.cfm?b=1632954&u=3103678&m=101889&urllink=&afftrack=',
-    'thumb': 'grid.webp'
   },
   {
     'name': 'HETZNER - Get €20 in cloud credits',
