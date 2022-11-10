@@ -35,6 +35,11 @@ const linksList = [
     'thumb': 'digitalocean.png'
   },
   {
+    'name': 'Byte This! - Lofi Radio',
+    'url': 'https://www.youtube.com/watch?v=_5QRRWByj6Y',
+    'thumb': 'bytethis.jpeg'
+  },
+  {
     'name': 'XREART - 10% off with code: MICHAL',
     'url': 'https://xreart.com/discount/MICHAL',
     'thumb': 'xreart.png'
