@@ -1,5 +1,15 @@
 const linksList = [
   {
+    'name': 'Warp Terminal',
+    'url': 'https://tinyurl.com/warpdev',
+    'thumb': 'warp.png'
+  },
+  {
+    'name': 'Autonomous - 4% off',
+    'url': 'https://www.autonomous.ai/standing-desks/smartdesk-2-business?utm_source=pr&utm_medium=influencer&utm_campaign=growth&utm_content=Instagram&utm_term=21MICHALCODE',
+    'thumb': 'autonomous.jpg'
+  },
+  {
     'name': 'ScribeHow Guide - Run VS Code directly on GitHub',
     'url': 'https://scribehow.com/shared/Run_VS_Code_directly_on_GitHub__c0C3QOMGQniyzgJ7LZIBnQ',
     'thumb': 'scribehow.jpg'
@@ -8,11 +18,6 @@ const linksList = [
     'name': 'SDET course from Syntax Technologies',
     'url': 'https://www.syntaxtechs.com/courses/sdet-training-course-online',
     'thumb': 'syntaxtechs.jpeg'
-  },
-  {
-    'name': 'Autonomous - 4% off',
-    'url': 'https://www.autonomous.ai/standing-desks/smartdesk-2-business?utm_source=pr&utm_medium=influencer&utm_campaign=growth&utm_content=Instagram&utm_term=21MICHALCODE',
-    'thumb': 'autonomous.jpg'
   },
   {
     'name': 'Grid Studio - 10% off',
