@@ -31,7 +31,7 @@ const linksList = [
   },
   {
     'name': 'Sunsama - The daily planner - 14 days free',
-    'url': 'https://sunsama.grsm.io/fsyygeo11ucv',
+    'url': 'https://try.sunsama.com/fsyygeo11ucv',
     'thumb': 'sunsama.png'
   },
   {
