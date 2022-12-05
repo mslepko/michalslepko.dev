@@ -10,6 +10,10 @@ const linksList = [
     'thumb': 'autonomous.jpg'
   },
   {
+    'name': 'Benq ScreenBar Halo',
+    'url': 'https://pse.is/4kdv9y',
+  },
+  {
     'name': 'ScribeHow Guide - Run VS Code directly on GitHub',
     'url': 'https://scribehow.com/shared/Run_VS_Code_directly_on_GitHub__c0C3QOMGQniyzgJ7LZIBnQ',
     'thumb': 'scribehow.jpg'
