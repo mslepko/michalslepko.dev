@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 
 import Layout from "../components/layout"
-import Seo from "../components/seo"
+import SEO from "../components/seo"
 
 const LinksPage = () => {
   const [formSubmitted, setFormSubmitted] = useState(false)
@@ -50,7 +50,6 @@ const LinksPage = () => {
 
   return (
   <Layout>
-    <Seo title="Contact Me" />
 
     <div className="container mx-auto p-8" data-form={formSubmitted}>
       <h1 className="text-center text-2xl sm:text-3xl font-bold text-mint tracking-tight dark:text-slate-200 pt-10 pb-16">Contact me</h1>
@@ -85,3 +84,7 @@ const LinksPage = () => {
 )}
 
 export default LinksPage
+
+export const Head = () => (
+  <SEO title="Contact Me" />
+)

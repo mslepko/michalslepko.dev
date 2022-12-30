@@ -1,12 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Michal Slepko | Software Developer, Content creator, Streamer`,
-    description: `Hello there. My name is Michal and I'm a Software Developer. Recently I've started creating content on Instagram and streaming on Twitch.`,
+    description: `Hello there. My name is Michal and I'm a Software Developer. Recently I've started creating content and streaming on Twitch.`,
     author: `@michal_codes`,
     siteUrl: `https://michalslepko.dev/`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -59,12 +58,6 @@ module.exports = {
             },
           },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-plausible`,
-      options: {
-        domain: `michalslepko.dev`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

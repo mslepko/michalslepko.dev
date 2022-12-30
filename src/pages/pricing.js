@@ -2,12 +2,11 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
-import Seo from "../components/seo"
+import SEO from "../components/seo"
 import UsesLine from "../components/usesLine"
 
 const UsesPage = () => (
   <Layout>
-    <Seo title="Partnerships pricing" robots={`nofollow, noindex`}/>
     <div className="container mx-auto p-8 pb-16 text-center max-w-screen-xl">
       <h1 className="text-2xl sm:text-3xl font-bold text-mint tracking-tight dark:text-slate-200 pt-10 text-center pb-16">Pricing</h1>
       <div className="pt-14">
@@ -86,3 +85,7 @@ const UsesPage = () => (
 )
 
 export default UsesPage
+
+export const Head = () => (
+  <SEO title="Partnerships pricing" robots="nofollow, noindex" />
+)
