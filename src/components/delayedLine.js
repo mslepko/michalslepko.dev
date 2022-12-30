@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import Typed from 'react-typed'
+import React, { useState, useEffect } from "react"
+import Typed from "react-typed"
 
 function DelayedLine() {
   const [shouldRender, setShouldRender] = useState(false)
@@ -14,7 +14,7 @@ function DelayedLine() {
 
   return (
     <span>
-      {shouldRender &&
+      {shouldRender && (
         <Typed
           strings={[
             '<span class="text-var_value">"a full-stack web developer"&#59;</span>',
@@ -29,7 +29,7 @@ function DelayedLine() {
           loop
           smartBackspace
         />
-      }
+      )}
     </span>
   )
 }

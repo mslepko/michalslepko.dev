@@ -3,10 +3,10 @@ import usesList from "../lists/usesList"
 import MyLink from "./myLinkComponent"
 import socialStats from "../lists/socialStats"
 
-const UsesLine = ({type}) => {
+const UsesLine = ({ type }) => {
   const setupElements = usesList[type]
-  let names = [];
-  var links = [];
+  let names = []
+  var links = []
 
   if (setupElements) {
     names = Object.keys(setupElements)
@@ -18,8 +18,8 @@ const UsesLine = ({type}) => {
       let urls = Object.keys(setupItem)
       if (setupItem) {
         var link = {
-          'name': name,
-          'url': '#'
+          name: name,
+          url: "#",
         }
 
         for (let url of urls) {
@@ -28,16 +28,13 @@ const UsesLine = ({type}) => {
             link.name += ` (${url})`
           }
 
-          if (type === 'socials') {
+          if (type === "socials") {
             if (socialStats.hasOwnProperty(name)) {
               link.name += ` - Followers: ${socialStats[name]}`
             }
           }
 
-          links.push(<MyLink
-            link={link}
-            key={link.name}
-          />)
+          links.push(<MyLink link={link} key={link.name} />)
         }
       }
     }

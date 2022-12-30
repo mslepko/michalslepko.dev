@@ -8,11 +8,7 @@ const BlogPost = ({ data, pageContext }) => {
   const {
     id,
     body,
-    frontmatter: {
-      featuredImage,
-      title,
-      published
-    },
+    frontmatter: { featuredImage, title, published },
   } = data.mdx
 
   return (

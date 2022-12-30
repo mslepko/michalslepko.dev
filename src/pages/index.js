@@ -13,6 +13,4 @@ const IndexPage = () => (
 
 export default IndexPage
 
-export const Head = () => (
-  <SEO title="Home" />
-)
+export const Head = () => <SEO title="Home" />

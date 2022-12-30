@@ -9,14 +9,19 @@ import React from "react"
 import useSiteMetadata from "../hooks/use-site-metadata"
 
 const SEO = ({ title, description, pathname, children, robots }) => {
-  const { title: defaultTitle, description: defaultDescription, siteUrl, author } = useSiteMetadata()
+  const {
+    title: defaultTitle,
+    description: defaultDescription,
+    siteUrl,
+    author,
+  } = useSiteMetadata()
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
     url: `${siteUrl}${pathname || ``}`,
-    robots: robots ? robots : 'follow, index',
-    author: author,q
+    robots: robots ? robots : "follow, index",
+    author: author,
   }
 
   return (

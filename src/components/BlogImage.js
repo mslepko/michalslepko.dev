@@ -1,9 +1,9 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Image = ({ className, title, filename, withFallback = false }) => {
-  const imageData = getImage(filename);
+  const imageData = getImage(filename)
 
   const data = useStaticQuery(graphql`
     query {
@@ -11,7 +11,7 @@ const Image = ({ className, title, filename, withFallback = false }) => {
         publicURL
       }
     }
-  `);
+  `)
 
   if (!imageData) {
     return withFallback ? (
@@ -20,10 +20,10 @@ const Image = ({ className, title, filename, withFallback = false }) => {
         alt={title}
         className={className}
       />
-    ) : null;
+    ) : null
   }
 
-  return <GatsbyImage className={className} image={imageData} alt={title} />;
-};
+  return <GatsbyImage className={className} image={imageData} alt={title} />
+}
 
-export default Image;
+export default Image

@@ -1,9 +1,9 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { StaticImage } from "gatsby-plugin-image"
-import { stack as Menu } from 'react-burger-menu'
-import MenuLinks from './menuLinks'
-import Socials from './socials'
+import { stack as Menu } from "react-burger-menu"
+import MenuLinks from "./menuLinks"
+import Socials from "./socials"
 import Footer from "./footer"
 
 const Header = ({ siteTitle }) => (
@@ -17,9 +17,7 @@ const Header = ({ siteTitle }) => (
       justify-between
       bg-header"
   >
-    <div
-      className="flex items-start w-full pt-0 md:pt-8"
-    >
+    <div className="flex items-start w-full pt-0 md:pt-8">
       <StaticImage
         src="../images/michalcodes.jpg"
         quality={95}
@@ -29,26 +27,15 @@ const Header = ({ siteTitle }) => (
       />
     </div>
 
-    <MenuLinks
-      classes="hidden lg:flex flex-col"
-      linkClasses={"text-4xl"}
-    />
+    <MenuLinks classes="hidden lg:flex flex-col" linkClasses={"text-4xl"} />
 
-    <div
-      className="hidden lg:flex w-full flex-col"
-    >
+    <div className="hidden lg:flex w-full flex-col">
       <Socials />
       <Footer />
     </div>
 
-    <div
-      className="flex lg:hidden"
-    >
-      <Menu
-        right
-        scaleRotate
-        width={"100%"}
-      >
+    <div className="flex lg:hidden">
+      <Menu right scaleRotate width={"100%"}>
         <MenuLinks
           classes="flex flex-col justify-center"
           linkClasses={"text-4xl"}

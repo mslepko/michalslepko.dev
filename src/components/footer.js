@@ -9,8 +9,8 @@ const Footer = () => {
       text-mint
       mt-4"
     >
-      Michal Slepko © {new Date().getFullYear()},
-      Built with {` `}<a href="https://www.gatsbyjs.com">Gatsby</a>
+      Michal Slepko © {new Date().getFullYear()}, Built with {` `}
+      <a href="https://www.gatsbyjs.com">Gatsby</a>
     </footer>
   )
 }

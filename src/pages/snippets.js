@@ -20,8 +20,8 @@ const SnippetsPage = () => {
             featuredImage {
               childImageSharp {
                 gatsbyImageData(
-                  width: 300,
-                  placeholder: BLURRED,
+                  width: 300
+                  placeholder: BLURRED
                   formats: [AUTO, WEBP, AVIF]
                 )
               }
@@ -33,21 +33,20 @@ const SnippetsPage = () => {
   `)
 
   return (
-  <Layout>
-
-    <div className="container mx-auto p-8 pb-16">
-      <h1 className="text-center text-2xl sm:text-3xl font-bold text-mint tracking-tight dark:text-slate-200 pt-10">My Snippets</h1>
-      <PostListLayout
-        data={Posts.allMdx.nodes}
-        key={Posts.allMdx.nodes.length}
-      />
-    </div>
-
-  </Layout>
-)}
+    <Layout>
+      <div className="container mx-auto p-8 pb-16">
+        <h1 className="text-center text-2xl sm:text-3xl font-bold text-mint tracking-tight dark:text-slate-200 pt-10">
+          My Snippets
+        </h1>
+        <PostListLayout
+          data={Posts.allMdx.nodes}
+          key={Posts.allMdx.nodes.length}
+        />
+      </div>
+    </Layout>
+  )
+}
 
 export default SnippetsPage
 
-export const Head = () => (
-  <SEO title="My Snippets" />
-)
+export const Head = () => <SEO title="My Snippets" />

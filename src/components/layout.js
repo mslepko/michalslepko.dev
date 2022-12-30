@@ -24,17 +24,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div
-        className="flex flex-col lg:flex-row h-screen bg-dark-blue"
-      >
-        <Header
-          siteTitle={data.site.siteMetadata?.title || `Title`}
-        />
-        <div
-          className="container lg:mx-auto lg:overflow-y-scroll bg-dark-blue"
-        >
+      <div className="flex flex-col lg:flex-row h-screen bg-dark-blue">
+        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+        <div className="container lg:mx-auto lg:overflow-y-scroll bg-dark-blue">
           <main className="min-h-full">{children}</main>
-
         </div>
       </div>
     </>
