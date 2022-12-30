@@ -5,38 +5,36 @@ import MyLink from "./myLinkComponent"
 
 const MyLinks = () => {
   const thumbnailsQuery = useStaticQuery(graphql`
-  {
-    allFile(
-      filter: {extension: {regex: "/(jpg)|(png)|(jpeg)|(webp)/"}, relativeDirectory: {eq: "thumbnails"}}
-    ) {
-      edges {
-        node {
-          base
-          childImageSharp {
-            gatsbyImageData(
-						  height: 46
-            )
+    {
+      allFile(
+        filter: {
+          extension: { regex: "/(jpg)|(png)|(jpeg)|(webp)/" }
+          relativeDirectory: { eq: "thumbnails" }
+        }
+      ) {
+        edges {
+          node {
+            base
+            childImageSharp {
+              gatsbyImageData(height: 46)
+            }
           }
         }
       }
     }
-  }
   `)
 
-  let thumbnails = [];
+  let thumbnails = []
 
-  thumbnailsQuery.allFile.edges.map(image => (
-    thumbnails[image.node.base] = image.node.childImageSharp.gatsbyImageData
-  ))
+  thumbnailsQuery.allFile.edges.map(
+    image =>
+      (thumbnails[image.node.base] = image.node.childImageSharp.gatsbyImageData)
+  )
 
-  let links = [];
+  let links = []
   for (let link of linksList) {
     let thumbnail = thumbnails[link.thumb]
-    links.push(<MyLink
-      link={link}
-      thumb = {thumbnail}
-      key={link.name}
-    />)
+    links.push(<MyLink link={link} thumb={thumbnail} key={link.name} />)
   }
 
   return (

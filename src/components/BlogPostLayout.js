@@ -43,15 +43,22 @@ const BlogPostLayout = ({
           <time className="block text-mint text-right mb-2" dateTime={date}>
             {date}
           </time>
-          <h1 className="text-2xl sm:text-3xl font-bold text-mint tracking-tight dark:text-slate-200 pt-10 text-center pb-16">{title}</h1>
+          <h1 className="text-2xl sm:text-3xl font-bold text-mint tracking-tight dark:text-slate-200 pt-10 text-center pb-16">
+            {title}
+          </h1>
         </header>
         <MDXRenderer>{content}</MDXRenderer>
-      <hr className="my-5 border-mint" />
-      <div className={previousLink ? 'flex w-full justify-between' : 'flex w-full justify-end'}>
-        {previousLink}
-        {nextLink}
-      </div>
-
+        <hr className="my-5 border-mint" />
+        <div
+          className={
+            previousLink
+              ? "flex w-full justify-between"
+              : "flex w-full justify-end"
+          }
+        >
+          {previousLink}
+          {nextLink}
+        </div>
       </article>
     </>
   )
