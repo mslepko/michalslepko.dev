@@ -1,20 +1,18 @@
 const usesList = {}
 
 usesList["my_work_setup"] = {
-  "Autonomous SmartDesk Pro Desk": {
+  "Desk - Autonomous SmartDesk Pro Desk": {
     Autonomous:
       "https://www.autonomous.ai/standing-desks/smartdesk-2-business?utm_source=pr&utm_medium=influencer&utm_campaign=growth&utm_content=Instagram&utm_term=21MICHALCODE",
   },
-  "MacBook Air M1 16GB RAM, 1TB SSD": {
+  "Laptop - MacBook Air M1 16GB RAM, 1TB SSD": {
     "Apple UK":
       "https://www.apple.com/uk/shop/buy-mac/macbook-air/space-grey-apple-m1-chip-with-8-core-cpu-and-8-core-gpu-512gb",
   },
-
-  "Samsung LU32J590UQUXEN 32-Inch 4K LED": {
+  "Monitor - Samsung LU32J590UQUXEN 32-Inch 4K LED": {
     "Amazon UK*":
       "https://www.amazon.co.uk/dp/B07BVXGBHT?tag=onamzrootscop-21&linkCode=ssc&creativeASIN=B07BVXGBHT&asc_item-id=amzn1.ideas.1VQNJPFZ7TCCD",
   },
-
   "Mechanical Keyboard, 88 Keys Full Anti-Ghosting Blue Switch 60% Mechanical Tenkeyless Gaming Keyboard, Customizable Rainbow Backlit":
     {
       "Amazon UK *":
@@ -23,11 +21,11 @@ usesList["my_work_setup"] = {
   "125-key Shimmer Theme Keycaps PBT Sublimation XDA Cherry MX Switch": {
     AliExpress: "https://www.aliexpress.com/i/1005002775674956.html",
   },
-  "Logitech M720 Triathlon": {
+  "Mouse - Logitech M720 Triathlon": {
     "Amazon UK*":
       "https://www.amazon.co.uk/dp/B01KZVQB42?tag=onamzrootscop-21&linkCode=ssc&creativeASIN=B01KZVQB42&asc_item-id=amzn1.ideas.1VQNJPFZ7TCCD&th=1",
   },
-  "Kensington SD4750P Docking Station": {
+  "Dock - Kensington SD4750P Docking Station": {
     "Amazon UK*":
       "https://www.amazon.co.uk/dp/B085B4Q94J?tag=onamzrootscop-21&linkCode=ssc&creativeASIN=B085B4Q94J&asc_item-id=amzn1.ideas.1VQNJPFZ7TCCD",
   },
