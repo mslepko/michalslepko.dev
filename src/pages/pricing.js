@@ -107,17 +107,6 @@ const UsesPage = () => (
       <h3 className="text-center text-xl sm:text-1xl font-bold text-mint tracking-tight dark:text-slate-200 pt-14">
         Social Media stats
       </h3>
-      <p className="text-mint pb-1 text-xl text-left">
-        More stats can be found&nbsp;
-        <a
-          href="https://drive.google.com/drive/folders/1fWyGw0OQKgKQAUduWd3UUqf9aNc6792V?usp=sharing"
-          target="_blank"
-          className="pr-2 text-light-blue"
-          rel="noopener noreferrer"
-        >
-          here
-        </a>
-      </p>
       <StaticImage
         src="../images/stats/nja_overview.png"
         alt="NotJustAnalytics stats overview"
@@ -126,7 +115,7 @@ const UsesPage = () => (
       <StaticImage
         src="../images/stats/ig_overview.jpg"
         alt="Instagram stats overview"
-        className="max-w-lg	block mx-auto"
+        className="block mx-auto"
       />
 
       <p className="text-mint pb-1 text-xl mt-8">
