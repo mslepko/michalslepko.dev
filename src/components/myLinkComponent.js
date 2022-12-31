@@ -2,23 +2,28 @@ import * as React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 function Thumbnail({ image, alt }) {
+  if (image && typeof image === "string") {
+    return <img src={image} className="w-8 h-8" alt="alt" />
+  }
   return image ? <GatsbyImage image={image} alt={alt} className="mr-4" /> : null
 }
 
-function MyLink({ link, thumb }) {
+function MyLink({ link, thumb, followers }) {
   let hasThumb = thumb ? true : false
+  let hasFollowers = followers ? true : false
+  let classes =
+    "flex items-center w-full p-4 text-dark bg-white rounded-lg shadow-md dark:text-gray-400 md:flex-row transition-all duration-500 hover:bg-mint hover:scale-105"
+
+  if (hasFollowers) {
+    classes += " justify-between"
+  }
+
+  let thumbClass = (hasFollowers ? "" : "w-1/5 ") + "text-center"
+
   return (
-    <a
-      className="flex items-center w-full p-4 text-dark bg-white rounded-lg
-    shadow-md dark:text-gray-400 md:flex-row transition-all duration-500
-    hover:bg-mint hover:scale-105
-    "
-      href={link.url}
-      target="_blank"
-      rel="noreferrer"
-    >
+    <a className={classes} href={link.url} target="_blank" rel="noreferrer">
       {hasThumb && (
-        <div className="w-1/5 text-center">
+        <div className={thumbClass}>
           <Thumbnail image={thumb} alt={link.name} key={link.name} />
         </div>
       )}
@@ -31,6 +36,11 @@ function MyLink({ link, thumb }) {
       >
         {link.name}
       </div>
+      {hasFollowers && (
+        <span className="font-bold text-light-dark text-xl">
+          {link.followers}
+        </span>
+      )}
     </a>
   )
 }

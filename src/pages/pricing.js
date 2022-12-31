@@ -42,11 +42,68 @@ const UsesPage = () => (
         just co-working with others.
       </p>
 
-      <h3 className="text-center text-xl sm:text-1xl font-bold text-mint tracking-tight dark:text-slate-200 pt-14">
-        Social Media links
-      </h3>
-      <UsesLine type="socials" />
-
+      <div className="flex flex-col md:flex-row gap-10">
+        <div className="flex-1">
+          <h3 className="text-center text-xl sm:text-1xl font-bold text-mint tracking-tight dark:text-slate-200 pt-14">
+            Social Media links
+          </h3>
+          <UsesLine type="socials" addClasses="w-full md:w-full" />
+        </div>
+        <div>
+          <h3 className="text-center text-xl sm:text-1xl font-bold text-mint tracking-tight dark:text-slate-200 pt-14">
+            Pricing
+          </h3>
+          <ul className="text-dark bg-white rounded-lg shadow-md dark:text-gray-400 md:flex-row max-w-xl m-auto mt-8">
+            <li className="py-2 px-4 w-full rounded-t-lg border-b border-gray-200 transition-all duration-500 hover:bg-mint">
+              <p className="font-bold">1 story - 199 GBP</p>
+              <p className="text-left">
+                A dedicated Instagram story about you or your brand/product
+                including a link and your profile mention.
+              </p>
+            </li>
+            <li className="py-2 px-4 w-full rounded-t-lg border-b border-gray-200 transition-all duration-500 hover:bg-mint">
+              <p className="font-bold">1 post (+ announcing story) - 499 GBP</p>
+              <p className="text-left">
+                A dedicated Instagram post about you or your brand, with a story
+                that promotes it with a link and your profile mention.
+              </p>
+            </li>
+            <li className="py-2 px-4 w-full rounded-t-lg border-b border-gray-200 transition-all duration-500 hover:bg-mint">
+              <p className="font-bold">1 reel (+ announcing story) - 699 GBP</p>
+              <p className="text-left">
+                A dedicated Instagram reel about you or your brand, with a story
+                that promotes it with a link and your profile mention.
+              </p>
+            </li>
+            <li className="py-2 px-4 w-full rounded-t-lg border-b border-gray-200 transition-all duration-500 hover:bg-mint">
+              <p className="font-bold">
+                Long-term sponsorship - 4-6 weeks - 2000 GBP
+              </p>
+              <p className="text-left">
+                {" "}
+                - Includes 1 dedicated post and 1 dedicated Reel about your
+                brand/product.
+              </p>
+              <p className="text-left">
+                {" "}
+                - In addition other non-sponsored posts (minimum 2) and reels
+                (minimum 2) created during the given period of time will have
+                your product/brand mentioned in the caption.
+              </p>
+              <p className="text-left">
+                {" "}
+                - A link to a dedicated page for your brand/product on my
+                website in bio.
+              </p>
+              <p className="text-left">
+                {" "}
+                - Stories (minimum 2/week) promoting the post/reel will include
+                a brand/product shoutout.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
       <h3 className="text-center text-xl sm:text-1xl font-bold text-mint tracking-tight dark:text-slate-200 pt-14">
         Social Media stats
       </h3>
@@ -67,64 +124,10 @@ const UsesPage = () => (
         className="block mx-auto mb-8"
       />
       <StaticImage
-        src="../images/stats/ig_overview.png"
+        src="../images/stats/ig_overview.jpg"
         alt="Instagram stats overview"
         className="max-w-lg	block mx-auto"
       />
-
-      <h3 className="text-center text-xl sm:text-1xl font-bold text-mint tracking-tight dark:text-slate-200 pt-14">
-        Pricing
-      </h3>
-
-      <ul className="text-dark bg-white rounded-lg shadow-md dark:text-gray-400 md:flex-row max-w-xl m-auto mt-8">
-        <li className="py-2 px-4 w-full rounded-t-lg border-b border-gray-200 transition-all duration-500 hover:bg-mint">
-          <p className="font-bold">1 story - 199 GBP</p>
-          <p className="text-left">
-            A dedicated Instagram story about you or your brand/product
-            including a link and your profile mention.
-          </p>
-        </li>
-        <li className="py-2 px-4 w-full rounded-t-lg border-b border-gray-200 transition-all duration-500 hover:bg-mint">
-          <p className="font-bold">1 post (+ announcing story) - 499 GBP</p>
-          <p className="text-left">
-            A dedicated Instagram post about you or your brand, with a story
-            that promotes it with a link and your profile mention.
-          </p>
-        </li>
-        <li className="py-2 px-4 w-full rounded-t-lg border-b border-gray-200 transition-all duration-500 hover:bg-mint">
-          <p className="font-bold">1 reel (+ announcing story) - 699 GBP</p>
-          <p className="text-left">
-            A dedicated Instagram reel about you or your brand, with a story
-            that promotes it with a link and your profile mention.
-          </p>
-        </li>
-        <li className="py-2 px-4 w-full rounded-t-lg border-b border-gray-200 transition-all duration-500 hover:bg-mint">
-          <p className="font-bold">
-            Long-term sponsorship - 4-6 weeks - 2000 GBP
-          </p>
-          <p className="text-left">
-            {" "}
-            - Includes 1 dedicated post and 1 dedicated Reel about your
-            brand/product.
-          </p>
-          <p className="text-left">
-            {" "}
-            - In addition other non-sponsored posts (minimum 2) and reels
-            (minimum 2) created during the given period of time will have your
-            product/brand mentioned in the caption.
-          </p>
-          <p className="text-left">
-            {" "}
-            - A link to a dedicated page for your brand/product on my website in
-            bio.
-          </p>
-          <p className="text-left">
-            {" "}
-            - Stories (minimum 2/week) promoting the post/reel will include a
-            brand/product shoutout.
-          </p>
-        </li>
-      </ul>
 
       <p className="text-mint pb-1 text-xl mt-8">
         If you are interested or have questions please email me at{" "}
