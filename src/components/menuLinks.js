@@ -4,11 +4,10 @@ import { Link } from "gatsby"
 const MenuLinks = ({ classes, hideHome, linkClasses }) => {
   const links = {
     "/": "Home",
-    "/uses": "Uses",
-    "/links": "Links",
-    "/contact": "Contact me",
-    "/snippets": "My snippets",
-    // '/partnerships': 'Partnerships',
+    "/uses/": "Uses",
+    "/links/": "Links",
+    "/contact/": "Contact me",
+    "/snippets/": "My snippets",
   }
 
   if (hideHome) {
