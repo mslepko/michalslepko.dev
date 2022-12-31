@@ -17,7 +17,7 @@ const SEO = ({ title, description, pathname, children, robots }) => {
   } = useSiteMetadata()
 
   const seo = {
-    title: title || defaultTitle,
+    title: `${title} | ${defaultTitle}`,
     description: description || defaultDescription,
     url: `${siteUrl}${pathname || ``}`,
     robots: robots ? robots : "follow, index",
@@ -27,8 +27,8 @@ const SEO = ({ title, description, pathname, children, robots }) => {
   return (
     <>
       <title>{seo.title}</title>
-      <meta name="og:title" content={seo.description} />
-      <meta name="og:description" content={seo.title} />
+      <meta name="og:title" content={seo.title} />
+      <meta name="og:description" content={seo.description} />
       <meta name="og:type" content="website" />
 
       <meta name="description" content={seo.description} />

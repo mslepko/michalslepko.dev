@@ -1,12 +1,11 @@
 import * as React from "react"
-import PropTypes from "prop-types"
 import { StaticImage } from "gatsby-plugin-image"
 import { stack as Menu } from "react-burger-menu"
 import MenuLinks from "./menuLinks"
 import Socials from "./socials"
 import Footer from "./footer"
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header
     className="p-4
       w-full
@@ -44,13 +43,5 @@ const Header = ({ siteTitle }) => (
     </div>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
