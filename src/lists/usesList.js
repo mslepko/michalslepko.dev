@@ -62,7 +62,7 @@ usesList["streamingSetup"] = {
   "Mac Mini 2018 - Intel i7 3.2GHz 6-core, 16GB RAM": {},
   "UPERFECT S 4K Portable Monitor": {
     "uperfectmonitor.com*":
-      "www.uperfectmonitor.com/products/uperfect-s-4k-portable-monitor-15-6?sca_ref=2346911.iXlbDisKz2&sca_source=instagram",
+      "https://www.uperfectmonitor.com/products/uperfect-s-4k-portable-monitor-15-6?sca_ref=2346911.iXlbDisKz2&sca_source=instagram",
   },
 }
 
