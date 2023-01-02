@@ -1,5 +1,10 @@
 const linksList = [
   {
+    name: "Sunsama - The daily planner - 30 days free",
+    url: "https://try.sunsama.com/fsyygeo11ucv",
+    thumb: "sunsama.png",
+  },
+  {
     name: "Warp Terminal",
     url: "https://tinyurl.com/warpdev",
     thumb: "warp.png",
@@ -14,16 +19,6 @@ const linksList = [
     url: "https://pse.is/4kdv9y",
   },
   {
-    name: "ScribeHow Guide - Run VS Code directly on GitHub",
-    url: "https://scribehow.com/shared/Run_VS_Code_directly_on_GitHub__c0C3QOMGQniyzgJ7LZIBnQ",
-    thumb: "scribehow.jpg",
-  },
-  {
-    name: "SDET course from Syntax Technologies",
-    url: "https://www.syntaxtechs.com/courses/sdet-training-course-online",
-    thumb: "syntaxtechs.jpeg",
-  },
-  {
     name: "Grid Studio - 10% off",
     url: "http://gridstudio.cc/referral/michal-codes",
     thumb: "grid.webp",
@@ -34,19 +29,9 @@ const linksList = [
     thumb: "notera.jpg",
   },
   {
-    name: "Sunsama - The daily planner - 14 days free",
-    url: "https://try.sunsama.com/fsyygeo11ucv",
-    thumb: "sunsama.png",
-  },
-  {
     name: "DigitalOcean - $200 in credit",
     url: "https://m.do.co/c/8ee9a5484e8b",
     thumb: "digitalocean.png",
-  },
-  {
-    name: "Byte This! - Lofi Radio",
-    url: "https://www.youtube.com/watch?v=_5QRRWByj6Y",
-    thumb: "bytethis.jpeg",
   },
   {
     name: "XREART - 10% off with code: MICHAL",
