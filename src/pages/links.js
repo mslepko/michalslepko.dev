@@ -10,13 +10,6 @@ const LinksPage = () => (
       <h1 className="text-2xl sm:text-3xl font-bold text-mint tracking-tight dark:text-slate-200 pt-10">
         Affiliate links
       </h1>
-      <StaticImage
-        src="../images/thecode.jpeg"
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt="theCode JavaScript poster"
-        className="max-w-lg	block mx-auto"
-      />
       <MyLinks />
     </div>
   </Layout>
