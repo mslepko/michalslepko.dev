@@ -13,6 +13,10 @@ usesList["my_work_setup"] = {
     "Amazon UK*":
       "https://www.amazon.co.uk/dp/B07BVXGBHT?tag=onamzrootscop-21&linkCode=ssc&creativeASIN=B07BVXGBHT&asc_item-id=amzn1.ideas.1VQNJPFZ7TCCD",
   },
+  "Ergonomic Chair Sihoo M57": {
+    "Sihoo":
+      "https://sihoooffice.com/products/m57-ergonomic-chair",
+  },
   "Mechanical Keyboard, 88 Keys Full Anti-Ghosting Blue Switch 60% Mechanical Tenkeyless Gaming Keyboard, Customizable Rainbow Backlit":
     {
       "Amazon UK *":
@@ -42,6 +46,10 @@ usesList["my_work_setup"] = {
   'Notera Desktop whiteboard "Original Wedge" (5% off)': {
     Notera: "https://shopnotera.com/discount/MICHALCODES5",
   },
+  'Webcam - Poly Studio P5': {
+    Poly: "https://www.poly.com/gb/en/shop/buy/studio-p5",
+  },
+  'Headset - Poly Voyager 4220': {},
 }
 
 usesList["streamingSetup"] = {
