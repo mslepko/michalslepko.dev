@@ -14,8 +14,8 @@ usesList["my_work_setup"] = {
       "https://www.amazon.co.uk/dp/B07BVXGBHT?tag=onamzrootscop-21&linkCode=ssc&creativeASIN=B07BVXGBHT&asc_item-id=amzn1.ideas.1VQNJPFZ7TCCD",
   },
   "Ergonomic Chair Sihoo M57": {
-    "Sihoo":
-      "https://sihoooffice.com/products/m57-ergonomic-chair",
+    "Sihoo*":
+      "http://shrsl.com/3vpss",
   },
   "Mechanical Keyboard, 88 Keys Full Anti-Ghosting Blue Switch 60% Mechanical Tenkeyless Gaming Keyboard, Customizable Rainbow Backlit":
     {
