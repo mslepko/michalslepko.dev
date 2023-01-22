@@ -130,6 +130,9 @@ usesList["socials"] = {
   TikTok: {
     "": "https://www.tiktok.com/@michal.codes",
   },
+  YouTube: {
+    "": "https://www.youtube.com/@michal_codes",
+  },
   Twitch: {
     "": "https://twitch.com/michal_codes",
   },

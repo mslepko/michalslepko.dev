@@ -6,6 +6,7 @@ import Twitter from "../images/icons/twitter-icon.svg"
 import Instagram from "../images/icons/instagram-icon.svg"
 import Twitch from "../images/icons/twitch-icon.svg"
 import TikTok from "../images/icons/tiktok.svg"
+import YouTube from "../images/icons/youtube.svg"
 
 const UsesLine = ({ type, addClasses }) => {
   const setupElements = usesList[type]
@@ -16,6 +17,7 @@ const UsesLine = ({ type, addClasses }) => {
     Instagram: Instagram,
     Twitch: Twitch,
     TikTok: TikTok,
+    YouTube: YouTube,
   }
 
   if (setupElements) {
