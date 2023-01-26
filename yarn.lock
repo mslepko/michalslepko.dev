@@ -1975,6 +1975,11 @@
   dependencies:
     defer-to-connect "^2.0.0"
 
+"@telemetrydeck/sdk@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@telemetrydeck/sdk/-/sdk-1.0.5.tgz#1a310cb1ad49803ac36430f2e6d736229f79af14"
+  integrity sha512-fGQ9ltZElMhdXWQVMjhW62byxbNRMIafMKRWRYC0/ygwH/aE0xaAtgfbN6KTmyw5p1abVOoy1KbHResUZdnX6A==
+
 "@tokenizer/token@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@tokenizer/token/-/token-0.3.0.tgz#fe98a93fe789247e998c75e74e9c7c63217aa276"
