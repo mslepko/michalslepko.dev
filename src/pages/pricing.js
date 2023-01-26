@@ -2,7 +2,7 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import UsesLine from "../components/usesLine"
 
 const UsesPage = () => (
@@ -131,5 +131,5 @@ const UsesPage = () => (
 export default UsesPage
 
 export const Head = () => (
-  <SEO title="Partnerships pricing" robots="nofollow, noindex" />
+  <Seo title="Partnerships pricing" robots="nofollow, noindex" pathname="/pricing"/>
 )

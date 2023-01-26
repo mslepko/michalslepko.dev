@@ -2,7 +2,7 @@
 import React, { useState } from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const LinksPage = () => {
   const [formSubmitted, setFormSubmitted] = useState(false)
@@ -126,4 +126,4 @@ const LinksPage = () => {
 
 export default LinksPage
 
-export const Head = () => <SEO title="Contact Me" />
+export const Head = () => <Seo title="Contact Me" pathname="/contact" />
