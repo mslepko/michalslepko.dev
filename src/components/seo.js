@@ -8,7 +8,7 @@
 import React from "react"
 import useSiteMetadata from "../hooks/use-site-metadata"
 import { TelemetryDeck } from '@telemetrydeck/sdk';
-const td = new TelemetryDeck({ app: '85F1CA88-24D2-4798-9F55-4C1573C42928', user: 'anonymous' });
+//const td = new TelemetryDeck({ app: '85F1CA88-24D2-4798-9F55-4C1573C42928', user: 'anonymous' });
 
 const SEO = ({ title, description, pathname, children, robots }) => {
   const {
@@ -27,10 +27,10 @@ const SEO = ({ title, description, pathname, children, robots }) => {
   }
 
 
-  td.signal()
-  td.signal({
-    route: seo.url,
-  });
+  // td.signal()
+  // td.signal({
+  //   route: seo.url,
+  // });
 
   return (
     <>
