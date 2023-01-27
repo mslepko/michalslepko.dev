@@ -27,7 +27,6 @@ const SEO = ({ title, description, pathname, children, robots }) => {
   }
 
 
-  td.signal()
   td.signal({
     route: seo.url,
   });
