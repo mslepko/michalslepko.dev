@@ -26,10 +26,9 @@ const SEO = ({ title, description, pathname, children, robots }) => {
     author: author,
   }
 
-
-  td.signal({
-    route: seo.url,
-  });
+  if (typeof location !== 'undefined') {
+    td.signal({});
+  }
 
   return (
     <>
