@@ -7,6 +7,7 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "JavaScriptSDK": "mslepko/JavaScriptSDK#main",
     "gatsby": "^4.19.0",
     "gatsby-plugin-gatsby-cloud": "^4.10.0",
     "gatsby-plugin-image": "^2.24.0",
@@ -42,7 +43,8 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "postinstall": "cd node_modules/JavaScriptSDK/ && npm install"
   },
   "repository": {
     "type": "git",

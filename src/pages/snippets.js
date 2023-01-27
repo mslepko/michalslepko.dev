@@ -1,7 +1,7 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import PostListLayout from "../components/PostListLayout"
 
 const SnippetsPage = () => {
@@ -49,4 +49,4 @@ const SnippetsPage = () => {
 
 export default SnippetsPage
 
-export const Head = () => <SEO title="My Snippets" />
+export const Head = () => <Seo title="My Snippets" pathname="/snippets"/>

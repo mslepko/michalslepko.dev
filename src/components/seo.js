@@ -7,6 +7,10 @@
 
 import React from "react"
 import useSiteMetadata from "../hooks/use-site-metadata"
+import { TelemetryDeck } from 'JavaScriptSDK';
+if (process.env.TelemetryDeck_APP_ID) {
+  const td = new TelemetryDeck({ app: 'process.env.TelemetryDeck_APP_ID', user: 'anonymous' });
+}
 
 const SEO = ({ title, description, pathname, children, robots }) => {
   const {
@@ -22,6 +26,12 @@ const SEO = ({ title, description, pathname, children, robots }) => {
     url: `${siteUrl}${pathname || ``}`,
     robots: robots ? robots : "follow, index",
     author: author,
+  }
+
+  if (typeof td !== 'undefined' && typeof location !== 'undefined') {
+    td.signal({
+      route: seo.url,
+    });
   }
 
   return (
