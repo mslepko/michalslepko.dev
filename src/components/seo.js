@@ -9,7 +9,7 @@ import React from "react"
 import useSiteMetadata from "../hooks/use-site-metadata"
 import { TelemetryDeck } from 'JavaScriptSDK';
 if (process.env.TelemetryDeck_APP_ID) {
-  const td = new TelemetryDeck({ app: 'process.env.TelemetryDeck_APP_ID', user: 'anonymous' });
+  const td = new TelemetryDeck({ app: process.env.TelemetryDeck_APP_ID, user: 'anonymous' });
 }
 
 const SEO = ({ title, description, pathname, children, robots }) => {
