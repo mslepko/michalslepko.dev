@@ -10,8 +10,8 @@ import useSiteMetadata from "../hooks/use-site-metadata"
 import { TelemetryDeck } from 'JavaScriptSDK';
 let td = undefined;
 
-if (process.env.TelemetryDeck_APP_ID) {
-  td = new TelemetryDeck({ app: process.env.TelemetryDeck_APP_ID, user: 'anonymous' });
+if (process.env.GATSBY_TelemetryDeck_APP_ID) {
+  td = new TelemetryDeck({ app: process.env.GATSBY_TelemetryDeck_APP_ID, user: 'anonymous' });
 }
 
 const SEO = ({ title, description, pathname, children, robots }) => {
