@@ -30,7 +30,7 @@ const SEO = ({ title, description, pathname, children, robots }) => {
     author: author,
   }
 
-  if (typeof td !== 'undefined' && typeof window.location !== 'undefined') {
+  if (typeof window !== 'undefined' && typeof td !== 'undefined' && typeof window.location !== 'undefined') {
     td.signal({
       route: seo.url,
     });
