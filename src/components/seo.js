@@ -8,8 +8,10 @@
 import React from "react"
 import useSiteMetadata from "../hooks/use-site-metadata"
 import { TelemetryDeck } from 'JavaScriptSDK';
+let td = undefined;
+
 if (process.env.TelemetryDeck_APP_ID) {
-  const td = new TelemetryDeck({ app: 'process.env.TelemetryDeck_APP_ID', user: 'anonymous' });
+  td = new TelemetryDeck({ app: process.env.TelemetryDeck_APP_ID, user: 'anonymous' });
 }
 
 const SEO = ({ title, description, pathname, children, robots }) => {
@@ -28,7 +30,7 @@ const SEO = ({ title, description, pathname, children, robots }) => {
     author: author,
   }
 
-  if (typeof td !== 'undefined' && typeof location !== 'undefined') {
+  if (typeof window !== 'undefined' && typeof td !== 'undefined' && typeof window.location !== 'undefined') {
     td.signal({
       route: seo.url,
     });
