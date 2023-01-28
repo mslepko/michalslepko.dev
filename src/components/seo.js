@@ -10,6 +10,7 @@ import useSiteMetadata from "../hooks/use-site-metadata"
 import { TelemetryDeck } from 'JavaScriptSDK';
 let td = undefined;
 console.log('ID', process.env.TelemetryDeck_APP_ID);
+console.log('GATSBY_ID', process.env.GATSBY_TelemetryDeck_APP_ID);
 if (process.env.TelemetryDeck_APP_ID) {
   td = new TelemetryDeck({ app: process.env.TelemetryDeck_APP_ID, user: 'anonymous' });
 }
