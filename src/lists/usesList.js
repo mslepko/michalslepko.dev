@@ -17,6 +17,10 @@ usesList["my_work_setup"] = {
     "Sihoo*":
       "http://shrsl.com/3vpss",
   },
+  "Leather Desk Mat (XL) Harber London": {
+    "Harber London*":
+      "https://shareasale.com/u.cfm?d=606672&m=90872&u=3103678&afftrack=",
+  },
   "Mechanical Keyboard, 88 Keys Full Anti-Ghosting Blue Switch 60% Mechanical Tenkeyless Gaming Keyboard, Customizable Rainbow Backlit":
     {
       "Amazon UK *":
