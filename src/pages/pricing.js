@@ -107,7 +107,7 @@ const UsesPage = () => (
               </p>
             </li>
           </ul>
-          <p class="text-base">All Reels are posted on TikTok and YT Shorts.</p>
+          <p class="text-base text-mint">*All Reels are posted on TikTok and YT Shorts.</p>
         </div>
       </div>
       <h3 className="text-center text-xl sm:text-1xl font-bold text-mint tracking-tight dark:text-slate-200 pt-14">
