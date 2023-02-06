@@ -11,14 +11,22 @@ import { TelemetryDeck } from 'JavaScriptSDK';
 let td = undefined;
 
 function generateUUID() {
-  const uuid = crypto.randomUUID()
-  localStorage.setItem('uuid', uuid)
+  let uuid = 'anonymous'
+
+  if (typeof window !== 'undefined') {
+    uuid = crypto.randomUUID()
+    localStorage.setItem('uuid', uuid)
+  }
 
   return uuid
 }
 
 function getUUID() {
-  let uuid = localStorage.getItem('uuid')
+  let uuid;
+
+  if (typeof window !== 'undefined') {
+    uuid = localStorage.getItem('uuid')
+  }
 
   if (!uuid) {
     uuid = generateUUID()
