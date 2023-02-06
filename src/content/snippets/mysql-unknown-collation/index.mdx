@@ -1,0 +1,16 @@
+---
+title: 'MYSQL - Unknown collation: "utf8mb4_unicode_520_ci"'
+description: ""
+published: 2023-02-05
+categories: "bash, centos, Linux, linux, shell, ssh, ubuntu, mysql"
+hero: ../../../defaultHero.jpg
+---
+
+Error is caused because the conflict of different versions of MySQL
+Best option would be to update MySQL to match
+
+Quick option is to replace the collation using the command below
+
+`
+sed -i 's/utf8mb4_unicode_520_ci/utf8mb4_unicode_ci/g' file.sql
+`
