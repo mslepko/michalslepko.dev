@@ -1,6 +1,6 @@
 import * as React from "react"
 import IndexLayout from "../components/IndexLayout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Hero from "../components/hero"
 
 const IndexPage = () => (
@@ -13,4 +13,4 @@ const IndexPage = () => (
 
 export default IndexPage
 
-export const Head = () => <SEO title="Home" />
+export const Head = () => <Seo title="Home" />

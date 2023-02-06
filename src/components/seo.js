@@ -10,8 +10,32 @@ import useSiteMetadata from "../hooks/use-site-metadata"
 import { TelemetryDeck } from 'JavaScriptSDK';
 let td = undefined;
 
+function generateUUID() {
+  let uuid = 'anonymous'
+
+  if (typeof window !== 'undefined') {
+    uuid = crypto.randomUUID()
+    localStorage.setItem('uuid', uuid)
+  }
+
+  return uuid
+}
+
+function getUUID() {
+  let uuid;
+
+  if (typeof window !== 'undefined') {
+    uuid = localStorage.getItem('uuid')
+  }
+
+  if (!uuid) {
+    uuid = generateUUID()
+  }
+  return uuid
+}
+
 if (process.env.GATSBY_TelemetryDeck_APP_ID) {
-  td = new TelemetryDeck({ app: process.env.GATSBY_TelemetryDeck_APP_ID, user: 'anonymous' });
+  td = new TelemetryDeck({ app: process.env.GATSBY_TelemetryDeck_APP_ID, user: getUUID() });
 }
 
 const SEO = ({ title, description, pathname, children, robots }) => {
