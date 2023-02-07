@@ -4,20 +4,19 @@ import Seo from "../components/seo"
 import Layout from "../components/layout"
 import BlogPostLayout from "../components/BlogPostLayout"
 
-const BlogPost = ({ data, pageContext }) => {
+const BlogPost = ({ data, children }) => {
   const {
     id,
-    body,
     frontmatter: { featuredImage, title, published },
   } = data.mdx
-
+console.log('children', children)
   return (
     <Layout>
       <Seo title={title} />
       <BlogPostLayout
         featuredImage={featuredImage}
         title={title}
-        content={body}
+        content={children}
         date={published}
         published={published}
         previous={data.previous}
@@ -38,8 +37,9 @@ export const query = graphql`
   ) {
     mdx(id: { eq: $id }) {
       id
-      slug
-      body
+      fields {
+        slug
+      }
       frontmatter {
         datetime: published
         published(formatString: "DD MMMM YYYY")
@@ -52,13 +52,13 @@ export const query = graphql`
       }
     }
     previous: mdx(id: { eq: $previousPostId }) {
-      slug
+      fields {slug}
       frontmatter {
         title
       }
     }
     next: mdx(id: { eq: $nextPostId }) {
-      slug
+      fields {slug}
       frontmatter {
         title
       }

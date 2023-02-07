@@ -1,6 +1,5 @@
 import { Link } from "gatsby"
 import React from "react"
-import { MDXRenderer } from "gatsby-plugin-mdx"
 
 //import Image from "./Image"
 
@@ -15,16 +14,16 @@ const BlogPostLayout = ({
   let previousLink
   let nextLink
 
-  if (previous && previous?.slug) {
+  if (previous && previous.fields.slug) {
     previousLink = (
-      <Link className="pagination-prev" to={`/${previous.slug}`}>
+      <Link className="pagination-prev" to={`${previous.fields.slug}`}>
         {previous.frontmatter.title}
       </Link>
     )
   }
-  if (next && next?.slug) {
+  if (next && next.fields.slug) {
     nextLink = (
-      <Link className="pagination-next" to={`/${next.slug}`}>
+      <Link className="pagination-next" to={`${next.fields.slug}`}>
         {next.frontmatter.title}
       </Link>
     )
@@ -47,7 +46,7 @@ const BlogPostLayout = ({
             {title}
           </h1>
         </header>
-        <MDXRenderer>{content}</MDXRenderer>
+        {content}
         <hr className="my-5 border-mint" />
         <div
           className={
