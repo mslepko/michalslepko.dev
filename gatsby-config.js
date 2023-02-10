@@ -115,6 +115,13 @@ module.exports = {
     },
   },
   },
+  {
+    resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: "https://beamanalytics.b-cdn.net/beam.min.js",
+        "data-token": process.env.GATSBY_BEAM_ANALYTICS_TOKEN,
+      },
+  },
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
