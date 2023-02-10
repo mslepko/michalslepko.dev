@@ -9,7 +9,7 @@ const BlogPost = ({ data, children }) => {
     id,
     frontmatter: { featuredImage, title, published },
   } = data.mdx
-console.log('children', children)
+
   return (
     <Layout>
       <Seo title={title} />
