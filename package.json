@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Michal Slepko <michal@rootscope.co.uk>",
   "dependencies": {
-    "@mdx-js/mdx": "^2.2.1",
+    "@mdx-js/mdx": "^2.3.0",
     "@mdx-js/react": "^2.2.1",
     "JavaScriptSDK": "mslepko/JavaScriptSDK#main",
     "gatsby": "^5.0.0",
