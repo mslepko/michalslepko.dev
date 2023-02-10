@@ -44,12 +44,6 @@ module.exports = {
         path: `${__dirname}/src/content/`,
       },
     },
-    {
-      resolve: "gatsby-plugin-page-creator",
-      options: {
-        path: `${__dirname}/src/content/snippets`,
-      },
-    },
     `gatsby-remark-images`,
     {
       resolve: `gatsby-plugin-mdx`,
@@ -64,6 +58,64 @@ module.exports = {
         ],
       },
     },
+    {
+    resolve: "gatsby-plugin-sitemap",
+    options: {
+      query: `
+      {
+        site {
+          siteMetadata {
+            siteUrl
+          }
+        }
+        allMdx(
+          sort: { frontmatter: { published: DESC } }
+          limit: 1000
+        ) {
+          nodes {
+            id
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              datetime: published
+              published(formatString: "DD MMMM YYYY")
+            }
+            internal {
+              contentFilePath
+            }
+          }
+        }
+      }
+    `,
+    resolveSiteUrl: ({ site: { siteMetadata: { siteUrl } } }) => siteUrl,
+    resolvePages: ({ allMdx: { nodes: snippets } }) => {
+
+      const posts = snippets.map(snippet => {
+        return {
+          path: snippet.fields.slug,
+          lastmod: snippet.frontmatter.published,
+        }
+      })
+      const staticPages = ['/', '/links/', '/uses/', '/snippets/', '/contact/']
+      const pages = staticPages.map(page => {
+        return {
+          path: page,
+          lastmod: posts[0].lastmod,
+        }
+      })
+      return [...posts, ...pages]
+    },
+    serialize: ({ path, lastmod}) => {
+      return {
+        url: path,
+        lastmod,
+      }
+    },
+  },
+  },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
