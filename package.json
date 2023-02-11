@@ -10,7 +10,6 @@
     "gatsby": "^5.0.0",
     "gatsby-plugin-gatsby-cloud": "^5.6.0",
     "gatsby-plugin-image": "^3.0.0",
-    "gatsby-plugin-load-script": "^1.1.0",
     "gatsby-plugin-manifest": "^5.5.0",
     "gatsby-plugin-mdx": "^5.5.0",
     "gatsby-plugin-offline": "^6.5.0",
