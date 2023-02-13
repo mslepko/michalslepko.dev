@@ -38,6 +38,7 @@ const SEO = ({ title, description, pathname, children, robots }) => {
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:creator" content={seo.author} />
       <meta name="robots" content={seo.robots} />
+      <meta name="msvalidate.01" content="A8B7DD5F07491747CFB9FC3293B85EA7" />
     </>
   )
 }
