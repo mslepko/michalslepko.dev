@@ -40,4 +40,7 @@ code {
     content: "Up next →";
     @apply block text-gray text-sm uppercase font-normal;
   }
+  article a {
+    @apply text-light-blue;
+  }
 }
