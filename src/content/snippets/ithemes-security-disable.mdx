@@ -1,0 +1,22 @@
+---
+title: 'Disable iThemes Security using wp-config.php'
+description: "How to disable iThemes security using wp-config.php?"
+published: 2023-02-17
+categories: "wordpress"
+hero: ../../../defaultHero.jpg
+featuredImage:
+---
+How to disable iThemes security using wp-config.php?
+
+
+1. Connect to your server using SSH/SFTP or FTP
+2. Locate wp-config.php file
+3. Add the code below and save the file
+4. You should be able to login using URL/wp-login.php
+
+```php
+define('ITSEC_DISABLE_MODULES', true);
+```
+
+
+Check out my hassle-free WordPress hosting and <a href="https://wordpress.rootscope.dev" target="_blank">WordPress Maintenance Plans</a>
