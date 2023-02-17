@@ -6,7 +6,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
   if (node.internal.type === `Mdx`) {
     const value = createFilePath({ node, getNode })
-
     createNodeField({
       name: `slug`,
       node,
@@ -23,16 +22,21 @@ exports.createPages = async ({ graphql, actions }) => {
     `
       {
         allMdx(
-          sort: { fields: [frontmatter___published], order: DESC }
+          sort: { frontmatter: { published: DESC } }
           limit: 1000
         ) {
           nodes {
             id
-            slug
+            fields {
+              slug
+            }
             frontmatter {
               title
               datetime: published
               published(formatString: "DD MMMM YYYY")
+            }
+            internal {
+              contentFilePath
             }
           }
         }
@@ -50,16 +54,15 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // Create blog posts pages.
   const posts = result.data.allMdx.nodes
-
+  const postTemplate = path.resolve(`./src/components/BlogPost.js`)
   await Promise.all(
     posts.map(async (post, index) => {
       const id = post.id
       const previousPostId = index === 0 ? null : posts[index - 1].id
       const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
-
       await createPage({
-        path: post.slug,
-        component: path.resolve(`./src/components/BlogPost.js`),
+        path: post.fields.slug,
+        component: `${postTemplate}?__contentFilePath=${post.internal.contentFilePath}`,
         context: {
           id,
           previousPostId,

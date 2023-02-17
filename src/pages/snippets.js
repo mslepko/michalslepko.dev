@@ -7,10 +7,12 @@ import PostListLayout from "../components/PostListLayout"
 const SnippetsPage = () => {
   const Posts = useStaticQuery(graphql`
     {
-      allMdx(sort: { fields: [frontmatter___published], order: DESC }) {
+      allMdx(sort: { frontmatter: { published: DESC } }) {
         nodes {
           id
-          slug
+          fields {
+            slug
+          }
           excerpt
           frontmatter {
             title

@@ -7,12 +7,6 @@
 
 import React from "react"
 import useSiteMetadata from "../hooks/use-site-metadata"
-import { TelemetryDeck } from 'JavaScriptSDK';
-let td = undefined;
-
-if (process.env.GATSBY_TelemetryDeck_APP_ID) {
-  td = new TelemetryDeck({ app: process.env.GATSBY_TelemetryDeck_APP_ID, user: 'anonymous' });
-}
 
 const SEO = ({ title, description, pathname, children, robots }) => {
   const {
@@ -30,12 +24,6 @@ const SEO = ({ title, description, pathname, children, robots }) => {
     author: author,
   }
 
-  if (typeof window !== 'undefined' && typeof td !== 'undefined' && typeof window.location !== 'undefined') {
-    td.signal({
-      route: seo.url,
-    });
-  }
-
   return (
     <>
       <title>{seo.title}</title>
@@ -50,6 +38,7 @@ const SEO = ({ title, description, pathname, children, robots }) => {
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:creator" content={seo.author} />
       <meta name="robots" content={seo.robots} />
+      <meta name="msvalidate.01" content="A8B7DD5F07491747CFB9FC3293B85EA7" />
     </>
   )
 }

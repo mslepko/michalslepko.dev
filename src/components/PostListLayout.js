@@ -24,8 +24,8 @@ const PostListLayout = ({ data }) => {
   }
 
   const postCard = memoizedData[selectedDataIndex.current].map(
-    ({ id, frontmatter, slug }, index) => (
-      <article
+    ({ id, frontmatter, fields }, index) => (
+      <section
         className="relative rounded-lg shadow-sm bg-white pb-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
         key={id}
       >
@@ -45,18 +45,18 @@ const PostListLayout = ({ data }) => {
             {frontmatter?.date}
           </time>
           <h3 className="text-xl text-black font-semibold m-0">
-            <Link className="hover:underline" to={`/${slug}`}>
+            <Link className="hover:underline" to={`${fields.slug}`}>
               {frontmatter?.title}
             </Link>
           </h3>
         </header>
-      </article>
+      </section>
     )
   )
 
   return (
     <>
-      <section className="mt-16 grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+      <section className="mt-16 grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
         {postCard}
       </section>
       <Pagination

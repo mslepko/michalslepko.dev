@@ -5,33 +5,34 @@
   "version": "0.1.0",
   "author": "Michal Slepko <michal@rootscope.co.uk>",
   "dependencies": {
-    "@mdx-js/mdx": "^1.6.22",
-    "@mdx-js/react": "^1.6.22",
-    "JavaScriptSDK": "mslepko/JavaScriptSDK#main",
-    "gatsby": "^4.19.0",
-    "gatsby-plugin-gatsby-cloud": "^4.10.0",
-    "gatsby-plugin-image": "^2.24.0",
-    "gatsby-plugin-manifest": "^4.10.0",
-    "gatsby-plugin-mdx": "^3.19.0",
-    "gatsby-plugin-offline": "^5.10.0",
-    "gatsby-plugin-plausible": "^0.0.7",
-    "gatsby-plugin-sharp": "^4.19.0",
-    "gatsby-plugin-utils": "^3.18.0",
-    "gatsby-remark-images": "^6.19.0",
-    "gatsby-source-filesystem": "^4.10.0",
-    "gatsby-transformer-sharp": "^4.10.0",
+    "@mdx-js/mdx": "^2.3.0",
+    "@mdx-js/react": "^2.3.0",
+    "gatsby": "^5.0.0",
+    "gatsby-plugin-canonical-urls": "^5.6.0",
+    "gatsby-plugin-gatsby-cloud": "^5.6.0",
+    "gatsby-plugin-image": "^3.6.0",
+    "gatsby-plugin-manifest": "^5.5.0",
+    "gatsby-plugin-mdx": "^5.6.0",
+    "gatsby-plugin-offline": "^6.5.0",
+    "gatsby-plugin-sharp": "^5.5.0",
+    "gatsby-plugin-sitemap": "^6.6.0",
+    "gatsby-plugin-utils": "^4.5.0",
+    "gatsby-remark-images": "^7.6.0",
+    "gatsby-source-filesystem": "^5.6.0",
+    "gatsby-transformer-sharp": "^5.6.0",
     "prop-types": "^15.8.1",
-    "react": "^17.0.1",
-    "react-burger-menu": "^3.0.6",
-    "react-dom": "^17.0.1",
-    "react-typed": "^1.2.0"
+    "react": "^18.0.0",
+    "react-burger-menu": "^3.0.9",
+    "react-dom": "^18.0.0",
+    "react-typed": "^1.2.0",
+    "request": "^2.88.2"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.4",
-    "gatsby-plugin-postcss": "^5.10.0",
-    "postcss": "^8.4.12",
-    "prettier": "^2.5.1",
-    "tailwindcss": "^3.0.23"
+    "autoprefixer": "^10.4.13",
+    "gatsby-plugin-postcss": "^6.6.0",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.3",
+    "tailwindcss": "^3.2.6"
   },
   "keywords": [
     "gatsby"
@@ -43,8 +44,7 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "postinstall": "cd node_modules/JavaScriptSDK/ && npm install"
+    "clean": "gatsby clean"
   },
   "repository": {
     "type": "git",

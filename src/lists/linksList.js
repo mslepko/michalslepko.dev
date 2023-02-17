@@ -69,6 +69,11 @@ const linksList = [
     thumb: "googlecloud.png",
   },
   {
+    name: "GDPR Compliant Google Analytics alternative",
+    url: "https://beamanalytics.io?via=michal_codes",
+    thumb: "beam.jpg",
+  },
+  {
     name: "Buy me a coffee",
     url: "https://www.buymeacoffee.com/michal.codes",
     thumb: "buymeacoffee.png",
