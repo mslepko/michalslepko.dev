@@ -1,11 +1,5 @@
 import * as React from "react"
-
-import Twitter from "../images/icons/twitter-icon.svg"
-import Instagram from "../images/icons/instagram-icon.svg"
-import Twitch from "../images/icons/twitch-icon.svg"
-import Github from "../images/icons/github-icon.svg"
-import LinkedIn from "../images/icons/linkedin.svg"
-import TikTok from "../images/icons/tiktok.svg"
+import { Twitter, Instagram, Twitch, Github, LinkedIn, TikTok } from "./util/icons"
 
 // Icons from = https://simpleicons.org/
 
