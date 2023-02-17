@@ -1,14 +1,14 @@
 import * as React from "react"
-import IndexLayout from "../components/IndexLayout"
+import Layout from "../components/layouts/layout"
 import Seo from "../components/seo"
 import Hero from "../components/hero"
 
 const IndexPage = () => (
-  <IndexLayout>
+  <Layout>
     <div className="h-screen w-screen">
       <Hero />
     </div>
-  </IndexLayout>
+  </Layout>
 )
 
 export default IndexPage
