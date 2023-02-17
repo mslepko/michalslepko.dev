@@ -29,6 +29,14 @@ const BlogPost = ({ data, children }) => {
 
 export default BlogPost
 
+export const Head = ({ data, children }) => {
+  const {
+    frontmatter: { title },
+    fields: { slug }
+  } = data.mdx
+  return <Seo title={title} pathname={slug} />
+}
+
 export const query = graphql`
   query BLOG_POST_BY_SLUG(
     $id: String!
