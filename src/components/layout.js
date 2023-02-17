@@ -1,25 +1,16 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import Sidebar from "./Sidebar"
+import Footer from "./footer"
 
 const Layout = ({ children }) => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
-
   return (
     <>
-      <div className="flex flex-col lg:flex-row h-screen bg-dark-blue">
+      <div className="flex flex-row h-screen bg-dark-blue">
         <Sidebar />
-        <div className="container lg:mx-auto lg:overflow-y-scroll bg-dark-blue">
-          <main className="min-h-full">{children}</main>
+        <div className="container mx-auto overflow-y-scroll bg-dark-blue h-screen">
+        <main className="">{children}</main>
+        <Footer />
         </div>
       </div>
     </>

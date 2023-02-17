@@ -10,59 +10,53 @@ import TikTok from "../images/icons/tiktok.svg"
 // Icons from = https://simpleicons.org/
 
 const Socials = () => (
-  <div className="flex justify-around flex-nowrap w-4/5 m-auto">
+  <div className="flex justify-around flex-col gap-6 align-center min-h-fit m-auto socials">
     <a
       href="https://twitter.com/michal_codes"
       target="_blank"
-      className="pr-2"
       rel="noopener noreferrer"
     >
-      <img src={Twitter} className="w-8 h-8" alt="Twitter" />
+      <Twitter />
     </a>
 
     <a
       href="https://instagram.com/michal.codes"
       target="_blank"
-      className="pr-2"
       rel="noopener noreferrer"
     >
-      <img src={Instagram} className="w-8 h-8" alt="Instagram" />
+      <Instagram />
     </a>
 
     <a
       href="https://twitch.com/michal_codes"
       target="_blank"
-      className="pr-2"
       rel="noopener noreferrer"
     >
-      <img src={Twitch} className="w-8 h-8" alt="Twitch" />
+      <Twitch />
     </a>
 
     <a
       href="https://www.tiktok.com/@michal.codes"
       target="_blank"
-      className="pr-2"
       rel="noopener noreferrer"
     >
-      <img src={TikTok} className="w-8 h-8" alt="TikTok" />
+      <TikTok />
     </a>
 
     <a
       href="https://github.com/mslepko"
       target="_blank"
-      className="pr-2"
       rel="noopener noreferrer"
     >
-      <img src={Github} className="w-8 h-8" alt="GitHub" />
+      <Github />
     </a>
 
     <a
       href="https://www.linkedin.com/in/michalslepko"
       target="_blank"
-      className="pr-2"
       rel="noopener noreferrer"
     >
-      <img src={LinkedIn} className="w-8 h-8" alt="LinkedIn" />
+      <LinkedIn />
     </a>
   </div>
 )
