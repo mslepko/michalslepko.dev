@@ -20,15 +20,14 @@ const Sidebar = () => (
   >
       <a href="/">
         <StaticImage
-          src="../images/ms_logo.webp"
+          src="../images/michalcodes_logo.png"
           quality={10}
           formats={["webp", "png"]}
           alt="Michal Codes Logo"
-          className=""
         />
       </a>
 
-      <div className="w-full h-[35px] p-2 bg-sidebar-light">
+      <div className="w-full h-[35px] p-2 bg-sidebar-light my-8">
         <Menu width={"100%"} pageWrapId={"content"} outerContainerId={"page"}>
           <MenuLinks
             classes="flex flex-col justify-center"
