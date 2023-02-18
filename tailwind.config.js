@@ -15,7 +15,8 @@ module.exports = {
         dark: "rgb(45, 49, 63)",
         "light-dark": "rgb(17, 29, 44)",
         header: "rgb(90, 105, 137)",
-        sidebar: '#242424',
+        sidebar: '#2d2d2d',
+        "sidebar-light": '#333333'
       },
       minHeight: {
         68: "68px",

@@ -1,26 +1,20 @@
 .bm-burger-button {
-  position: fixed;
-  width: 36px;
-  height: 30px;
-  right: 36px;
-  top: 36px;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
 }
 
 .bm-burger-bars {
   @apply bg-mint;
-  height: 15% !important;
+  height: 10% !important;
 }
 
-.bm-burger-button,
 .bm-cross-button {
   height: 36px !important;
   width: 36px !important;
-  top: 36px !important;
-  right: 36px !important;
-}
-
-.bm-cross-button {
   top: 25px !important;
+  right: 36px !important;
 }
 
 .bm-cross {

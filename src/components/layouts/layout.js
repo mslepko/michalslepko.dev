@@ -6,9 +6,9 @@ import Footer from "../footer"
 const Layout = ({ children }) => {
   return (
     <>
-      <div className="flex flex-row h-screen bg-dark-blue">
+      <div id="page" className="flex flex-row h-screen bg-dark-blue">
         <Sidebar />
-        <div className="container mx-auto overflow-y-scroll bg-dark-blue h-screen">
+        <div id="content" className="container mx-auto overflow-y-scroll bg-dark-blue h-screen">
           <main>{children}</main>
           <Footer />
         </div>

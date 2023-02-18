@@ -52,6 +52,6 @@ code {
     @apply mb-4;
   }
   .socials svg {
-    @apply fill-white w-8 h-8;
+    @apply fill-white w-6 h-6;
   }
 }

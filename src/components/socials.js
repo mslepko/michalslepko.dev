@@ -4,7 +4,7 @@ import { Twitter, Instagram, Twitch, Github, LinkedIn, TikTok } from "./util/ico
 // Icons from = https://simpleicons.org/
 
 const Socials = () => (
-  <div className="flex justify-around flex-col gap-6 align-center min-h-fit m-auto socials">
+  <div className="flex justify-around flex-col gap-12 align-center min-h-fit m-auto socials">
     <a
       href="https://twitter.com/michal_codes"
       target="_blank"
