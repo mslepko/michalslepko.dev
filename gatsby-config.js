@@ -118,7 +118,7 @@ module.exports = {
   {
     resolve: `gatsby-plugin-canonical-urls`,
     options: {
-      siteUrl: `https://michalslepko.dev/`,
+      siteUrl: `https://michalslepko.dev`,
     },
   },
   {
