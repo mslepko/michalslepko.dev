@@ -5660,19 +5660,19 @@ gatsby-plugin-postcss@^6.6.0:
     "@babel/runtime" "^7.20.13"
     postcss-loader "^7.0.2"
 
-gatsby-plugin-sharp@^5.5.0:
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-5.5.0.tgz#b9c92dc11b6e0afbc1e112a1d2fdc6e31f35dc97"
-  integrity sha512-XtRjproz7FT3df8HetkpKlUFfQfPu+KdCsyXwnlAu6vm94+86ZgN/6O4gioG8GLZvoOF/1Zud47xagBPbvzLLg==
+gatsby-plugin-sharp@^5.6.0:
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-5.6.0.tgz#a5fac096ff561380a7c622a8cccb93f796cbed82"
+  integrity sha512-OXZomxNcZ7wYACLwFWAcjL6H+7pTm2jVHi9zltuKgBOXIe54i91VrtXyT/bEb2Egmh5323QKryyfgcwGCPEC4g==
   dependencies:
-    "@babel/runtime" "^7.20.7"
+    "@babel/runtime" "^7.20.13"
     async "^3.2.4"
     bluebird "^3.7.2"
     debug "^4.3.4"
     filenamify "^4.3.0"
     fs-extra "^11.1.0"
-    gatsby-core-utils "^4.5.0"
-    gatsby-plugin-utils "^4.5.0"
+    gatsby-core-utils "^4.6.0"
+    gatsby-plugin-utils "^4.6.0"
     lodash "^4.17.21"
     probe-image-size "^7.2.3"
     semver "^7.3.8"
