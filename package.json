@@ -9,8 +9,8 @@
     "@mdx-js/react": "^2.3.0",
     "gatsby": "^5.0.0",
     "gatsby-plugin-canonical-urls": "^5.6.0",
-    "gatsby-plugin-gatsby-cloud": "^5.6.0",
-    "gatsby-plugin-image": "^3.6.0",
+    "gatsby-plugin-gatsby-cloud": "^5.7.0",
+    "gatsby-plugin-image": "^3.7.0",
     "gatsby-plugin-manifest": "^5.7.0",
     "gatsby-plugin-mdx": "^5.6.0",
     "gatsby-plugin-offline": "^6.7.0",
@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
-    "gatsby-plugin-postcss": "^6.6.0",
+    "gatsby-plugin-postcss": "^6.7.0",
     "postcss": "^8.4.21",
     "prettier": "^2.8.4",
     "tailwindcss": "^3.2.7"
