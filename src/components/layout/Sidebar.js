@@ -13,12 +13,14 @@ const Sidebar = () => (
       h-screen
       min-h-fit
       overflow-y-auto
+      overflow-x-hidden
       flex
       flex-col
       items-center
       justify-between
       bg-light/30 dark:bg-darkest
-      gap-y-4"
+      gap-y-4
+      p-2"
   >
       <a href="/" className="logo text-dark dark:text-lightest w-full m-3">
         <Logo />
