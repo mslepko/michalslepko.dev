@@ -1,14 +1,15 @@
 import * as React from "react"
-import { GatsbyImage } from "gatsby-plugin-image"
+//import { GatsbyImage } from "gatsby-plugin-image"
 
 function Thumbnail({ image, alt }) {
   if (image && typeof image === "string") {
-    return <img src={image} className="w-8 h-8" alt="alt" />
+    return <img src={image} className="w-8 h-8" alt={alt} />
   }
-  return image ? <GatsbyImage image={image} alt={alt} className="mr-4" /> : null
+  return image();// ? <GatsbyImage image={image} alt={alt} className="mr-4" /> : null
 }
 
 function MyLink({ link, thumb, followers }) {
+  console.log('thumb', thumb)
   let hasThumb = thumb ? true : false
   let hasFollowers = followers ? true : false
   let classes =
@@ -18,7 +19,7 @@ function MyLink({ link, thumb, followers }) {
     classes += " justify-between"
   }
 
-  let thumbClass = (hasFollowers ? "" : "w-1/5 ") + "text-center"
+  let thumbClass = (hasFollowers ? "" : "w-1/5 ") + "text-center thumbnail"
 
   return (
     <a className={classes} href={link.url} target="_blank" rel="noreferrer">
