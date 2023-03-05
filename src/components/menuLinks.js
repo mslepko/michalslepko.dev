@@ -23,7 +23,7 @@ const MenuLinks = ({ classes, hideHome, linkClasses }) => {
       <Link
         to={url}
         className={`${linkClasses} mb-4`}
-        activeClassName="text-mint"
+        activeClassName="text-darkest dark:text-lightest"
         key={links[url]}
       >
         {links[url]}
