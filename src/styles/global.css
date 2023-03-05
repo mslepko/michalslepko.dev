@@ -52,7 +52,11 @@ code {
     @apply mb-4;
   }
   .socials svg {
-    @apply fill-white w-6 h-6;
+    @apply fill-darkest w-6 h-6;
+  }
+  
+  .dark .socials svg {
+    @apply fill-lightest;
   }
 }
 
