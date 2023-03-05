@@ -1,8 +1,6 @@
 import * as React from "react"
 import DelayedLine from "./delayedLine"
 import Typed from "react-typed"
-import MenuLinks from "./menuLinks"
-import Footer from "./footer"
 
 const Hero = () => {
   return (
@@ -63,14 +61,6 @@ const Hero = () => {
 
           <DelayedLine />
         </p>
-      </div>
-      <div className="absolute inset-x-0 bottom-0 px-8">
-        <MenuLinks
-          hideHome={true}
-          classes={"flex justify-evenly m-auto max-w-screen-sm w-4/5 flex-wrap"}
-          linkClasses={"text-2xl md:text-4xl text-white hover:text-var_value"}
-        />
-        <Footer />
       </div>
     </div>
   )
