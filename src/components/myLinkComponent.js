@@ -1,15 +1,19 @@
 import * as React from "react"
-//import { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 function Thumbnail({ image, alt }) {
-  if (image && typeof image === "string") {
-    return <img src={image} className="w-8 h-8" alt={alt} />
+  if (!image) return;
+  
+  if (typeof image === "string") {
+    return <img src={image} className="w-8 h-8" alt={alt} />;
+  } else if (typeof image === "function") {
+    return image();
   }
-  return image();// ? <GatsbyImage image={image} alt={alt} className="mr-4" /> : null
+  
+  return <GatsbyImage image={image} alt={alt} className="mr-4" />;
 }
 
 function MyLink({ link, thumb, followers }) {
-  console.log('thumb', thumb)
   let hasThumb = thumb ? true : false
   let hasFollowers = followers ? true : false
   let classes =
