@@ -42,7 +42,7 @@ const LinksPage = () => {
 
   return (
     <Layout>
-      <div className="container mx-auto p-8" data-form={formSubmitted}>
+      <div className="container mx-auto p-8 h-screen" data-form={formSubmitted}>
         <h1 className="text-center text-2xl sm:text-3xl font-bold text-mint tracking-tight dark:text-slate-200 pt-10 pb-16">
           Contact me
         </h1>
