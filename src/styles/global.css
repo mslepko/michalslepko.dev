@@ -70,3 +70,8 @@ code {
 
 .logo .accent-color { fill: #FF7B80 }
 .dark .logo .accent-color { fill: #B8F649; }
+
+.thumbnail > svg {
+  width: 24px;
+  height: 24px;
+}
