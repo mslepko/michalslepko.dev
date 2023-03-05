@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Twitter, Instagram, Twitch, Github, LinkedIn, TikTok } from "./util/icons"
+import { Twitter, Instagram, Twitch, Github, LinkedIn, TikTok } from "../util/svgs"
 
 // Icons from = https://simpleicons.org/
 

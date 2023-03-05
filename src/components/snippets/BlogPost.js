@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Seo from "../components/seo"
-import Layout from "./layouts/layout"
-import BlogPostLayout from "../components/BlogPostLayout"
+import Seo from "../seo"
+import Layout from "../layout/Layout"
+import BlogPostLayout from "./BlogPostLayout"
 
 const BlogPost = ({ data, children }) => {
   const {

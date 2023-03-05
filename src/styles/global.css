@@ -55,3 +55,14 @@ code {
     @apply fill-white w-6 h-6;
   }
 }
+
+.switch:hover > svg {
+  @apply text-darkest;
+}
+.dark .switch:hover > svg {
+  @apply text-lightest;
+}
+
+
+.logo .accent-color { fill: #FF7B80 }
+.dark .logo .accent-color { fill: #B8F649; }

@@ -54,7 +54,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // Create blog posts pages.
   const posts = result.data.allMdx.nodes
-  const postTemplate = path.resolve(`./src/components/BlogPost.js`)
+  const postTemplate = path.resolve(`./src/components/snippets/BlogPost.js`)
   await Promise.all(
     posts.map(async (post, index) => {
       const id = post.id

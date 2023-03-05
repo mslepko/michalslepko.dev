@@ -1,5 +1,5 @@
 import * as React from "react"
-import Layout from "../components/layouts/layout"
+import Layout from "../components/layout/Layout"
 import Seo from "../components/seo"
 import Hero from "../components/hero"
 

@@ -1,7 +1,7 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-import Layout from "../components/layouts/layout"
+import Layout from "../components/layout/Layout"
 import Seo from "../components/seo"
 import UsesLine from "../components/usesLine"
 

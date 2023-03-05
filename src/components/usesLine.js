@@ -2,11 +2,7 @@ import * as React from "react"
 import usesList from "../lists/usesList"
 import MyLink from "./myLinkComponent"
 import socialStats from "../lists/socialStats"
-import Twitter from "../images/icons/twitter-icon.svg"
-import Instagram from "../images/icons/instagram-icon.svg"
-import Twitch from "../images/icons/twitch-icon.svg"
-import TikTok from "../images/icons/tiktok.svg"
-import YouTube from "../images/icons/youtube.svg"
+import { Twitter, Instagram, Twitch, YouTube, TikTok } from "./util/svgs"
 
 const UsesLine = ({ type, addClasses }) => {
   const setupElements = usesList[type]
