@@ -1,0 +1,318 @@
+/* Developer Portfolio Starter Kit v1.0 Global CSS File */
+
+/*****************************************
+Table Of Contents:
+  - Core Setup
+  - Global Styles
+  - Typography
+  - Layout
+  - Section Styles
+    - Hero
+    - About
+    - Skills
+    - Work
+    - Testimonials
+    - Contact
+  - Component Styles
+  - Site Logo
+  - Navigation
+  - Buttons
+  - Forms
+  - Slide-out Menu (Mobile)
+******************************************/
+
+/**********************/
+/*     Core Setup     */
+/**********************/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/***********************/
+/*    Global Styles    */
+/***********************/
+@layer base {
+  * {
+    @apply antialiased box-border;
+  }
+  html,
+  body {
+    @apply w-full h-full;
+  }
+}
+
+/**********************/
+/*     Typography     */
+/**********************/
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-darkest dark:text-lightest font-extrabold
+    transition-all duration-150 ease-in-out font-body;
+  }
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl;
+  }
+  h2 {
+    @apply text-3xl sm:text-4xl md:text-5xl;
+  }
+  h3 {
+    @apply text-2xl sm:text-3xl md:text-4xl;
+  }
+  h4 {
+    @apply text-xl sm:text-2xl md:text-3xl;
+  }
+  h5 {
+    @apply text-base sm:text-xl md:text-2xl;
+  }
+  h6 {
+    @apply text-sm font-semibold md:text-lg;
+  }
+  p {
+    @apply text-base text-dark dark:text-light;
+  }
+  a {
+    @apply text-brand hover:text-darkest dark:text-brand dark:hover:text-white
+    font-bold transition-all duration-200 ease-in-out;
+  }
+  em {
+    @apply text-brand not-italic lg:block;
+  }
+}
+
+/**********************/
+/*       Layout       */
+/**********************/
+@layer base {
+  .wrapper {
+    @apply flex flex-col w-full relative z-20 bg-lightest dark:bg-darkest;
+  }
+  header {
+    @apply flex items-center h-20 w-full relative bg-light/30 dark:bg-darkest;
+  }
+  main {
+    @apply flex flex-col w-full;
+  }
+  footer {
+    @apply flex items-center h-24 w-full bg-darkest;
+  }
+}
+
+/**********************/
+/*   Section Styles   */
+/**********************/
+/* General */
+@layer components {
+  .section {
+    @apply w-full flex bg-light/30 dark:bg-darkest py-16;
+  }
+  .section-title {
+    @apply text-4xl md:text-5xl font-extrabold text-darkest dark:text-lightest;
+  }
+  .section-subtitle {
+    @apply text-sm md:text-base font-semibold uppercase tracking-wide mb-2 text-dark/70 dark:text-light/70;
+  }
+  .inner-container {
+    @apply flex container mx-auto items-center;
+  }
+}
+/* Hero */
+@layer utilities {
+  .hero {
+    @apply relative w-full h-auto md:h-[calc(100vh_-_5rem)] bg-light/30 dark:bg-transparent overflow-hidden;
+  }
+  .hero > .inner-container {
+    @apply container mx-auto flex flex-col md:flex-row gap-x-4 h-[calc(100vh_-_5rem)] items-center z-20;
+  }
+  .hero .left {
+    @apply flex flex-1 flex-col h-full justify-center;
+  }
+  .hero .right {
+    @apply w-60 lg:w-72 xl:w-96 hidden h-96 md:flex flex-col gap-y-3 relative justify-center;
+  }
+  .hero .right > article {
+    @apply w-full relative;
+  }
+  .hero .right .image-container {
+    @apply relative w-full h-60 lg:h-72 xl:h-96 rounded-3xl overflow-hidden;
+  }
+  .hero .right .image-container > .overlay {
+    @apply absolute top-0 w-full h-full rounded-3xl overflow-hidden mix-blend-screen opacity-50 bg-darkest;
+  }
+}
+/* About */
+@layer utilities {
+  .about > .inner-container {
+    @apply container mx-auto flex flex-col md:flex-row gap-x-4 sm:gap-x-8 md:gap-x-12 gap-y-4 md:gap-y-6 h-full md:items-start;
+  }
+  .about .title {
+    @apply w-full md:w-1/3 lg:w-1/2 flex flex-col h-full items-start;
+  }
+  .about .content {
+    @apply w-full md:w-2/3 lg:w-1/2 flex flex-col items-center gap-y-3 relative h-full;
+  }
+}
+/* Skills */
+@layer utilities {
+  .skills > .inner-container {
+    @apply flex flex-col lg:flex-row w-full container mx-auto gap-x-4 sm:gap-x-8 md:gap-x-10 lg:gap-x-10 gap-y-8 items-center md:items-start lg:items-end;
+  }
+  .skills .title {
+    @apply flex flex-col w-full md:w-1/4 gap-y-2;
+  }
+  .skills .content {
+    @apply w-full lg:w-3/4 grid gap-y-4 gap-x-4 sm:gap-y-4 md:gap-y-6 grid-cols-5 sm:grid-cols-5 md:grid-cols-9 xl:grid-cols-9;
+  }
+}
+/* Work */
+@layer utilities {
+  .work > .inner-container {
+    @apply flex flex-col lg:flex-row w-full container mx-auto gap-x-4 sm:gap-x-8 md:gap-x-10 lg:gap-x-10 gap-y-8 items-center md:items-start;
+  }
+  .work .title {
+    @apply flex flex-col w-full md:w-1/4 gap-y-2;
+  }
+  .work .content {
+    @apply flex-1 grid gap-y-4 gap-x-6 sm:gap-y-4 md:gap-y-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-2;
+  }
+  .work .github-icon {
+    @apply transition-all duration-150 ease-in-out fill-brand hover:fill-darkest dark:fill-mid dark:hover:fill-lightest;
+  }
+  .work .external-icon {
+    @apply transition-all duration-150 ease-in-out text-brand hover:text-darkest dark:text-mid dark:hover:text-lightest;
+  }
+}
+/* Testimonials */
+@layer utilities {
+  .testimonials > .inner-container {
+    @apply flex flex-col container mx-auto gap-x-12 gap-y-8 items-start;
+  }
+  .testimonials .title {
+    @apply flex flex-col w-full xl:w-1/4 justify-start gap-y-2;
+  }
+  .testimonials .content {
+    @apply w-full grid grid-flow-row xl:grid-flow-col overflow-hidden grid-cols-1 lg:grid-cols-3 grid-rows-3 lg:grid-rows-1 gap-5;
+  }
+}
+/* Contact */
+@layer utilities {
+  .contact > .inner-container {
+    @apply flex flex-col lg:flex-row container mx-auto gap-x-12 gap-y-8 items-start;
+  }
+  .contact .title {
+    @apply w-full lg:w-1/2;
+  }
+  .contact form {
+    @apply w-full lg:w-1/2;
+  }
+}
+
+/************************/
+/*   Component Styles   */
+/************************/
+@layer components {
+  .box {
+    @apply flex flex-col bg-lightest dark:bg-dark/30 rounded-lg p-8 shadow-sm justify-center h-full overflow-hidden;
+  }
+  .profile-icon {
+    @apply fill-mid group-hover:fill-darkest dark:fill-light dark:group-hover:fill-lightest transition-all duration-150 ease-in-out;
+  }
+  .switch {
+    @apply flex items-center;
+  }
+  .switch > svg {
+    @apply w-6 h-6 text-mid dark:text-light transition-all duration-150 ease-in-out;
+  }
+  .switch:hover > svg {
+    @apply text-darkest dark:text-lightest;
+  }
+  .button-container {
+    @apply flex gap-x-4;
+  }
+}
+
+/************************/
+/*      Site Logo       */
+/************************/
+@layer components {
+  .site-logo-text {
+    @apply font-extrabold text-xl;
+  }
+}
+
+/************************/
+/*      Navigation      */
+/************************/
+@layer utilities {
+  .nav-item {
+    @apply h-full flex items-center lg:px-5 py-1.5 lg:py-0;
+  }
+  .nav-item > a {
+    @apply flex items-center w-full h-full text-dark dark:text-mid hover:text-darkest dark:hover:text-lightest;
+  }
+  footer .nav-item > a {
+    @apply text-mid dark:text-mid hover:text-lightest;
+  }
+}
+
+/***********************/
+/*       Buttons       */
+/***********************/
+@layer components {
+  /* Button Sizes */
+  .btn-lg {
+    @apply flex w-auto py-4 px-6 items-center justify-center rounded-lg text-center font-bold transition-all duration-150 ease-in-out text-base;
+  }
+  .btn-md {
+    @apply flex w-auto py-3.5 px-5 items-center justify-center rounded-md text-center font-bold transition-all duration-150 ease-in-out text-base;
+  }
+  .btn-sm {
+    @apply flex w-auto py-2 px-4 items-center justify-center rounded-md text-center font-bold transition-all duration-150 ease-in-out text-sm;
+  }
+  .btn-xs {
+    @apply flex w-auto py-1.5 px-2.5 rounded-md items-center justify-center text-center font-bold transition-all duration-150 ease-in-out text-xs uppercase tracking-wide;
+  }
+  /* Button Styles */
+  .btn-brand {
+    @apply bg-brand hover:bg-darkest text-lightest hover:text-lightest  dark:bg-brand dark:hover:bg-lightest dark:text-lightest dark:hover:text-darkest;
+  }
+  .btn-outline {
+    @apply border-2 border-darkest/30 hover:border-darkest dark:border-lightest/30 dark:hover:border-white text-darkest dark:text-lightest;
+  }
+}
+
+/*******************/
+/*      Forms      */
+/*******************/
+@layer components {
+  label {
+    @apply text-darkest dark:text-lightest;
+  }
+  input,
+  textarea {
+    @apply w-full mt-2 py-3 px-3 rounded-lg border focus:outline-none focus:border-mid dark:focus:border-light bg-lightest dark:bg-darkest border-light dark:border-dark text-dark dark:text-light;
+  }
+}
+
+/*************************************/
+/*      Slide-out Menu (Mobile)      */
+/*************************************/
+@layer components {
+  #slide-out-menu {
+    @apply w-108 lg:hidden fixed top-0 flex flex-col h-full shadow-lg transform transition-all duration-300 ease-in-out z-30 left-0 bg-lightest dark:bg-darkest;
+  }
+  #slide-out-menu .inner-container {
+    @apply flex flex-col w-full h-full px-6 py-4 bg-lightest dark:bg-dark/30 items-start;
+  }
+
+  #slide-out-menu nav {
+    @apply mt-5 w-full flex flex-col justify-start items-start mb-auto;
+  }
+  #slide-out-menu nav ul {
+    @apply flex flex-col lg:flex-row h-auto lg:h-full w-full;
+  }
+}

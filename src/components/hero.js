@@ -8,10 +8,8 @@ const Hero = () => {
       className="flex flex-col space-y-2
     justify-center align-center
     p-16
-    bg-dark-blue
+    bg-light/30 dark:bg-darkest
     grow
-    h-screen
-    w-screen
     "
     >
       <div>
