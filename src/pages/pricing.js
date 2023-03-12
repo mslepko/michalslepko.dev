@@ -55,27 +55,27 @@ const UsesPage = () => (
           </h3>
           <ul className="text-dark bg-white rounded-lg shadow-md dark:text-gray-400 md:flex-row max-w-xl m-auto mt-8">
             <li className="py-2 px-4 w-full rounded-t-lg border-b border-gray-200 transition-all duration-500 hover:bg-mint">
-              <p className="font-bold">Link in bio - 99 GBP/week</p>
+              <p className="font-bold">Link in bio - 99 USD/week</p>
               <p className="text-left">
                 Link in my bio to your brand/product.
               </p>
             </li>
             <li className="py-2 px-4 w-full rounded-t-lg border-b border-gray-200 transition-all duration-500 hover:bg-mint">
-              <p className="font-bold">1 story - 199 GBP</p>
+              <p className="font-bold">1 story - 199 USD</p>
               <p className="text-left">
                 A dedicated Instagram story about you or your brand/product
                 including a link and your profile mention.
               </p>
             </li>
             <li className="py-2 px-4 w-full rounded-t-lg border-b border-gray-200 transition-all duration-500 hover:bg-mint">
-              <p className="font-bold">1 post (+ announcing story) - 499 GBP</p>
+              <p className="font-bold">1 post (+ announcing story) - 399 USD</p>
               <p className="text-left">
                 A dedicated Instagram post about you or your brand, with a story
                 that promotes it with a link and your profile mention.
               </p>
             </li>
             <li className="py-2 px-4 w-full rounded-t-lg border-b border-gray-200 transition-all duration-500 hover:bg-mint">
-              <p className="font-bold">1 reel (+ announcing story) - 699 GBP</p>
+              <p className="font-bold">1 reel (+ announcing story) - 499 USD</p>
               <p className="text-left">
                 A dedicated Instagram reel about you or your brand, with a story
                 that promotes it with a link and your profile mention.
@@ -83,11 +83,11 @@ const UsesPage = () => (
             </li>
             <li className="py-2 px-4 w-full rounded-t-lg border-b border-gray-200 transition-all duration-500 hover:bg-mint">
               <p className="font-bold">
-                Long-term sponsorship - 4-6 weeks - 2000 GBP
+                Long-term sponsorship - 4 weeks - 2000 GBP
               </p>
               <p className="text-left">
                 {" "}
-                - Includes 1 dedicated post and 2 dedicated Reels about your
+                - Includes 2 dedicated post and 2 dedicated Reels about your
                 brand/product.
               </p>
               <p className="text-left">
