@@ -83,7 +83,7 @@ const UsesPage = () => (
             </li>
             <li className="py-2 px-4 w-full rounded-t-lg border-b border-gray-200 transition-all duration-500 hover:bg-mint">
               <p className="font-bold">
-                Long-term sponsorship - 4 weeks - 2000 GBP
+                Long-term sponsorship - 4 weeks - 2000 USD
               </p>
               <p className="text-left">
                 {" "}
