@@ -15,7 +15,7 @@
     "gatsby-plugin-mdx": "^5.7.0",
     "gatsby-plugin-offline": "^6.7.0",
     "gatsby-plugin-sharp": "^5.7.0",
-    "gatsby-plugin-sitemap": "^6.6.0",
+    "gatsby-plugin-sitemap": "^6.7.0",
     "gatsby-plugin-utils": "^4.5.0",
     "gatsby-remark-images": "^7.7.0",
     "gatsby-source-filesystem": "^5.7.0",
