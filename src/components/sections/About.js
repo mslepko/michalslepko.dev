@@ -7,22 +7,17 @@ export default function About() {
         <div className="title">
           <p className="section-subtitle">About me</p>
           <h2 className="section-title">
-            I design and build <em>quality, accessible</em> web apps.
+            Full-stack developer <em>constantly</em> trying something new.
           </h2>
         </div>
         <div className="content">
           <p className="text-base md:text-xl font-bold text-darkest dark:text-lightest">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
-            animi a nisi labore sint iste veniam at accusamus, ipsum suscipit
-            sit. Aspernatur quas recusandae laborum dolore?
+            Hi. I'm Michal and I'm a software engineer based in the UK. I work full-time as the EMEA Technical Lead for The Estée Lauder Companies.
           </p>
           <p className="text-base md:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia porro
-            rerum maxime nulla corporis culpa doloribus blanditiis, fugit sequi
-            reiciendis laudantium at velit delectus voluptas aliquam
-            consequuntur unde eligendi natus. Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. A praesentium laboriosam aliquid sint
-            temporibus. Architecto ab ipsam laboriosam temporibus beatae.
+          In my spare time, which I don't have too much as I have 4 children, I'm creating content on <a href="https://instagram.com/michal.codes" target="_blank">Instagram</a>, <a href="https://www.youtube.com/@michal_codes" target="_blank">YouTube</a> and <a href="https://www.tiktok.com/@michal.codes" target="_blank">TikTok</a> related to my day-to-day job as a developer. I post mainly about software development, productivity, working from home and having fun while doing what you love.
+          </p>
+          <p className="text-base md:text-lg">I'm also trying to build small exciting projects that allow me to explore new frameworks, new programming languages and new technologies. 
           </p>
         </div>
       </article>
