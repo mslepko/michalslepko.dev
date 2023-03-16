@@ -37,7 +37,7 @@ const SnippetsPage = () => {
   return (
     <Layout>
       <div className="container mx-auto p-8 pb-16">
-        <h1 className="text-center text-2xl sm:text-3xl font-bold text-mint tracking-tight dark:text-slate-200 pt-10">
+        <h1 className="text-center text-2xl sm:text-3xl font-bold text-darkest dark:text-lightest tracking-tight pt-10">
           My Snippets
         </h1>
         <PostListLayout

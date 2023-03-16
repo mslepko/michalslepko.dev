@@ -9,11 +9,12 @@ const LinksPage = () => {
   return (
     <Layout>
       <div className="container mx-auto p-8 h-screen">
-        <h1 className="text-center text-2xl sm:text-3xl font-bold text-mint tracking-tight dark:text-slate-200 pt-10 pb-16">
+        <h1 className="text-center text-2xl sm:text-3xl font-bold text-darkest dark:text-lightest tracking-tight pt-10 pb-16">
           Contact me
         </h1>
-
-        <ContactForm />
+        <div className="w-full flex justify-center">
+          <ContactForm />
+        </div>
       </div>
     </Layout>
   )

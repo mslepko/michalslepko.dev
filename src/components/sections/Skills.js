@@ -27,23 +27,23 @@ export default function Skills() {
         </article>
 
         <article className="content">
-          <Php />
-          <Perl />
-          <Bash />
-          <Apache />
-          <Linux />
-          <Laravel />
-          <Wordpress />
-          <Html />
-          <Css />
-          <Bootstrap />
-          <TailwindCss />
-          <JavaScript />
-          <ReactJs />
-          <Jquery />
-          <Gatsbyjs />
-          <Github />
-          <Graphql />
+          <div className="m-2"><Php /></div>
+          <div className="m-2"><Perl /></div>
+          <div className="m-2"><Bash /></div>
+          <div className="m-2"><Apache /></div>
+          <div className="m-2"><Linux /></div>
+          <div className="m-2"><Laravel /></div>
+          <div className="m-2"><Wordpress /></div>
+          <div className="m-2"><Html /></div>
+          <div className="m-2"><Css /></div>
+          <div className="m-2"><Bootstrap /></div>
+          <div className="m-2"><TailwindCss /></div>
+          <div className="m-2"><JavaScript /></div>
+          <div className="m-2"><ReactJs /></div>
+          <div className="m-2"><Jquery /></div>
+          <div className="m-2"><Gatsbyjs /></div>
+          <div className="m-2"><Github /></div>
+          <div className="m-2"><Graphql /></div>
         </article>
       </article>
     </section>

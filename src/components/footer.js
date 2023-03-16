@@ -7,8 +7,7 @@ const Footer = () => {
       className="container
       mx-auto
       text-center
-      my-4 justify-around
-      bg-light/30 dark:bg-darkest"
+      my-4 justify-around"
     >
       <p>Built with&nbsp;<a href="https://www.gatsbyjs.com" target="_blank" rel="noreferrer">Gatsby</a></p>
       <p>Michal Slepko © {new Date().getFullYear()}</p>

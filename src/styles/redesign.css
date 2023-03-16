@@ -159,7 +159,7 @@ Table Of Contents:
 /* Skills */
 @layer utilities {
   .skills > .inner-container {
-    @apply flex flex-col lg:flex-row w-full container mx-auto gap-x-4 sm:gap-x-8 md:gap-x-10 lg:gap-x-10 gap-y-8 items-center md:items-start lg:items-end;
+    @apply flex flex-col lg:flex-row w-full container mx-auto gap-x-4 sm:gap-x-8 md:gap-x-10 lg:gap-x-10 gap-y-8 items-center md:items-start lg:items-center;
   }
   .skills .title {
     @apply flex flex-col w-full md:w-1/4 gap-y-2;
