@@ -12,7 +12,6 @@ const BlogPost = ({ data, children }) => {
 
   return (
     <Layout>
-      <Seo title={title} />
       <BlogPostLayout
         featuredImage={featuredImage}
         title={title}

@@ -7,7 +7,7 @@ const Image = ({ className, title, filename, withFallback = false }) => {
 
   const data = useStaticQuery(graphql`
     query {
-      fallbackImage: file(relativePath: { eq: "svgs/fallback.svg" }) {
+      fallbackImage: file(relativePath: { eq: "fallback.png" }) {
         publicURL
       }
     }
