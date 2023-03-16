@@ -25,7 +25,7 @@ const Sidebar = () => (
       <a href="/" className="logo text-dark dark:text-lightest w-full m-3">
         <Logo />
       </a>
-      <ThemeToggleSwitch />
+      <div className="h-6 w-6"><ThemeToggleSwitch /></div>
       <div className="w-full h-[35px] p-2 bg-sidebar-light my-8">
         <Menu width={"100%"} pageWrapId={"content"} outerContainerId={"page"}>
           <MenuLinks
