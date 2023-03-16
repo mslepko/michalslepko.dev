@@ -7,7 +7,7 @@ import Skills from "../components/sections/Skills"
 
 const IndexPage = () => (
   <Layout>
-    <div className="h-screen w-screen">
+    <div className="w-full">
       <Hero />
       <About />
       <Skills />
