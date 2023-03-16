@@ -167,6 +167,10 @@ Table Of Contents:
   .skills .content {
     @apply w-full lg:w-3/4 grid gap-y-4 gap-x-4 sm:gap-y-4 md:gap-y-6 grid-cols-5 sm:grid-cols-5 md:grid-cols-9 xl:grid-cols-9;
   }
+  
+  .skills svg {
+    max-width: 100px;
+  }
 }
 /* Work */
 @layer utilities {
@@ -207,7 +211,7 @@ Table Of Contents:
     @apply w-full lg:w-1/2;
   }
   .contact form {
-    @apply w-full lg:w-1/2;
+    @apply w-full;
   }
 }
 
@@ -216,7 +220,7 @@ Table Of Contents:
 /************************/
 @layer components {
   .box {
-    @apply flex flex-col bg-lightest dark:bg-dark/30 rounded-lg p-8 shadow-sm justify-center h-full overflow-hidden;
+    @apply flex flex-col bg-lightest dark:bg-dark/30 rounded-lg p-8 shadow-sm justify-start h-full overflow-hidden;
   }
   .profile-icon {
     @apply fill-mid group-hover:fill-darkest dark:fill-light dark:group-hover:fill-lightest transition-all duration-150 ease-in-out;

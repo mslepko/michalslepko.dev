@@ -12,7 +12,7 @@ const Hero = () => {
     grow
     "
     >
-      <div>
+      <div className="inner-container flex-col items-start">
         <p className="text-2xl md:text-5xl pb-1 md:pb-6">
           <span className="text-dark pr-6 md:pr-14">1</span>
           <Typed

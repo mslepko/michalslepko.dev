@@ -41,7 +41,7 @@ code {
     @apply block text-gray text-sm uppercase font-normal;
   }
   article a {
-    @apply text-light-blue;
+    @apply text-brand hover:text-darkest dark:text-brand dark:hover:text-white
   }
 
   article ol {

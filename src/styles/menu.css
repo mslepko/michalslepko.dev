@@ -6,7 +6,7 @@
 }
 
 .bm-burger-bars {
-  @apply bg-mint;
+  @apply bg-darkest dark:bg-lightest;
   height: 10% !important;
 }
 
