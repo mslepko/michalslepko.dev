@@ -126,7 +126,7 @@ Table Of Contents:
     @apply relative w-full h-auto md:h-[calc(100vh_-_5rem)] bg-light/30 dark:bg-transparent overflow-hidden;
   }
   .hero > .inner-container {
-    @apply container mx-auto flex flex-col md:flex-row gap-x-4 h-[calc(100vh_-_5rem)] items-center z-20 pl-4 md:pl-8;
+    @apply container mx-auto flex flex-col md:flex-row gap-x-4 h-[calc(100vh_-_5rem)] items-center z-20 px-4;
   }
   .hero .left {
     @apply flex flex-1 flex-col h-full justify-center;
@@ -147,7 +147,7 @@ Table Of Contents:
 /* About */
 @layer utilities {
   .about > .inner-container {
-    @apply container mx-auto flex flex-col md:flex-row gap-x-4 sm:gap-x-8 md:gap-x-12 gap-y-4 md:gap-y-6 h-full md:items-start pl-4 md:pl-8;
+    @apply container mx-auto flex flex-col md:flex-row gap-x-4 sm:gap-x-8 md:gap-x-12 gap-y-4 md:gap-y-6 h-full md:items-start px-4;
   }
   .about .title {
     @apply w-full md:w-1/3 lg:w-1/2 flex flex-col h-full items-start;
@@ -159,7 +159,7 @@ Table Of Contents:
 /* Skills */
 @layer utilities {
   .skills > .inner-container {
-    @apply flex flex-col lg:flex-row w-full container mx-auto gap-x-4 sm:gap-x-8 md:gap-x-10 lg:gap-x-10 gap-y-8 items-center md:items-start lg:items-center pl-4 md:pl-8;
+    @apply flex flex-col lg:flex-row w-full container mx-auto gap-x-4 sm:gap-x-8 md:gap-x-10 lg:gap-x-10 gap-y-8 items-center md:items-start lg:items-center px-4;
   }
   .skills .title {
     @apply flex flex-col w-full md:w-1/4 gap-y-2;
@@ -175,7 +175,7 @@ Table Of Contents:
 /* Work */
 @layer utilities {
   .work > .inner-container {
-    @apply flex flex-col lg:flex-row w-full container mx-auto gap-x-4 sm:gap-x-8 md:gap-x-10 lg:gap-x-10 gap-y-8 items-center md:items-start pl-4 md:pl-8;
+    @apply flex flex-col lg:flex-row w-full container mx-auto gap-x-4 sm:gap-x-8 md:gap-x-10 lg:gap-x-10 gap-y-8 items-center md:items-start px-4;
   }
   .work .title {
     @apply flex flex-col w-full md:w-1/4 gap-y-2;
@@ -193,7 +193,7 @@ Table Of Contents:
 /* Testimonials */
 @layer utilities {
   .testimonials > .inner-container {
-    @apply flex flex-col container mx-auto gap-x-12 gap-y-8 items-start pl-4 md:pl-8;
+    @apply flex flex-col container mx-auto gap-x-12 gap-y-8 items-start px-4;
   }
   .testimonials .title {
     @apply flex flex-col w-full xl:w-1/4 justify-start gap-y-2;
@@ -205,7 +205,7 @@ Table Of Contents:
 /* Contact */
 @layer utilities {
   .contact > .inner-container {
-    @apply flex flex-col lg:flex-row container mx-auto gap-x-12 gap-y-8 items-start pl-4 md:pl-8;
+    @apply flex flex-col lg:flex-row container mx-auto gap-x-12 gap-y-8 items-start px-4;
   }
   .contact .title {
     @apply w-full lg:w-1/2;
