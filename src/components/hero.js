@@ -11,7 +11,7 @@ const Hero = () => {
     grow
     "
     >
-      <div className="inner-container flex-col items-start">
+      <div className="inner-container flex-col items-start pt-4">
         <p className="text-2xl md:text-5xl pb-1 md:pb-6">
           <span className="text-dark pr-6 md:pr-14">1</span>
           <Typed
@@ -29,7 +29,7 @@ const Hero = () => {
           <span className="text-dark pr-6 md:pr-14">2</span>
           <Typed
             strings={[
-              '<span class="text-var_name">$name&nbsp;=&nbsp;</span><span class="text-var_value">"Michal";</span>',
+              '<span class="text-var_name">$name&nbsp;=&nbsp;</span><span class="text-brand">"Michal";</span>',
             ]}
             className="grow"
             typeSpeed={100}

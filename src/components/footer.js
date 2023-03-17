@@ -4,10 +4,11 @@ import { Script } from "gatsby"
 const Footer = () => {
   return (
     <footer
-      className="container
+      className="
       mx-auto
       text-center
-      my-4 justify-around"
+      bg-light/30 dark:bg-darkest
+      py-4 justify-around"
     >
       <p>Built with&nbsp;<a href="https://www.gatsbyjs.com" target="_blank" rel="noreferrer">Gatsby</a></p>
       <p>Michal Slepko © {new Date().getFullYear()}</p>

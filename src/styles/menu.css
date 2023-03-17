@@ -18,17 +18,13 @@
 }
 
 .bm-cross {
-  @apply bg-dark-blue;
+  @apply bg-darkest dark:bg-lightest;
   height: 36px !important;
   transform-origin: center;
 }
 
 .bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  @apply bg-lightest dark:bg-darkest top-0 left-0 right-0 bottom-0;
 }
 
 .bm-item-list {
@@ -46,5 +42,5 @@
 }
 
 .bm-menu {
-  @apply bg-header p-8;
+  @apply p-8 bg-lightest dark:bg-darkest;
 }
