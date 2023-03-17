@@ -25,32 +25,34 @@ const PostListLayout = ({ data }) => {
 
   const postCard = memoizedData[selectedDataIndex.current].map(
     ({ id, frontmatter, fields }, index) => (
-      <section
-        className="relative rounded-lg shadow-sm bg-white pb-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
-        key={id}
-      >
-        <div className="mx-auto w-full">
-          <Image
-            className="rounded-t-lg h-56"
-            filename={frontmatter?.featuredImage}
-            title={frontmatter?.title}
-            withFallback={!frontmatter?.featuredImage}
-          />
-        </div>
-        <header className="mt-2 px-5">
-          <time
-            className="text-gray-500 font-light text-base"
-            dateTime={frontmatter?.published}
-          >
-            {frontmatter?.date}
-          </time>
-          <h3 className="text-xl text-black font-semibold m-0">
-            <Link className="hover:underline" to={`${fields.slug}`}>
-              {frontmatter?.title}
-            </Link>
-          </h3>
-        </header>
-      </section>
+      <Link className="hover:underline" to={`${fields.slug}`}>
+        <section
+          className="relative rounded-lg shadow-sm bg-lightest dark:bg-dark/30 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300
+          flex flex-col justify-between p-1
+          "
+          key={id}
+        >
+          <div className="mx-auto w-full">
+            <Image
+              className="rounded-t-lg h-56"
+              filename={frontmatter?.featuredImage}
+              title={frontmatter?.title}
+              withFallback={!frontmatter?.featuredImage}
+            />
+          </div>
+          <header className="text-center p-5 flex-1 rounded-b-lg">
+            <time
+              className="text-gray-500 font-light text-base"
+              dateTime={frontmatter?.published}
+            >
+              {frontmatter?.date}
+            </time>
+            <h3 className="text-xl text-black font-semibold m-0">
+                {frontmatter?.title}
+            </h3>
+          </header>
+        </section>
+      </Link>
     )
   )
 

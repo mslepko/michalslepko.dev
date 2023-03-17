@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Seo from "../components/seo"
-import Layout from "../components/layout"
-import BlogPostLayout from "../components/BlogPostLayout"
+import Seo from "../seo"
+import Layout from "../layout/Layout"
+import BlogPostLayout from "./BlogPostLayout"
 
 const BlogPost = ({ data, children }) => {
   const {
@@ -12,7 +12,6 @@ const BlogPost = ({ data, children }) => {
 
   return (
     <Layout>
-      <Seo title={title} />
       <BlogPostLayout
         featuredImage={featuredImage}
         title={title}
@@ -28,6 +27,14 @@ const BlogPost = ({ data, children }) => {
 }
 
 export default BlogPost
+
+export const Head = ({ data, children }) => {
+  const {
+    frontmatter: { title },
+    fields: { slug }
+  } = data.mdx
+  return <Seo title={title} pathname={slug} />
+}
 
 export const query = graphql`
   query BLOG_POST_BY_SLUG(

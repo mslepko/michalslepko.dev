@@ -14,10 +14,13 @@ const SEO = ({ title, description, pathname, children, robots }) => {
     description: defaultDescription,
     siteUrl,
     author,
+    titleShort,
   } = useSiteMetadata()
-
+  
+  const secondTitle = title === 'Home' ? defaultTitle : titleShort;
+  
   const seo = {
-    title: `${title} | ${defaultTitle}`,
+    title: `${title} | ${secondTitle}`,
     description: description || defaultDescription,
     url: `${siteUrl}${pathname || ``}`,
     robots: robots ? robots : "follow, index",

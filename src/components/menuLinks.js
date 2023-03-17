@@ -22,8 +22,8 @@ const MenuLinks = ({ classes, hideHome, linkClasses }) => {
     htmlOutput.push(
       <Link
         to={url}
-        className={`${linkClasses} mb-4`}
-        activeClassName="text-mint"
+        className={`${linkClasses} mb-4 text-dark dark:text-mid hover:text-darkest dark:hover:text-lightest`}
+        activeClassName="text-darkest dark:text-lightest"
         key={links[url]}
       >
         {links[url]}

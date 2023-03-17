@@ -1,5 +1,5 @@
 import * as React from "react"
-import Layout from "./layout"
+import Layout from "./layouts/layout"
 
 const BlogPostSimple = ({ children }) => {
   console.log("children", children)

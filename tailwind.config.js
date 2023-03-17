@@ -1,7 +1,14 @@
 module.exports = {
-  darkMode: "media",
+  darkMode: "class",
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    container: {
+      padding: {
+        DEFAULT: "2rem",
+        sm: "2rem",
+        md: "3rem",
+      },
+    },
     extend: {
       colors: {
         "dark-blue": "rgb(17, 29, 44)",
@@ -12,9 +19,18 @@ module.exports = {
         "light-blue": "rgb(174, 241, 255)",
         mint: "#f1faee",
         purple: "rgb(232, 163, 236)",
-        dark: "rgb(45, 49, 63)",
+        //dark: "rgb(45, 49, 63)",
         "light-dark": "rgb(17, 29, 44)",
         header: "rgb(90, 105, 137)",
+        // from colorhub
+        transparent: "transparent",
+        current: "currentColor",
+        brand: "#1FB2A7",
+        darkest: "#0B0E16",
+        dark: "#283047",
+        mid: "#A4A5A8",
+        light: "#E1E2E3",
+        lightest: "#FFFFFF",
       },
       minHeight: {
         68: "68px",
@@ -30,9 +46,36 @@ module.exports = {
       backgroundSize: {
         "size-200": "200% 200%",
       },
+      fontFamily: {
+        display: ["Helvetica", "sans-serif"],
+        body: ["Helvetica", "sans-serif"],
+      },spacing: {
+        98: "24.5rem",
+        100: "25rem",
+        102: "25.5rem",
+        104: "26rem",
+        106: "26.5rem",
+        108: "27rem",
+        110: "27.5rem",
+        112: "28rem",
+        114: "28.5rem",
+        116: "29rem",
+        118: "29.5rem",
+        120: "30rem",
+        122: "30.5rem",
+        124: "31rem",
+        126: "31.5rem",
+        128: "32rem",
+        130: "32.5rem",
+        132: "33rem",
+        134: "33.5rem",
+        136: "34rem",
+        138: "34.5rem",
+        140: "35rem",
+        142: "35.5rem",
+        144: "36rem",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss"), require("autoprefixer")],
 }
-
-// Comment

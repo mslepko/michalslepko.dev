@@ -40,16 +40,37 @@ code {
     content: "Up next →";
     @apply block text-gray text-sm uppercase font-normal;
   }
-  article
-    a {
-      @apply text-light-blue;
-    }
+  article a {
+    @apply text-brand hover:text-darkest dark:text-brand dark:hover:text-white
+  }
 
-    ol {
-      @apply list-decimal ml-8;
-    }
+  article ol {
+    @apply list-decimal ml-8;
+  }
 
-    p {
-      @apply mb-4;
-    }
+  article p {
+    @apply mb-4;
+  }
+  .socials svg {
+    @apply fill-darkest w-6 h-6;
+  }
+  
+  .dark .socials svg {
+    @apply fill-lightest;
+  }
+}
+
+.switch:hover > svg {
+  @apply text-darkest;
+}
+.dark .switch:hover > svg {
+  @apply text-lightest;
+}
+
+
+.logo .accent-color { fill: #FF7B80 }
+.dark .logo .accent-color { fill: #B8F649; }
+
+.thumbnail > svg {
+  @apply fill-darkest w-6 h-6;
 }

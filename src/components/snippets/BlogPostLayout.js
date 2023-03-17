@@ -30,24 +30,23 @@ const BlogPostLayout = ({
   }
 
   return (
-    <>
-      <article className="text-xl container mx-auto p-8 pb-16 text-left text-mint">
+      <article className="flex-1 text-xl container mx-auto p-8 pb-16 text-left text-darkest dark:text-lightest">
         {/* <Image
           className="max-w-md rounded-lg ml-10 mb-10 float-right"
           filename={featuredImage}
           title={title}
         /> */}
 
-        <header className="mb-5">
-          <time className="block text-mint text-right mb-2" dateTime={date}>
+        <header className="mb-5 bg-transparent block h-auto">
+          <time className="block text-darkest dark:text-lightest text-right mb-2" dateTime={date}>
             {date}
           </time>
-          <h1 className="text-2xl sm:text-3xl font-bold text-mint tracking-tight dark:text-slate-200 pt-10 text-center pb-16">
+          <h1 className="block text-2xl sm:text-3xl font-bold text-darkest dark:text-lightest tracking-tight pt-10 text-center pb-16">
             {title}
           </h1>
         </header>
         {content}
-        <hr className="my-5 border-mint" />
+        <hr className="my-5 border-darkest dark:border-lightest" />
         <div
           className={
             previousLink
@@ -59,7 +58,6 @@ const BlogPostLayout = ({
           {nextLink}
         </div>
       </article>
-    </>
   )
 }
 

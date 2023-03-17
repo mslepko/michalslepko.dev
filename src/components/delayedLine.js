@@ -17,9 +17,9 @@ function DelayedLine() {
       {shouldRender && (
         <Typed
           strings={[
-            '<span class="text-var_value">"a full-stack web developer"&#59;</span>',
-            '<span class="text-var_value">"a content creator"&#59;</span>',
-            '<span class="text-var_value">"a streamer"&#59;</span>',
+            '<span class="text-brand">"a full-stack web developer"&#59;</span>',
+            '<span class="text-brand">"a content creator"&#59;</span>',
+            '<span class="text-brand">"a streamer"&#59;</span>',
           ]}
           className="grow"
           typeSpeed={100}
