@@ -11,7 +11,7 @@ const Hero = () => {
     grow
     "
     >
-      <div className="inner-container flex-col items-start pt-4">
+      <div className="inner-container flex-col items-start pt-4 pl-4 md:pl-8">
         <p className="text-2xl md:text-5xl pb-1 md:pb-6">
           <span className="text-dark pr-6 md:pr-14">1</span>
           <Typed
