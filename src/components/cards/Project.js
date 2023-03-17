@@ -20,7 +20,7 @@ const Project = ({ image, title, description, url, github }) => {
           {description}
         </p>
         <div className="button-container items-center mt-3">
-          {github && <a href={github} target="_blank" rel="noreferrer" className="github-icon">
+          {github && <a href={github} className="github-icon">
               <svg
                 className="w-6 h-6"
                 role="img"
@@ -31,7 +31,7 @@ const Project = ({ image, title, description, url, github }) => {
               </svg>
             </a>}
           
-          {url && <a href={url} target="_blank" rel="noreferrer" className="external-icon">
+          {url && <a href={url} className="external-icon">
               <svg
                 className="w-6 h-6 text-current"
                 fill="none"
