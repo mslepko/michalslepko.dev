@@ -7,7 +7,6 @@ const Hero = () => {
     <div
       className="flex flex-col space-y-2
     justify-center align-center
-    p-16
     bg-light/30 dark:bg-darkest
     grow
     "
