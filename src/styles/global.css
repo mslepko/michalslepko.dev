@@ -74,3 +74,8 @@ code {
 .thumbnail > svg {
   @apply fill-darkest w-6 h-6;
 }
+
+.pricing p,
+.dark .pricing p {
+  @apply text-darkest;
+}
