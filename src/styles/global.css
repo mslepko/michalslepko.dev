@@ -79,3 +79,8 @@ code {
 .dark .pricing p {
   @apply text-darkest;
 }
+
+/* Featured links */
+.featured-link__turing > div {
+  color: #673AFF;  
+}
