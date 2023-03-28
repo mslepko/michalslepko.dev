@@ -5,6 +5,12 @@ const linksList = [
     thumb: "sunsama.png",
   },
   {
+    name: "Turing College - Get a raise or unlock better job opportunities.",
+    url: "https://turing-college.pxf.io/michal_codes",
+    thumb: "turingcollege.png",
+    featured: true,
+  },
+  {
     name: "Warp Terminal",
     url: "https://tinyurl.com/warpdev",
     thumb: "warp.png",

@@ -1,7 +1,7 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import linksList from "../lists/linksList"
-import MyLink from "./myLinkComponent"
+import linksList from "../../lists/linksList"
+import FeaturedLink from '../cards/FeaturedLink'
 
 const MyLinks = () => {
   const thumbnailsQuery = useStaticQuery(graphql`
@@ -9,14 +9,14 @@ const MyLinks = () => {
       allFile(
         filter: {
           extension: { regex: "/(jpg)|(png)|(jpeg)|(webp)/" }
-          relativeDirectory: { eq: "thumbnails" }
+          relativeDirectory: { eq: "featured" }
         }
       ) {
         edges {
           node {
             base
             childImageSharp {
-              gatsbyImageData(height: 49)
+              gatsbyImageData
             }
           }
         }
@@ -31,20 +31,24 @@ const MyLinks = () => {
       (thumbnails[image.node.base] = image.node.childImageSharp.gatsbyImageData)
   )
 
-  let links = []
-  const normalLinks = linksList.filter(link => !link.featured);
+  let featured = []
+  const featuredLinks = linksList.filter(link => link.featured);
   
-  for (let link of normalLinks) {
-    let thumbnail = thumbnails[link.thumb]
-    links.push(<MyLink link={link} thumb={thumbnail} key={link.name} />)
+  if (featuredLinks.length > 0) {
+    for (let link of featuredLinks) {
+      let thumbnail = thumbnails[link.thumb]
+      featured.push(<FeaturedLink link={link} thumb={thumbnail} key={link.name} />)
+    }
   }
 
   return (
     <div className="md:w-2/3 m-auto marker:text-sky-400 list-disc md:pl-5 space-y-6 text-slate-500 mt-8">
+      <div className="mb-32">
         <h1 className="text-2xl sm:text-3xl font-bold text-darkest dark:text-lightest tracking-tight pt-10">
-          Affiliate links
+          Featured links
         </h1>
-      {links}
+        {featured}
+      </div>
     </div>
   )
 }
