@@ -1,5 +1,10 @@
 const linksList = [
   {
+    name: "Code Snippets AI - VSCode extension",
+    url: "https://codesnippets.ai?via=michal_codes",
+    thumb: "codesnippets.png",
+  },
+  {
     name: "Sunsama - The daily planner - 30 days free",
     url: "https://try.sunsama.com/fsyygeo11ucv",
     thumb: "sunsama.png",
