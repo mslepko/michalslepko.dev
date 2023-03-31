@@ -7,9 +7,9 @@
   "dependencies": {
     "@mdx-js/mdx": "^2.3.0",
     "@mdx-js/react": "^2.3.0",
-    "gatsby": "^5.7.0",
+    "gatsby": "^5.8.1",
     "gatsby-plugin-canonical-urls": "^5.7.0",
-    "gatsby-plugin-gatsby-cloud": "^5.7.0",
+    "gatsby-plugin-gatsby-cloud": "^5.8.0",
     "gatsby-plugin-image": "^3.7.0",
     "gatsby-plugin-manifest": "^5.7.0",
     "gatsby-plugin-mdx": "^5.7.0",
@@ -18,7 +18,7 @@
     "gatsby-plugin-sharp": "^5.8.0",
     "gatsby-plugin-sitemap": "^6.7.0",
     "gatsby-plugin-utils": "^4.5.0",
-    "gatsby-remark-images": "^7.7.0",
+    "gatsby-remark-images": "^7.8.0",
     "gatsby-source-filesystem": "^5.7.0",
     "gatsby-transformer-sharp": "^5.7.0",
     "prop-types": "^15.8.1",
@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
-    "gatsby-plugin-postcss": "^6.7.0",
+    "gatsby-plugin-postcss": "^6.8.0",
     "postcss": "^8.4.21",
     "prettier": "^2.8.5",
     "tailwindcss": "^3.2.7"
