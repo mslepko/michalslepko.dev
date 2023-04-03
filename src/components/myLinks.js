@@ -2,6 +2,7 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import linksList from "../lists/linksList"
 import MyLink from "./myLinkComponent"
+import LinkGroup from "./sections/LinkGroup"
 
 const MyLinks = () => {
   const thumbnailsQuery = useStaticQuery(graphql`
@@ -32,7 +33,33 @@ const MyLinks = () => {
   )
 
   let links = []
-  const normalLinks = linksList.filter(link => !link.featured);
+  let normalLinks = []
+  let groupedLinks = {}
+  
+  const linksGroup = [
+    {name: 'tools', order: 1},
+    {name: 'brand', order: 2},
+    {name: 'server', order: 3},
+  ]
+  
+  linksGroup.forEach(link => {
+    groupedLinks[link.name] = []
+  })
+  
+  
+  linksList.forEach(link => {
+    if (link.featured) return;
+    if (typeof link.type !== 'undefined') {
+      groupedLinks[link.type].push(link)
+    } else {
+      normalLinks.push(link)
+    }
+  })
+  linksGroup.sort((a, b) => {
+    if (a.order < b.order) return -1
+    if (a.order > b.order) return 1
+    return 0
+  })
   
   for (let link of normalLinks) {
     let thumbnail = thumbnails[link.thumb]
@@ -45,6 +72,10 @@ const MyLinks = () => {
           Affiliate links
         </h1>
       {links}
+      {linksGroup && (linksGroup.map(link => (
+          <LinkGroup name={link.name} links={groupedLinks[link.name]} key={link.name}/>
+        ))
+      )}
     </div>
   )
 }
