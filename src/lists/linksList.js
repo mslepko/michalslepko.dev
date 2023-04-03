@@ -10,9 +10,9 @@ const linksList = [
     thumb: "sunsama.png",
   },
   {
-    name: "Turing College - Get a raise or unlock better job opportunities.",
-    url: "https://turing-college.pxf.io/michal_codes",
-    thumb: "turingcollege.png",
+    name: "Wondershare DemoCreator - Create programming training videos in less time!",
+    url: "http://bit.ly/3KfGYD3",
+    thumb: "wondershare.png",
     featured: true,
   },
   {
