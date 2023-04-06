@@ -5635,10 +5635,10 @@ gatsby-plugin-manifest@^5.8.0:
     semver "^7.3.8"
     sharp "^0.31.3"
 
-gatsby-plugin-mdx@^5.7.0:
-  version "5.7.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-5.7.0.tgz#7b7b3cadb7f8eb312213c484253c71122c2e6707"
-  integrity sha512-lIJmZZf6qxeNN2sKXWYj/uCmyRCtanEiOcbwWAz7Zvl5sbFnoEQCIJQIJMBovR8i0ea8sY/nKSD2QQBkxvgzXQ==
+gatsby-plugin-mdx@^5.8.0:
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-5.8.0.tgz#05cb1b483e19b6e7e40594881caac1a0f7461d79"
+  integrity sha512-dUwwg8+P8FdOjzFwsG704qemSLReSwp/1hrQ2p0/Z8V4SdrN6M3Looe0irXc6lI01qOBlM3vvdSAMWTClVKSBQ==
   dependencies:
     "@mdx-js/mdx" "^2.1.5"
     acorn "^8.8.1"
@@ -5647,8 +5647,8 @@ gatsby-plugin-mdx@^5.7.0:
     deepmerge "^4.2.2"
     estree-util-build-jsx "^2.2.0"
     fs-extra "^11.1.0"
-    gatsby-core-utils "^4.7.0"
-    gatsby-plugin-utils "^4.7.0"
+    gatsby-core-utils "^4.8.0"
+    gatsby-plugin-utils "^4.8.0"
     gray-matter "^4.0.3"
     mdast-util-mdx "^2.0.0"
     mdast-util-to-hast "^10.2.0"
