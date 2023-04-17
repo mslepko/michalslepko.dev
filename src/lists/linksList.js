@@ -10,12 +10,6 @@ const linksList = [
     thumb: "sunsama.png",
   },
   {
-    name: "Wondershare DemoCreator - Create programming training videos in less time!",
-    url: "http://bit.ly/3KfGYD3",
-    thumb: "wondershare.png",
-    featured: true,
-  },
-  {
     name: "Warp Terminal",
     url: "https://tinyurl.com/warpdev",
     thumb: "warp.png",
