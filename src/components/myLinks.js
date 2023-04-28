@@ -69,7 +69,7 @@ const MyLinks = () => {
   return (
     <div className="md:w-2/3 m-auto marker:text-sky-400 list-disc md:pl-5 space-y-6 text-slate-500 mt-8">
         <h1 className="text-2xl sm:text-3xl font-bold text-darkest dark:text-lightest tracking-tight pt-10">
-          Affiliate links
+          My links
         </h1>
       {links}
       {linksGroup && (linksGroup.map(link => (

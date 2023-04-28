@@ -8,8 +8,8 @@ const linksList = [
   {
     name: "Your next SaaS starter template",
     url: "https://supastarter.lemonsqueezy.com/?aff=WyGy7",
-    thumb: "supastarter.jpg",
-    type: "tools",
+    thumb: "supastarter.jpeg",
+    featured: true,
   },
   {
     name: "My setup",
@@ -20,11 +20,13 @@ const linksList = [
     name: "Sunsama - The daily planner - 30 days free",
     url: "https://try.sunsama.com/fsyygeo11ucv",
     thumb: "sunsama.png",
+    type: "tools",
   },
   {
     name: "Warp Terminal",
     url: "https://tinyurl.com/warpdev",
     thumb: "warp.png",
+    type: "tools",
   },
   {
     name: "Grammarly",
@@ -89,6 +91,7 @@ const linksList = [
     name: "GDPR Compliant Google Analytics alternative",
     url: "https://beamanalytics.io?via=michal_codes",
     thumb: "beam.jpg",
+    type: "tools",
   },
   {
     name: "Buy me a coffee",

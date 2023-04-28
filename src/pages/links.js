@@ -7,6 +7,7 @@ import FeaturedLinks from '../components/sections/FeaturedLinks'
 const LinksPage = () => (
   <Layout>
     <div className="container mx-auto p-8 pb-16 text-center">
+      <p>Hi! I'm Michal, senior web developer creating tech content.</p>
       <FeaturedLinks />
       <MyLinks />
     </div>

@@ -17,13 +17,13 @@ function MyLink({ link, thumb, followers }) {
   let hasThumb = thumb ? true : false
   let hasFollowers = followers ? true : false
   let classes =
-    "flex items-center w-full p-4 text-dark bg-white rounded-lg shadow-md dark:text-gray-400 md:flex-row transition-all duration-500 hover:bg-mint hover:scale-105"
+    "flex items-center w-full p-4 text-dark bg-white rounded-lg shadow-md dark:text-gray-400 flex-col md:flex-row transition-all duration-500 hover:bg-mint hover:scale-105"
 
   if (hasFollowers) {
     classes += " justify-between"
   }
 
-  let thumbClass = (hasFollowers ? "" : "w-1/5 ") + "text-center thumbnail"
+  let thumbClass = (hasFollowers ? "" : "w-full md:w-1/5 ") + "text-center thumbnail"
 
   return (
     <a className={classes} href={link.url} target="_blank" rel="noreferrer">

@@ -30,7 +30,7 @@ function FeaturedLink({ link, thumb }) {
       <div
         className={
           hasThumb
-            ? "text-left text-blue font-bold text-2xl"
+            ? "text-center md:text-left text-blue font-bold text-2xl"
             : "text-center text-blue font-bold w-full"
         }
       >
