@@ -2,7 +2,7 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import linksList from "../lists/linksList"
 import MyLink from "./myLinkComponent"
-import LinkGroup from "./sections/LinkGroup"
+import GroupLinks from "./sections/GroupLinks"
 
 const MyLinks = () => {
   const thumbnailsQuery = useStaticQuery(graphql`
@@ -38,8 +38,8 @@ const MyLinks = () => {
   
   const linksGroup = [
     {name: 'tools', order: 1},
-    {name: 'brand', order: 2},
-    {name: 'server', order: 3},
+    {name: 'brands', order: 2},
+    {name: 'servers', order: 3},
   ]
   
   linksGroup.forEach(link => {
@@ -73,7 +73,7 @@ const MyLinks = () => {
         </h1>
       {links}
       {linksGroup && (linksGroup.map(link => (
-          <LinkGroup name={link.name} links={groupedLinks[link.name]} key={link.name}/>
+          <GroupLinks name={link.name} links={groupedLinks[link.name]} key={link.name} thumbnails={thumbnails}/>
         ))
       )}
     </div>
