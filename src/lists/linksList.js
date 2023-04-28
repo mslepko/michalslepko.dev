@@ -10,11 +10,16 @@ const linksList = [
     url: "https://supastarter.lemonsqueezy.com/?aff=WyGy7",
     thumb: "supastarter.jpeg",
     featured: true,
-  },
+  },  
   {
     name: "My setup",
     url: "https://kit.co/michal.codes",
     thumb: "michalcodes_logo.png",
+  },
+  {
+    name: "Career path mentoring with me",
+    url: "https://app.zencal.io/u/michalslepko/lets-talk-about-your-future",
+    thumb: "michalcodes.jpg",
   },
   {
     name: "Sunsama - The daily planner - 30 days free",
