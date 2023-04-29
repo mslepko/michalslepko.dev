@@ -7,7 +7,7 @@ const linksList = [
   },
   {
     name: "Your next SaaS starter template",
-    url: "https://supastarter.lemonsqueezy.com/?aff=WyGy7",
+    url: "https://supastarter.dev/?aff=WyGy7",
     thumb: "supastarter.jpeg",
     featured: true,
   },  
