@@ -1942,7 +1942,7 @@
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
-"@sideway/formula@^3.0.0":
+"@sideway/formula@^3.0.0", "@sideway/formula@^3.0.1":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@sideway/formula/-/formula-3.0.1.tgz#80fcbcbaf7ce031e0ef2dd29b1bfc7c3f583611f"
   integrity sha512-/poHZJJVjx3L+zVD6g9KgHfYnb443oi7wLu/XKojDviHy6HOEOA6z1Trk5aR1dGcmPenJEgb2sK2I80LeS3MIg==
@@ -5139,7 +5139,7 @@ fastest-levenshtein@^1.0.16:
   resolved "https://registry.yarnpkg.com/fastest-levenshtein/-/fastest-levenshtein-1.0.16.tgz#210e61b6ff181de91ea9b3d1b84fdedd47e034e5"
   integrity sha512-eRnCtTTtGZFpQCwhJiUOuxPQWRXVKYDn0b2PeHfXL6/Zi53SLAzAHfVhVWK2AryC/WH05kGfxhFIPvTF0SXQzg==
 
-fastq@^1.13.0, fastq@^1.15.0, fastq@^1.6.0:
+fastq@^1.15.0, fastq@^1.6.0:
   version "1.15.0"
   resolved "https://registry.yarnpkg.com/fastq/-/fastq-1.15.0.tgz#d04d07c6a2a68fe4599fea8d2e103a937fae6b3a"
   integrity sha512-wBrocU2LCXXa+lWBt8RoIRD89Fi8OdABODa/kEnyeyjS5aZO5/GNvI5sEINADqP/h8M29UHTHUb53sUu5Ihqdw==
@@ -5606,14 +5606,14 @@ gatsby-plugin-image@^3.8.0:
     objectFitPolyfill "^2.3.5"
     prop-types "^15.8.1"
 
-gatsby-plugin-manifest@^5.8.0:
-  version "5.8.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-5.8.0.tgz#732e0dd537015f1cf1855210a81ad2c4ba11d0ac"
-  integrity sha512-/+oJ+i2HEWgG3K9NcvjH3BAHlnUWUJbgF6sPgYC6bbAN4D0Bfu8qTlY0iP3Fw7mqvancV1c+w0OH/XBQdJF1CQ==
+gatsby-plugin-manifest@^5.9.0:
+  version "5.9.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-5.9.0.tgz#0d181c86e840400f93b263d2dcbbf486f6d5388c"
+  integrity sha512-6BrS5WprI+MJM4JsoJ30Z5cuKzICFlohpXiUMO2Xc+p2bzl+hgeIb06nm4lP52gNAPOVyLQDZDqB0PKRNYVe/w==
   dependencies:
     "@babel/runtime" "^7.20.13"
-    gatsby-core-utils "^4.8.0"
-    gatsby-plugin-utils "^4.8.0"
+    gatsby-core-utils "^4.9.0"
+    gatsby-plugin-utils "^4.9.0"
     semver "^7.3.8"
     sharp "^0.31.3"
 
@@ -5729,19 +5729,19 @@ gatsby-plugin-typescript@^5.8.0:
     "@babel/runtime" "^7.20.13"
     babel-plugin-remove-graphql-queries "^5.8.0"
 
-gatsby-plugin-utils@^4.5.0, gatsby-plugin-utils@^4.8.0:
-  version "4.8.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-4.8.0.tgz#d88824bec89cef1192246358a9b1c0171f7f4432"
-  integrity sha512-zRdqP2t2W+j8ujHYtXFYnXKUS1JkjjM59Lh39bl6u9opgAByfK3jab1NpmxFQ220TAmqHrDSwOqiiB7GyuJQ/w==
+gatsby-plugin-utils@^4.5.0, gatsby-plugin-utils@^4.8.0, gatsby-plugin-utils@^4.9.0:
+  version "4.9.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-4.9.0.tgz#d0b7c72964ef6c4dee7d81f4e6217e5e677c7352"
+  integrity sha512-JGd6FNjoj2ceb4eCw7xzIELlPwSBxGGkJpy+iQTnLT32aPT0vidjGmiytXpNDvktLrxpmuTDPVfMJTjopu+y2A==
   dependencies:
     "@babel/runtime" "^7.20.13"
-    fastq "^1.13.0"
-    fs-extra "^11.1.0"
-    gatsby-core-utils "^4.8.0"
-    gatsby-sharp "^1.8.0"
+    fastq "^1.15.0"
+    fs-extra "^11.1.1"
+    gatsby-core-utils "^4.9.0"
+    gatsby-sharp "^1.9.0"
     graphql-compose "^9.0.10"
     import-from "^4.0.0"
-    joi "^17.7.0"
+    joi "^17.9.1"
     mime "^3.0.0"
 
 gatsby-react-router-scroll@^6.8.0:
@@ -5777,6 +5777,14 @@ gatsby-sharp@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/gatsby-sharp/-/gatsby-sharp-1.8.0.tgz#2f8016a560383d06b0dd25f7c0ce61477b922631"
   integrity sha512-68y/KH5Z7aU8EGgATTgZsr7qYnE/M34oPoDDA1seXWx3gvE0yXctuXNrRKGS89M94/aEu2WotKoX3Gjb2JQzVQ==
+  dependencies:
+    "@types/sharp" "^0.31.1"
+    sharp "^0.31.3"
+
+gatsby-sharp@^1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/gatsby-sharp/-/gatsby-sharp-1.9.0.tgz#96f085dba28dcae44f67b99cf503757c63bac1e3"
+  integrity sha512-R5uahYWf1vWZJs97n6DMC+yMByWcDFZiYCkghdS4qvFz4MsbtS/jzU8qz/mcgwxQW3G10VlFa2XuxTsKGYdzzQ==
   dependencies:
     "@types/sharp" "^0.31.1"
     sharp "^0.31.3"
@@ -7095,6 +7103,17 @@ joi@^17.7.0:
     "@hapi/topo" "^5.0.0"
     "@sideway/address" "^4.1.3"
     "@sideway/formula" "^3.0.0"
+    "@sideway/pinpoint" "^2.0.0"
+
+joi@^17.9.1:
+  version "17.9.2"
+  resolved "https://registry.yarnpkg.com/joi/-/joi-17.9.2.tgz#8b2e4724188369f55451aebd1d0b1d9482470690"
+  integrity sha512-Itk/r+V4Dx0V3c7RLFdRh12IOjySm2/WGPMubBT92cQvRfYZhPM2W0hZlctjj72iES8jsRCwp7S/cRmWBnJ4nw==
+  dependencies:
+    "@hapi/hoek" "^9.0.0"
+    "@hapi/topo" "^5.0.0"
+    "@sideway/address" "^4.1.3"
+    "@sideway/formula" "^3.0.1"
     "@sideway/pinpoint" "^2.0.0"
 
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
