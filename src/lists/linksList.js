@@ -17,9 +17,14 @@ const linksList = [
     thumb: "michalcodes_logo.png",
   },
   {
-    name: "Career path mentoring with me",
+    name: "Career path mentoring",
     url: "https://app.zencal.io/u/michalslepko/lets-talk-about-your-future",
     thumb: "michalcodes.jpg",
+  },
+  {
+    name: "DevHero - Heroic Devs Apparel (10% off using 'MICHALCODES10')",
+    url: "https://devhero.shop/?rfsn=7360302.801ce4",
+    thumb: "devhero.png",
   },
   {
     name: "Sunsama - The daily planner - 30 days free",
