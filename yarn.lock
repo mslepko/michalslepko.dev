@@ -5706,10 +5706,10 @@ gatsby-plugin-sharp@^5.8.1:
     semver "^7.3.8"
     sharp "^0.31.3"
 
-gatsby-plugin-sitemap@^6.8.0:
-  version "6.8.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sitemap/-/gatsby-plugin-sitemap-6.8.0.tgz#af45e25cac18797389a9a7c1ca8f0964a927fbc6"
-  integrity sha512-V+WR0L5dr6HWmsABTFFVBTw5ZT5e34DWqT7lWFZCJ2EZFk6b0UYd3c0IF5NtrdDK7kYYqybxituZGzjyehkYqQ==
+gatsby-plugin-sitemap@^6.9.0:
+  version "6.9.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sitemap/-/gatsby-plugin-sitemap-6.9.0.tgz#8c3f253f1a697cf2b0ff7293a7bd77f9a87d7fb2"
+  integrity sha512-h4QQlDtYKD/gHA4Ykur0DgmEyLshqmf1jSdcgM7t7O8gkFUXkdIkhy/8RCwO4eIRDdRHycxPT7q8SL/RJPidww==
   dependencies:
     "@babel/runtime" "^7.20.13"
     common-tags "^1.8.2"
