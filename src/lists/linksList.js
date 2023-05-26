@@ -6,20 +6,24 @@ const linksList = [
     type: "tools",
   },
   {
-    name: "Your next SaaS starter template",
-    url: "https://supastarter.dev/?aff=WyGy7",
-    thumb: "supastarter.jpeg",
-    featured: true,
-  },  
-  {
     name: "My setup",
     url: "https://kit.co/michal.codes",
     thumb: "michalcodes_logo.png",
   },
   {
-    name: "Career path mentoring",
-    url: "https://app.zencal.io/u/michalslepko/lets-talk-about-your-future",
+    name: "Let's collaborate",
+    url: "https://www.passionfroot.me/michal.codes",
+  },
+  {
+    name: "1-1 consultations",
+    url: "https://cal.com/michalslepko/1-1-consultations",
     thumb: "michalcodes.jpg",
+  },
+  {
+    name: "Your next SaaS starter template",
+    url: "https://supastarter.dev/?aff=WyGy7",
+    thumb: "supastarter.jpeg",
+    featured: true,
   },
   {
     name: "DevHero - Heroic Devs Apparel (10% off using 'MICHALCODES10')",
@@ -27,8 +31,19 @@ const linksList = [
     thumb: "devhero.png",
   },
   {
+    name: "EdrawMax AI - The Intelligent Choice for Diagramming",
+    url: "https://bit.ly/3Mqn601",
+    thumb: "EdrawMax.png",
+    type: "tools",
+  }, 
+  {
+    name: "My backpack - The Menos Backpack - Black",
+    url: "https://wearemenos.com/michal",
+    thumb: "wearemenos.png",
+  },
+  {
     name: "Sunsama - The daily planner - 30 days free",
-    url: "https://try.sunsama.com/fsyygeo11ucv",
+    url: "https://try.sunsama.com/michal_codes",
     thumb: "sunsama.png",
     type: "tools",
   },
