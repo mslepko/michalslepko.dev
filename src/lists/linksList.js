@@ -22,7 +22,7 @@ const linksList = [
   {
     name: "Dark Mode FTW Wallpaper Pack",
     url: "https://store.michalslepko.dev",
-    thumb: "dark_mode_ftw.png",
+    thumb: "dark_mode_ftw.jpg",
     featured: true,
   },
   {
