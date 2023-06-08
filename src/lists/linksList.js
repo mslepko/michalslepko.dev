@@ -20,10 +20,16 @@ const linksList = [
     thumb: "michalcodes.jpg",
   },
   {
+    name: "Dark Mode FTW Wallpaper Pack",
+    url: "https://store.michalslepko.dev",
+    thumb: "dark_mode_ftw.jpg",
+    featured: true,
+  },
+  {
     name: "Your next SaaS starter template",
     url: "https://supastarter.dev/?aff=WyGy7",
     thumb: "supastarter.jpeg",
-    featured: true,
+    type: "tools",
   },
   {
     name: "DevHero - Heroic Devs Apparel (10% off using 'MICHALCODES10')",
