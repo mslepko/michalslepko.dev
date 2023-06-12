@@ -5505,7 +5505,7 @@ gatsby-cli@^5.8.0:
     yoga-layout-prebuilt "^1.10.0"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^4.10.0, gatsby-core-utils@^4.8.0, gatsby-core-utils@^4.9.0:
+gatsby-core-utils@^4.10.0, gatsby-core-utils@^4.8.0:
   version "4.10.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-4.10.0.tgz#affc18e2a64f2e49e50c59ec13c7114c7937ad7d"
   integrity sha512-7wNANRPzxyTsZMnZFyCq1f2D0T6299l1qUew8q8Ax2QJM0kzFY/4uuJaV/fnrC0RdjWnkwGIAiZ1ZnGK4E8HSA==
@@ -5803,20 +5803,20 @@ gatsby-sharp@^1.8.0:
     "@types/sharp" "^0.31.1"
     sharp "^0.31.3"
 
-gatsby-source-filesystem@^5.9.0:
-  version "5.9.0"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-5.9.0.tgz#63c40912df347e1edb341715ffa6596050f06fcb"
-  integrity sha512-1DANeWOzkmAcstduQIjk0rLlijDlvVKwUvMTt/Mwj/HdESh+mQXjM9dlDRF3eZwZ2HJ9jiq5eZvfm8Yj67m1+A==
+gatsby-source-filesystem@^5.10.0:
+  version "5.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-5.10.0.tgz#9b009a42ea1c202c7aa3dbd59d9042c2a6512814"
+  integrity sha512-pTcqFvngUqap4NJfzG9VMmJ4T5TTf/WsMVTVORw18kprXZBchioLu0m5vVb9Tm7/MW7XPXvKJPZQkw+/otmVYw==
   dependencies:
     "@babel/runtime" "^7.20.13"
     chokidar "^3.5.3"
     file-type "^16.5.4"
     fs-extra "^11.1.1"
-    gatsby-core-utils "^4.9.0"
+    gatsby-core-utils "^4.10.0"
     mime "^3.0.0"
     pretty-bytes "^5.6.0"
     valid-url "^1.0.9"
-    xstate "^4.37.1"
+    xstate "^4.37.2"
 
 gatsby-telemetry@^4.10.0, gatsby-telemetry@^4.8.0:
   version "4.10.0"
@@ -11730,10 +11730,10 @@ xmlhttprequest-ssl@~2.0.0:
   resolved "https://registry.yarnpkg.com/xmlhttprequest-ssl/-/xmlhttprequest-ssl-2.0.0.tgz#91360c86b914e67f44dce769180027c0da618c67"
   integrity sha512-QKxVRxiRACQcVuQEYFsI1hhkrMlrXHPegbbd1yn9UHOmRxY+si12nQYzri3vbzt8VdTTRviqcKxcyllFas5z2A==
 
-xstate@^4.35.3, xstate@^4.37.1:
-  version "4.37.1"
-  resolved "https://registry.yarnpkg.com/xstate/-/xstate-4.37.1.tgz#1dd5a8bda179ef6cbb42e0e5fe06c99048a1ce3c"
-  integrity sha512-MuB7s01nV5vG2CzaBg2msXLGz7JuS+x/NBkQuZAwgEYCnWA8iQMiRz2VGxD3pcFjZAOih3fOgDD3kDaFInEx+g==
+xstate@^4.35.3, xstate@^4.37.2:
+  version "4.37.2"
+  resolved "https://registry.yarnpkg.com/xstate/-/xstate-4.37.2.tgz#c5f4c1d8062784238b91e2dfddca05f821cb4eac"
+  integrity sha512-Qm337O49CRTZ3PRyRuK6b+kvI+D3JGxXIZCTul+xEsyFCVkTFDt5jixaL1nBWcUBcaTQ9um/5CRGVItPi7fveg==
 
 xtend@^4.0.0:
   version "4.0.2"
