@@ -129,6 +129,19 @@ module.exports = {
         include: /svgs/
       }
     }
+  },
+  {
+    resolve: `gatsby-source-wordpress`,
+    options: {
+      // the only required plugin option for WordPress is the GraphQL url.
+      url: process.env.WPGRAPHQL_URL,
+      auth: {
+        htaccess: {
+          username: process.env.HTTPBASICAUTH_USERNAME,
+          password: process.env.HTTPBASICAUTH_PASSWORD,
+        }
+      }
+    },
   }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

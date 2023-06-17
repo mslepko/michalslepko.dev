@@ -36,39 +36,77 @@ export const Head = ({ data, children }) => {
   return <Seo title={title} pathname={slug} />
 }
 
-export const query = graphql`
-  query BLOG_POST_BY_SLUG(
+// export const query = graphql`
+//   query BLOG_POST_BY_SLUG(
+//     $id: String!
+//     $previousPostId: String
+//     $nextPostId: String
+//   ) {
+//     mdx(id: { eq: $id }) {
+//       id
+//       fields {
+//         slug
+//       }
+//       frontmatter {
+//         datetime: published
+//         published(formatString: "DD MMMM YYYY")
+//         title
+//         featuredImage {
+//           childImageSharp {
+//             gatsbyImageData
+//           }
+//         }
+//       }
+//     }
+//     previous: mdx(id: { eq: $previousPostId }) {
+//       fields {slug}
+//       frontmatter {
+//         title
+//       }
+//     }
+//     next: mdx(id: { eq: $nextPostId }) {
+//       fields {slug}
+//       frontmatter {
+//         title
+//       }
+//     }
+//   }
+// `
+
+export const pageQuery = graphql`
+  query BlogPostById(
     $id: String!
     $previousPostId: String
     $nextPostId: String
   ) {
-    mdx(id: { eq: $id }) {
+    post: wpPost(id: { eq: $id }) {
       id
-      fields {
-        slug
-      }
-      frontmatter {
-        datetime: published
-        published(formatString: "DD MMMM YYYY")
-        title
-        featuredImage {
-          childImageSharp {
-            gatsbyImageData
+      excerpt
+      content
+      title
+      date(formatString: "MMMM DD, YYYY")
+      featuredImage {
+        node {
+          altText
+          localFile {
+            childImageSharp {
+              gatsbyImageData(
+                quality: 100
+                placeholder: TRACED_SVG
+                layout: FULL_WIDTH
+              )
+            }
           }
         }
       }
     }
-    previous: mdx(id: { eq: $previousPostId }) {
-      fields {slug}
-      frontmatter {
-        title
-      }
+    previous: wpPost(id: { eq: $previousPostId }) {
+      uri
+      title
     }
-    next: mdx(id: { eq: $nextPostId }) {
-      fields {slug}
-      frontmatter {
-        title
-      }
+    next: wpPost(id: { eq: $nextPostId }) {
+      uri
+      title
     }
   }
 `

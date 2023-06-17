@@ -1,8 +1,8 @@
 import { Link } from "gatsby"
 import React, { useRef, useMemo } from "react"
 import PropTypes from "prop-types"
-import Image from "./BlogImage"
-import Pagination from "./Pagination"
+import Image from "../BlogImage"
+import Pagination from "../Pagination"
 
 const chunkList = (list, size) => {
   let length = list.length
