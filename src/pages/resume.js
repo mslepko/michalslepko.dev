@@ -94,9 +94,10 @@ const ResumePage = () => (
         </div>
       </div>
       <StaticImage
-        src="../images/michal.png"
+        src="../images/michalsitting.jpeg"
         className="hidden md:block object-cover w-1/4 h-screen rounded-full ring-2 ring-gray-500/50 ring-offset-[30px]"
         alt="Michal Slepko"
+        quality={100}
       />
       <div className="hidden md:flex flex-col w-1/3 space-y-12 text-right">
         <div className="px-20">
