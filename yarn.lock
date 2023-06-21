@@ -5803,15 +5803,15 @@ gatsby-react-router-scroll@^6.10.0:
     "@babel/runtime" "^7.20.13"
     prop-types "^15.8.1"
 
-gatsby-remark-images@^7.10.0:
-  version "7.10.0"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-7.10.0.tgz#a91d68064db0536da825d512cf36c5d35d9582cd"
-  integrity sha512-Oh2cTlsGn0gDZug8wuW+eiQn3EU0476B/U8ieyE6eiLy0kTybpUbF9Ic8InnIFJfDOB+hCX5Ve9Ao8nj+PnytQ==
+gatsby-remark-images@^7.11.0:
+  version "7.11.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-7.11.0.tgz#1ceb7c689e8851202d07b9984cefa889ffa0a667"
+  integrity sha512-utTisz3j7/h3fnriIY5e6J8p/aAitELblkiNXkUkPlvd4xqHrafgUTOzxSVQqVjPxrVIEvsJIFkVtfoe+U0EFQ==
   dependencies:
     "@babel/runtime" "^7.20.13"
     chalk "^4.1.2"
     cheerio "^1.0.0-rc.10"
-    gatsby-core-utils "^4.10.0"
+    gatsby-core-utils "^4.11.0"
     is-relative-url "^3.0.0"
     lodash "^4.17.21"
     mdast-util-definitions "^4.0.0"
