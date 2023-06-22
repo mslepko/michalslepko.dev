@@ -16,7 +16,7 @@ const ResumePage = () => (
       <div className="flex flex-col items-center justify-center text-center h-screen-half">
         <StaticImage
           src="../images/michalsitting.jpeg"
-          className="md:hidden object-cover w-15 h-40 rounded-full mb-5 ring-2 ring-gray-500/50 ring-offset-[10px]"
+          imgClassName="md:hidden object-cover w-15 h-40 rounded-full mb-5 ring-2 ring-gray-500/50 ring-offset-[10px]"
           alt="Michal Slepko"
           quality={100}
         />
@@ -83,7 +83,7 @@ const ResumePage = () => (
       </div>
       <StaticImage
         src="../images/michalsitting.jpeg"
-        className="hidden md:block object-cover w-1/4 h-screen rounded-full ring-2 ring-gray-500/50 ring-offset-[30px]"
+        imgClassName="hidden md:block object-cover w-1/4 h-screen rounded-full ring-2 ring-gray-500/50 ring-offset-[30px]"
         alt="Michal Slepko"
         quality={100}
       />
