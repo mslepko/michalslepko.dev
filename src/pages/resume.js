@@ -83,7 +83,7 @@ const ResumePage = () => (
           </ul>
         </div>
       </div>
-      <div className="hidden md:block">
+      <div className="hidden md:block w-1/4 h-screen">
         <StaticImage
           src="../images/michalsitting.jpeg"
           className="hidden md:block object-cover w-1/4 h-screen rounded-full ring-2 ring-gray-500/50 ring-offset-[30px]"
