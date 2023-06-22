@@ -58,6 +58,9 @@ code {
   .dark .socials svg {
     @apply fill-lightest;
   }
+  .line-break-anywhere {
+    line-break: anywhere;
+  }
 }
 
 .switch:hover > svg {
