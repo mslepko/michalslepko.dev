@@ -47,11 +47,12 @@ const ResumePage = () => (
         <div className="px-10 md:px-20">
           <br />
           <h3 className="text-xl font-bold">Contact</h3>
-          <p><a className="text-xl hover:text-blue-600" href="mailto:test@nomail.com">michal@rootscope.co.uk</a></p>
+          <p><a className="text-xl hover:text-blue-600 line-break-anywhere" href="mailto:michal@rootscope.co.uk">michal@rootscope.co.uk</a></p>
           <p><a className="text-xl hover:text-blue-600" href="https://cal.com/michalslepko/coffee-chat-with-michal" target="_blank" rel="noopener noreferrer">Let's have a chat</a></p>
+          <p><a className="text-xl hover:text-blue-600" href="https://drive.google.com/file/d/1e8O9QjakgEkUmpQDnEHCVuda2u0kQ7gZ/view?usp=sharing" target="_blank" rel="noopener noreferrer">My CV in PDF</a></p>
         </div>
         <div className="px-10 md:px-20">
-          <ul className="flex flex-col md:flex-row items-end md:items-center md:space-x-4 space-y-4 md:space-y-0">
+          <ul className="flex flex-row items-end gap-2 md:items-center md:space-x-4 space-y-4 md:space-y-0 justify-between">
             <li>
               <a href="https://www.instagram.com/michal.codes/" target="_blank" aria-label="Instagram"
                 className="hover:text-blue-600 socials" rel="noopener noreferrer">
@@ -110,7 +111,7 @@ const ResumePage = () => (
       </div>
     </section>
     <hr className="border-darkest mx-44 dark:border-lightest" />
-    <section className="px-20 mt-10">
+    <section className="px-10 md:px-20 mt-10">
       <h4 className="mb-8 text-3xl font-bold text-center md:text-left">Experience</h4>
       <div className="grid grid-cols-1 md:grid-cols-6 my-10">
         <div className="flex flex-col col-span-2 mb-4 md:mb-0">
@@ -263,7 +264,7 @@ const ResumePage = () => (
       </div>
     </section>
     <hr className="border-darkest mx-44 dark:border-lightest" />
-    <section className="px-20 mt-10">
+    <section className="px-10 md:px-20 mt-10">
       <h4 className="mb-8 text-3xl font-bold text-center md:text-left">Education</h4>
       <div className="grid grid-cols-1 md:grid-cols-6 my-10">
         <div className="flex flex-col col-span-2 mb-4 md:mb-0">
