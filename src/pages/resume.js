@@ -14,12 +14,14 @@ const ResumePage = () => (
     </div>
     <section className="flex flex-col items-center justify-center h-screen px-8">
       <div className="flex flex-col items-center justify-center text-center h-screen-half">
-        <StaticImage
-          src="../images/michalsitting.jpeg"
-          className="md:hidden object-cover w-15 h-40 rounded-full mb-5 ring-2 ring-gray-500/50 ring-offset-[10px]"
-          alt="Michal Slepko"
-          quality={100}
-        />
+        <div className="md:hidden">
+          <StaticImage
+            src="../images/michalsitting.jpeg"
+            className="md:hidden object-cover w-15 h-40 rounded-full mb-5 ring-2 ring-gray-500/50 ring-offset-[10px]"
+            alt="Michal Slepko"
+            quality={100}
+          />
+          </div>
         <h1 className="text-5xl sm:text-6xl lg:text-9xl">Michal Slepko</h1>
         <h2 className="font-light text-4xl sm:text-5xl lg:text-8xl">Senior web developer</h2>
       </div>
@@ -81,12 +83,14 @@ const ResumePage = () => (
           </ul>
         </div>
       </div>
-      <StaticImage
-        src="../images/michalsitting.jpeg"
-        className="hidden md:block object-cover w-1/4 h-screen rounded-full ring-2 ring-gray-500/50 ring-offset-[30px]"
-        alt="Michal Slepko"
-        quality={100}
-      />
+      <div className="hidden md:block w-1/4 h-screen">
+        <StaticImage
+          src="../images/michalsitting.jpeg"
+          className="hidden md:block object-cover w-1/4 h-screen rounded-full ring-2 ring-gray-500/50 ring-offset-[30px]"
+          alt="Michal Slepko"
+          quality={100}
+        />
+      </div>
       <div className="hidden md:flex flex-col w-1/3 space-y-12 text-right">
         <div className="px-20">
           <h4 className="text-xl font-bold">Full-stack developer (mainly PHP, JS)</h4>
