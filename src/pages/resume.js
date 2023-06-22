@@ -15,9 +15,10 @@ const ResumePage = () => (
     <section className="flex flex-col items-center justify-center h-screen px-8">
       <div className="flex flex-col items-center justify-center text-center h-screen-half">
         <StaticImage
-          src="../images/michal.png"
+          src="../images/michalsitting.jpeg"
           className="md:hidden object-cover w-15 h-40 rounded-full mb-5 ring-2 ring-gray-500/50 ring-offset-[10px]"
           alt="Michal Slepko"
+          quality={100}
         />
         <h1 className="text-5xl sm:text-6xl lg:text-9xl">Michal Slepko</h1>
         <h2 className="font-light text-4xl sm:text-5xl lg:text-8xl">Senior web developer</h2>
