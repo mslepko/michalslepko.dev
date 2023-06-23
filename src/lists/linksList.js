@@ -32,6 +32,11 @@ const linksList = [
     type: "tools",
   },
   {
+    name: "Practical 4-Port USB Hub 5Gbps",
+    url: "https://amzn.to/3NxgtuE",
+    thumb: "setmspace.png",
+  },
+  {
     name: "DevHero - Heroic Devs Apparel (10% off using 'MICHALCODES10')",
     url: "https://devhero.shop/?rfsn=7360302.801ce4",
     thumb: "devhero.png",
