@@ -11,6 +11,11 @@ const linksList = [
     thumb: "michalcodes_logo.png",
   },
   {
+    name: "WordPress Maintenance Plans",
+    url: "https://wordpress.rootscope.dev/",
+    thumb: "wordpress.png",
+  },
+  {
     name: "Let's collaborate",
     url: "https://www.passionfroot.me/michal.codes",
   },
