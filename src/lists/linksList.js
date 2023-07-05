@@ -13,7 +13,7 @@ const linksList = [
   {
     name: "Waterdrop 200-Gallon Long-Life Lucid 10-Cup Water Filter",
     url: "https://bit.ly/3CmpujU",
-    thumb: "waterdrop.jpeg",
+    thumb: "waterdrop.png",
     type: 'essentials',
   },
   {
