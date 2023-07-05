@@ -5622,10 +5622,10 @@ gatsby-parcel-config@^1.11.0:
     "@parcel/transformer-js" "2.8.3"
     "@parcel/transformer-json" "2.8.3"
 
-gatsby-plugin-canonical-urls@^5.10.0:
-  version "5.10.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-canonical-urls/-/gatsby-plugin-canonical-urls-5.10.0.tgz#085c25a5f7a619567c0f6086bc7eb13768de3204"
-  integrity sha512-klB5EGv82tIXSQ11pu8fPJ5orzYYQAR9Lh6fsa6P1PNRFu8vYy87cK7DDZF48YtLaj+ggTWXk3SxU3nJp7IjYA==
+gatsby-plugin-canonical-urls@^5.11.0:
+  version "5.11.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-canonical-urls/-/gatsby-plugin-canonical-urls-5.11.0.tgz#09494785423f7d1290744df97113a0889e3abbab"
+  integrity sha512-UU0f/FDUKSoDrsycSm7vS2uPQRcUVwNlttDX75D6DLEIMWM7EGJUkmqv+OEPcMRgsNCJjLkJswnnUISQtj6idQ==
   dependencies:
     "@babel/runtime" "^7.20.13"
 
@@ -5662,15 +5662,15 @@ gatsby-plugin-image@^3.10.0:
     objectFitPolyfill "^2.3.5"
     prop-types "^15.8.1"
 
-gatsby-plugin-manifest@^5.10.0:
-  version "5.10.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-5.10.0.tgz#27e479ac82b5c776e849155c0d62cc23d6947b5b"
-  integrity sha512-y3TUARyNaK29oD/8ZJOVvLVRvSvfKNjLHmNc0D6KPJRQld7T+ZKCZh4ylwN+Hor8vHnXKHyVoBZd+BIEjTBVAg==
+gatsby-plugin-manifest@^5.11.0:
+  version "5.11.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-5.11.0.tgz#5c47e2752725d8b5f40c4e2b43928eb1e6a33ba1"
+  integrity sha512-f1ViusTLF3K4fNvn1vIKZwUeP1Bl9ercrhQBe7rBnu9Cl7EWYskH0MSXJfxev29kD7Ag+FTvC2MPObDvi3LFhw==
   dependencies:
     "@babel/runtime" "^7.20.13"
-    gatsby-core-utils "^4.10.0"
-    gatsby-plugin-utils "^4.10.0"
-    semver "^7.5.0"
+    gatsby-core-utils "^4.11.0"
+    gatsby-plugin-utils "^4.11.0"
+    semver "^7.5.1"
     sharp "^0.32.1"
 
 gatsby-plugin-mdx@^5.11.0:
