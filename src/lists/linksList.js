@@ -46,6 +46,7 @@ const linksList = [
     name: "Practical 4-Port USB Hub 5Gbps",
     url: "https://amzn.to/3NxgtuE",
     thumb: "setmspace.png",
+    type: 'essentials',
   },
   {
     name: "DevHero - Heroic Devs Apparel (10% off using 'MICHALCODES10')",
@@ -62,6 +63,7 @@ const linksList = [
     name: "My backpack - The Menos Backpack - Black",
     url: "https://wearemenos.com/michal",
     thumb: "wearemenos.png",
+    type: 'essentials',
   },
   {
     name: "Sunsama - The daily planner - 30 days free",
