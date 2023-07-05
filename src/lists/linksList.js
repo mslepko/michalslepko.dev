@@ -11,6 +11,12 @@ const linksList = [
     thumb: "michalcodes_logo.png",
   },
   {
+    name: "Waterdrop 200-Gallon Long-Life Lucid 10-Cup Water Filter",
+    url: "https://bit.ly/3CmpujU",
+    thumb: "waterdrop.jpeg",
+    type: 'essentials',
+  },
+  {
     name: "WordPress Maintenance Plans",
     url: "https://wordpress.rootscope.dev/",
     thumb: "wordpress.png",

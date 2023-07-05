@@ -38,8 +38,9 @@ const MyLinks = () => {
   
   const linksGroup = [
     {name: 'tools', order: 1},
-    {name: 'brands', order: 2},
-    {name: 'servers', order: 3},
+    {name: 'essentials', order: 2},
+    {name: 'brands', order: 3},
+    {name: 'servers', order: 4},
   ]
   
   linksGroup.forEach(link => {
