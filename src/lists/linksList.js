@@ -11,6 +11,12 @@ const linksList = [
     thumb: "michalcodes_logo.png",
   },
   {
+    name: "Waterdrop 200-Gallon Long-Life Lucid 10-Cup Water Filter",
+    url: "https://bit.ly/3CmpujU",
+    thumb: "waterdrop.png",
+    type: 'essentials',
+  },
+  {
     name: "WordPress Maintenance Plans",
     url: "https://wordpress.rootscope.dev/",
     thumb: "wordpress.png",
@@ -40,6 +46,7 @@ const linksList = [
     name: "Practical 4-Port USB Hub 5Gbps",
     url: "https://amzn.to/3NxgtuE",
     thumb: "setmspace.png",
+    type: 'essentials',
   },
   {
     name: "DevHero - Heroic Devs Apparel (10% off using 'MICHALCODES10')",
@@ -56,6 +63,7 @@ const linksList = [
     name: "My backpack - The Menos Backpack - Black",
     url: "https://wearemenos.com/michal",
     thumb: "wearemenos.png",
+    type: 'essentials',
   },
   {
     name: "Sunsama - The daily planner - 30 days free",
