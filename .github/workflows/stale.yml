@@ -21,7 +21,7 @@ jobs:
     - uses: actions/stale@v5
       with:
         repo-token: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
-        stale-issue-message: 'Stale issue message'
-        stale-pr-message: 'Stale pull request message'
+        stale-issue-message: 'This issues has not been upodated for 60 days, are you planning to work on it?'
+        stale-pr-message: 'This pull request has not been updated for 60 days, it might be better to close is and reopen when you have more time to work on it.'
         stale-issue-label: 'no-issue-activity'
         stale-pr-label: 'no-pr-activity'
