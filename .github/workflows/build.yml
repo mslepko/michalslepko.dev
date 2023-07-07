@@ -5,24 +5,22 @@ on:
     branches:
       - main
 
-env: 
-  NODE_VERSION: 19
-
 jobs: 
   build:
     name: Build 
     runs-on: ubuntu-latest
     steps: 
-      - name: Install NodeJS
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-
       - name: Code Checkout
         uses: actions/checkout@v3
+        
+      - name: Install NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'yarn'
 
       - name: Install Dependencies
         run: yarn install
 
-      - name: Code Linting
+      - name: Yarn build
         run: yarn build
