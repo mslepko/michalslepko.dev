@@ -16,7 +16,7 @@ export default function Work() {
         <article className="content">
           {/* Project 1 */}
 
-          <Project
+      <Project
             image={Project1Image}
             title="NotiTasks"
             description="Managing Notion Tasks Made easy. A side project to help me manage my tasks. 
