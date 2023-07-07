@@ -2,3 +2,10 @@
 package.json
 package-lock.json
 public
+.github
+gatsby-config.js
+gatsby-node.js
+gatsby-browser.js
+gatsby-ssr.js
+tailwind.config.js
+postcss.config.js
