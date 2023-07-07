@@ -1,8 +1,7 @@
 import * as React from "react"
 import GroupLink from "../cards/GroupLink"
 
-
-const GroupLinks = ({name, links, thumbnails}) => {
+const GroupLinks = ({ name, links, thumbnails }) => {
   let linksList = []
   for (let link of links) {
     let thumbnail = thumbnails[link.thumb]
@@ -15,9 +14,7 @@ const GroupLinks = ({name, links, thumbnails}) => {
         <h1 className="text-2xl sm:text-3xl font-bold text-darkest dark:text-lightest tracking-tight pt-10 capitalize mb-4">
           {name}
         </h1>
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
-          {linksList}
-        </div>
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">{linksList}</div>
       </div>
     </div>
   )

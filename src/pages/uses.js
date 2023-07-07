@@ -28,7 +28,12 @@ const UsesPage = () => (
           I hope this page will be useful for you.
         </p>
         <p>
-          <a className="text-darkest dark:text-lightest pb-1 text-xl" href="https://www.amazon.co.uk/shop/michal.codes">My Amazon store</a>
+          <a
+            className="text-darkest dark:text-lightest pb-1 text-xl"
+            href="https://www.amazon.co.uk/shop/michal.codes"
+          >
+            My Amazon store
+          </a>
         </p>
       </div>
       <a
