@@ -13,16 +13,23 @@ jobs:
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v3
-        with: 
-          # Make sure the actual branch is checked out when running on pull requests
-          ref: ${{ github.head_ref }}
-          # This is important to fetch the changes to the previous commit
-          fetch-depth: 0
 
-      - name: Prettify code
-        uses: creyD/prettier_action@v4.3
+      - name: Install NodeJS
+        uses: actions/setup-node@v3
         with:
-          # This part is also where you can pass other options, for example:
-          prettier_options: --write **/*.{js,jsx,ts,tsx,json,md,css}
-          only_changed: True
-          github_token: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
+          node-version-file: '.nvmrc'
+          cache: 'yarn'
+
+      # ESLint and Prettier must be in `package.json`
+      - name: Install Node.js dependencies
+        run: yarn install
+        
+      # ESLint and Prettier must be in `package.json`
+      - name: Run prettier
+        run: yarn format
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Apply formatting changes
+          branch: ${{ github.head_ref }}
