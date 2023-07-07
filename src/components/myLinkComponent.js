@@ -2,15 +2,15 @@ import * as React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 function Thumbnail({ image, alt }) {
-  if (!image) return;
-  
+  if (!image) return
+
   if (typeof image === "string") {
-    return <img src={image} className="w-8 h-8" alt={alt} />;
+    return <img src={image} className="w-8 h-8" alt={alt} />
   } else if (typeof image === "function") {
-    return image();
+    return image()
   }
-  
-  return <GatsbyImage image={image} alt={alt} className="mr-4" />;
+
+  return <GatsbyImage image={image} alt={alt} className="mr-4" />
 }
 
 function MyLink({ link, thumb, followers }) {
@@ -23,7 +23,8 @@ function MyLink({ link, thumb, followers }) {
     classes += " justify-between"
   }
 
-  let thumbClass = (hasFollowers ? "" : "w-full md:w-1/5 ") + "text-center thumbnail"
+  let thumbClass =
+    (hasFollowers ? "" : "w-full md:w-1/5 ") + "text-center thumbnail"
 
   return (
     <a className={classes} href={link.url} target="_blank" rel="noreferrer">

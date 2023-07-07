@@ -49,7 +49,8 @@ module.exports = {
       fontFamily: {
         display: ["Helvetica", "sans-serif"],
         body: ["Helvetica", "sans-serif"],
-      },spacing: {
+      },
+      spacing: {
         98: "24.5rem",
         100: "25rem",
         102: "25.5rem",

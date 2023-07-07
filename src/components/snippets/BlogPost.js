@@ -31,7 +31,7 @@ export default BlogPost
 export const Head = ({ data, children }) => {
   const {
     frontmatter: { title },
-    fields: { slug }
+    fields: { slug },
   } = data.mdx
   return <Seo title={title} pathname={slug} />
 }
@@ -59,13 +59,17 @@ export const query = graphql`
       }
     }
     previous: mdx(id: { eq: $previousPostId }) {
-      fields {slug}
+      fields {
+        slug
+      }
       frontmatter {
         title
       }
     }
     next: mdx(id: { eq: $nextPostId }) {
-      fields {slug}
+      fields {
+        slug
+      }
       frontmatter {
         title
       }

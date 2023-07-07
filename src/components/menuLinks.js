@@ -6,7 +6,7 @@ const MenuLinks = ({ classes, hideHome, linkClasses }) => {
     "/": "Home",
     "/uses/": "Uses",
     "/links/": "Links",
-    "/resume/": 'My CV',
+    "/resume/": "My CV",
     "/contact/": "Contact me",
     "/snippets/": "My snippets",
   }
