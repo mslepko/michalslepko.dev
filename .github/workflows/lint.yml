@@ -4,8 +4,6 @@ on:
   pull_request:
     branches:
       - main
-env: 
-  NODE_VERSION: 19
   
 jobs:
   run-linters:
@@ -19,7 +17,7 @@ jobs:
       - name: Install NodeJS
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ env.NODE_VERSION }}
+          node-version-file: '.nvmrc'
           cache: 'yarn'
 
       # ESLint and Prettier must be in `package.json`
