@@ -13,18 +13,16 @@ jobs:
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v3
+        with: 
+          # Make sure the actual branch is checked out when running on pull requests
+          ref: ${{ github.head_ref }}
+          # This is important to fetch the changes to the previous commit
+          fetch-depth: 0
 
-      - name: Install NodeJS
-        uses: actions/setup-node@v3
+      - name: Prettify code
+        uses: creyD/prettier_action@v4.3
         with:
-          node-version-file: '.nvmrc'
-          cache: 'yarn'
-
-      # ESLint and Prettier must be in `package.json`
-      - name: Install Node.js dependencies
-        run: yarn install
-
-      - name: Run linters
-        uses: wearerequired/lint-action@v2.3.0
-        with:
-          prettier: true
+          # This part is also where you can pass other options, for example:
+          prettier_options: --write **/*.{js,md}
+          only_changed: True
+          github_token: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
