@@ -23,6 +23,6 @@ jobs:
         uses: creyD/prettier_action@v4.3
         with:
           # This part is also where you can pass other options, for example:
-          prettier_options: --write "**/*.{js,jsx,ts,tsx,json,md,css}"
+          prettier_options: --write **/*.{js,jsx,ts,tsx,json,md,css}
           only_changed: True
           github_token: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
