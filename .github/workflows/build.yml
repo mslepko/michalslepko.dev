@@ -14,9 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: Install NodeJS
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
+          cache: 'yarn'
 
       - name: Code Checkout
         uses: actions/checkout@v3
@@ -24,5 +25,5 @@ jobs:
       - name: Install Dependencies
         run: yarn install
 
-      - name: Code Linting
+      - name: Yarn build
         run: yarn build
