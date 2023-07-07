@@ -1,6 +1,6 @@
-import React from "react";
-import SectionTitle from "../layout/SectionTitle";
-import ContactForm from "../forms/ContactForm";
+import React from "react"
+import SectionTitle from "../layout/SectionTitle"
+import ContactForm from "../forms/ContactForm"
 
 export default function Contact() {
   return (
@@ -18,5 +18,5 @@ export default function Contact() {
         <ContactForm />
       </article>
     </section>
-  );
+  )
 }

@@ -35,7 +35,7 @@ const ContactForm = () => {
         console.log(error)
       })
   }
-  
+
   return (
     <div className="flex flex-col w-full lg:w-1/2">
       {formSubmitted && (
@@ -100,7 +100,7 @@ const ContactForm = () => {
         </button>
       </form>
     </div>
-  );
+  )
 }
 
-export default ContactForm;
+export default ContactForm

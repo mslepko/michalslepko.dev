@@ -1,7 +1,7 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import linksList from "../../lists/linksList"
-import FeaturedLink from '../cards/FeaturedLink'
+import FeaturedLink from "../cards/FeaturedLink"
 
 const MyLinks = () => {
   let showFeaturedLinks = false
@@ -34,12 +34,14 @@ const MyLinks = () => {
   )
 
   let featured = []
-  const featuredLinks = linksList.filter(link => link.featured);
-  
+  const featuredLinks = linksList.filter(link => link.featured)
+
   if (featuredLinks.length > 0) {
     for (let link of featuredLinks) {
       let thumbnail = thumbnails[link.thumb]
-      featured.push(<FeaturedLink link={link} thumb={thumbnail} key={link.name} />)
+      featured.push(
+        <FeaturedLink link={link} thumb={thumbnail} key={link.name} />
+      )
     }
     showFeaturedLinks = true
   }
