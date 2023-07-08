@@ -1,0 +1,26 @@
+name: Build
+
+on: 
+  pull_request: # on a pull request to each of these branches
+    branches:
+      - main
+
+jobs: 
+  build:
+    name: Build 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Code Checkout
+        uses: actions/checkout@v3
+        
+      - name: Install NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'yarn'
+
+      - name: Install Dependencies
+        run: yarn install
+
+      - name: Yarn build
+        run: yarn build

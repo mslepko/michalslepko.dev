@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 export default function SectionTitle({ title, subtitle }) {
   return (
@@ -6,5 +6,5 @@ export default function SectionTitle({ title, subtitle }) {
       <p className="section-subtitle">{subtitle}</p>
       <h2 className="section-title">{title}</h2>
     </>
-  );
+  )
 }

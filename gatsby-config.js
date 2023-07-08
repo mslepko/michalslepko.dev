@@ -60,9 +60,9 @@ module.exports = {
       },
     },
     {
-    resolve: "gatsby-plugin-sitemap",
-    options: {
-      query: `
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        query: `
       {
         site {
           siteMetadata {
@@ -90,47 +90,56 @@ module.exports = {
         }
       }
     `,
-    resolveSiteUrl: ({ site: { siteMetadata: { siteUrl } } }) => siteUrl,
-    resolvePages: ({ allMdx: { nodes: snippets } }) => {
-
-      const posts = snippets.map(snippet => {
-        return {
-          path: snippet.fields.slug,
-          lastmod: snippet.frontmatter.published,
-        }
-      })
-      const staticPages = ['/', '/links/', '/uses/', '/snippets/', '/contact/']
-      const pages = staticPages.map(page => {
-        return {
-          path: page,
-          lastmod: posts[0].lastmod,
-        }
-      })
-      return [...posts, ...pages]
+        resolveSiteUrl: ({
+          site: {
+            siteMetadata: { siteUrl },
+          },
+        }) => siteUrl,
+        resolvePages: ({ allMdx: { nodes: snippets } }) => {
+          const posts = snippets.map(snippet => {
+            return {
+              path: snippet.fields.slug,
+              lastmod: snippet.frontmatter.published,
+            }
+          })
+          const staticPages = [
+            "/",
+            "/links/",
+            "/uses/",
+            "/snippets/",
+            "/contact/",
+          ]
+          const pages = staticPages.map(page => {
+            return {
+              path: page,
+              lastmod: posts[0].lastmod,
+            }
+          })
+          return [...posts, ...pages]
+        },
+        serialize: ({ path, lastmod }) => {
+          return {
+            url: path,
+            lastmod,
+          }
+        },
+      },
     },
-    serialize: ({ path, lastmod}) => {
-      return {
-        url: path,
-        lastmod,
-      }
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://michalslepko.dev`,
+      },
     },
-  },
-  },
-  {
-    resolve: `gatsby-plugin-canonical-urls`,
-    options: {
-      siteUrl: `https://michalslepko.dev`,
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /svgs/,
+        },
+      },
     },
-  },
-  {
-    resolve: 'gatsby-plugin-react-svg',
-    options: {
-      rule: {
-        include: /svgs/
-      }
-    }
-  },
-  {
+    {
     resolve: `gatsby-source-wordpress`,
     options: {
       // the only required plugin option for WordPress is the GraphQL url.

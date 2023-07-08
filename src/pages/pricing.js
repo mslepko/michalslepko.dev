@@ -21,7 +21,10 @@ const UsesPage = () => (
         </p>
         <p className="text-darkest dark:text-lightest pb-1 text-xl">
           If you are interested or have questions please email me at{" "}
-          <a href="mailto:michal@rootscope.co.uk" className="text-brand hover:text-darkest dark:text-brand dark:hover:text-white">
+          <a
+            href="mailto:michal@rootscope.co.uk"
+            className="text-brand hover:text-darkest dark:text-brand dark:hover:text-white"
+          >
             michal@rootscope.co.uk
           </a>
         </p>
@@ -56,9 +59,7 @@ const UsesPage = () => (
           <ul className="pricing text-darkest bg-white rounded-lg shadow-md md:flex-row max-w-xl m-auto mt-8">
             <li className="py-2 px-4 w-full rounded-t-lg border-b border-gray-200 transition-all duration-500 hover:bg-mint">
               <p className="font-bold">Link in bio - 99 USD/week</p>
-              <p className="text-left">
-                Link in my bio to your brand/product.
-              </p>
+              <p className="text-left">Link in my bio to your brand/product.</p>
             </li>
             <li className="py-2 px-4 w-full rounded-t-lg border-b border-gray-200 transition-all duration-500 hover:bg-mint">
               <p className="font-bold">1 story - 199 USD</p>
@@ -92,13 +93,14 @@ const UsesPage = () => (
               </p>
               <p className="text-left">
                 {" "}
-                - Other posts (minimum 2) and reels
-                (minimum 2) related to my normal content will have
-                your product/brand mentioned in the caption.
+                - Other posts (minimum 2) and reels (minimum 2) related to my
+                normal content will have your product/brand mentioned in the
+                caption.
               </p>
               <p className="text-left">
                 {" "}
-                - A link to a dedicated page for your brand/product in my bio for the entire duration.
+                - A link to a dedicated page for your brand/product in my bio
+                for the entire duration.
               </p>
               <p className="text-left">
                 {" "}
@@ -107,7 +109,9 @@ const UsesPage = () => (
               </p>
             </li>
           </ul>
-          <p className="text-base text-darkest dark:text-lightest">*All Reels are posted on TikTok and YT Shorts.</p>
+          <p className="text-base text-darkest dark:text-lightest">
+            *All Reels are posted on TikTok and YT Shorts.
+          </p>
         </div>
       </div>
       <h3 className="text-center text-xl sm:text-1xl font-bold text-darkest dark:text-lightest tracking-tight  pt-14">
@@ -137,5 +141,9 @@ const UsesPage = () => (
 export default UsesPage
 
 export const Head = () => (
-  <Seo title="Partnerships pricing" robots="nofollow, noindex" pathname="/pricing"/>
+  <Seo
+    title="Partnerships pricing"
+    robots="nofollow, noindex"
+    pathname="/pricing"
+  />
 )

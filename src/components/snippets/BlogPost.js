@@ -31,7 +31,7 @@ export default BlogPost
 export const Head = ({ data, children }) => {
   const {
     frontmatter: { title },
-    fields: { slug }
+    fields: { slug },
   } = data.mdx
   return <Seo title={title} pathname={slug} />
 }

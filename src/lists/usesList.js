@@ -14,8 +14,7 @@ usesList["my_work_setup"] = {
       "https://www.amazon.co.uk/dp/B07BVXGBHT?tag=onamzrootscop-21&linkCode=ssc&creativeASIN=B07BVXGBHT&asc_item-id=amzn1.ideas.1VQNJPFZ7TCCD",
   },
   "Ergonomic Chair Sihoo M57": {
-    "Sihoo*":
-      "http://shrsl.com/3vpss",
+    "Sihoo*": "http://shrsl.com/3vpss",
   },
   "Leather Desk Mat (XL) Harber London": {
     "Harber London*":
@@ -50,10 +49,10 @@ usesList["my_work_setup"] = {
   'Notera Desktop whiteboard "Original Wedge" (5% off)': {
     Notera: "https://shopnotera.com/discount/MICHALCODES5",
   },
-  'Webcam - Poly Studio P5': {
+  "Webcam - Poly Studio P5": {
     Poly: "https://www.poly.com/gb/en/shop/buy/studio-p5",
   },
-  'Headset - Poly Voyager 4220': {},
+  "Headset - Poly Voyager 4220": {},
 }
 
 usesList["streamingSetup"] = {

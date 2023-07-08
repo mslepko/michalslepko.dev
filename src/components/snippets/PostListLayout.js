@@ -48,7 +48,7 @@ const PostListLayout = ({ data }) => {
               {frontmatter?.date}
             </time>
             <h3 className="text-xl text-black font-semibold m-0">
-                {frontmatter?.title}
+              {frontmatter?.title}
             </h3>
           </header>
         </section>

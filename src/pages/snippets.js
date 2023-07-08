@@ -18,4 +18,4 @@ const SnippetsPage = () => {
 
 export default SnippetsPage
 
-export const Head = () => <Seo title="My Snippets" pathname="/snippets"/>
+export const Head = () => <Seo title="My Snippets" pathname="/snippets" />

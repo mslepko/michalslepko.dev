@@ -1,17 +1,16 @@
 const path = require(`path`)
 
 exports.createPages = async gatsbyUtilities => {
-  // Query our posts from the GraphQL server
-  const posts = await getPosts(gatsbyUtilities)
-
-  // If there are no posts in WordPress, don't do anything
-  if (!posts.length) {
-    return
-  }
-  // If there are posts, create pages for them
-  await createBlogPostPages({ posts, gatsbyUtilities })
+    // Query our posts from the GraphQL server
+    const posts = await getPosts(gatsbyUtilities)
+    // If there are no posts in WordPress, don't do anything
+    if (!posts.length) {
+      return;
+    }
+    // If there are posts, create pages for them
+    await createBlogPostPages({ posts, gatsbyUtilities })
   
-  await createBlogPostArchive({ posts, gatsbyUtilities })
+    await createBlogPostArchive({ posts, gatsbyUtilities })
 }
 
 async function createBlogPostArchive({ posts, gatsbyUtilities }) {
