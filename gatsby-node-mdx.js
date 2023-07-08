@@ -21,10 +21,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const result = await graphql(
     `
       {
-        allMdx(
-          sort: { frontmatter: { published: DESC } }
-          limit: 1000
-        ) {
+        allMdx(sort: { frontmatter: { published: DESC } }, limit: 1000) {
           nodes {
             id
             fields {

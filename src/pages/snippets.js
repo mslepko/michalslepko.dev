@@ -10,7 +10,7 @@ const SnippetsPage = () => {
         <h1 className="text-center text-2xl sm:text-3xl font-bold text-darkest dark:text-lightest tracking-tight pt-10">
           My Snippets
         </h1>
-        <PostListLayout/>
+        <PostListLayout />
       </div>
     </Layout>
   )
