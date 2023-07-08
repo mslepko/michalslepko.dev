@@ -1,4 +1,5 @@
 const path = require(`path`)
+const chunk = require(`lodash/chunk`)
 
 exports.createPages = async gatsbyUtilities => {
     // Query our posts from the GraphQL server
