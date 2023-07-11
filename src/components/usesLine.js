@@ -54,7 +54,7 @@ const UsesLine = ({ type, addClasses }) => {
               key={link.name}
               thumb={link.thumb}
               followers={link.followers}
-            />
+            />,
           )
         }
       }

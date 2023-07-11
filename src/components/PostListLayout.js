@@ -53,7 +53,7 @@ const PostListLayout = ({ data }) => {
           </header>
         </section>
       </Link>
-    )
+    ),
   )
 
   return (

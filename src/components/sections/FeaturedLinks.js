@@ -30,7 +30,8 @@ const MyLinks = () => {
 
   thumbnailsQuery.allFile.edges.map(
     image =>
-      (thumbnails[image.node.base] = image.node.childImageSharp.gatsbyImageData)
+      (thumbnails[image.node.base] =
+        image.node.childImageSharp.gatsbyImageData),
   )
 
   let featured = []
@@ -40,7 +41,7 @@ const MyLinks = () => {
     for (let link of featuredLinks) {
       let thumbnail = thumbnails[link.thumb]
       featured.push(
-        <FeaturedLink link={link} thumb={thumbnail} key={link.name} />
+        <FeaturedLink link={link} thumb={thumbnail} key={link.name} />,
       )
     }
     showFeaturedLinks = true
