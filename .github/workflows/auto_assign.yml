@@ -1,18 +1,20 @@
-name: PR assignment
-
+name: Auto Assign
 on:
+  issues:
+    types: [opened]
   pull_request:
     types: [opened, reopened]
 
 jobs:
-  auto-assign:
+  run:
     runs-on: ubuntu-latest
     permissions:
       issues: write
+      pull-requests: write
     steps:
-      - name: 'Auto-assign PR to me'
-        uses: pozil/auto-assign-issue@v1
-        with:
+    - name: 'Auto-assign issue'
+      uses: pozil/auto-assign-issue@v1
+      with:
           repo-token: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
           assignees: mslepko
           numOfAssignee: 1
