@@ -29,7 +29,8 @@ const MyLinks = () => {
 
   thumbnailsQuery.allFile.edges.map(
     image =>
-      (thumbnails[image.node.base] = image.node.childImageSharp.gatsbyImageData)
+      (thumbnails[image.node.base] =
+        image.node.childImageSharp.gatsbyImageData),
   )
 
   let links = []

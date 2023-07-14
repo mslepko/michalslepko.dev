@@ -28,7 +28,7 @@ const MenuLinks = ({ classes, hideHome, linkClasses }) => {
         key={links[url]}
       >
         {links[url]}
-      </Link>
+      </Link>,
     )
   }
   return <div className={classes}>{htmlOutput}</div>
