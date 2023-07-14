@@ -30,7 +30,7 @@ const ContactForm = () => {
       })
       .catch(error => {
         alert(
-          "There was an error when submitting the form. Please try again later."
+          "There was an error when submitting the form. Please try again later.",
         )
         console.log(error)
       })
