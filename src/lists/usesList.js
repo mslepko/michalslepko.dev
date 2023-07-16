@@ -142,6 +142,9 @@ usesList["socials"] = {
   Twitter: {
     "": "https://twitter.com/michal_codes",
   },
+  Threads: {
+    "": "https://www.threads.net/@michal.codes",
+  },
 }
 
 export default usesList
