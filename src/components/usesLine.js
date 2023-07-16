@@ -2,7 +2,7 @@ import * as React from "react"
 import usesList from "../lists/usesList"
 import MyLink from "./myLinkComponent"
 import socialStats from "../lists/socialStats"
-import { Twitter, Instagram, Twitch, YouTube, TikTok } from "./util/svgs"
+import { Twitter, Instagram, Twitch, YouTube, TikTok, Threads } from "./util/svgs"
 
 const UsesLine = ({ type, addClasses }) => {
   const setupElements = usesList[type]
@@ -14,6 +14,7 @@ const UsesLine = ({ type, addClasses }) => {
     Twitch: Twitch,
     TikTok: TikTok,
     YouTube: YouTube,
+    Threads: Threads,
   }
 
   if (setupElements) {
