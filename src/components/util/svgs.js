@@ -8,4 +8,14 @@ import YouTube from "../../images/svgs/youtube.svg"
 import Logo from "../../images/svgs/michal_codes.svg"
 import Threads from "../../images/svgs/threads.svg"
 
-export { Twitter, Instagram, Twitch, Github, LinkedIn, TikTok, YouTube, Logo, Threads }
+export {
+  Twitter,
+  Instagram,
+  Twitch,
+  Github,
+  LinkedIn,
+  TikTok,
+  YouTube,
+  Logo,
+  Threads,
+}
