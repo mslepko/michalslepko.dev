@@ -34,6 +34,11 @@ const linksList = [
     name: "Dark Mode FTW Wallpaper Pack",
     url: "https://store.michalslepko.dev",
     thumb: "dark_mode_ftw.jpg",
+  },
+  {
+    name: "diskAshur DT2 - certified hardware encrypted desktop drive",
+    url: "https://istorage-uk.com/product/diskashur-dt2/",
+    thumb: "istorage.png",
     featured: true,
   },
   {
