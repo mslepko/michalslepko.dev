@@ -29,7 +29,7 @@
     "request": "^2.88.2"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.15",
+    "autoprefixer": "^10.4.16",
     "gatsby-plugin-postcss": "^6.12.0",
     "postcss": "^8.4.29",
     "prettier": "^3.0.3",
