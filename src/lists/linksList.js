@@ -39,6 +39,11 @@ const linksList = [
     name: "diskAshur DT2 - certified hardware encrypted desktop drive",
     url: "https://istorage-uk.com/product/diskashur-dt2/",
     thumb: "istorage.png",
+  },
+  {
+    name: "Phomemo M08F Portable Thermal Printer",
+    url: "https://amzn.to/3Qmn0K4",
+    thumb: "phomemo.jpg",
     featured: true,
   },
   {
