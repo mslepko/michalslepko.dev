@@ -5848,7 +5848,7 @@ gatsby-plugin-typescript@^5.12.1:
     "@babel/runtime" "^7.20.13"
     babel-plugin-remove-graphql-queries "^5.12.1"
 
-gatsby-plugin-utils@^4.12.1, gatsby-plugin-utils@^4.12.2, gatsby-plugin-utils@^4.12.3:
+gatsby-plugin-utils@^4.12.2, gatsby-plugin-utils@^4.12.3:
   version "4.12.3"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-4.12.3.tgz#685bb26c073ac0ecf50efe6cba5fa879905c0f75"
   integrity sha512-AMagRfVAIwc3w66RZzq9cGPma3pkrGe/iyhktmHWDOtu45tOt0zlbSY91juuCw2Oov17WzJp2TWKQ/i0nkuLbA==
@@ -5871,15 +5871,15 @@ gatsby-react-router-scroll@^6.12.0:
     "@babel/runtime" "^7.20.13"
     prop-types "^15.8.1"
 
-gatsby-remark-images@^7.12.0:
-  version "7.12.0"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-7.12.0.tgz#a7856278b9bc311bb8eef33ff31e86ea445905ea"
-  integrity sha512-+jTbqcAcR2dj676w9W38oQKeTZDFy0kYT/gJncbS0fEdlk9MlZFErpoXZ4gmqOxxbTxRDbrSCaNBMF/k89F0fg==
+gatsby-remark-images@^7.12.3:
+  version "7.12.3"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-7.12.3.tgz#281435d3e965fd870ac150a2da7324ef7b944dc1"
+  integrity sha512-rolG1X6jfLnNWlXYyqqonohpHoS0V5s9bSpS4c8wvupWUHB6dok81g6E2we8ZOo+dJAKokDkBU1YViBC+IBVHg==
   dependencies:
     "@babel/runtime" "^7.20.13"
     chalk "^4.1.2"
     cheerio "^1.0.0-rc.10"
-    gatsby-core-utils "^4.12.0"
+    gatsby-core-utils "^4.12.1"
     is-relative-url "^3.0.0"
     lodash "^4.17.21"
     mdast-util-definitions "^4.0.0"
