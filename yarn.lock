@@ -5796,15 +5796,15 @@ gatsby-plugin-canonical-urls@^5.12.0:
   dependencies:
     "@babel/runtime" "^7.20.13"
 
-gatsby-plugin-gatsby-cloud@^5.12.1:
-  version "5.12.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-gatsby-cloud/-/gatsby-plugin-gatsby-cloud-5.12.1.tgz#42f6bb8e116425b1f886ce0588f35a881da0f20e"
-  integrity sha512-z299sbZ0kBa9ZjfDpC9IdZBJAcDGMyXbB779ligQEeUCHmzyRTPTwyzvAvtjfJUowpNG6RzKcgx0FRxeJiOKQA==
+gatsby-plugin-gatsby-cloud@^5.12.2:
+  version "5.12.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-gatsby-cloud/-/gatsby-plugin-gatsby-cloud-5.12.2.tgz#40bb2b8a2396b78cc60070e63dcd5f64837b5798"
+  integrity sha512-h1h5IN5oJVbjMMu4pnAJm4aq4/v6cwgUj2aMRylAoyOIr19ICRGiosP747eboUhxM8D+npPqTo+uVBTu8O2KQQ==
   dependencies:
     "@babel/runtime" "^7.20.13"
     fs-extra "^11.1.1"
-    gatsby-core-utils "^4.12.0"
-    gatsby-telemetry "^4.12.0"
+    gatsby-core-utils "^4.12.1"
+    gatsby-telemetry "^4.12.1"
     kebab-hash "^0.1.2"
     lodash "^4.17.21"
     webpack-assets-manifest "^5.1.0"
@@ -5829,14 +5829,14 @@ gatsby-plugin-image@^3.12.3:
     objectFitPolyfill "^2.3.5"
     prop-types "^15.8.1"
 
-gatsby-plugin-manifest@^5.12.2:
-  version "5.12.2"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-5.12.2.tgz#09734e9fd471a5e3c0b3206e3680524376378e23"
-  integrity sha512-Bs2U/gNVjXebQS3p4OLZjT/9Y+YAv0MYwZdWVCmXIIXEYUcE5zrWlNLjhsKPS0tTE5d5ELymTRVBOzvkHabdPA==
+gatsby-plugin-manifest@^5.12.3:
+  version "5.12.3"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-5.12.3.tgz#2da44659425850564f65fa69d600c6969edaae05"
+  integrity sha512-qpH0pSIIt7ggO7OnP127eKn6fhD1DKTzg9Aw8vaMCO8MMOQ5qfOn3ZrRCgH6DuaU1admZU18gFKlCKH+QHoGfQ==
   dependencies:
     "@babel/runtime" "^7.20.13"
-    gatsby-core-utils "^4.12.0"
-    gatsby-plugin-utils "^4.12.2"
+    gatsby-core-utils "^4.12.1"
+    gatsby-plugin-utils "^4.12.3"
     semver "^7.5.3"
     sharp "^0.32.6"
 
@@ -5975,15 +5975,15 @@ gatsby-react-router-scroll@^6.12.0:
     "@babel/runtime" "^7.20.13"
     prop-types "^15.8.1"
 
-gatsby-remark-images@^7.12.0:
-  version "7.12.0"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-7.12.0.tgz#a7856278b9bc311bb8eef33ff31e86ea445905ea"
-  integrity sha512-+jTbqcAcR2dj676w9W38oQKeTZDFy0kYT/gJncbS0fEdlk9MlZFErpoXZ4gmqOxxbTxRDbrSCaNBMF/k89F0fg==
+gatsby-remark-images@^7.12.3:
+  version "7.12.3"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-7.12.3.tgz#281435d3e965fd870ac150a2da7324ef7b944dc1"
+  integrity sha512-rolG1X6jfLnNWlXYyqqonohpHoS0V5s9bSpS4c8wvupWUHB6dok81g6E2we8ZOo+dJAKokDkBU1YViBC+IBVHg==
   dependencies:
     "@babel/runtime" "^7.20.13"
     chalk "^4.1.2"
     cheerio "^1.0.0-rc.10"
-    gatsby-core-utils "^4.12.0"
+    gatsby-core-utils "^4.12.1"
     is-relative-url "^3.0.0"
     lodash "^4.17.21"
     mdast-util-definitions "^4.0.0"
@@ -6003,22 +6003,22 @@ gatsby-sharp@^1.12.1:
   dependencies:
     sharp "^0.32.6"
 
-gatsby-source-filesystem@^5.12.0:
-  version "5.12.0"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-5.12.0.tgz#5f970fccc3102a4c62d99575c55a2a167912bb02"
-  integrity sha512-0BZkgADBu56vTzZ6TLvrMXhp8MzpEqvtpsI+VRtNTlsu6ULaHRjoMClomlAqWecjBXTkujhwpSjnIfEmpmCaLQ==
+gatsby-source-filesystem@^5.12.1:
+  version "5.12.1"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-5.12.1.tgz#200b141620e632bcefd23bd0fc468b070cfd89aa"
+  integrity sha512-JV6lttId7cBDasVaweFbKuDQP9VH8fFgI1Mg0sM/tfydfKTLXiEbBadKgEHbvbwAZsYjK+/KvT7A58dzrzDdXw==
   dependencies:
     "@babel/runtime" "^7.20.13"
     chokidar "^3.5.3"
     file-type "^16.5.4"
     fs-extra "^11.1.1"
-    gatsby-core-utils "^4.12.0"
+    gatsby-core-utils "^4.12.1"
     mime "^3.0.0"
     pretty-bytes "^5.6.0"
     valid-url "^1.0.9"
     xstate "^4.38.0"
 
-gatsby-telemetry@^4.12.0, gatsby-telemetry@^4.12.1:
+gatsby-telemetry@^4.12.1:
   version "4.12.1"
   resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-4.12.1.tgz#b6878cd8659a3c4fdd7d196b70e4541891a4f877"
   integrity sha512-MTHcKt5Cl68DveBpsduwfJdRjoXg48fcjITo1TspbxS2R0WnTZPRohGbA+JmQdY+O1eUSysdrONIjf6r86nhiA==
