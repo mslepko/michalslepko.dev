@@ -12,8 +12,7 @@ export default function About() {
         </div>
         <div className="content">
           <p className="text-base md:text-xl font-bold text-darkest dark:text-lightest">
-            Hi. I'm Michal and I'm a software engineer based in the UK. I work
-            full-time as the EMEA Technical Lead for The Estée Lauder Companies.
+            Hi. I'm Michal and I'm a software engineer based in the UK.
           </p>
           <p className="text-base md:text-lg">
             In my spare time, which I don't have too much as I have 4 children,
