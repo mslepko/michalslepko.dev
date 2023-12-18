@@ -9,7 +9,7 @@
     "@mdx-js/react": "^2.3.0",
     "gatsby": "^5.12.12",
     "gatsby-plugin-canonical-urls": "^5.12.0",
-    "gatsby-plugin-gatsby-cloud": "^5.12.2",
+    "gatsby-plugin-gatsby-cloud": "^5.13.0",
     "gatsby-plugin-image": "^3.12.3",
     "gatsby-plugin-manifest": "^5.12.3",
     "gatsby-plugin-mdx": "^5.12.3",
