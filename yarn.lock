@@ -5710,7 +5710,7 @@ gatsby-cli@^5.13.1:
     yoga-layout-prebuilt "^1.10.0"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^4.12.1, gatsby-core-utils@^4.13.0:
+gatsby-core-utils@^4.13.0:
   version "4.13.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-4.13.0.tgz#b286d9a5f31363d5264114b724a8d122850df2cd"
   integrity sha512-+oJJsADfcEnzpQpof+L5qtP4iSeMaEPn1QSjXENlg/go9Pi/4eqb+Nn3y3q8bC/zy4hMWFWrPdMJmdW581uNvA==
@@ -5837,10 +5837,10 @@ gatsby-plugin-manifest@^5.13.0:
     semver "^7.5.3"
     sharp "^0.32.6"
 
-gatsby-plugin-mdx@^5.12.3:
-  version "5.12.3"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-5.12.3.tgz#d7006fd3d9199d0b66c003a9077d9dbb6725e8b9"
-  integrity sha512-MnpI9GFA2EOzAHgmrcr2pWlBJFR9UD3njS9eFfK0M+3e40UHCcyVB1Sl63XTisGxMxPvBcFmrVbfZhMvPMfERw==
+gatsby-plugin-mdx@^5.13.0:
+  version "5.13.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-5.13.0.tgz#32eaa439fdcb53285d4a15f66f99370f400896d5"
+  integrity sha512-sKN3M02VsLGfLYQuqAATBAVk4aG9XpXnj3TJ+vIPZMsA0VC+3d4KsyvzMvlMuKFH8vHtQx1Zmk7u0y3iy2Jt8g==
   dependencies:
     "@mdx-js/mdx" "^2.3.0"
     acorn "^8.8.2"
@@ -5849,8 +5849,8 @@ gatsby-plugin-mdx@^5.12.3:
     deepmerge "^4.3.1"
     estree-util-build-jsx "^2.2.2"
     fs-extra "^11.1.1"
-    gatsby-core-utils "^4.12.1"
-    gatsby-plugin-utils "^4.12.3"
+    gatsby-core-utils "^4.13.0"
+    gatsby-plugin-utils "^4.13.0"
     gray-matter "^4.0.3"
     mdast-util-mdx "^2.0.1"
     mdast-util-to-hast "^10.2.0"
@@ -5949,7 +5949,7 @@ gatsby-plugin-typescript@^5.13.0:
     "@babel/runtime" "^7.20.13"
     babel-plugin-remove-graphql-queries "^5.13.0"
 
-gatsby-plugin-utils@^4.12.2, gatsby-plugin-utils@^4.12.3, gatsby-plugin-utils@^4.13.0:
+gatsby-plugin-utils@^4.12.2, gatsby-plugin-utils@^4.13.0:
   version "4.13.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-4.13.0.tgz#7715055942161fc20e4cc9e90c42cae15c0ff6b9"
   integrity sha512-3qwhM6mUYjorRiD0D0cgmCHcKwroG2d4PlfErnapHJpM/ISGfdBBOfRhPyk2N0u3dbGeb3KQq5gImCCS73bvxg==
