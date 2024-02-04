@@ -3,7 +3,7 @@ const socialStats = {
   TikTok: "6.7k",
   Twitch: "161",
   Twitter: "359",
-  YouTube: "533",
+  YouTube: "542",
 }
 
 export default socialStats
