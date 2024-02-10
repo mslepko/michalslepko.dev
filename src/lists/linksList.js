@@ -25,11 +25,11 @@ const linksList = [
     name: "Let's collaborate",
     url: "https://www.passionfroot.me/michal.codes",
   },
-  {
-    name: "1-1 consultations",
-    url: "https://cal.com/michalslepko/1-1-consultations",
-    thumb: "michalcodes.jpg",
-  },
+  // {
+  //   name: "1-1 consultations",
+  //   url: "https://cal.com/michalslepko/1-1-consultations",
+  //   thumb: "michalcodes.jpg",
+  // },
   {
     name: "Dark Mode FTW Wallpaper Pack",
     url: "https://store.michalslepko.dev",
@@ -39,12 +39,13 @@ const linksList = [
     name: "diskAshur DT2 - certified hardware encrypted desktop drive",
     url: "https://istorage-uk.com/product/diskashur-dt2/",
     thumb: "istorage.png",
+    type: "essentials",
   },
   {
     name: "Phomemo M08F Portable Thermal Printer",
     url: "https://amzn.to/3Qmn0K4",
     thumb: "phomemo.jpg",
-    featured: true,
+    type: "essentials",
   },
   {
     name: "Your next SaaS starter template",
