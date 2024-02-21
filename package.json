@@ -12,7 +12,7 @@
     "gatsby-plugin-gatsby-cloud": "^5.13.1",
     "gatsby-plugin-image": "^3.13.1",
     "gatsby-plugin-manifest": "^5.13.0",
-    "gatsby-plugin-mdx": "^5.13.0",
+    "gatsby-plugin-mdx": "^5.13.1",
     "gatsby-plugin-offline": "^6.13.1",
     "gatsby-plugin-react-svg": "^3.3.0",
     "gatsby-plugin-sharp": "^5.13.1",
