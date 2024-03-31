@@ -29,7 +29,7 @@ export default function Work() {
             image={Project2Image}
             title="WordPress Care Plans"
             description="Landing page for WordPress Care Plans webiste. Build using HTML, jQuery, CSS."
-            url="https://wordpress.rootscope.dev/"
+            url="https://wp-maintenance.pro/"
             github="https://github.com/rootscopeltd/wp.rootscope.dev"
           />
 
