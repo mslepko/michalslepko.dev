@@ -13,6 +13,7 @@ const linksList = [
   {
     name: "Launch your iOS app 10x faster",
     url: "https://swiftsail.dev/?via=michal",
+    thumb: "swift.png",
   },
   {
     name: "Waterdrop 200-Gallon Long-Life Lucid 10-Cup Water Filter",
