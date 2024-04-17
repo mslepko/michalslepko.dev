@@ -23,7 +23,7 @@ const linksList = [
   },
   {
     name: "WordPress Maintenance Plans",
-    url: "https://wordpress.rootscope.dev/",
+    url: "https://wp-maintenance.pro/",
     thumb: "wordpress.png",
   },
   {
