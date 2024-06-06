@@ -28,6 +28,13 @@
     "react-typed": "^1.2.0",
     "request": "^2.88.2"
   },
+  "overrides": {
+    "gatsby-plugin-react-svg": {
+      "svg-react-loader": {
+        "loader-utils": "^1.4.2"
+      }
+    }
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
     "gatsby-plugin-postcss": "^6.13.1",
