@@ -13,7 +13,6 @@ import socialStats from "../../lists/socialStats"
 // Icons from = https://simpleicons.org/
 
 const Socials = props => {
-  console.log("fullPage", props)
   let classNames =
     "flex justify-around gap-12 align-center min-h-fit m-auto socials "
   let linkClass = ""
