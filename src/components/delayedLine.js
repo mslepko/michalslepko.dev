@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import Typed from "react-typed"
+import { ReactTyped } from "react-typed"
 
 function DelayedLine() {
   const [shouldRender, setShouldRender] = useState(false)
@@ -15,7 +15,7 @@ function DelayedLine() {
   return (
     <span>
       {shouldRender && (
-        <Typed
+        <ReactTyped
           strings={[
             '<span class="text-brand">"a full-stack web developer"&#59;</span>',
             '<span class="text-brand">"a content creator"&#59;</span>',
