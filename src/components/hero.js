@@ -1,6 +1,6 @@
 import * as React from "react"
 import DelayedLine from "./delayedLine"
-import { ReactTyped } from "react-typed";
+import { ReactTyped } from "react-typed"
 
 const Hero = () => {
   return (
