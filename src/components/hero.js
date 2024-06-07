@@ -1,6 +1,6 @@
 import * as React from "react"
 import DelayedLine from "./delayedLine"
-import Typed from "react-typed"
+import { ReactTyped } from "react-typed";
 
 const Hero = () => {
   return (
@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="inner-container flex-col items-start pt-4 px-4">
         <p className="text-2xl md:text-5xl pb-1 md:pb-6">
           <span className="text-dark pr-6 md:pr-14">1</span>
-          <Typed
+          <ReactTyped
             strings={['<span class="text-gray">// Hello World!</span>']}
             className="grow"
             typeSpeed={100}
@@ -27,7 +27,7 @@ const Hero = () => {
 
         <p className="text-2xl md:text-5xl pb-1 md:pb-6">
           <span className="text-dark pr-6 md:pr-14">2</span>
-          <Typed
+          <ReactTyped
             strings={[
               '<span class="text-var_name">$name&nbsp;=&nbsp;</span><span class="text-brand">"Michal";</span>',
             ]}
@@ -43,7 +43,7 @@ const Hero = () => {
 
         <p className="text-2xl md:text-5xl pb-1 md:pb-6 min-h-68 pl-10">
           <span className="text-dark pr-6 md:pr-14 -ml-10">3</span>
-          <Typed
+          <ReactTyped
             strings={[
               '<span class="text-var_name">$description&nbsp;=&nbsp;</span>',
             ]}
