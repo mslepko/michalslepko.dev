@@ -1,8 +1,8 @@
 const socialStats = {
   Instagram: "101k",
   TikTok: "6.6k",
-  Twitter: "453",
-  YouTube: "823",
+  Twitter: "455",
+  YouTube: "844",
 }
 
 export default socialStats
