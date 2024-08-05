@@ -212,9 +212,13 @@ const ResumePage = () => (
         </div>
         <div className="flex flex-col col-span-4">
           <p>
-            Working with a WordPress and WooCommerce site taking 300+ orders per day.
+            Working with a WordPress and WooCommerce site taking 300+ orders per
+            day.
           </p>
-          <p>Managing servers, plugins and bespoke codebase ensuring optimal performance and security.</p>
+          <p>
+            Managing servers, plugins and bespoke codebase ensuring optimal
+            performance and security.
+          </p>
           <p>Stack: PHP, Linux, JavaScript, React, WordPress</p>
         </div>
       </div>
@@ -236,9 +240,7 @@ const ResumePage = () => (
       </div>
       <div className="grid grid-cols-1 md:grid-cols-6 my-10">
         <div className="flex flex-col col-span-2 mb-4 md:mb-0">
-          <h5 className="text-xl md:text-2xl font-bold">
-            Software Developer
-          </h5>
+          <h5 className="text-xl md:text-2xl font-bold">Software Developer</h5>
           <h6 className="text-lg font-bold">University of Greenwich</h6>
           <p>Jan 2024 - Jun 2024</p>
         </div>
