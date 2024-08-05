@@ -190,10 +190,10 @@ const ResumePage = () => (
         </div>
         <div className="px-20">
           <h4 className="text-xl font-bold">
-            Content creator (90k+ followers)
+            Content creator (100k+ followers)
           </h4>
           <br />
-          <p className="text-6xl">2+ yrs</p>
+          <p className="text-6xl">3+ yrs</p>
         </div>
       </div>
     </section>
@@ -205,10 +205,59 @@ const ResumePage = () => (
       <div className="grid grid-cols-1 md:grid-cols-6 my-10">
         <div className="flex flex-col col-span-2 mb-4 md:mb-0">
           <h5 className="text-xl md:text-2xl font-bold">
+            Senior Web Developer (Contract, Part Time)
+          </h5>
+          <h6 className="text-lg font-bold">ProDog Raw</h6>
+          <p>Aug 2023 - Present</p>
+        </div>
+        <div className="flex flex-col col-span-4">
+          <p>
+            Working with a WordPress and WooCommerce site taking 300+ orders per
+            day.
+          </p>
+          <p>
+            Managing servers, plugins and bespoke codebase ensuring optimal
+            performance and security.
+          </p>
+          <p>Stack: PHP, Linux, JavaScript, React, WordPress</p>
+        </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-6 my-10">
+        <div className="flex flex-col col-span-2 mb-4 md:mb-0">
+          <h5 className="text-xl md:text-2xl  font-bold">
+            Technical Lead (Contract, Part Time)
+          </h5>
+          <h6 className="text-lg font-bold">Chaptr</h6>
+          <p>Dec 2015 - Present</p>
+        </div>
+        <div className="flex flex-col col-span-4">
+          <p>Managing multiple WordPress sites - maintenance, updates</p>
+          <p>Custom WordPress themes and plugins development.</p>
+          <p>BAU tasks.</p>
+          <p>Linux servers management.</p>
+          <p>Stack: PHP, WordPress, MySQL, GIT, jQuery, Figma.</p>
+        </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-6 my-10">
+        <div className="flex flex-col col-span-2 mb-4 md:mb-0">
+          <h5 className="text-xl md:text-2xl font-bold">Software Developer</h5>
+          <h6 className="text-lg font-bold">University of Greenwich</h6>
+          <p>Jan 2024 - Jun 2024</p>
+        </div>
+        <div className="flex flex-col col-span-4">
+          <p>Built, updated and rolled out internal web applications.</p>
+          <p>Migrated applications and databases between servers.</p>
+          <p>Collaborated with business stakeholders and development team.</p>
+          <p>Stack: PHP, jQuery, Linux, MySQL</p>
+        </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-6 my-10">
+        <div className="flex flex-col col-span-2 mb-4 md:mb-0">
+          <h5 className="text-xl md:text-2xl font-bold">
             Technical Lead (Contract)
           </h5>
           <h6 className="text-lg font-bold">The Estée Lauder Companies Inc.</h6>
-          <p>Dec 2018 - present</p>
+          <p>Dec 2018 - Dec 2023</p>
         </div>
         <div className="flex flex-col col-span-4">
           <p>
@@ -230,22 +279,6 @@ const ResumePage = () => (
           </p>
           <p>Integrating with 3rd party APIs</p>
           <p>Stack: PERL, PHP, Linux, JavaScript, SASS, React, GIT, Jira</p>
-        </div>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-6 my-10">
-        <div className="flex flex-col col-span-2 mb-4 md:mb-0">
-          <h5 className="text-xl md:text-2xl  font-bold">
-            Technical Lead (Contract, Part Time)
-          </h5>
-          <h6 className="text-lg font-bold">Chaptr</h6>
-          <p>Dec 2015 - Present</p>
-        </div>
-        <div className="flex flex-col col-span-4">
-          <p>Managing multiple WordPress sites - maintenance, updates</p>
-          <p>Custom WordPress themes and plugins development.</p>
-          <p>BAU tasks.</p>
-          <p>Linux servers management.</p>
-          <p>Stack: PHP, WordPress, MySQL, GIT, jQuery, Figma.</p>
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-6 my-10">
@@ -288,7 +321,7 @@ const ResumePage = () => (
       <div className="grid grid-cols-1 md:grid-cols-6 my-10">
         <div className="flex flex-col col-span-2 mb-4 md:mb-0">
           <h5 className="text-xl md:text-2xl  font-bold">
-            Regional Technical Lead EMEA (Contract)
+            Regional Technical Lead for EMEA (Contract)
           </h5>
           <h6 className="text-lg font-bold">The Estée Lauder Companies Inc.</h6>
           <p>Mar 2017 - Dec 2018</p>
