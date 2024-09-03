@@ -18,7 +18,7 @@
     "gatsby-plugin-sharp": "^5.13.1",
     "gatsby-plugin-sitemap": "^6.13.1",
     "gatsby-plugin-utils": "^4.13.1",
-    "gatsby-remark-images": "^7.13.1",
+    "gatsby-remark-images": "^7.13.2",
     "gatsby-source-filesystem": "^5.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
     "prop-types": "^15.8.1",
@@ -41,7 +41,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "gatsby-plugin-postcss": "^6.13.1",
-    "postcss": "^8.4.41",
+    "postcss": "^8.4.44",
     "prettier": "^3.3.3",
     "tailwindcss": "^3.4.10"
   },
