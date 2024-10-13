@@ -11,6 +11,12 @@ const linksList = [
     thumb: "michalcodes_logo.png",
   },
   {
+    name: "Guidde - Magically create video documentation with AI. Capture any process without design or video skills.",
+    url: "https://www.guidde.com/?ref=ywy5nmu",
+    thumb: "guidde.png",
+    featured: true,
+  },
+  {
     name: "Launch your iOS app 10x faster",
     url: "https://swiftsail.dev/?via=michal",
     thumb: "swift.png",
