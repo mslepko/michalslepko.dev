@@ -19,7 +19,7 @@ export default function Work() {
           <Project
             image={Project1Image}
             title="NotiTasks"
-            description="Managing Notion Tasks Made easy. A side project to help me manage my tasks. 
+            description="Managing Notion Tasks Made easy. A side project to help me manage my tasks.
             Build using NextJS, TailwindCSS, ChakraUI, Supabase."
             url="https://notitasks.com/"
           />
@@ -37,7 +37,7 @@ export default function Work() {
 
           <Project
             image={Project3Image}
-            title="Notion Widgets (WIP)"
+            title="Notion Widgets"
             description="Website with a different widgets that can be embeded in Notion templates."
             url="https://notion-with-widgets.vercel.app/"
             github="https://github.com/mslepko/notion-widgets"
