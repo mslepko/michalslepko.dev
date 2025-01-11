@@ -16,7 +16,10 @@ const Footer = () => {
           Gatsby
         </a>
       </p>
-      <p>© {new Date().getFullYear()} Michal Slepko & <a href="https://rootscope.dev/">RootScope</a></p>
+      <p>
+        © {new Date().getFullYear()} Michal Slepko &{" "}
+        <a href="https://rootscope.dev/">RootScope</a>
+      </p>
       <p>
         Template from{" "}
         <a href="https://www.colorhub.app/starter-kits">Colorhub</a>
