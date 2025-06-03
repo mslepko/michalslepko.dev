@@ -32,7 +32,10 @@
       "svg-react-loader": {
         "loader-utils": "^1.4.2"
       }
-    }
+    },
+    "multer": "^2.0.0",
+    "path-to-regexp": "0.1.12",
+    "lodash": "^4.17.21"
   },
   "resolutions": {
     "svg-react-loader/loader-utils": "^1.4.2"
