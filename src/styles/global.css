@@ -24,7 +24,7 @@ code {
   /* Pagination */
   .pagination-prev,
   .pagination-next {
-    @apply text-mint p-3 text-base font-semibold capitalize border border-transparent hover:border-gray hover:rounded max-w-sm;
+    @apply p-3 text-base font-semibold capitalize border border-transparent hover:border-gray hover:rounded max-w-sm;
   }
 
   .pagination-next {

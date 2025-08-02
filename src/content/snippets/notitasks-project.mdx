@@ -1,0 +1,227 @@
+---
+title: "Building NotiTasks - Learning Next.js and Modern Web Development"
+description: "A deep dive into building NotiTasks, a task management tool for Notion users, and the learning journey with Next.js, TailwindCSS, and modern web technologies."
+published: 2025-08-02
+hero_image: "../../images/featured/notitasks.jpg"
+---
+
+# Building NotiTasks - Learning Next.js and Modern Web Development
+
+As a developer who's always looking to learn new technologies and frameworks, I decided to build [NotiTasks](https://notitasks.com/) as a way to dive deep into modern web development. While I primarily work with PHP and traditional web technologies, I wanted to explore the React ecosystem and see what modern JavaScript frameworks could offer.
+
+## The Learning Motivation
+
+My decision to build NotiTasks came from several motivations:
+
+### **Exploring New Technologies**
+I wanted to learn:
+- **Next.js**: The React framework everyone was talking about
+- **TailwindCSS**: Utility-first CSS framework
+- **ChakraUI**: Component library for React
+- **Supabase**: Modern database solution
+- **TypeScript**: Type-safe JavaScript
+
+### **Solving a Real Problem**
+While learning, I also wanted to build something useful. As a Notion user myself, I found that task management within Notion could be more efficient. The idea was to create a tool that would enhance the Notion experience rather than replace it.
+
+## The Technology Stack
+
+### **Frontend**
+- **Next.js 13+**: For the React framework with App Router
+- **TailwindCSS**: For utility-first styling
+- **ChakraUI**: For pre-built components
+- **TypeScript**: For type safety
+
+### **Backend**
+- **Supabase**: For database and authentication
+
+### **Deployment**
+- **Vercel**: For hosting and deployment
+- **GitHub**: For version control
+
+## The Learning Journey
+
+### **Getting Started with Next.js**
+Coming from a PHP background, Next.js was a revelation. The file-based routing, server-side rendering, and API routes made so much sense. I learned:
+
+```typescript
+// File-based routing in Next.js 13
+app/
+  dashboard/
+    page.tsx      // /dashboard
+    tasks/
+      page.tsx    // /dashboard/tasks
+      [id]/
+        page.tsx  // /dashboard/tasks/[id]
+```
+
+### **TailwindCSS Experience**
+After years of writing traditional CSS, TailwindCSS felt liberating. The utility-first approach meant:
+
+```tsx
+// Instead of writing custom CSS
+<div className="flex items-center justify-between p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+  <h2 className="text-xl font-semibold text-gray-800">Task Title</h2>
+  <span className="px-2 py-1 text-sm bg-blue-100 text-blue-800 rounded">High</span>
+</div>
+```
+
+### **ChakraUI Components**
+ChakraUI provided a great balance between customization and speed:
+
+```tsx
+import { Box, Button, Text, VStack } from '@chakra-ui/react'
+
+const TaskCard = ({ task }) => (
+  <Box p={4} borderWidth="1px" borderRadius="lg">
+    <VStack align="start" spacing={2}>
+      <Text fontSize="lg" fontWeight="semibold">{task.title}</Text>
+      <Button size="sm" colorScheme="blue">Edit</Button>
+    </VStack>
+  </Box>
+)
+```
+
+### **Supabase Integration**
+Learning Supabase was eye-opening. The combination of database, authentication, and real-time features in one platform was powerful:
+
+```typescript
+// Real-time subscriptions
+const { data: tasks } = useSubscription(
+  supabase
+    .from('tasks')
+    .on('*', payload => {
+      console.log('Change received!', payload)
+    })
+    .subscribe()
+)
+```
+
+## Key Features That I Planned to Build
+
+### **Task Management**
+- Create, edit, and delete tasks
+- Priority levels and due dates
+- Drag-and-drop reordering
+- Real-time updates
+
+### **Notion Integration**
+- Import tasks from Notion databases
+- Sync changes back to Notion
+- Maintain Notion's data structure
+
+### **User Experience**
+- Responsive design for all devices
+- Dark/light mode support
+- Keyboard shortcuts
+- Offline capability
+
+## Challenges and Solutions
+
+### **State Management**
+Coming from PHP, managing client-side state was new territory. I learned to use React hooks effectively:
+
+```typescript
+const [tasks, setTasks] = useState<Task[]>([])
+const [loading, setLoading] = useState(false)
+
+const addTask = async (task: Task) => {
+  setLoading(true)
+  try {
+    const { data, error } = await supabase
+      .from('tasks')
+      .insert([task])
+    if (data) setTasks([...tasks, data[0]])
+  } catch (error) {
+    console.error('Error adding task:', error)
+  } finally {
+    setLoading(false)
+  }
+}
+```
+
+### **TypeScript Learning Curve**
+TypeScript was initially challenging but became invaluable:
+
+```typescript
+interface Task {
+  id: string
+  title: string
+  description?: string
+  priority: 'low' | 'medium' | 'high'
+  due_date?: string
+  completed: boolean
+  user_id: string
+  created_at: string
+}
+```
+
+### **Deployment and CI/CD**
+Learning Vercel's deployment process was smooth:
+
+```json
+// vercel.json
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "framework": "nextjs"
+}
+```
+
+## The Impact on My Development Skills
+
+### **Modern JavaScript**
+I gained deep understanding of:
+- ES6+ features
+- Async/await patterns
+- Modern React patterns
+- TypeScript benefits
+
+### **Full-Stack Development**
+The project taught me:
+- API design and development
+- Database design and optimization
+- Authentication and authorization
+- Real-time features
+
+### **Development Workflow**
+I learned modern development practices:
+- Git workflow with feature branches
+- Code review processes
+- Testing strategies
+- Performance optimization
+
+## Future Enhancements
+
+I'm planning to add:
+- **Mobile App**: React Native version
+- **Advanced Analytics**: Task completion metrics
+- **Team Features**: Collaborative task management
+- **API Integration**: More third-party tools
+- **Advanced Notifications**: Email and push notifications
+
+## Lessons Learned
+
+### **Technology Choices**
+- **Next.js**: Excellent for full-stack React applications
+- **TailwindCSS**: Great for rapid prototyping and consistent design
+- **Supabase**: Perfect for small to medium applications
+- **TypeScript**: Worth the learning curve for type safety
+
+### **Development Process**
+- **Start Small**: Begin with core features
+- **Iterate Quickly**: Use modern tools for fast development
+- **Focus on UX**: User experience is as important as functionality
+- **Document Everything**: Good documentation saves time later
+
+## The Bigger Picture
+
+Building NotiTasks taught me that modern web development is incredibly powerful. The combination of React, Next.js, and modern tooling makes it possible to build sophisticated applications quickly and efficiently.
+
+## Conclusion
+
+NotiTasks represents my journey into modern web development. It's not just a task management tool - it's a testament to the power of learning new technologies and applying them to solve real problems.
+
+The project has significantly expanded my technical skills and given me confidence to tackle more complex web applications. It's a perfect example of how learning new technologies can lead to building better tools and becoming a more versatile developer.
+
+Try NotiTasks at [notitasks.com](https://notitasks.com/) and see how modern web technologies can create powerful, user-friendly applications. 

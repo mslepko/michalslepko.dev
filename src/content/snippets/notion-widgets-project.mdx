@@ -1,0 +1,350 @@
+---
+title: "Building Notion Widgets - Exploring Next.js and Widget Development"
+description: "A journey into building Notion Widgets, a collection of embeddable tools for Notion pages, and learning Next.js for modern, performant web applications."
+published: 2025-08-02
+hero_image: "../../images/featured/notion_widgets.jpg"
+---
+
+# Building Notion Widgets - Exploring Next.js and Widget Development
+
+After diving into React with NotiTasks, I wanted to explore a different approach to web development. I decided to build [Notion Widgets](https://notion-with-widgets.vercel.app/) using Next.js to create lightweight, embeddable tools for Notion users while learning modern React patterns and optimization techniques.
+
+## The Learning Motivation
+
+My decision to build Notion Widgets came from several goals:
+
+### **Exploring Next.js Further**
+After working with Next.js on NotiTasks, I wanted to:
+- Deepen my understanding of Next.js patterns
+- Learn advanced React techniques
+- Explore performance optimization
+- Build embeddable components
+
+### **Widget Development**
+I was curious about:
+- How to create embeddable web components with React
+- Cross-origin embedding challenges
+- Performance optimization for widgets
+- User experience in constrained environments
+
+### **Notion Ecosystem**
+As a Notion power user, I wanted to:
+- Enhance my own Notion workspace
+- Create tools for the Notion community
+- Learn about iframe embedding with React
+- Understand Notion's embedding capabilities
+
+## The Technology Stack
+
+### **Frontend**
+- **Next.js 14**: For the React framework with App Router
+- **React 18**: For component development
+- **TailwindCSS**: For utility-first styling
+- **Luxon**: For advanced date/time handling
+
+### **Deployment**
+- **Vercel**: For hosting and CDN
+- **GitHub**: For version control
+- **Vercel Analytics**: For usage tracking
+
+## The Widget Collection is growing
+
+### **Date/Time Display**
+A simple but effective date and time display widget using React hooks:
+
+```tsx
+import { useState, useEffect } from 'react'
+import { DateTime } from 'luxon'
+
+const DateTimeWidget = ({ format = 'full' }) => {
+  const [currentTime, setCurrentTime] = useState(DateTime.now())
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(DateTime.now())
+    }, 1000)
+
+    return () => clearInterval(timer)
+  }, [])
+
+  const formatTime = () => {
+    switch (format) {
+      case 'time':
+        return currentTime.toFormat('HH:mm:ss')
+      case 'date':
+        return currentTime.toFormat('EEEE, MMMM d, yyyy')
+      case 'full':
+      default:
+        return currentTime.toFormat('EEEE, MMMM d, yyyy HH:mm:ss')
+    }
+  }
+
+  return (
+    <div className="datetime-widget">
+      <div className="time-display">
+        {formatTime()}
+      </div>
+    </div>
+  )
+}
+```
+
+### **Pomodoro Timer**
+A customizable Pomodoro timer for productivity:
+
+```tsx
+import { useState, useEffect } from 'react'
+
+const PomodoroWidget = ({ workTime = 25, breakTime = 5 }) => {
+  const [timeLeft, setTimeLeft] = useState(workTime * 60)
+  const [isRunning, setIsRunning] = useState(false)
+  const [isBreak, setIsBreak] = useState(false)
+
+  useEffect(() => {
+    let timer = null
+    
+    if (isRunning && timeLeft > 0) {
+      timer = setInterval(() => {
+        setTimeLeft(prev => {
+          if (prev <= 1) {
+            // Timer finished, switch modes
+            setIsBreak(!isBreak)
+            return isBreak ? workTime * 60 : breakTime * 60
+          }
+          return prev - 1
+        })
+      }, 1000)
+    }
+
+    return () => clearInterval(timer)
+  }, [isRunning, timeLeft, isBreak, workTime, breakTime])
+
+  const formatTime = (seconds) => {
+    const mins = Math.floor(seconds / 60)
+    const secs = seconds % 60
+    return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`
+  }
+
+  const toggleTimer = () => {
+    setIsRunning(!isRunning)
+  }
+
+  const resetTimer = () => {
+    setIsRunning(false)
+    setIsBreak(false)
+    setTimeLeft(workTime * 60)
+  }
+
+  return (
+    <div className="pomodoro-widget">
+      <div className="timer-display">
+        <div className="mode-indicator">
+          {isBreak ? 'Break' : 'Work'}
+        </div>
+        <div className="time">
+          {formatTime(timeLeft)}
+        </div>
+      </div>
+      <div className="controls">
+        <button onClick={toggleTimer}>
+          {isRunning ? 'Pause' : 'Start'}
+        </button>
+        <button onClick={resetTimer}>Reset</button>
+      </div>
+    </div>
+  )
+}
+```
+
+## Technical Challenges and Solutions
+
+### **Cross-Origin Embedding**
+One of the biggest challenges was making React components work when embedded in Notion:
+
+```tsx
+// Handle different embedding contexts
+const useEmbeddedContext = () => {
+  const [isEmbedded, setIsEmbedded] = useState(false)
+  const [isNotion, setIsNotion] = useState(false)
+
+  useEffect(() => {
+    const embedded = window !== window.top
+    const notion = window.location.hostname.includes('notion.so')
+    
+    setIsEmbedded(embedded)
+    setIsNotion(notion)
+
+    if (embedded) {
+      document.body.classList.add('embedded')
+      
+      // Handle communication with parent frame
+      window.addEventListener('message', (event) => {
+        if (event.origin !== 'https://notion.so') return
+        // Handle messages from Notion
+      })
+    }
+  }, [])
+
+  return { isEmbedded, isNotion }
+}
+```
+
+### **Performance Optimization**
+Since widgets are embedded, performance is crucial:
+
+```tsx
+// Lazy loading for widgets
+import { Suspense, lazy } from 'react'
+
+const LazyWidget = lazy(() => import('./Widget'))
+
+const WidgetContainer = () => (
+  <Suspense fallback={<div>Loading...</div>}>
+    <LazyWidget />
+  </Suspense>
+)
+```
+
+### **Responsive Design with TailwindCSS**
+Widgets need to work in various container sizes:
+
+```tsx
+const WidgetWrapper = ({ children }) => (
+  <div className="w-full max-w-md min-h-[200px] mx-auto p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow">
+    {children}
+  </div>
+)
+```
+
+## Learning Outcomes
+
+### **Next.js Mastery**
+I gained deep understanding of:
+- **App Router**: File-based routing in Next.js 13+
+- **Server Components**: Understanding React Server Components
+- **API Routes**: Building backend functionality
+- **Performance**: Optimization techniques for Next.js
+- **Deployment**: Vercel integration and optimization
+
+### **React Advanced Patterns**
+I learned about:
+- **Custom Hooks**: Creating reusable logic
+- **Context API**: State management for widgets
+- **Error Boundaries**: Handling errors gracefully
+- **Memoization**: Performance optimization with useMemo and useCallback
+
+### **Widget Development**
+Understanding:
+- **Iframe Communication**: Cross-origin messaging with React
+- **Embedding Best Practices**: Making React components embeddable
+- **CSS Isolation**: Preventing style conflicts with TailwindCSS
+- **Mobile Optimization**: Touch-friendly interfaces
+
+### **Notion Integration**
+Understanding:
+- **Embedding Limitations**: What works in Notion iframes
+- **User Experience**: How users interact with embedded React components
+- **Performance Requirements**: Fast loading in constrained environments
+
+## The Impact on My Development Skills
+
+### **Next.js Ecosystem**
+Building with Next.js taught me:
+- How modern React frameworks work
+- The importance of performance optimization
+- When to use different rendering strategies
+- Deployment and hosting best practices
+
+### **User Experience**
+I learned to design for:
+- Constrained environments (iframes)
+- Various screen sizes with TailwindCSS
+- Different embedding contexts
+- Performance-conscious users
+
+### **Development Workflow**
+The project improved my:
+- Code organization with Next.js structure
+- Testing strategies for React components
+- Deployment processes with Vercel
+- Documentation practices
+
+## Technical Implementation Details
+
+### **Next.js App Router Structure**
+```
+app/
+  widgets/
+    datetime/
+      page.tsx
+    pomodoro/
+      page.tsx
+  globals.css
+  layout.tsx
+```
+
+### **TailwindCSS Configuration**
+```js
+// tailwind.config.js
+module.exports = {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        widget: {
+          primary: '#007bff',
+          secondary: '#6c757d'
+        }
+      }
+    }
+  }
+}
+```
+
+## Community Impact
+
+The project has gained traction in the open-source community:
+
+- **7 stars** and **12 forks** on GitHub
+- **6 contributors** from the community
+- Featured in **Hacktoberfest 2024**
+- Used by Notion users worldwide
+
+## Future Enhancements
+
+I'm planning to add:
+- **More Widget Types**: Calendar, calculator, note-taking
+- **Customization Options**: Themes, colors, sizes
+- **Data Persistence**: Local storage for user preferences
+- **Analytics**: Usage tracking with Vercel Analytics
+- **API Integration**: More third-party services
+
+## Lessons Learned
+
+### **Technology Choices**
+- **Next.js**: Excellent for modern, performant web applications
+- **TailwindCSS**: Perfect for rapid prototyping and consistent design
+- **React**: Powerful for component-based development
+- **Vercel**: Excellent for Next.js deployment and hosting
+
+### **Development Process**
+- **Start Simple**: Begin with basic functionality
+- **Test in Context**: Always test embedded behavior
+- **Optimize for Performance**: Every millisecond counts
+- **Document Embedding**: Clear instructions for users
+
+## The Bigger Picture
+
+Building Notion Widgets with Next.js taught me that modern React frameworks are incredibly powerful for creating embeddable, performant applications. The combination of Next.js, React, and TailwindCSS makes it possible to build sophisticated widgets quickly and efficiently.
+
+## Conclusion
+
+Notion Widgets represents my exploration of Next.js and modern React development. It's not just a collection of tools - it's a testament to the power of modern web frameworks and the importance of understanding both the framework and the fundamentals.
+
+The project has made me a more versatile developer by teaching me advanced React patterns, Next.js optimization, and the challenges of building embeddable components. It's also given me a deeper appreciation for the Notion ecosystem and the power of modern web technologies.
+
+Try the widgets at [notion-with-widgets.vercel.app](https://notion-with-widgets.vercel.app/) and see how Next.js can create powerful, embeddable tools that enhance your Notion workspace. 
