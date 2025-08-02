@@ -5,24 +5,26 @@ const Project = ({ image, title, description, url, github }) => {
   const schemaMarkup = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": title,
-    "description": description,
-    "url": url,
-    "applicationCategory": "ProductivityApplication",
-    "operatingSystem": "Web",
-    "offers": {
+    name: title,
+    description: description,
+    url: url,
+    applicationCategory: "ProductivityApplication",
+    operatingSystem: "Web",
+    offers: {
       "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    }
+      price: "0",
+      priceCurrency: "USD",
+    },
   }
 
   return (
-    <article className="box p-0" itemScope itemType="https://schema.org/SoftwareApplication">
-      <script type="application/ld+json">
-        {JSON.stringify(schemaMarkup)}
-      </script>
-      
+    <article
+      className="box p-0"
+      itemScope
+      itemType="https://schema.org/SoftwareApplication"
+    >
+      <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
+
       {image && (
         <div
           style={{
@@ -35,15 +37,22 @@ const Project = ({ image, title, description, url, github }) => {
           aria-label={`Screenshot of ${title}`}
         ></div>
       )}
-      
+
       <div className="p-6 flex flex-col gap-y-1.5">
-        <h3 className="font-bold text-darkest dark:text-lightest" itemProp="name">{title}</h3>
-        <p className="text-dark dark:text-light" itemProp="description">{description}</p>
-        
+        <h3
+          className="font-bold text-darkest dark:text-lightest"
+          itemProp="name"
+        >
+          {title}
+        </h3>
+        <p className="text-dark dark:text-light" itemProp="description">
+          {description}
+        </p>
+
         <div className="button-container items-center mt-3">
           {github && (
-            <a 
-              href={github} 
+            <a
+              href={github}
               className="github-icon"
               aria-label={`View ${title} source code on GitHub`}
               rel="noopener noreferrer"
@@ -61,8 +70,8 @@ const Project = ({ image, title, description, url, github }) => {
           )}
 
           {url && (
-            <a 
-              href={url} 
+            <a
+              href={url}
               className="external-icon"
               aria-label={`Visit ${title} live website`}
               rel="noopener noreferrer"

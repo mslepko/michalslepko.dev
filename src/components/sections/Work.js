@@ -13,78 +13,91 @@ export default function Work() {
   const portfolioSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "Michal Slepko's Portfolio Projects",
-    "description": "A collection of software development projects showcasing web applications, productivity tools, PHP development tools, and technical solutions built with modern technologies.",
-    "numberOfItems": 6,
-    "itemListElement": [
+    name: "Michal Slepko's Portfolio Projects",
+    description:
+      "A collection of software development projects showcasing web applications, productivity tools, PHP development tools, and technical solutions built with modern technologies.",
+    numberOfItems: 6,
+    itemListElement: [
       {
         "@type": "ListItem",
-        "position": 1,
-        "item": {
+        position: 1,
+        item: {
           "@type": "SoftwareApplication",
-          "name": "NotiTasks",
-          "description": "A comprehensive task management solution designed specifically for Notion users."
-        }
+          name: "NotiTasks",
+          description:
+            "A comprehensive task management solution designed specifically for Notion users.",
+        },
       },
       {
         "@type": "ListItem",
-        "position": 2,
-        "item": {
+        position: 2,
+        item: {
           "@type": "WebSite",
-          "name": "WordPress Care Plans",
-          "description": "A professional landing page showcasing comprehensive WordPress maintenance and support services."
-        }
+          name: "WordPress Care Plans",
+          description:
+            "A professional landing page showcasing comprehensive WordPress maintenance and support services.",
+        },
       },
       {
         "@type": "ListItem",
-        "position": 3,
-        "item": {
+        position: 3,
+        item: {
           "@type": "SoftwareApplication",
-          "name": "Notion Widgets",
-          "description": "A collection of customizable widgets and tools designed to enhance Notion workspace functionality."
-        }
+          name: "Notion Widgets",
+          description:
+            "A collection of customizable widgets and tools designed to enhance Notion workspace functionality.",
+        },
       },
       {
         "@type": "ListItem",
-        "position": 4,
-        "item": {
+        position: 4,
+        item: {
           "@type": "WebApplication",
-          "name": "PHP Unserialize Online",
-          "description": "An online tool for converting serialized PHP data back into readable PHP data structures."
-        }
+          name: "PHP Unserialize Online",
+          description:
+            "An online tool for converting serialized PHP data back into readable PHP data structures.",
+        },
       },
       {
         "@type": "ListItem",
-        "position": 5,
-        "item": {
+        position: 5,
+        item: {
           "@type": "WebApplication",
-          "name": "PHP Serialize Online",
-          "description": "A web-based tool for converting PHP arrays and objects into serialized strings."
-        }
+          name: "PHP Serialize Online",
+          description:
+            "A web-based tool for converting PHP arrays and objects into serialized strings.",
+        },
       },
       {
         "@type": "ListItem",
-        "position": 6,
-        "item": {
+        position: 6,
+        item: {
           "@type": "WebApplication",
-          "name": "PHP Playground Online",
-          "description": "An interactive online environment for testing and experimenting with PHP code."
-        }
-      }
-    ]
+          name: "PHP Playground Online",
+          description:
+            "An interactive online environment for testing and experimenting with PHP code.",
+        },
+      },
+    ],
   }
 
   return (
-    <section className="work section" itemScope itemType="https://schema.org/ItemList">
+    <section
+      className="work section"
+      itemScope
+      itemType="https://schema.org/ItemList"
+    >
       <script type="application/ld+json">
         {JSON.stringify(portfolioSchema)}
       </script>
-      
+
       <article className="inner-container">
         <header className="title">
           <SectionTitle subtitle={"What have I made?"} title={"Work"} />
           <p className="text-dark dark:text-light">
-            A collection of software development hobby projects showcasing web applications, productivity tools, PHP development tools, and technical solutions built with modern technologies.
+            A collection of software development hobby projects showcasing web
+            applications, productivity tools, PHP development tools, and
+            technical solutions built with modern technologies.
           </p>
         </header>
 
@@ -138,8 +151,6 @@ export default function Work() {
             description="An interactive online PHP development environment that allows developers to write, test, and execute PHP code directly in the browser. Features include syntax highlighting, error reporting, output formatting, and the ability to save and share code snippets. Built with modern web technologies for seamless performance and real-time code execution. Ideal for learning PHP, testing code snippets, debugging, and sharing code examples with other developers without requiring local PHP installation."
             url="https://phpplayground.online/"
           />
-          
-          
         </div>
       </article>
     </section>
