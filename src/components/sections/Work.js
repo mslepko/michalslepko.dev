@@ -4,23 +4,96 @@ import Project from "../cards/Project"
 import Project1Image from "../../images/projects/notitasks.png"
 import Project2Image from "../../images/projects/wp_care_plans.png"
 import Project3Image from "../../images/projects/notion_widgets.png"
+import Project4Image from "../../images/projects/phpunserialize.png"
+import Project5Image from "../../images/projects/phpserialize.png"
+import Project6Image from "../../images/projects/phpplayground.png"
 
 export default function Work() {
+  // Schema markup for the portfolio
+  const portfolioSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Michal Slepko's Portfolio Projects",
+    "description": "A collection of software development projects showcasing web applications, productivity tools, PHP development tools, and technical solutions built with modern technologies.",
+    "numberOfItems": 6,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "NotiTasks",
+          "description": "A comprehensive task management solution designed specifically for Notion users."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "WebSite",
+          "name": "WordPress Care Plans",
+          "description": "A professional landing page showcasing comprehensive WordPress maintenance and support services."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "Notion Widgets",
+          "description": "A collection of customizable widgets and tools designed to enhance Notion workspace functionality."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "WebApplication",
+          "name": "PHP Unserialize Online",
+          "description": "An online tool for converting serialized PHP data back into readable PHP data structures."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "WebApplication",
+          "name": "PHP Serialize Online",
+          "description": "A web-based tool for converting PHP arrays and objects into serialized strings."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "WebApplication",
+          "name": "PHP Playground Online",
+          "description": "An interactive online environment for testing and experimenting with PHP code."
+        }
+      }
+    ]
+  }
+
   return (
-    <section className="work section">
+    <section className="work section" itemScope itemType="https://schema.org/ItemList">
+      <script type="application/ld+json">
+        {JSON.stringify(portfolioSchema)}
+      </script>
+      
       <article className="inner-container">
-        <article className="title">
+        <header className="title">
           <SectionTitle subtitle={"What have I made?"} title={"Work"} />
-        </article>
+          <p className="text-dark dark:text-light">
+            A collection of software development hobby projects showcasing web applications, productivity tools, PHP development tools, and technical solutions built with modern technologies.
+          </p>
+        </header>
 
-        <article className="content">
+        <div className="content" itemProp="itemListElement">
           {/* Project 1 */}
-
           <Project
             image={Project1Image}
             title="NotiTasks"
-            description="Managing Notion Tasks Made easy. A side project to help me manage my tasks.
-            Build using NextJS, TailwindCSS, ChakraUI, Supabase."
+            description="A comprehensive task management solution designed specifically for Notion users. This productivity tool streamlines task organization with intuitive features including drag-and-drop functionality, priority tagging, and deadline tracking. Built with modern web technologies including Next.js for optimal performance, TailwindCSS for responsive design, ChakraUI for accessible components, and Supabase for real-time database functionality. Perfect for developers and teams looking to enhance their Notion workflow with advanced task management capabilities."
             url="https://notitasks.com/"
           />
 
@@ -28,21 +101,46 @@ export default function Work() {
           <Project
             image={Project2Image}
             title="WordPress Care Plans"
-            description="Landing page for WordPress Care Plans webiste. Build using HTML, jQuery, CSS."
+            description="A professional landing page showcasing comprehensive WordPress maintenance and support services. Features include automated security monitoring, performance optimization, regular backups, and 24/7 technical support. Built with semantic HTML5, jQuery for interactive elements, and responsive CSS3 for optimal mobile experience. Designed to convert visitors into long-term WordPress care clients with clear service offerings and trust indicators."
             url="https://wp-maintenance.pro/"
             github="https://github.com/rootscopeltd/wp.rootscope.dev"
           />
 
           {/* Project 3 */}
-
           <Project
             image={Project3Image}
             title="Notion Widgets"
-            description="Website with a different widgets that can be embeded in Notion templates."
+            description="A collection of customizable widgets and tools designed to enhance Notion workspace functionality. Includes productivity widgets like countdown timers, progress bars, weather displays, and interactive forms that can be seamlessly embedded into any Notion page. Built with vanilla JavaScript for lightweight performance and deployed on Vercel for global CDN distribution. Ideal for Notion power users seeking to create more dynamic and interactive workspaces."
             url="https://notion-with-widgets.vercel.app/"
             github="https://github.com/mslepko/notion-widgets"
           />
-        </article>
+
+          {/* Project 4 */}
+          <Project
+            image={Project4Image}
+            title="PHP Unserialize Online"
+            description="A specialized web-based tool designed for PHP developers to easily convert serialized PHP data back into readable PHP data structures. Features include support for complex serialized arrays, objects, and nested data structures with real-time conversion and syntax highlighting. Built with modern JavaScript for instant processing and responsive design for optimal mobile experience. Essential for debugging, development, and educational purposes when working with PHP serialized data in databases or configuration files."
+            url="https://phpunserialize.com/"
+          />
+
+          {/* Project 5 */}
+          <Project
+            image={Project5Image}
+            title="PHP Serialize Online"
+            description="An intuitive online tool that converts PHP arrays and objects into serialized strings for storage and transmission. Supports complex data structures including nested arrays, objects, and mixed data types with instant conversion and copy-to-clipboard functionality. Built with vanilla JavaScript for fast processing and clean, responsive interface. Perfect for developers who need to quickly serialize PHP data structures for database storage, caching, or API communication without setting up a local development environment."
+            url="https://phpserialize.com/"
+          />
+
+          {/* Project 6 */}
+          <Project
+            image={Project6Image}
+            title="PHP Playground Online"
+            description="An interactive online PHP development environment that allows developers to write, test, and execute PHP code directly in the browser. Features include syntax highlighting, error reporting, output formatting, and the ability to save and share code snippets. Built with modern web technologies for seamless performance and real-time code execution. Ideal for learning PHP, testing code snippets, debugging, and sharing code examples with other developers without requiring local PHP installation."
+            url="https://phpplayground.online/"
+          />
+          
+          
+        </div>
       </article>
     </section>
   )
