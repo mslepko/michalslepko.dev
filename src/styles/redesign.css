@@ -320,3 +320,20 @@ Table Of Contents:
     @apply flex flex-col lg:flex-row h-auto lg:h-full w-full;
   }
 }
+
+article.my-snippets ul {
+  @apply list-disc list-inside mb-4 mt-4 ml-4;
+}
+
+article.my-snippets p {
+  @apply mt-4;
+}
+
+article.my-snippets h2,
+article.my-snippets h3 {
+  @apply font-bold mt-8 mb-4;
+}
+
+article.my-snippets code {
+  @apply rounded-lg p-2;
+}

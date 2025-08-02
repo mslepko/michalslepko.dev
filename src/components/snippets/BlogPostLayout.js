@@ -30,7 +30,7 @@ const BlogPostLayout = ({
   }
 
   return (
-    <article className="flex-1 text-xl container mx-auto p-8 pb-16 text-left text-darkest dark:text-lightest">
+    <article className="flex-1 text-xl container mx-auto p-8 pb-16 text-left text-darkest dark:text-lightest my-snippets">
       {/* <Image
           className="max-w-md rounded-lg ml-10 mb-10 float-right"
           filename={featuredImage}
