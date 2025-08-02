@@ -43,11 +43,15 @@ export default function Skills() {
               </div>
               <div className="m-2 flex flex-col items-center" title="Perl">
                 <Perl />
-                <p className="text-dark dark:text-light text-center m-0">Perl</p>
+                <p className="text-dark dark:text-light text-center m-0">
+                  Perl
+                </p>
               </div>
               <div className="m-2 flex flex-col items-center" title="Bash">
                 <Bash />
-                <p className="text-dark dark:text-light text-center m-0">Bash</p>
+                <p className="text-dark dark:text-light text-center m-0">
+                  Bash
+                </p>
               </div>
             </div>
           </div>
@@ -60,19 +64,28 @@ export default function Skills() {
             <div className="flex flex-col">
               <div className="m-2 flex flex-col items-center" title="HTML">
                 <Html />
-                <p className="text-dark dark:text-light text-center m-0">HTML</p>
+                <p className="text-dark dark:text-light text-center m-0">
+                  HTML
+                </p>
               </div>
               <div className="m-2 flex flex-col items-center" title="CSS">
                 <Css />
                 <p className="text-dark dark:text-light text-center m-0">CSS</p>
               </div>
-              <div className="m-2 flex flex-col items-center" title="JavaScript">
+              <div
+                className="m-2 flex flex-col items-center"
+                title="JavaScript"
+              >
                 <JavaScript />
-                <p className="text-dark dark:text-light text-center m-0">JavaScript</p>
+                <p className="text-dark dark:text-light text-center m-0">
+                  JavaScript
+                </p>
               </div>
               <div className="m-2 flex flex-col items-center" title="Jquery">
                 <Jquery />
-                <p className="text-dark dark:text-light text-center m-0">jQuery</p>
+                <p className="text-dark dark:text-light text-center m-0">
+                  jQuery
+                </p>
               </div>
             </div>
           </div>
@@ -85,23 +98,33 @@ export default function Skills() {
             <div className="flex flex-col">
               <div className="m-2 flex flex-col items-center" title="Laravel">
                 <Laravel />
-                <p className="text-dark dark:text-light text-center m-0">Laravel</p>
+                <p className="text-dark dark:text-light text-center m-0">
+                  Laravel
+                </p>
               </div>
               <div className="m-2 flex flex-col items-center" title="Wordpress">
                 <Wordpress />
-                <p className="text-dark dark:text-light text-center m-0">WordPress</p>
+                <p className="text-dark dark:text-light text-center m-0">
+                  WordPress
+                </p>
               </div>
               <div className="m-2 flex flex-col items-center" title="ReactJS">
                 <ReactJs />
-                <p className="text-dark dark:text-light text-center m-0">React JS</p>
+                <p className="text-dark dark:text-light text-center m-0">
+                  React JS
+                </p>
               </div>
               <div className="m-2 flex flex-col items-center" title="GatsbyJS">
                 <Gatsbyjs />
-                <p className="text-dark dark:text-light text-center m-0">Gatsby JS</p>
+                <p className="text-dark dark:text-light text-center m-0">
+                  Gatsby JS
+                </p>
               </div>
               <div className="m-2 flex flex-col items-center" title="Shopify">
                 <Shopify />
-                <p className="text-dark dark:text-light text-center m-0">Shopify</p>
+                <p className="text-dark dark:text-light text-center m-0">
+                  Shopify
+                </p>
               </div>
             </div>
           </div>
@@ -114,11 +137,18 @@ export default function Skills() {
             <div className="flex flex-col">
               <div className="m-2 flex flex-col items-center" title="Bootstrap">
                 <Bootstrap />
-                <p className="text-dark dark:text-light text-center m-0">Bootstrap</p>
+                <p className="text-dark dark:text-light text-center m-0">
+                  Bootstrap
+                </p>
               </div>
-              <div className="m-2 flex flex-col items-center" title="TailwindCSS">
+              <div
+                className="m-2 flex flex-col items-center"
+                title="TailwindCSS"
+              >
                 <TailwindCss />
-                <p className="text-dark dark:text-light text-center m-0">Tailwind CSS</p>
+                <p className="text-dark dark:text-light text-center m-0">
+                  Tailwind CSS
+                </p>
               </div>
             </div>
           </div>
@@ -131,31 +161,45 @@ export default function Skills() {
             <div className="flex flex-col">
               <div className="m-2 flex flex-col items-center" title="Apache">
                 <Apache />
-                <p className="text-dark dark:text-light text-center m-0">Apache</p>
+                <p className="text-dark dark:text-light text-center m-0">
+                  Apache
+                </p>
               </div>
               <div className="m-2 flex flex-col items-center" title="NGINX">
                 <Nginx />
-                <p className="text-dark dark:text-light text-center m-0">NGINX</p>
+                <p className="text-dark dark:text-light text-center m-0">
+                  NGINX
+                </p>
               </div>
               <div className="m-2 flex flex-col items-center" title="Linux">
                 <Linux />
-                <p className="text-dark dark:text-light text-center m-0">Linux</p>
+                <p className="text-dark dark:text-light text-center m-0">
+                  Linux
+                </p>
               </div>
               <div className="m-2 flex flex-col items-center" title="Github">
                 <Github />
-                <p className="text-dark dark:text-light text-center m-0">GitHub</p>
+                <p className="text-dark dark:text-light text-center m-0">
+                  GitHub
+                </p>
               </div>
               <div className="m-2 flex flex-col items-center" title="GraphQL">
                 <Graphql />
-                <p className="text-dark dark:text-light text-center m-0">GraphQL</p>
+                <p className="text-dark dark:text-light text-center m-0">
+                  GraphQL
+                </p>
               </div>
               <div className="m-2 flex flex-col items-center" title="Jenkins">
                 <Jenkins />
-                <p className="text-dark dark:text-light text-center m-0">Jenkins</p>
+                <p className="text-dark dark:text-light text-center m-0">
+                  Jenkins
+                </p>
               </div>
               <div className="m-2 flex flex-col items-center" title="Docker">
                 <Docker />
-                <p className="text-dark dark:text-light text-center m-0">Docker</p>
+                <p className="text-dark dark:text-light text-center m-0">
+                  Docker
+                </p>
               </div>
             </div>
           </div>
