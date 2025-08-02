@@ -165,7 +165,7 @@ Table Of Contents:
     @apply flex flex-col w-full md:w-1/4 gap-y-2;
   }
   .skills .content {
-    @apply w-full lg:w-3/4 grid gap-y-4 gap-x-4 sm:gap-y-4 md:gap-y-6 grid-cols-5 sm:grid-cols-5 md:grid-cols-9 xl:grid-cols-9;
+    @apply w-full lg:w-3/4 grid gap-y-4 gap-x-4 sm:gap-y-4 md:gap-y-6 grid-cols-2 sm:grid-cols-5;
   }
 
   .skills svg {

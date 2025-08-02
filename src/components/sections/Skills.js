@@ -17,6 +17,10 @@ import Laravel from "../../images/tech/Laravel"
 import Linux from "../../images/tech/Linux"
 import Wordpress from "../../images/tech/Wordpress"
 import Jquery from "../../images/tech/Jquery"
+import Shopify from "../../images/tech/Shopify"
+import Jenkins from "../../images/tech/Jenkins"
+import Docker from "../../images/tech/Docker"
+import Nginx from "../../images/tech/nginx"
 
 export default function Skills() {
   return (
@@ -27,56 +31,177 @@ export default function Skills() {
         </article>
 
         <article className="content">
-          <div className="m-2">
-            <Php />
+          {/* Backend Languages */}
+          <div className="skill-group mb-8">
+            <h3 className="text-xl font-bold text-darkest dark:text-lightest mb-4 border-b border-gray-300 dark:border-gray-600 pb-2 min-h-16 text-center">
+              Backend
+            </h3>
+            <div className="flex flex-col">
+              <div className="m-2 flex flex-col items-center" title="PHP">
+                <Php />
+                <p className="text-dark dark:text-light text-center m-0">PHP</p>
+              </div>
+              <div className="m-2 flex flex-col items-center" title="Perl">
+                <Perl />
+                <p className="text-dark dark:text-light text-center m-0">
+                  Perl
+                </p>
+              </div>
+              <div className="m-2 flex flex-col items-center" title="Bash">
+                <Bash />
+                <p className="text-dark dark:text-light text-center m-0">
+                  Bash
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="m-2">
-            <Perl />
+
+          {/* Frontend Technologies */}
+          <div className="skill-group mb-8">
+            <h3 className="text-xl font-bold text-darkest dark:text-lightest mb-4 border-b border-gray-300 dark:border-gray-600 pb-2 min-h-16 text-center">
+              Frontend
+            </h3>
+            <div className="flex flex-col">
+              <div className="m-2 flex flex-col items-center" title="HTML">
+                <Html />
+                <p className="text-dark dark:text-light text-center m-0">
+                  HTML
+                </p>
+              </div>
+              <div className="m-2 flex flex-col items-center" title="CSS">
+                <Css />
+                <p className="text-dark dark:text-light text-center m-0">CSS</p>
+              </div>
+              <div
+                className="m-2 flex flex-col items-center"
+                title="JavaScript"
+              >
+                <JavaScript />
+                <p className="text-dark dark:text-light text-center m-0">
+                  JavaScript
+                </p>
+              </div>
+              <div className="m-2 flex flex-col items-center" title="Jquery">
+                <Jquery />
+                <p className="text-dark dark:text-light text-center m-0">
+                  jQuery
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="m-2">
-            <Bash />
+
+          {/* Frameworks & CMS */}
+          <div className="skill-group mb-8">
+            <h3 className="text-xl font-bold text-darkest dark:text-lightest mb-4 border-b border-gray-300 dark:border-gray-600 pb-2 min-h-16 text-center">
+              Frameworks & CMS
+            </h3>
+            <div className="flex flex-col">
+              <div className="m-2 flex flex-col items-center" title="Laravel">
+                <Laravel />
+                <p className="text-dark dark:text-light text-center m-0">
+                  Laravel
+                </p>
+              </div>
+              <div className="m-2 flex flex-col items-center" title="Wordpress">
+                <Wordpress />
+                <p className="text-dark dark:text-light text-center m-0">
+                  WordPress
+                </p>
+              </div>
+              <div className="m-2 flex flex-col items-center" title="ReactJS">
+                <ReactJs />
+                <p className="text-dark dark:text-light text-center m-0">
+                  React JS
+                </p>
+              </div>
+              <div className="m-2 flex flex-col items-center" title="GatsbyJS">
+                <Gatsbyjs />
+                <p className="text-dark dark:text-light text-center m-0">
+                  Gatsby JS
+                </p>
+              </div>
+              <div className="m-2 flex flex-col items-center" title="Shopify">
+                <Shopify />
+                <p className="text-dark dark:text-light text-center m-0">
+                  Shopify
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="m-2">
-            <Apache />
+
+          {/* CSS Frameworks */}
+          <div className="skill-group mb-8">
+            <h3 className="text-xl font-bold text-darkest dark:text-lightest mb-4 border-b border-gray-300 dark:border-gray-600 pb-2 min-h-16 text-center">
+              CSS Frameworks
+            </h3>
+            <div className="flex flex-col">
+              <div className="m-2 flex flex-col items-center" title="Bootstrap">
+                <Bootstrap />
+                <p className="text-dark dark:text-light text-center m-0">
+                  Bootstrap
+                </p>
+              </div>
+              <div
+                className="m-2 flex flex-col items-center"
+                title="TailwindCSS"
+              >
+                <TailwindCss />
+                <p className="text-dark dark:text-light text-center m-0">
+                  Tailwind CSS
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="m-2">
-            <Linux />
-          </div>
-          <div className="m-2">
-            <Laravel />
-          </div>
-          <div className="m-2">
-            <Wordpress />
-          </div>
-          <div className="m-2">
-            <Html />
-          </div>
-          <div className="m-2">
-            <Css />
-          </div>
-          <div className="m-2">
-            <Bootstrap />
-          </div>
-          <div className="m-2">
-            <TailwindCss />
-          </div>
-          <div className="m-2">
-            <JavaScript />
-          </div>
-          <div className="m-2">
-            <ReactJs />
-          </div>
-          <div className="m-2">
-            <Jquery />
-          </div>
-          <div className="m-2">
-            <Gatsbyjs />
-          </div>
-          <div className="m-2">
-            <Github />
-          </div>
-          <div className="m-2">
-            <Graphql />
+
+          {/* DevOps & Tools */}
+          <div className="skill-group mb-8">
+            <h3 className="text-xl font-bold text-darkest dark:text-lightest mb-4 border-b border-gray-300 dark:border-gray-600 pb-2 min-h-16 text-center">
+              DevOps & Tools
+            </h3>
+            <div className="flex flex-col">
+              <div className="m-2 flex flex-col items-center" title="Apache">
+                <Apache />
+                <p className="text-dark dark:text-light text-center m-0">
+                  Apache
+                </p>
+              </div>
+              <div className="m-2 flex flex-col items-center" title="NGINX">
+                <Nginx />
+                <p className="text-dark dark:text-light text-center m-0">
+                  NGINX
+                </p>
+              </div>
+              <div className="m-2 flex flex-col items-center" title="Linux">
+                <Linux />
+                <p className="text-dark dark:text-light text-center m-0">
+                  Linux
+                </p>
+              </div>
+              <div className="m-2 flex flex-col items-center" title="Github">
+                <Github />
+                <p className="text-dark dark:text-light text-center m-0">
+                  GitHub
+                </p>
+              </div>
+              <div className="m-2 flex flex-col items-center" title="GraphQL">
+                <Graphql />
+                <p className="text-dark dark:text-light text-center m-0">
+                  GraphQL
+                </p>
+              </div>
+              <div className="m-2 flex flex-col items-center" title="Jenkins">
+                <Jenkins />
+                <p className="text-dark dark:text-light text-center m-0">
+                  Jenkins
+                </p>
+              </div>
+              <div className="m-2 flex flex-col items-center" title="Docker">
+                <Docker />
+                <p className="text-dark dark:text-light text-center m-0">
+                  Docker
+                </p>
+              </div>
+            </div>
           </div>
         </article>
       </article>
