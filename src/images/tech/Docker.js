@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function Bash() {
+export default function Docker() {
   return (
     <svg role="img" 
       xmlns="http://www.w3.org/2000/svg"
