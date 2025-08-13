@@ -1,0 +1,55 @@
+---
+title: 'Fix for PHP Fatal error:  Uncaught Error: Class "Elementor\Core\Schemes\Typography" not found'
+description: "This error occurs when Elementor is unable to find the Typography class, which is essential for handling typography settings in Elementor widgets."
+published: 2023-02-17
+categories: "wordpress"
+hero: ../../../defaultHero.jpg
+featuredImage:
+---
+PHP Fatal error:  Uncaught Error: Class "Elementor\Core\Schemes\Typography" not found
+This error occurs when Elementor is unable to find the Typography class, which is essential for handling typography settings in Elementor widgets.
+This can happen due to a few reasons, such as a corrupted Elementor installation or a conflict with another plugin or theme.
+Often other plugins or themes rely in the Typography class, so disabling Elementor will cause other plugins to fail as well.
+Elementor has deprecated the Typography class in version 3.10.0, you may not encounter this issue when you update plugins that rely on it.
+
+This is a simple bash script that replaces the Typography class with a hardcoded values to prevent the error from occurring.
+
+In ideal workld you would update the plugins that rely on the Typography class, but this is a quick fix to get your site back up and running.
+
+```bash
+#!/bin/bash
+
+# Define the directory to search, usually the plugins directory
+# Adjust the path as necessary for your WordPress installation
+# For example, if your WordPress installation is in /var/www/html, you might set
+# DIRECTORY="/var/www/html/wp-content/plugins"
+# For WP Engine it usually is:
+DIRECTORY="/home/wpe-user/sites/SITE_NAME/wp-content/plugins"
+
+# Define the replacements as an associative array
+declare -A REPLACEMENTS=(
+    ["Scheme_Typography::TYPOGRAPHY_1"]="1"
+    ["Scheme_Typography::TYPOGRAPHY_2"]="2"
+    ["Scheme_Typography::TYPOGRAPHY_3"]="3"
+    ["Scheme_Typography::TYPOGRAPHY_4"]="4"
+    ["Scheme_Color::get_type()"]="'color'"
+    ["Scheme_Color::COLOR_1"]="1"
+    ["Scheme_Color::COLOR_2"]="2"
+    ["Scheme_Color::COLOR_3"]="3"
+    ["Scheme_Color::COLOR_4"]="4"
+)
+
+# Find all PHP files in the directory and subdirectories
+find "$DIRECTORY" -type f -name "*.php" | while read -r file; do
+    # Loop through the replacements and apply them
+    for key in "${!REPLACEMENTS[@]}"; do
+        sed -i "s/${key}/${REPLACEMENTS[$key]}/g" "$file"
+    done
+    echo "Processed: $file"
+done
+
+echo "All replacements completed."
+```
+
+
+Check out my hassle-free WordPress hosting and <a href="https://wp-maintenance.pro">WordPress Maintenance Plans</a>
