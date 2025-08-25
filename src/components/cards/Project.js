@@ -7,7 +7,6 @@ const Project = ({ image, title, description, url, github }) => {
       itemScope
       itemType="https://schema.org/SoftwareApplication"
     >
-
       {image && (
         <div
           style={{
