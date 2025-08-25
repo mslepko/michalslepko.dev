@@ -1,29 +1,12 @@
 import React from "react"
 
 const Project = ({ image, title, description, url, github }) => {
-  // Generate schema markup for the project
-  const schemaMarkup = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: title,
-    description: description,
-    url: url,
-    applicationCategory: "ProductivityApplication",
-    operatingSystem: "Web",
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-    },
-  }
-
   return (
     <article
       className="box p-0"
       itemScope
       itemType="https://schema.org/SoftwareApplication"
     >
-      <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
 
       {image && (
         <div
