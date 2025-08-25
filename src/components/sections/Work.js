@@ -32,8 +32,8 @@ export default function Work() {
             "@type": "Offer",
             price: "0",
             priceCurrency: "USD",
-            availability: "https://schema.org/InStock"
-          }
+            availability: "https://schema.org/InStock",
+          },
         },
       },
       {
@@ -50,8 +50,8 @@ export default function Work() {
             "@type": "Offer",
             price: "0",
             priceCurrency: "USD",
-            availability: "https://schema.org/InStock"
-          }
+            availability: "https://schema.org/InStock",
+          },
         },
       },
       {
@@ -68,8 +68,8 @@ export default function Work() {
             "@type": "Offer",
             price: "0",
             priceCurrency: "USD",
-            availability: "https://schema.org/InStock"
-          }
+            availability: "https://schema.org/InStock",
+          },
         },
       },
       {
@@ -80,14 +80,14 @@ export default function Work() {
           name: "PHP Unserialize Online",
           description:
             "An online tool for converting serialized PHP data back into readable PHP data structures.",
-            applicationCategory: "DeveloperApplication",
-            operatingSystem: "Web Browser",
-            offers: {
-              "@type": "Offer",
-              price: "0",
-              priceCurrency: "USD",
-              availability: "https://schema.org/InStock"
-            }
+          applicationCategory: "DeveloperApplication",
+          operatingSystem: "Web Browser",
+          offers: {
+            "@type": "Offer",
+            price: "0",
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
+          },
         },
       },
       {
@@ -98,14 +98,14 @@ export default function Work() {
           name: "PHP Serialize Online",
           description:
             "A web-based tool for converting PHP arrays and objects into serialized strings.",
-            applicationCategory: "DeveloperApplication",
-            operatingSystem: "Web Browser",
-            offers: {
-              "@type": "Offer",
-              price: "0",
-              priceCurrency: "USD",
-              availability: "https://schema.org/InStock"
-            }
+          applicationCategory: "DeveloperApplication",
+          operatingSystem: "Web Browser",
+          offers: {
+            "@type": "Offer",
+            price: "0",
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
+          },
         },
       },
       {
@@ -116,14 +116,14 @@ export default function Work() {
           name: "PHP Playground Online",
           description:
             "An interactive online environment for testing and experimenting with PHP code.",
-            applicationCategory: "DeveloperApplication",
-            operatingSystem: "Web Browser",
-            offers: {
-              "@type": "Offer",
-              price: "0",
-              priceCurrency: "USD",
-              availability: "https://schema.org/InStock"
-            }
+          applicationCategory: "DeveloperApplication",
+          operatingSystem: "Web Browser",
+          offers: {
+            "@type": "Offer",
+            price: "0",
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
+          },
         },
       },
     ],
