@@ -26,6 +26,14 @@ export default function Work() {
           name: "NotiTasks",
           description:
             "A comprehensive task management solution designed specifically for Notion users.",
+          applicationCategory: "ProductivityApplication",
+          operatingSystem: "Web Browser",
+          offers: {
+            "@type": "Offer",
+            price: "0",
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock"
+          }
         },
       },
       {
@@ -36,6 +44,14 @@ export default function Work() {
           name: "WordPress Care Plans",
           description:
             "A professional landing page showcasing comprehensive WordPress maintenance and support services.",
+          applicationCategory: "BrowserApplication",
+          operatingSystem: "Web Browser",
+          offers: {
+            "@type": "Offer",
+            price: "0",
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock"
+          }
         },
       },
       {
@@ -46,6 +62,14 @@ export default function Work() {
           name: "Notion Widgets",
           description:
             "A collection of customizable widgets and tools designed to enhance Notion workspace functionality.",
+          applicationCategory: "ProductivityApplication",
+          operatingSystem: "Web Browser",
+          offers: {
+            "@type": "Offer",
+            price: "0",
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock"
+          }
         },
       },
       {
@@ -56,6 +80,14 @@ export default function Work() {
           name: "PHP Unserialize Online",
           description:
             "An online tool for converting serialized PHP data back into readable PHP data structures.",
+            applicationCategory: "DeveloperApplication",
+            operatingSystem: "Web Browser",
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "USD",
+              availability: "https://schema.org/InStock"
+            }
         },
       },
       {
@@ -66,6 +98,14 @@ export default function Work() {
           name: "PHP Serialize Online",
           description:
             "A web-based tool for converting PHP arrays and objects into serialized strings.",
+            applicationCategory: "DeveloperApplication",
+            operatingSystem: "Web Browser",
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "USD",
+              availability: "https://schema.org/InStock"
+            }
         },
       },
       {
@@ -76,6 +116,14 @@ export default function Work() {
           name: "PHP Playground Online",
           description:
             "An interactive online environment for testing and experimenting with PHP code.",
+            applicationCategory: "DeveloperApplication",
+            operatingSystem: "Web Browser",
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "USD",
+              availability: "https://schema.org/InStock"
+            }
         },
       },
     ],
