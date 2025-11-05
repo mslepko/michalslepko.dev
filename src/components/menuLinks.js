@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 const MenuLinks = ({ classes, hideHome, linkClasses }) => {
   const links = {
     "/": "Home",
+    "/work/": "Work",
     "/uses/": "Uses",
     "/links/": "Links",
     "/resume/": "My CV",
