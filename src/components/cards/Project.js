@@ -56,7 +56,7 @@ const Project = ({ image, title, description, url, github }) => {
               href={url}
               className="external-icon"
               aria-label={`Visit ${title} live website`}
-              rel="noopener noreferrer"
+              rel="noopener"
               itemProp="url"
             >
               <svg
