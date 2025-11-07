@@ -6,9 +6,9 @@ const MenuLinks = ({ classes, hideHome, linkClasses }) => {
     "/": "Home",
     "/uses/": "Uses",
     "/links/": "Links",
-    "/resume/": "My CV",
+    "/snippets/": "Snippets",
+    "/projects/": "Projects",
     "/contact/": "Contact me",
-    "/snippets/": "My snippets",
   }
 
   if (hideHome) {

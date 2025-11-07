@@ -7,6 +7,8 @@ import Project3Image from "../../images/projects/notion_widgets.png"
 import Project4Image from "../../images/projects/phpunserialize.png"
 import Project5Image from "../../images/projects/phpserialize.png"
 import Project6Image from "../../images/projects/phpplayground.png"
+import Project7Image from "../../images/projects/errorlogsemailer.png"
+import Project8Image from "../../images/projects/failedactionsmonitor.png"
 
 export default function Work() {
   // Schema markup for the portfolio
@@ -15,8 +17,8 @@ export default function Work() {
     "@type": "ItemList",
     name: "Michal Slepko's Portfolio Projects",
     description:
-      "A collection of software development projects showcasing web applications, productivity tools, PHP development tools, and technical solutions built with modern technologies.",
-    numberOfItems: 6,
+      "A collection of software development projects showcasing web applications, productivity tools, PHP development tools, WordPress plugins, and technical solutions built with modern technologies.",
+    numberOfItems: 8,
     itemListElement: [
       {
         "@type": "ListItem",
@@ -126,6 +128,42 @@ export default function Work() {
           },
         },
       },
+      {
+        "@type": "ListItem",
+        position: 7,
+        item: {
+          "@type": "SoftwareApplication",
+          name: "Error Logs Emailer for WooCommerce",
+          description:
+            "A WordPress plugin that automatically delivers WooCommerce fatal error logs to specified email addresses.",
+          applicationCategory: "DeveloperApplication",
+          operatingSystem: "WordPress",
+          offers: {
+            "@type": "Offer",
+            price: "0",
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
+          },
+        },
+      },
+      {
+        "@type": "ListItem",
+        position: 8,
+        item: {
+          "@type": "SoftwareApplication",
+          name: "Failed Actions Monitor for Action Scheduler",
+          description:
+            "A WordPress plugin that monitors failed Action Scheduler jobs and delivers daily email notifications.",
+          applicationCategory: "DeveloperApplication",
+          operatingSystem: "WordPress",
+          offers: {
+            "@type": "Offer",
+            price: "0",
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
+          },
+        },
+      },
     ],
   }
 
@@ -144,7 +182,7 @@ export default function Work() {
           <SectionTitle subtitle={"What have I made?"} title={"Work"} />
           <p className="text-dark dark:text-light">
             A collection of software development hobby projects showcasing web
-            applications, productivity tools, PHP development tools, and
+            applications, productivity tools, PHP development tools, WordPress plugins, and
             technical solutions built with modern technologies.
           </p>
         </header>
@@ -198,6 +236,22 @@ export default function Work() {
             title="PHP Playground Online"
             description="An interactive online PHP development environment that allows developers to write, test, and execute PHP code directly in the browser. Features include syntax highlighting, error reporting, output formatting, and the ability to save and share code snippets. Built with modern web technologies for seamless performance and real-time code execution. Ideal for learning PHP, testing code snippets, debugging, and sharing code examples with other developers without requiring local PHP installation."
             url="https://phpplayground.online/"
+          />
+
+          {/* Project 7 */}
+          <Project
+            image={Project7Image}
+            title="Error Logs Emailer for WooCommerce"
+            description="A WordPress plugin that automatically delivers WooCommerce fatal error logs to specified email addresses, eliminating the need for manual log monitoring. Features automated error notifications sent daily at 5 AM, flexible email configuration with support for multiple recipients, and a user-friendly settings interface. Built with PHP and integrates with Action Scheduler for reliable scheduled delivery. With over 20 active installations and a 5-star rating, this plugin helps site administrators stay informed about errors without constantly checking logs. Perfect for WooCommerce store owners and developers who need proactive error monitoring."
+            url="https://wordpress.org/plugins/error-logs-emailer-for-woocommerce/"
+          />
+
+          {/* Project 8 */}
+          <Project
+            image={Project8Image}
+            title="Failed Actions Monitor for Action Scheduler"
+            description="A WordPress plugin that monitors failed Action Scheduler jobs and delivers daily email notifications about them at 5:00 AM server time. Designed for WooCommerce and other WordPress sites using Action Scheduler, this monitoring tool helps administrators stay informed about background job failures with configurable notification recipients and recovery mode email delivery support. Features include detailed failure reports with action IDs, hook names, and scheduled dates. With over 30 active installations, this plugin is essential for maintaining reliable scheduled tasks and background processes on WordPress sites."
+            url="https://wordpress.org/plugins/failed-actions-monitor-for-action-scheduler/"
           />
         </div>
       </article>
