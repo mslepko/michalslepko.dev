@@ -182,8 +182,8 @@ export default function Work() {
           <SectionTitle subtitle={"What have I made?"} title={"Work"} />
           <p className="text-dark dark:text-light">
             A collection of software development hobby projects showcasing web
-            applications, productivity tools, PHP development tools, WordPress plugins, and
-            technical solutions built with modern technologies.
+            applications, productivity tools, PHP development tools, WordPress
+            plugins, and technical solutions built with modern technologies.
           </p>
         </header>
 
