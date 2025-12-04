@@ -4,7 +4,7 @@ import Seo from "../components/seo"
 import Hero from "../components/hero"
 import About from "../components/sections/About"
 import Skills from "../components/sections/Skills"
-import Work from "../components/sections/Work"
+import ProfessionalWork from "../components/sections/ProfessionalWork"
 import Contact from "../components/sections/Contact"
 
 const IndexPage = () => (
@@ -13,7 +13,7 @@ const IndexPage = () => (
       <Hero />
       <About />
       <Skills />
-      <Work />
+      <ProfessionalWork />
       <Contact />
     </div>
   </Layout>

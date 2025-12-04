@@ -7,6 +7,7 @@ const MenuLinks = ({ classes, hideHome, linkClasses }) => {
     "/uses/": "Uses",
     "/links/": "Links",
     "/snippets/": "Snippets",
+    "/work/": "Work",
     "/projects/": "Projects",
     "/contact/": "Contact me",
   }
