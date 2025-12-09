@@ -184,9 +184,13 @@ export default function ProfessionalWork() {
             results={[
               {
                 metric: "100%",
-                label: "Automation of donation data entry (2-3 hrs saved daily)",
+                label:
+                  "Automation of donation data entry (2-3 hrs saved daily)",
               },
-              { metric: "Instant", label: "Donor acknowledgment via automation" },
+              {
+                metric: "Instant",
+                label: "Donor acknowledgment via automation",
+              },
               { metric: "Zero", label: "Data discrepancies between systems" },
               { metric: "25%+", label: "Increase in online donations" },
             ]}
