@@ -1,0 +1,128 @@
+---
+title: "Why I Built SitemapToLLMs"
+description: "Why I built SitemapToLLMs — a tool that converts sitemaps into structured llms.txt files to help websites become AI-readable."
+slug: "why-i-built-sitemaptollms"
+date: "2026-02-22"
+tags: ["AI", "LLMs", "SEO", "Developer Tools", "Startups"]
+hero_image: "../../images/projects/sitemaptollms.png"
+---
+
+# Why I Built SitemapToLLMs
+
+I've been building developer tools for years - PHP Unserialize, PHP Serialize, PHP Playground, WP Admin Online, and others. They're simple, focused tools that solve one problem well.
+
+But recently, I noticed something shifting in how people discover and use these tools.
+
+More traffic was coming from AI-assisted workflows. People weren’t just Googling *“unserialize PHP online”* anymore — they were asking ChatGPT, Claude, or Perplexity for recommendations.
+
+And that got me thinking:
+
+**How do LLMs actually understand what my sites do?**
+
+The answer was uncomfortable.
+
+They don’t — not really. They infer. They scrape fragments. They fill in gaps. Sometimes they hallucinate the rest.
+
+---
+
+## The llms.txt Moment
+
+When I first came across the `llms.txt` specification, it immediately clicked.
+
+It felt like what `robots.txt` did for search engines — but for AI.
+
+A structured file at your site root that tells LLMs:
+
+- What the site is about
+- Which pages matter
+- How everything is organised
+
+The problem was obvious.
+
+Nobody is going to manually maintain an `llms.txt` file for a site with hundreds of pages. And even if you write one, it goes stale the moment you publish new content.
+
+But I already had sitemaps on all my sites.
+
+Sitemaps already describe structure.
+
+The leap from sitemap → `llms.txt` felt natural.
+
+---
+
+## Building It
+
+The first version was intentionally simple:
+
+Paste a sitemap URL → get a formatted `llms.txt`.
+
+Technically correct. Practically useless.
+
+Auth pages leaked through. WordPress archives appeared. Duplicate URLs showed up. The output was just a flat list — no structure, no signal, no prioritisation.
+
+So I iterated.
+
+- URL filtering to remove noise (login pages, admin routes, archives)
+- Semantic section naming (turning slugs into readable headings)
+- Automatic grouping of legal pages
+- Priority-based ordering so important content appears first
+
+With each improvement, the output became more meaningful.
+
+It stopped being a URL dump and started becoming something that genuinely helps an LLM understand a site's purpose and structure.
+
+---
+
+## Making It Sustainable
+
+From building other tools, I’ve learned something simple:
+
+“Free forever” doesn’t pay server bills.
+
+But I also didn’t want to hide the core functionality behind a paywall.
+
+So I landed on something fair:
+
+### Free
+
+- Up to 5 sites
+- Manual generation anytime
+- 100 URLs per site
+
+### Pro — $0.99/site/month
+
+- Up to 50,000 URLs
+- Automated daily/weekly/monthly regeneration
+- Email notifications
+
+The Pro tier solves a real problem.
+
+An `llms.txt` file is only useful if it stays current.
+
+If you publish weekly content, your AI-facing structure should update automatically — not rely on you remembering to regenerate it.
+
+---
+
+## What I Learned
+
+Building SitemapToLLMs reinforced something I keep rediscovering:
+
+The best tools automate the thing you’d otherwise forget to do.
+
+Nobody wakes up thinking:
+
+> “I should update my llms.txt today.”
+
+But everyone wants their site to be discoverable by AI.
+
+The AI discovery landscape today feels a bit like SEO did 15 years ago. Early, undefined, slightly chaotic.
+
+`llms.txt` might not be the final standard.
+
+But the underlying need — making websites machine-readable for LLMs — isn’t going away.
+
+If anything, it’s becoming foundational.
+
+If you have a website, you’ll likely need some structured AI-facing layer.
+
+And if you don’t want to maintain it by hand, that’s exactly why I built
+👉 **[SitemapToLLMs](https://sitemaptollms.com)**.
