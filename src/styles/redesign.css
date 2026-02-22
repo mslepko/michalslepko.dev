@@ -335,5 +335,5 @@ article.my-snippets h3 {
 }
 
 article.my-snippets code {
-  @apply rounded-lg p-2;
+  @apply rounded-lg p-2 inline-block;
 }
