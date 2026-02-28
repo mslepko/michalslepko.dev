@@ -1,15 +1,9 @@
 import * as React from "react"
 import Layout from "../components/layout/Layout"
 import Seo from "../components/seo"
-import Work from "../components/sections/Work"
+import Work, { WORK_TYPES } from "../components/sections/Work"
 
-const VALID_FILTERS = [
-  "tool",
-  "saas",
-  "mobile-app",
-  "browser-extension",
-  "wordpress-plugin",
-]
+const VALID_FILTERS = WORK_TYPES.map(type => type.slug)
 
 function getFilterFromPath(pathname) {
   const segment = pathname.replace(/^\/projects\/?/, "").replace(/\/$/, "")

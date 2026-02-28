@@ -13,7 +13,7 @@ import Project8Image from "../../images/projects/failedactionsmonitor.png"
 import Project9Image from "../../images/projects/zohofilters.png"
 import Project10Image from "../../images/projects/sitemaptollms.png"
 
-const WORK_TYPES = [
+export const WORK_TYPES = [
   { slug: "tool", label: "Tool" },
   { slug: "saas", label: "SaaS" },
   { slug: "mobile-app", label: "Mobile App" },
