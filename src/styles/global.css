@@ -86,6 +86,11 @@ code {
   @apply text-darkest;
 }
 
+.gatsby-image-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
 /* Featured links */
 .featured-link__turing > div {
   color: #673aff;
