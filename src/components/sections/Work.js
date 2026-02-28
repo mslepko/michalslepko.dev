@@ -85,7 +85,7 @@ const projects = [
       "A collection of customizable widgets and tools designed to enhance Notion workspace functionality. Includes productivity widgets like countdown timers, progress bars, weather displays, and interactive forms that can be seamlessly embedded into any Notion page. Built with vanilla JavaScript for lightweight performance and deployed on Vercel for global CDN distribution. Ideal for Notion power users seeking to create more dynamic and interactive workspaces.",
     url: "https://notion-with-widgets.vercel.app/",
     github: "https://github.com/mslepko/notion-widgets",
-    workType: "saas",
+    workType: "tool",
   },
   {
     image: Project2Image,
