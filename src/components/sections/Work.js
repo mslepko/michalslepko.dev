@@ -11,6 +11,7 @@ import Project6Image from "../../images/projects/phpplayground.png"
 import Project7Image from "../../images/projects/errorlogsemailer.png"
 import Project8Image from "../../images/projects/failedactionsmonitor.png"
 import Project9Image from "../../images/projects/zohofilters.png"
+import Project10Image from "../../images/projects/sitemaptollms.png"
 
 const WORK_TYPES = [
   { slug: "tool", label: "Tool" },
@@ -21,6 +22,14 @@ const WORK_TYPES = [
 ]
 
 const projects = [
+  {
+    image: Project10Image,
+    title: "SitemapToLLMs",
+    description:
+      "A tool that converts XML sitemaps into structured llms.txt files, helping websites become AI-readable. Paste a sitemap URL and get a formatted llms.txt with smart URL filtering, semantic section naming, automatic grouping, and priority-based ordering. Free tier supports up to 5 sites with 100 URLs each; Pro tier offers up to 50,000 URLs per site with automated daily, weekly, or monthly regeneration and email notifications. Like robots.txt for search engines, but for AI.",
+    url: "https://sitemaptollms.com/",
+    workType: "saas",
+  },
   {
     image: Project9Image,
     title: "Zoho CRM Filter Manager",
