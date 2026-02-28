@@ -14,6 +14,17 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 }
 
+exports.onCreatePage = async ({ page, actions }) => {
+  const { createPage, deletePage } = actions
+  if (page.path === "/projects/") {
+    deletePage(page)
+    createPage({
+      ...page,
+      matchPath: "/projects/*",
+    })
+  }
+}
+
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
