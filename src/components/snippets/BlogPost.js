@@ -7,13 +7,13 @@ import BlogPostLayout from "./BlogPostLayout"
 const BlogPost = ({ data, children }) => {
   const {
     id,
-    frontmatter: { featuredImage, title, published },
+    frontmatter: { hero_image, title, published },
   } = data.mdx
 
   return (
     <Layout>
       <BlogPostLayout
-        featuredImage={featuredImage}
+        featuredImage={hero_image}
         title={title}
         content={children}
         date={published}
@@ -51,7 +51,7 @@ export const query = graphql`
         datetime: published
         published(formatString: "DD MMMM YYYY")
         title
-        featuredImage {
+        hero_image {
           childImageSharp {
             gatsbyImageData
           }

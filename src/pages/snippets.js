@@ -19,7 +19,7 @@ const SnippetsPage = () => {
             datetime: published
             published(formatString: "DD MMMM YYYY")
             categories
-            featuredImage {
+            hero_image {
               childImageSharp {
                 gatsbyImageData(
                   width: 300
