@@ -35,9 +35,9 @@ const PostListLayout = ({ data }) => {
           <div className="mx-auto w-full">
             <Image
               className="rounded-t-lg h-56"
-              filename={frontmatter?.featuredImage}
+              filename={frontmatter?.hero_image}
               title={frontmatter?.title}
-              withFallback={!frontmatter?.featuredImage}
+              withFallback={!frontmatter?.hero_image}
             />
           </div>
           <header className="text-center p-5 flex-1 rounded-b-lg">
