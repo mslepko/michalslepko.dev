@@ -20,7 +20,10 @@ const Footer = () => {
 
   const moreLinksCol2 = [
     { url: "https://wp-admin.online/", label: "WP Admin Online" },
-    { url: "https://wp-maintenance.pro/", label: "Dedicated WordPress maintenance plans" },
+    {
+      url: "https://wp-maintenance.pro/",
+      label: "Dedicated WordPress maintenance plans",
+    },
   ]
 
   const moreLinksCol3 = [
@@ -54,7 +57,12 @@ const Footer = () => {
             <ul className="list-none p-0 m-0 flex flex-col gap-y-1">
               {moreLinksCol1.map(link => (
                 <li key={link.url}>
-                  <a href={link.url} target="_blank" rel="noreferrer" className="text-sm">
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-sm"
+                  >
                     {link.label}
                   </a>
                 </li>
@@ -63,7 +71,12 @@ const Footer = () => {
             <ul className="list-none p-0 m-0 flex flex-col gap-y-1">
               {moreLinksCol2.map(link => (
                 <li key={link.url}>
-                  <a href={link.url} target="_blank" rel="noreferrer" className="text-sm">
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-sm"
+                  >
                     {link.label}
                   </a>
                 </li>
@@ -72,7 +85,12 @@ const Footer = () => {
             <ul className="list-none p-0 m-0 flex flex-col gap-y-1">
               {moreLinksCol3.map(link => (
                 <li key={link.url}>
-                  <a href={link.url} target="_blank" rel="noreferrer" className="text-sm">
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-sm"
+                  >
                     {link.label}
                   </a>
                 </li>
