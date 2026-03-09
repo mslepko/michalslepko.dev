@@ -98,7 +98,7 @@ Table Of Contents:
     @apply flex flex-col w-full;
   }
   footer {
-    @apply flex items-center h-24 w-full bg-light/30 dark:bg-dark-blue;
+    @apply flex flex-col w-full bg-light/30 dark:bg-dark-blue;
   }
 }
 
