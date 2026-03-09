@@ -113,8 +113,8 @@ const Footer = () => {
         </p>
       </div>
       <Script
-        src="https://beamanalytics.b-cdn.net/beam.min.js"
-        data-token={process.env.GATSBY_BEAM_ANALYTICS_TOKEN}
+        src="https://scripts.simpleanalyticscdn.com/latest.js"
+        data-collect-dnt="true"
         async
       />
     </footer>
