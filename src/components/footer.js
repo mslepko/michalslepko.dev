@@ -37,10 +37,7 @@ const Footer = () => {
           <ul className="list-none p-0 m-0 flex flex-col gap-y-1">
             {navLinks.map(link => (
               <li key={link.url}>
-                <Link
-                  to={link.url}
-                  className="text-sm"
-                >
+                <Link to={link.url} className="text-sm">
                   {link.label}
                 </Link>
               </li>
