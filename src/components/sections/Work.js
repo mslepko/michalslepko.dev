@@ -12,6 +12,8 @@ import Project7Image from "../../images/projects/errorlogsemailer.png"
 import Project8Image from "../../images/projects/failedactionsmonitor.png"
 import Project9Image from "../../images/projects/zohofilters.png"
 import Project10Image from "../../images/projects/sitemaptollms.png"
+import Project11Image from "../../images/projects/pichamp.png"
+import Project12Image from "../../images/projects/multistopwatch.png"
 
 export const WORK_TYPES = [
   { slug: "tool", label: "Tool" },
@@ -22,6 +24,22 @@ export const WORK_TYPES = [
 ]
 
 const projects = [
+  {
+    image: Project11Image,
+    title: "Pi Champ",
+    description:
+      "Challenge yourself to memorize the digits of Pi. Start from 3.14 and keep going — type each digit from memory, track how far you get, and try to beat your personal best. Whether you're a student, a maths enthusiast, or just love a good memory challenge, Pi Champ makes it easy to practice. Clean, distraction-free design with no ads, no accounts, and no data collection. Works completely offline and is lightweight and fast. Everything is stored locally on your device.",
+    url: "https://apps.apple.com/gb/app/pi-champ/id6759722282",
+    workType: "mobile-app",
+  },
+  {
+    image: Project12Image,
+    title: "MultiStopwatch",
+    description:
+      "Run multiple stopwatches at the same time, so every child, task, or activity can have its own timer. Originally built for parenting chaos, MultiStopwatch is simple, colourful, and fast — designed to help you track multiple timers side-by-side without confusion. Start all timers with one tap, reset them all instantly, give each stopwatch its own colour, and rename timers for each child or task. Perfect for parents with multiple kids, morning and bedtime routines, teachers and classrooms, sports and training, homework sessions, cooking and workouts. No account required, works offline, and no data collection.",
+    url: "https://apps.apple.com/gb/app/multistopwatch/id6759875356",
+    workType: "mobile-app",
+  },
   {
     image: Project10Image,
     title: "SitemapToLLMs",
