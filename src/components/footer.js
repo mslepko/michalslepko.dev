@@ -31,7 +31,7 @@ const Footer = () => {
       bg-light/30 dark:bg-darkest
       py-8 px-4"
     >
-      <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-8 md:gap-12 justify-center">
+      <div className="max-w-4xl mx-auto w-full flex flex-col md:flex-row gap-8 md:gap-12 justify-between">
         <div>
           <h4 className="text-sm font-semibold mb-3">Pages</h4>
           <ul className="list-none p-0 m-0 flex flex-col gap-y-1">
