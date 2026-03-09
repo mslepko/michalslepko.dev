@@ -23,6 +23,22 @@ export const WORK_TYPES = [
 
 const projects = [
   {
+    image: null,
+    title: "Pi Champ",
+    description:
+      "A simple, focused app for memorizing the digits of Pi. Start from 3.14 and keep going. Type each digit from memory, track how far you get, and try to beat your personal best. Clean, distraction-free design with no ads, no accounts, no data collection. Works completely offline. Perfect for students, maths enthusiasts, or anyone who loves a good memory challenge.",
+    url: "https://apps.apple.com/gb/app/pi-champ/id6759722282",
+    workType: "mobile-app",
+  },
+  {
+    image: null,
+    title: "MultiStopwatch",
+    description:
+      "Run multiple stopwatches at once. Start all timers with one tap, reset all instantly, give each stopwatch its own colour, and rename timers for each child or task. Perfect for parents with multiple kids, morning and bedtime routines, teachers, sports, homework, cooking, and workouts. Clean, simple, distraction-free design. No account required. Works offline.",
+    url: "https://apps.apple.com/gb/app/multistopwatch/id6759875356",
+    workType: "mobile-app",
+  },
+  {
     image: Project10Image,
     title: "SitemapToLLMs",
     description:
