@@ -39,7 +39,7 @@ const Footer = () => {
               <li key={link.url}>
                 <Link
                   to={link.url}
-                  className="text-sm text-dark dark:text-mid hover:text-darkest dark:hover:text-lightest"
+                  className="text-sm"
                 >
                   {link.label}
                 </Link>
