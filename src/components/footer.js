@@ -24,6 +24,7 @@ const Footer = () => {
       url: "https://wp-maintenance.pro/",
       label: "Dedicated WordPress maintenance plans",
     },
+    { url: "https://ip.rootscope.dev/", label: "IP Address Check" },
   ]
 
   const moreLinksCol3 = [
