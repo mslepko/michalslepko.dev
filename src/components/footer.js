@@ -30,7 +30,7 @@ const Footer = () => {
     >
       <div className="mb-4">
         <h4 className="text-sm font-semibold mb-2">More</h4>
-        <ul className="list-none p-0 m-0 flex flex-wrap justify-center gap-x-4 gap-y-1">
+        <ul className="list-none p-0 m-0 flex flex-col items-center gap-y-1">
           {moreLinks.map(link => (
             <li key={link.url}>
               <a
