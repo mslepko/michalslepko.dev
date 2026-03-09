@@ -10,8 +10,14 @@ const Footer = () => {
     { url: "https://phpplayground.online/", label: "PHP Playground Online" },
     { url: "https://byhumannotai.com/", label: "By Human Not AI" },
     { url: "https://ip.rootscope.dev/", label: "IP Address Check" },
-    { url: "https://wp-maintenance.pro/", label: "Dedicated WordPress maintenance plans" },
-    { url: "https://sitemaptollms.com/", label: "Convert Any Sitemap to llms.txt" },
+    {
+      url: "https://wp-maintenance.pro/",
+      label: "Dedicated WordPress maintenance plans",
+    },
+    {
+      url: "https://sitemaptollms.com/",
+      label: "Convert Any Sitemap to llms.txt",
+    },
   ]
 
   return (
@@ -27,7 +33,12 @@ const Footer = () => {
         <ul className="list-none p-0 m-0 flex flex-wrap justify-center gap-x-4 gap-y-1">
           {moreLinks.map(link => (
             <li key={link.url}>
-              <a href={link.url} target="_blank" rel="noreferrer" className="text-sm">
+              <a
+                href={link.url}
+                target="_blank"
+                rel="noreferrer"
+                className="text-sm"
+              >
                 {link.label}
               </a>
             </li>
