@@ -44,7 +44,7 @@
     "svg-react-loader/loader-utils": "^1.4.2"
   },
   "devDependencies": {
-    "autoprefixer": "^10.5.4",
+    "autoprefixer": "^10.6.1",
     "gatsby-plugin-postcss": "^6.16.0",
     "postcss": "^8.5.26",
     "prettier": "^3.9.6",
