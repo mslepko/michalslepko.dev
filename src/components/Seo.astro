@@ -1,0 +1,37 @@
+---
+import { siteMetadata } from "../site"
+
+const { title, description, robots } = Astro.props
+const {
+  title: defaultTitle,
+  description: defaultDescription,
+  author,
+  titleShort,
+} = siteMetadata
+
+const secondTitle = title === "Home" ? defaultTitle : titleShort
+
+const seo = {
+  title: `${title} | ${secondTitle}`,
+  description: description || defaultDescription,
+  url: new URL(Astro.url.pathname, Astro.site).href,
+  robots: robots ? robots : "follow, index",
+  author: author,
+}
+---
+
+<title>{seo.title}</title>
+<link rel="canonical" href={seo.url} />
+<meta property="og:title" content={seo.title} />
+<meta property="og:description" content={seo.description} />
+<meta property="og:type" content="website" />
+<meta property="og:url" content={seo.url} />
+
+<meta name="description" content={seo.description} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={seo.title} />
+<meta name="twitter:url" content={seo.url} />
+<meta name="twitter:description" content={seo.description} />
+<meta name="twitter:creator" content={seo.author} />
+<meta name="robots" content={seo.robots} />
+<meta name="msvalidate.01" content="A8B7DD5F07491747CFB9FC3293B85EA7" />

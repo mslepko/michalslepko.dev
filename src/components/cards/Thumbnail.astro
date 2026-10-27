@@ -1,0 +1,29 @@
+---
+import { Image } from "astro:assets"
+
+// `image` is either an SVG component (social icons) or a raster image import
+const {
+  image,
+  alt,
+  height,
+  widths,
+  sizes,
+  class: className = "mr-4 inline-block",
+} = Astro.props
+const Svg = typeof image === "function" ? image : null
+---
+
+{image &&
+  (Svg ? (
+    <Svg />
+  ) : (
+    <Image
+      src={image}
+      alt={alt}
+      height={height}
+      widths={widths}
+      sizes={sizes}
+      densities={widths ? undefined : [1, 2]}
+      class={className}
+    />
+  ))}

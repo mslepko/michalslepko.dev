@@ -1,0 +1,19 @@
+---
+import SectionTitle from "../layout/SectionTitle.astro"
+import ContactForm from "../forms/ContactForm.jsx"
+---
+
+<section class="contact section pb-28">
+  <article class="inner-container">
+    <div class="title">
+      <SectionTitle subtitle={"Get in touch"} title={"Contact"} />
+
+      <p class="text-normal text-lg sm:text-xl font-medium mt-8">
+        If you&apos;d like to hire me or have any questions, send me a message
+        and I&apos;ll come back to you.
+      </p>
+    </div>
+
+    <ContactForm client:visible />
+  </article>
+</section>

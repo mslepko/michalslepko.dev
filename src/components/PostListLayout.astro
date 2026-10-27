@@ -1,0 +1,39 @@
+---
+import { Image } from "astro:assets"
+import Pagination from "./Pagination.astro"
+import { formatDate } from "../lib/snippets"
+import fallbackImage from "../images/fallback.png"
+
+const { posts, currentPage, lastPage } = Astro.props
+---
+
+<section class="mt-16 grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+  {posts.map(({ id, data }) => (
+    <a class="hover:underline" href={`/snippets/${id}/`}>
+      <section
+        class="relative rounded-lg shadow-sm bg-lightest dark:bg-dark/30 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300
+          flex flex-col justify-between p-1"
+      >
+        <div class="mx-auto w-full">
+          <Image
+            class="rounded-t-lg h-56 w-full object-cover"
+            src={data.hero_image ?? fallbackImage}
+            alt={data.title}
+            widths={[300, 600]}
+            sizes="(min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
+          />
+        </div>
+        <header class="text-center p-5 flex-1 flex-col justify-center rounded-b-lg">
+          <time
+            class="text-gray-500 font-light text-base"
+            datetime={data.published.toISOString()}
+          >
+            {formatDate(data.published)}
+          </time>
+          <h3 class="text-xl text-black font-semibold m-0">{data.title}</h3>
+        </header>
+      </section>
+    </a>
+  ))}
+</section>
+<Pagination currentPage={currentPage} lastPage={lastPage} />

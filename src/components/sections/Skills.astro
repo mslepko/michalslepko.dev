@@ -1,0 +1,99 @@
+---
+import SectionTitle from "../layout/SectionTitle.astro"
+import Html from "../../images/tech/Html.svg"
+import Css from "../../images/tech/Css.svg"
+import Bootstrap from "../../images/tech/Bootstrap.svg"
+import TailwindCss from "../../images/tech/TailwindCss.svg"
+import JavaScript from "../../images/tech/JavaScript.svg"
+import ReactJs from "../../images/tech/ReactJs.svg"
+import Php from "../../images/tech/Php.svg"
+import Perl from "../../images/tech/Perl.svg"
+import Apache from "../../images/tech/Apache.svg"
+import Bash from "../../images/tech/Bash.svg"
+import Gatsbyjs from "../../images/tech/Gatsbyjs.svg"
+import Github from "../../images/tech/Github.svg"
+import Graphql from "../../images/tech/Graphql.svg"
+import Laravel from "../../images/tech/Laravel.svg"
+import Linux from "../../images/tech/Linux.svg"
+import Wordpress from "../../images/tech/Wordpress.svg"
+import Jquery from "../../images/tech/Jquery.svg"
+import Shopify from "../../images/tech/Shopify.svg"
+import Jenkins from "../../images/tech/Jenkins.svg"
+import Docker from "../../images/tech/Docker.svg"
+import Nginx from "../../images/tech/nginx.svg"
+
+const skillGroups = [
+  {
+    name: "Backend",
+    skills: [
+      { Icon: Php, title: "PHP", label: "PHP" },
+      { Icon: Perl, title: "Perl", label: "Perl" },
+      { Icon: Bash, title: "Bash", label: "Bash" },
+    ],
+  },
+  {
+    name: "Frontend",
+    skills: [
+      { Icon: Html, title: "HTML", label: "HTML" },
+      { Icon: Css, title: "CSS", label: "CSS" },
+      { Icon: JavaScript, title: "JavaScript", label: "JavaScript" },
+      { Icon: Jquery, title: "Jquery", label: "jQuery" },
+    ],
+  },
+  {
+    name: "Frameworks & CMS",
+    skills: [
+      { Icon: Laravel, title: "Laravel", label: "Laravel" },
+      { Icon: Wordpress, title: "Wordpress", label: "WordPress" },
+      { Icon: ReactJs, title: "ReactJS", label: "React JS" },
+      { Icon: Gatsbyjs, title: "GatsbyJS", label: "Gatsby JS" },
+      { Icon: Shopify, title: "Shopify", label: "Shopify" },
+    ],
+  },
+  {
+    name: "CSS Frameworks",
+    skills: [
+      { Icon: Bootstrap, title: "Bootstrap", label: "Bootstrap" },
+      { Icon: TailwindCss, title: "TailwindCSS", label: "Tailwind CSS" },
+    ],
+  },
+  {
+    name: "DevOps & Tools",
+    skills: [
+      { Icon: Apache, title: "Apache", label: "Apache" },
+      { Icon: Nginx, title: "NGINX", label: "NGINX" },
+      { Icon: Linux, title: "Linux", label: "Linux" },
+      { Icon: Github, title: "Github", label: "GitHub" },
+      { Icon: Graphql, title: "GraphQL", label: "GraphQL" },
+      { Icon: Jenkins, title: "Jenkins", label: "Jenkins" },
+      { Icon: Docker, title: "Docker", label: "Docker" },
+    ],
+  },
+]
+---
+
+<section class="skills section">
+  <article class="inner-container">
+    <article class="title">
+      <SectionTitle subtitle={"What do I do?"} title={"Skills"} />
+    </article>
+
+    <article class="content">
+      {skillGroups.map(group => (
+        <div class="skill-group mb-8">
+          <h3 class="text-xl font-bold text-darkest dark:text-lightest mb-4 border-b border-gray-300 dark:border-gray-600 pb-2 min-h-16 text-center">
+            {group.name}
+          </h3>
+          <div class="flex flex-col">
+            {group.skills.map(({ Icon, title, label }) => (
+              <div class="m-2 flex flex-col items-center" title={title}>
+                <Icon />
+                <p class="text-dark dark:text-light text-center m-0">{label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </article>
+  </article>
+</section>

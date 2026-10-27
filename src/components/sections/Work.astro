@@ -1,0 +1,99 @@
+---
+import SectionTitle from "../layout/SectionTitle.astro"
+import Project from "../cards/Project.astro"
+import { WORK_TYPES, projects } from "../../lists/projects"
+
+const { activeFilter, showFilters } = Astro.props
+
+const filteredProjects = activeFilter
+  ? projects.filter(p => p.workType === activeFilter)
+  : projects
+
+// Clicking the active filter again clears it
+const filterUrl = slug =>
+  slug === activeFilter ? "/projects/" : `/projects/${slug}/`
+
+const portfolioSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Michal Slepko's Portfolio Projects",
+  description:
+    "A collection of software development projects showcasing web applications, productivity tools, PHP development tools, WordPress plugins, and technical solutions built with modern technologies.",
+  numberOfItems: filteredProjects.length,
+  itemListElement: filteredProjects.map((project, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    item: {
+      "@type": "SoftwareApplication",
+      name: project.title,
+      description: project.description,
+      applicationCategory: "DeveloperApplication",
+      operatingSystem: "Web Browser",
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "USD",
+        availability: "https://schema.org/InStock",
+      },
+    },
+  })),
+}
+---
+
+<section class="work section" itemscope itemtype="https://schema.org/ItemList">
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(portfolioSchema)}
+  />
+  <article class="inner-container">
+    <header class="title">
+      <SectionTitle subtitle={"What have I made?"} title={"Work"} />
+      <p class="text-dark dark:text-light">
+        A collection of software development hobby projects showcasing web
+        applications, productivity tools, PHP development tools, WordPress
+        plugins, and technical solutions built with modern technologies.
+      </p>
+
+      {showFilters && (
+        <div class="flex flex-wrap gap-2 mt-4">
+          <a
+            href="/projects/"
+            class={`btn-sm cursor-pointer ${
+              !activeFilter ? "btn-brand" : "btn-outline"
+            }`}
+          >
+            All
+          </a>
+          {WORK_TYPES.map(type => (
+            <a
+              href={filterUrl(type.slug)}
+              class={`btn-sm cursor-pointer ${
+                type.slug === activeFilter ? "btn-brand" : "btn-outline"
+              }`}
+            >
+              {type.label}
+            </a>
+          ))}
+        </div>
+      )}
+    </header>
+
+    <div class="content" itemprop="itemListElement">
+      {filteredProjects.map(project => (
+        <Project
+          image={project.image}
+          title={project.title}
+          description={project.description}
+          url={project.url}
+          github={project.github}
+        />
+      ))}
+
+      {filteredProjects.length === 0 && (
+        <p class="text-dark dark:text-light col-span-full text-center py-8">
+          No projects found for this category.
+        </p>
+      )}
+    </div>
+  </article>
+</section>

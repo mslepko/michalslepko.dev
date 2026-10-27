@@ -1,0 +1,36 @@
+---
+import Thumbnail from "./Thumbnail.astro"
+
+const { link, thumb } = Astro.props
+
+let hasThumb = thumb ? true : false
+let classes =
+  "flex items-center w-full p-4 text-dark rounded-lg shadow-md dark:text-gray-400 flex-col transition-all duration-500 hover:bg-mint hover:scale-105 bg-clip-border shadow-3xl shadow-shadow-500 bg-white my-4 featured-link featured-link__" +
+  link.name.split(" ")[0].toLowerCase()
+
+let thumbClass =
+  "text-center thumbnail h-full w-full h-[250px] flex justify-center items-center my-4"
+---
+
+<a class={classes} href={link.url} target="_blank" rel="noreferrer">
+  {hasThumb && (
+    <div class={thumbClass}>
+      <Thumbnail
+        image={thumb}
+        alt={link.name}
+        widths={[410, 820, 1640]}
+        sizes="(min-width: 1640px) 1640px, 100vw"
+        class="mr-4 w-full min-w-0"
+      />
+    </div>
+  )}
+  <div
+    class={
+      hasThumb
+        ? "text-center md:text-left text-blue font-bold text-2xl"
+        : "text-center text-blue font-bold w-full"
+    }
+  >
+    {link.name}
+  </div>
+</a>

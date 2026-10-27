@@ -1,0 +1,35 @@
+---
+import { formatDate } from "../../lib/snippets"
+
+const { title, published, previous, next } = Astro.props
+---
+
+<article class="flex-1 text-xl container mx-auto p-8 pb-16 text-left text-darkest dark:text-lightest my-snippets">
+  <header class="mb-5 bg-transparent block h-auto">
+    <time
+      class="block text-darkest dark:text-lightest text-right mb-2"
+      datetime={published.toISOString()}
+    >
+      {formatDate(published)}
+    </time>
+    <h1 class="block text-2xl sm:text-3xl font-bold text-darkest dark:text-lightest tracking-tight pt-10 text-center pb-16">
+      {title}
+    </h1>
+  </header>
+  <slot />
+  <hr class="my-5 border-darkest dark:border-lightest" />
+  <div
+    class={previous ? "flex w-full justify-between" : "flex w-full justify-end"}
+  >
+    {previous && (
+      <a class="pagination-prev" href={`/snippets/${previous.id}/`}>
+        {previous.data.title}
+      </a>
+    )}
+    {next && (
+      <a class="pagination-next" href={`/snippets/${next.id}/`}>
+        {next.data.title}
+      </a>
+    )}
+  </div>
+</article>

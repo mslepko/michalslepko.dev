@@ -1,0 +1,68 @@
+---
+import { Image } from "astro:assets"
+import Layout from "../components/layout/Layout.astro"
+import UsesLine from "../components/UsesLine.astro"
+import deskImage from "../images/michaldesk.jpg"
+---
+
+<Layout title="Uses">
+  <div class="container mx-auto p-8 pb-16 text-center">
+    <h1 class="text-2xl sm:text-3xl font-bold text-darkest dark:text-lightest tracking-tight pt-10 text-center pb-16">
+      Uses
+    </h1>
+    <Image
+      src={deskImage}
+      alt="Michal.codes's setup"
+      width={1024}
+      class="max-w-lg w-full block mx-auto"
+    />
+
+    <div class="pt-14">
+      <p class="ttext-darkest dark:text-lightestpb-1 text-xl">
+        The list of hardware and software I use almost everyday.
+      </p>
+      <p class="text-darkest dark:text-lightest pb-1 text-xl">
+        I get a lot of questions about my setup and what I use.
+      </p>
+      <p class="text-darkest dark:text-lightest pb-1 text-xl">
+        I hope this page will be useful for you.
+      </p>
+      <p>
+        <a
+          class="text-darkest dark:text-lightest pb-1 text-xl"
+          href="https://www.amazon.co.uk/shop/michal.codes"
+        >
+          My Amazon store
+        </a>
+      </p>
+    </div>
+    <a
+      href="#my_work_setup"
+      class="text-center block text-xl sm:text-1xl font-bold text-darkest dark:text-lightest tracking-tight pt-10"
+    >
+      My work setup
+    </a>
+    <p class="text-sm text-slate-500 text-center">* affiliated links</p>
+    <UsesLine type="my_work_setup" />
+
+    <h3 class="text-center text-xl sm:text-1xl font-bold text-darkest dark:text-lightest tracking-tight pt-14">
+      My streaming setup
+    </h3>
+    <UsesLine type="streamingSetup" />
+
+    <h3 class="text-center text-xl sm:text-1xl font-bold text-darkest dark:text-lightest tracking-tight pt-14">
+      Coding Apps
+    </h3>
+    <UsesLine type="codingApps" />
+
+    <h3 class="text-center text-xl sm:text-1xl font-bold text-darkest dark:text-lightest tracking-tight pt-14">
+      Productivity Apps
+    </h3>
+    <UsesLine type="productivityApps" />
+
+    <h3 class="text-center text-xl sm:text-1xl font-bold text-darkest dark:text-lightest tracking-tight pt-14">
+      VS Code setup
+    </h3>
+    <UsesLine type="vscode" />
+  </div>
+</Layout>

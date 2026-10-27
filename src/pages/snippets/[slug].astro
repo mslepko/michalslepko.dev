@@ -1,0 +1,32 @@
+---
+import { render } from "astro:content"
+import Layout from "../../components/layout/Layout.astro"
+import BlogPostLayout from "../../components/snippets/BlogPostLayout.astro"
+import { getSortedSnippets } from "../../lib/snippets"
+
+export async function getStaticPaths() {
+  const snippets = await getSortedSnippets()
+  return snippets.map((post, index) => ({
+    params: { slug: post.id },
+    props: {
+      post,
+      previous: snippets[index - 1],
+      next: snippets[index + 1],
+    },
+  }))
+}
+
+const { post, previous, next } = Astro.props
+const { Content } = await render(post)
+---
+
+<Layout title={post.data.title} description={post.data.description}>
+  <BlogPostLayout
+    title={post.data.title}
+    published={post.data.published}
+    previous={previous}
+    next={next}
+  >
+    <Content />
+  </BlogPostLayout>
+</Layout>
