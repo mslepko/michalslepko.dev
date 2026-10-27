@@ -1,0 +1,18 @@
+---
+import GroupLink from "../cards/GroupLink.astro"
+
+const { name, links, thumbnails } = Astro.props
+---
+
+<div class="m-auto marker:text-sky-400 list-disc md:pl-5 space-y-6 text-slate-500 mt-8">
+  <div class="my-16">
+    <h1 class="text-2xl sm:text-3xl font-bold text-darkest dark:text-lightest tracking-tight pt-10 capitalize mb-4">
+      {name}
+    </h1>
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+      {links.map(link => (
+        <GroupLink link={link} thumb={thumbnails[link.thumb]} />
+      ))}
+    </div>
+  </div>
+</div>

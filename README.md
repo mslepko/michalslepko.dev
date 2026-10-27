@@ -1,6 +1,10 @@
 ## My personal website
 
-Build with GatsbyJS
-<a href="https://www.gatsbyjs.com">
-<img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-</a>
+Built with [Astro](https://astro.build), React islands and Tailwind CSS.
+
+- `npm run dev` - start the dev server on http://localhost:4321
+- `npm run build` - build the static site into `dist/`
+- `npm run preview` - serve the built site locally
+- `npm run format` - format the code with Prettier
+
+Snippets live as MDX files in `src/content/snippets/`.

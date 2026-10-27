@@ -1,0 +1,15 @@
+---
+import Layout from "../../components/layout/Layout.astro"
+import Work from "../../components/sections/Work.astro"
+import { WORK_TYPES } from "../../lists/projects"
+
+export function getStaticPaths() {
+  return WORK_TYPES.map(type => ({ params: { filter: type.slug } }))
+}
+
+const { filter } = Astro.params
+---
+
+<Layout title={`Projects - ${filter}`}>
+  <Work activeFilter={filter} showFilters />
+</Layout>

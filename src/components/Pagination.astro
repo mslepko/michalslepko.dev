@@ -1,0 +1,28 @@
+---
+const { currentPage, lastPage } = Astro.props
+
+const pages = Array.from({ length: lastPage }, (_, index) => index + 1)
+---
+
+<nav
+  class="flex justify-end space-x-2 rounded-md mt-10"
+  aria-label="Page navigation"
+>
+  {pages.map(pageNum => {
+    const url = pageNum === 1 ? "/snippets/" : `/snippets/${pageNum}/`
+    const isSelected = pageNum === currentPage
+    const disableClass = isSelected ? " pointer-events-none" : ""
+
+    return (
+      <a
+        href={url}
+        class={`relative rounded-md border border-blue shadow-sm px-4 py-2 text-sm ${
+          isSelected ? "bg-blue-500 text-white" : "bg-white text-blue-500"
+        }${disableClass}`}
+        aria-current={isSelected ? "page" : undefined}
+      >
+        {pageNum}
+      </a>
+    )
+  })}
+</nav>

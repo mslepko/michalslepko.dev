@@ -1,0 +1,46 @@
+---
+import linksList from "../lists/linksList"
+import MyLink from "./MyLink.astro"
+import GroupLinks from "./sections/GroupLinks.astro"
+import { thumbnails } from "../lib/images"
+
+let normalLinks = []
+let groupedLinks = {}
+
+const linksGroup = [
+  { name: "tools", order: 1 },
+  { name: "essentials", order: 2 },
+  { name: "brands", order: 3 },
+  { name: "servers", order: 4 },
+]
+
+linksGroup.forEach(link => {
+  groupedLinks[link.name] = []
+})
+
+linksList.forEach(link => {
+  if (link.featured) return
+  if (typeof link.type !== "undefined") {
+    groupedLinks[link.type].push(link)
+  } else {
+    normalLinks.push(link)
+  }
+})
+linksGroup.sort((a, b) => a.order - b.order)
+---
+
+<div class="md:w-2/3 m-auto marker:text-sky-400 list-disc md:pl-5 space-y-6 text-slate-500 mt-8">
+  <h1 class="text-2xl sm:text-3xl font-bold text-darkest dark:text-lightest tracking-tight pt-10">
+    My links
+  </h1>
+  {normalLinks.map(link => (
+    <MyLink link={link} thumb={thumbnails[link.thumb]} />
+  ))}
+  {linksGroup.map(link => (
+    <GroupLinks
+      name={link.name}
+      links={groupedLinks[link.name]}
+      thumbnails={thumbnails}
+    />
+  ))}
+</div>

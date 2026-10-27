@@ -1,0 +1,88 @@
+---
+import Instagram from "../../images/svgs/instagram-icon.svg"
+import TikTok from "../../images/svgs/tiktok.svg"
+import YouTube from "../../images/svgs/youtube.svg"
+import Twitter from "../../images/svgs/twitter-icon.svg"
+import Twitch from "../../images/svgs/twitch-icon.svg"
+import Github from "../../images/svgs/github-icon.svg"
+import LinkedIn from "../../images/svgs/linkedin.svg"
+import socialStats from "../../lists/socialStats"
+
+// Icons from = https://simpleicons.org/
+
+const { fullPage } = Astro.props
+
+const socials = [
+  {
+    name: "Instagram",
+    label: "Instagram",
+    url: "https://instagram.com/michal.codes",
+    Icon: Instagram,
+  },
+  {
+    name: "TikTok",
+    label: "Tiktok",
+    url: "https://www.tiktok.com/@michal.codes",
+    Icon: TikTok,
+  },
+  {
+    name: "YouTube",
+    label: "YouTube",
+    url: "https://www.youtube.com/@michal_codes",
+    Icon: YouTube,
+  },
+  {
+    name: "Twitter",
+    label: "Twitter",
+    url: "https://twitter.com/michal_codes",
+    Icon: Twitter,
+  },
+  {
+    name: "Twitch",
+    label: "Twitch",
+    url: "https://twitch.com/michal_codes",
+    Icon: Twitch,
+  },
+  {
+    name: "GitHub",
+    label: "GitHub",
+    url: "https://github.com/mslepko",
+    Icon: Github,
+  },
+  {
+    name: "LinkedIn",
+    label: "LinkedIn",
+    url: "https://www.linkedin.com/in/michalslepko",
+    Icon: LinkedIn,
+  },
+]
+
+let classNames =
+  "flex justify-around gap-12 align-center min-h-fit m-auto socials "
+let linkClass = ""
+
+if (fullPage) {
+  classNames += "mt-12 flex-row flex-wrap w-3/4"
+  linkClass = "flex flex-col items-center"
+} else {
+  classNames += "flex-col"
+}
+---
+
+<div class={classNames}>
+  {socials.map(({ name, label, url, Icon }) => (
+    <a href={url} target="_blank" rel="noopener noreferrer" class={linkClass}>
+      {fullPage && (
+        <p class="dark:text-mid dark:hover:text-lightest text-dark hover:text-darkest font-bold mb-4">
+          {label}
+        </p>
+      )}
+      <Icon />
+      {fullPage && socialStats[name] && (
+        <p class="dark:text-mid dark:hover:text-lightest text-dark hover:text-darkest font-bold mt-2">
+          {socialStats[name]}
+        </p>
+      )}
+    </a>
+  ))}
+</div>

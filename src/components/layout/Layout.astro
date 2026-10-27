@@ -1,0 +1,67 @@
+---
+import { getImage } from "astro:assets"
+import "../../styles/global.css"
+import "../../styles/menu.css"
+import "../../styles/animations.css"
+import "../../styles/redesign.css"
+import Seo from "../Seo.astro"
+import Sidebar from "./Sidebar.astro"
+import Header from "./Header.astro"
+import Footer from "../Footer.astro"
+import siteIcon from "../../images/site-icon.png"
+
+const { title, description, robots } = Astro.props
+
+const favicon = await getImage({
+  src: siteIcon,
+  width: 32,
+  height: 32,
+  format: "png",
+})
+const touchIcon = await getImage({
+  src: siteIcon,
+  width: 192,
+  height: 192,
+  format: "png",
+})
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href={favicon.src} type="image/png" />
+    <link rel="apple-touch-icon" sizes="192x192" href={touchIcon.src} />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <Seo title={title} description={description} robots={robots} />
+    <script is:inline>
+      // Apply the saved/system theme before first paint to avoid a flash
+      try {
+        if (
+          localStorage.theme === "dark" ||
+          (!("theme" in localStorage) &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+          document.documentElement.classList.add("dark")
+        }
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="page" class="flex flex-row h-screen bg-light/30 dark:bg-darkest">
+      <Sidebar />
+      <div
+        id="content"
+        class="w-full mx-auto overflow-y-scroll bg-light/30 dark:bg-darkest h-screen overflow-x-hidden flex flex-col"
+      >
+        <Header />
+        <main>
+          <slot />
+        </main>
+        <Footer />
+      </div>
+    </div>
+  </body>
+</html>

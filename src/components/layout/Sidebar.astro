@@ -1,0 +1,34 @@
+---
+import MobileMenu from "../MobileMenu.jsx"
+import Socials from "./Socials.astro"
+import ThemeToggleSwitch from "../buttons/ThemeToggleSwitch.jsx"
+import Logo from "../../images/svgs/michal_codes.svg"
+---
+
+<aside
+  class="w-[40px]
+    md:w-[100px]
+    h-screen
+    min-h-fit
+    overflow-y-auto
+    overflow-x-hidden
+    flex
+    flex-col
+    items-center
+    justify-between
+    bg-light/30 dark:bg-darkest
+    gap-y-4
+    p-2"
+>
+  <a href="/" class="logo text-dark dark:text-lightest w-full m-3">
+    <Logo />
+  </a>
+  <div class="h-6 w-6">
+    <ThemeToggleSwitch client:load />
+  </div>
+  <div class="w-full h-[35px] bg-sidebar-light my-8">
+    <MobileMenu client:load currentPath={Astro.url.pathname} />
+  </div>
+
+  <Socials />
+</aside>

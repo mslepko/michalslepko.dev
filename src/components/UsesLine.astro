@@ -1,0 +1,49 @@
+---
+import usesList from "../lists/usesList"
+import MyLink from "./MyLink.astro"
+import socialStats from "../lists/socialStats"
+import Twitter from "../images/svgs/twitter-icon.svg"
+import Instagram from "../images/svgs/instagram-icon.svg"
+import Twitch from "../images/svgs/twitch-icon.svg"
+import YouTube from "../images/svgs/youtube.svg"
+import TikTok from "../images/svgs/tiktok.svg"
+import Threads from "../images/svgs/threads.svg"
+
+const { type, addClasses } = Astro.props
+
+const setupElements = usesList[type] || {}
+const socialIcons = {
+  Twitter: Twitter,
+  Instagram: Instagram,
+  Twitch: Twitch,
+  TikTok: TikTok,
+  YouTube: YouTube,
+  Threads: Threads,
+}
+
+let classList = addClasses ? addClasses : ""
+const classes = `md:w-2/3 m-auto marker:text-sky-400 list-disc md:pl-5 space-y-6 text-slate-500 mt-8 ${classList}`
+
+// Each item maps a store/label to a URL, e.g. { "Amazon UK*": "https://..." }
+const links = Object.entries(setupElements).flatMap(([name, urls]) =>
+  Object.entries(urls).map(([label, url]) => {
+    const link = {
+      name: label.length > 0 ? `${name} (${label})` : name,
+      url: url,
+    }
+
+    if (type === "socials") {
+      link.followers = socialStats[name]
+      link.thumb = socialIcons[name]
+    }
+
+    return link
+  }),
+)
+---
+
+<div class={classes}>
+  {links.map(link => (
+    <MyLink link={link} thumb={link.thumb} followers={link.followers} />
+  ))}
+</div>

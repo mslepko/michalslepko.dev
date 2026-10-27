@@ -1,0 +1,20 @@
+---
+import linksList from "../../lists/linksList"
+import FeaturedLink from "../cards/FeaturedLink.astro"
+import { featuredImages } from "../../lib/images"
+
+const featuredLinks = linksList.filter(link => link.featured)
+---
+
+{featuredLinks.length > 0 && (
+  <div class="md:w-2/3 m-auto marker:text-sky-400 list-disc md:pl-5 space-y-6 text-slate-500 mt-8">
+    <div class="mb-32">
+      <h1 class="text-2xl sm:text-3xl font-bold text-darkest dark:text-lightest tracking-tight pt-10">
+        Featured links
+      </h1>
+      {featuredLinks.map(link => (
+        <FeaturedLink link={link} thumb={featuredImages[link.thumb]} />
+      ))}
+    </div>
+  </div>
+)}

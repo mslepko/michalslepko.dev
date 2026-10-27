@@ -1,6 +1,6 @@
-module.exports = {
+export default {
   darkMode: "class",
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svg}"],
   theme: {
     container: {
       padding: {
@@ -78,5 +78,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss"), require("autoprefixer")],
+  plugins: [],
 }
